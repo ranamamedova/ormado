@@ -3,8 +3,8 @@ import React from 'react'
 const App = () => {
   return (
    <>
-      <h1 style={{"textAlign":"center"}} className="mt-5">
-        Ormado DEV
+      <h1 className='text-center'>
+        Ormado dev
       </h1>
    
    </>

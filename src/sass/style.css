@@ -1,0 +1,7 @@
+:root {
+  --section-h1:orange;
+}
+
+div {
+  color: var(--section-h1);
+}/*# sourceMappingURL=style.css.map */

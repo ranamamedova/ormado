@@ -4,7 +4,7 @@ const App = () => {
   return (
    <>
       <h1 className='text-center'>
-        Ormado dev
+        Ormado dev Project
       </h1>
    
    </>

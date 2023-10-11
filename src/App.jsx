@@ -1,11 +1,10 @@
 import React from 'react'
+import Section1 from './components/home/Section1'
 
 const App = () => {
   return (
    <>
-      <h1 className='text-center'>
-        Ormado dev Project
-      </h1>
+      <Section1 />
    
    </>
   )

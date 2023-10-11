@@ -1,0 +1,101 @@
+#root {
+    height: 100%;
+  }
+  body {
+    background: #fff;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+
+  .main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .section1-part1{
+      width: 60%;
+      height: 700px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .section1-part1-text{
+        width: 65%;
+        background-image: url('../components/home/imgs/Vector.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        .text-part1{
+          font-size: 80px;
+          font-weight: bolder;
+          color: #E3B142;
+          span{
+            color: #4A3024;
+          }
+        }
+        .text-part2{
+          font-size: 20px;
+          color: #979797;
+        }
+      }
+      button{
+        border: 0;
+        border-radius: 20px;
+        color: white;
+        background-color: #E3B142;
+        font-size: 20px;
+      }
+    }
+    .section1-part2{
+      width: 35%;
+      height: 700px;
+      .swiper {
+        width: 100%;
+        height: 700px;
+        right: 0;
+        border-radius: 150px 0px 0px 150px;
+      }
+      .mySwiper2{
+        left: 0;
+      }
+      
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+      
+        /* Center slide text vertically */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .swiper-pagination{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 30px !important;
+        right: 0px !important;
+        left: unset !important;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        .swiper-pagination-bullet{
+            width: 13px;
+            height: 13px;
+            background-color: #4E2922;
+            
+        }
+      }
+    }
+
+  }

@@ -29,22 +29,105 @@
               letter-spacing: 1.2px;
             }
           }
-        }
-        .beans {
-          position: absolute;
-          top: 19%;
-          left: 132%;
-          transform: translate(-132%, -19%);
-          width: auto;
-          height: auto;
-          @include displayCenter;
+          .row {
+            .modalDrink {
+              width: 100%;
+              height: auto;
+              background-color: rgba(227, 177, 66, 0.2);
+              border-radius: 13px;
+
+              .modalDrinkBox {
+                display: flex;
+                align-items: center;
+                .img {
+                  transform: translateX(-10%);
+                  img {
+                    // position: absolute;
+                    top: 200%;
+                  }
+                }
+              }
+              .modalDrinkText {
+                p {
+                  font-size: 12.2px;
+                  transform: translateX(-15%);
+                  color: #4a3024;
+                  font-family: Montserrat;
+                  font-style: normal;
+                  font-weight: 600;
+                  line-height: 1.3rem;
+                  a {
+                    color: #4a3024;
+                    font-weight: 500;
+                    font-size: 11px;
+                  }
+                }
+              }
+              .modalDrinkGrey {
+                background-color: var(--bg-white);
+                border-radius: 20px;
+                border: 1px solid #d8d7d7;
+                transition: 250ms;
+                &:hover {
+                  background-color: #f9efd9;
+                  cursor: pointer;
+                  border: 1px solid #f9efd9;
+                  .modalDrinkGreyText {
+                    p {
+                      font-size: 12.2px;
+                      transform: translateX(-15%);
+                      color: #4a3024;
+                      font-family: Montserrat;
+                      font-style: normal;
+                      font-weight: 600;
+                      line-height: 1.3rem;
+                      a {
+                        color: #4a3024;
+                        font-weight: 500;
+                        font-size: 11px;
+                      }
+                    }
+                  }
+                }
+              }
+
+              .modalDrinkGreyText {
+                p {
+                  color: #979797;
+                  font-weight: 500;
+                  a {
+                    color: #979797;
+                    font-weight: 500;
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }
 
     .coffeImgContainer1 {
-      margin-top: 140px;
+      margin-top: 120px;
       .enjoyCoffeDesc {
+        position: relative;
+        .beansBig {
+          position: absolute;
+          // top: -120px;
+          // right: 20px;
+          top: -40px;
+          right: 95px;
+          transform: translate(-95px, -40px);
+        }
+        .beans {
+          position: absolute;
+          bottom: 70%;
+          right: 95%;
+          transform: translate(-95%, -70%);
+          width: auto;
+          height: auto;
+          @include displayCenter;
+        }
         .enjoyCoffeDesch6 {
           color: #e3b142;
           font-family: Montserrat;
@@ -58,11 +141,62 @@
         h1 {
           color: #54372b;
           font-family: Montserrat;
-          font-size: 71px;
+          font-size: 60px;
           font-style: normal;
           font-weight: 600;
           line-height: normal;
         }
+        p {
+          color: rgb(163, 163, 163);
+          font-family: Montserrat;
+          font-size: 14px;
+          font-style: normal;
+          line-height: 24px;
+        }
+      }
+      .row {
+        .enjoyFilterTxt {
+          position: relative;
+          img {
+            position: absolute;
+            bottom: 27px;
+            right: 40px;
+            z-index: -1;
+            transform: rotate(4deg);
+          }
+          .active {
+            background-color: rgba(227, 177, 66, 1);
+            border-radius: 20px;
+            color: var(--bg-white);
+            position: relative;
+          }
+          p {
+            color: #979797;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 500;
+            padding: 3px 20px;
+            cursor: pointer;
+          }
+          .moreMenup {
+            font-size: x-small;
+            width: 100px;
+            height: 30px;
+            border-radius: 20px;
+            background-color: rgba(227, 177, 66, 1);
+            color: #fff;
+            @include displayCenter;
+          }
+        }
+      }
+      .beans3{
+       margin-left: 20%;
+       margin-top: 20px;
+      }
+      .beans4{
+       margin-left: 50%;
+       margin-top: -170px;
+       
       }
     }
   }

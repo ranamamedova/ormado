@@ -1,0 +1,270 @@
+.Payments {
+    background-color: #FFF;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+
+    .leftside {
+
+        //    margin-top: 50px;
+
+        .title {
+            width: 70%;
+            height: auto;
+
+            h1 {
+
+                color: #979797;
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 800;
+                line-height: normal;
+                font-size: 39px;
+
+                .mpay {
+                    color: #E3B142;
+                }
+            }
+        }
+
+        .click {
+            width: auto;
+            height: 25px;
+            border-radius: 82.836px;
+            background-color: #E3B142;
+            outline: none !important;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            padding: 13px;
+
+
+            h6 {
+                color: #FFF;
+                font-family: Montserrat;
+                font-size: 11.283px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                margin-top: 5px;
+
+            }
+
+        }
+
+        .about {
+            width: 70%;
+            height: auto;
+            margin-top: 25px;
+
+            h6 {
+                color: #979797;
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 500;
+            }
+        }
+
+        .store {
+            width: 70%;
+            display: flex;
+            align-items: center;
+            margin-top: 25px;
+
+            .imgleft {
+                width: 30%;
+            }
+
+            .imgright {
+                width: 30%;
+
+            }
+
+        }
+    }
+
+    .iphone {
+        flex-shrink: 0;
+        margin-top: 5px;
+    }
+
+    .Slick {
+        width: 100%;
+        height: auto;
+
+        .writing {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 13px;
+
+            h2 {
+                color: var(--slick);
+                text-align: center;
+
+            }
+
+            p {
+                color: var(--title);
+                text-align: center;
+            }
+
+        }
+
+     
+    
+
+
+    }
+
+    .slick-prev {
+        left: -52px !important;
+      }
+      .slick-next:before,
+      .slick-prev:before {
+        content: "" !important;
+      }
+      .next-slick-arrow,
+      .prev-slick-arrow {
+        color: #000000;
+        font-size: 45px;
+      }
+
+
+}
+
+@media(max-width:768px) {
+    .leftside {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .store {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
+@media(max-width:376px) {
+    .leftside {
+        width: 100%;
+        height: auto;
+
+        .title {
+            width: 100% !important;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            h1 {
+
+                color: #979797;
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 800;
+                line-height: normal;
+                font-size: 32px !important;
+
+                .mpay {
+                    color: #E3B142;
+                }
+            }
+        }
+
+
+
+        .about {
+            width: 100%;
+            height: auto;
+            margin-top: 5px;
+
+            p {
+                color: #979797;
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 13px;
+            }
+        }
+
+
+        .store {
+            width: 70% !important;
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+
+            .imgleft {
+                width: 35% !important;
+                height: auto;
+            }
+
+            .imgright {
+                width: 35% !important;
+                height: auto;
+            }
+
+        }
+
+
+        .click {
+            width: 14% !important;
+            height: 25px !important;
+            border-radius: 32.836px;
+            background-color: #E3B142 !important;
+            outline: none !important;
+            margin-top: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            padding: 1px !important;
+
+
+            h6 {
+                color: #FFF;
+                font-family: Montserrat;
+                font-size: 6.283px !important;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                margin-top: 5px;
+
+            }
+
+        }
+
+        .iphone {
+            width: 100% !important;
+            height: auto;
+
+        }
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+}

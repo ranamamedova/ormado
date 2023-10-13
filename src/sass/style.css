@@ -1,7 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
 :root {
-  --section-h1:orange;
+  --box-shadow-coffeModal:rgba(0, 0, 0, 0.25) ;
+  --coffeModal-txt:#502e2d;
+  --bg-white:#f1eaea;
+  --slick:#4A3024;
+  --title:#717171;
 }
 
-div {
-  color: var(--section-h1);
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.container-fluid {
+  padding: 2rem 0 0 0 !important;
+}
+.container-fluid .row .coffeImgContainer .coffeImg {
+  max-width: 450px;
+  width: 100%;
+  position: relative;
+}
+.container-fluid .row .coffeImgContainer .coffeImg .coffeModal {
+  position: absolute;
+  top: 80%;
+  left: 155%;
+  transform: translate(-155%, -80%);
+  width: 230px;
+  height: 370px;
+  background-color: var(--bg-white);
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px 0px var(--box-shadow-coffeModal);
+  z-index: 1;
+}
+.container-fluid .row .coffeImgContainer .coffeImg .coffeModal .coffeModalText h6 {
+  color: var(--coffeModal-txt);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+}
+.container-fluid .row .coffeImgContainer .coffeImg .beans {
+  position: absolute;
+  top: 19%;
+  left: 132%;
+  transform: translate(-132%, -19%);
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-fluid .row .coffeImgContainer1 {
+  margin-top: 140px;
+}
+.container-fluid .row .coffeImgContainer1 .enjoyCoffeDesc .enjoyCoffeDesch6 {
+  color: #e3b142;
+  font-family: Montserrat;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.container-fluid .row .coffeImgContainer1 .enjoyCoffeTitleDesc h1 {
+  color: #54372b;
+  font-family: Montserrat;
+  font-size: 71px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.Payments {
+  background-color: #FFF;
+  width: auto;
+  height: auto;
+}
+.Payments .leftside .title {
+  width: 70%;
+  height: auto;
+}
+.Payments .leftside .title h1 {
+  color: #979797;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  font-size: 39px;
+}
+.Payments .leftside .title h1 .mpay {
+  color: #E3B142;
+}
+.Payments .leftside .click {
+  width: auto;
+  height: 20px;
+  border-radius: 42.836px;
+  background-color: #E3B142;
+  outline: none !important;
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 9px;
+}
+.Payments .leftside .click h6 {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 9.283px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 5px;
+}
+.Payments .leftside .about {
+  width: 70%;
+  height: auto;
+  margin-top: 25px;
+}
+.Payments .leftside .about h6 {
+  color: #979797;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+}
+.Payments .leftside .store {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+.Payments .leftside .store .imgleft {
+  width: 30%;
+}
+.Payments .leftside .store .imgright {
+  width: 30%;
+}
+.Payments .iphone {
+  flex-shrink: 0;
+}
+.Payments .Slick {
+  width: 100%;
+  height: auto;
+}
+.Payments .Slick .writing {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Payments .Slick .writing h2 {
+  color: var(--slick);
+}
+.Payments .Slick .writing p {
+  color: var(--title);
+}
+
+@media (max-width: 768px) {
+  .leftside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .store {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 376px) {
+  .leftside {
+    width: 100%;
+    height: auto;
+  }
+  .leftside .title {
+    width: 100% !important;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .leftside .title h1 {
+    color: #979797;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    font-size: 32px !important;
+  }
+  .leftside .title h1 .mpay {
+    color: #E3B142;
+  }
+  .leftside .about {
+    width: 100%;
+    height: auto;
+    margin-top: 5px;
+  }
+  .leftside .about p {
+    color: #979797;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3px;
+  }
+  .leftside .store {
+    width: 70% !important;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .leftside .store .imgleft {
+    width: 35% !important;
+    height: auto;
+  }
+  .leftside .store .imgright {
+    width: 35% !important;
+    height: auto;
+  }
+  .leftside .click {
+    width: 30%;
+    height: 15px;
+    border-radius: 32.836px;
+    background-color: #000000;
+    outline: none !important;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    padding: 3px !important;
+  }
+  .leftside .click h6 {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 6.283px !important;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 5px;
+  }
+  .leftside .iphone {
+    width: 100% !important;
+    height: auto;
+  }
 }/*# sourceMappingURL=style.css.map */

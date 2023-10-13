@@ -1,13 +1,14 @@
 import React from 'react'
-import Home from './components/Home'
+import Section1 from './components/home/Section1'
+import Home from "./components/Home"
 
 const App = () => {
   return (
    <>
-      <h1 className='text-center'>
-      <Home/>
-      </h1>
+      
+    <Home/>
    
+
    </>
   )
 }

@@ -1,11 +1,13 @@
 import React from 'react'
-import Navbar from './Navbar'
+import EnjoyNewCoffe from './EnjoyNewCoffe'
+import Payments from './Payments'
 
 const Home = () => {
   return (
-    <div>
-      <Navbar/>
-    </div>
+  <>
+  <EnjoyNewCoffe/>
+  <Payments/>
+  </>
   )
 }
 

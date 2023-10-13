@@ -1,9 +1,23 @@
-:root{
-    --section-h1:orange;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+:root {
+  --box-shadow-coffeModal:rgba(0, 0, 0, 0.25) ;
+  --coffeModal-txt:#502e2d;
+  --bg-white:#f1eaea;
+  --slick:#4A3024;
+  --title:#717171;
 }
 
-
-div{
-    color: var(--section-h1);
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
+// Variable Mixin
+@import "./variable" ;
+
+// Enjoy New Coffe
+@import "./enjoynewcoffe" ;
+
+@import "./payment"

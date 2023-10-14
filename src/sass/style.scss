@@ -1,8 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
 :root {
-  --box-shadow-coffeModal:rgba(0, 0, 0, 0.25) ;
-  --coffeModal-txt:#502e2d;
-  --bg-white:#fff;
+  --box-shadow-coffeModal: rgba(0, 0, 0, 0.25);
+  --coffeModal-txt: #502e2d;
+  --bg-white: #fff;
+  --border-grey:#d1d1d1;
+  --placeholder:#979797 ;
+  --cart-total:#e3b142;
+  --sign-a:#979797;
+  --sign-up:#d2c59d;
+  --black:#000 ;
+  --nav-a:#4a3024 ;
 }
 
 body {
@@ -13,8 +20,13 @@ body {
 }
 
 // Variable Mixin
-@import "./variable" ;
+@import "./variable";
+
+// Navbar
+@import "./navbar" ;
 
 // Enjoy New Coffe
-@import "./enjoynewcoffe" ;
+@import "./enjoynewcoffe";
 
+// Ormado Kaffe Swiper 
+@import "ormadokaffeswiper" ;

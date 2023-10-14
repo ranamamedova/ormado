@@ -1,0 +1,19 @@
+.ormadoKaffeSwiper{
+    .container-fluid{
+      padding:  50px 0 50px 0 !important;
+      background-color: red;
+      .row{
+        .ormadoKaffeHaus{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: auto;
+          height: 40vh;
+          background-image: url("../img/beansbg.png");
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center;
+        }
+      }
+   }
+}

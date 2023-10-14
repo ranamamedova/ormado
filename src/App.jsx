@@ -1,16 +1,13 @@
 import React from 'react'
-
 import Home from './components/Home'
-import Section1 from './components/home/Section1'
-import ProductsDetails from './components/ProductsDetails'
-
+import Section1 from "./components/home/Section1"
+import Navbar from './components/Navbar'
 const App = () => {
   return (
    <>
-      {/* <Section1 /> */}
+   <Navbar/>
+   {/* <Section1/> */}
     <Home/>
-   {/* <ProductsDetails/> */}
-
    </>
   )
 }

@@ -13,7 +13,7 @@ const EnjoyNewCoffe = () => {
     <>
       <div className="container-fluid">
         <div className="row">
-          <div className="col-12 col-sm-12 col-md-12 col-lg-5 coffeImgContainer">
+          <div className="col-12 col-sm-10 col-md-5 col-lg-5  coffeImgContainer ">
             <div className="coffeImg">
               <img src={coffeImg} alt="" className="img-fluid" />
               <div className="coffeModal">
@@ -24,7 +24,7 @@ const EnjoyNewCoffe = () => {
                   className="row"
                   style={{ display: "flex", justifyContent: "center" }}
                 >
-                  <div className="col-11  mt-3">
+                  <div className="col-10 col-sm-10 col-md-11 col-lg-11  mt-3">
                     <div className="modalDrink">
                       <div className="modalDrinkBox pt-1 pb-1">
                         <div className="img">
@@ -40,7 +40,7 @@ const EnjoyNewCoffe = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="col-11  mt-3">
+                  <div className="col-10 col-sm-11 col-md-11 col-lg-11  mt-3">
                     <div className="modalDrink">
                       <div className="modalDrinkBox pt-1 pb-1 modalDrinkGrey">
                         <div className="img">
@@ -56,7 +56,7 @@ const EnjoyNewCoffe = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="col-11  mt-3">
+                  <div className="col-10 col-sm-11 col-md-11 col-lg-11  mt-3">
                     <div className="modalDrink">
                       <div className="modalDrinkBox pt-1 pb-1 modalDrinkGrey">
                         <div className="img">
@@ -76,7 +76,7 @@ const EnjoyNewCoffe = () => {
               </div>
             </div>
           </div>
-          <div className="col-12 col-sm-12 col-md-12 col-lg-6 coffeImgContainer1" style={{"marginLeft":"80px"}}>
+          <div className="col-12 col-sm-6 col-md-6 col-lg-6  coffeImgContainer1" style={{"marginLeft":"80px"}}>
             <div className="enjoyCoffeDesc">
               <div className="beansBig">
                 <img src={beans3} alt="" />

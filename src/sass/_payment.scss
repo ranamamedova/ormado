@@ -108,7 +108,7 @@
             .slicklogo {
                 width: auto;
                 height: auto;
-                margin-top: 40px !important;
+                margin-top: 0px !important;
                 z-index: 1;
 
                 #one {
@@ -139,6 +139,7 @@
                 color: var(--slick);
                 text-align: center;
                 margin-top: 0 !important;
+                font-size: 30px;
 
             }
 
@@ -333,6 +334,20 @@
     }
 
 
+.Slick{
+    width: auto;
+    height: auto;
+
+    .writing{
+
+        h2{
+            font-size: 33px !important;
+        }
+    }
+}
+     
+
+
     .slider {
         width: auto;
         height: auto;
@@ -344,7 +359,7 @@
             height: auto;
 
             img {
-                width: 20px;
+                width: 30px;
                 margin-top: 3px !important;
             }
         }
@@ -365,7 +380,7 @@
         border: none;
         border-radius: 5px;
         display: block !important;
-        margin-top:25px !important ;
+        margin-top:0 !important ;
     }
 
     .next-slick-arrow {

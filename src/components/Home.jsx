@@ -5,7 +5,7 @@ import Payments from './Payments'
 const Home = () => {
   return (
   <>
-  <EnjoyNewCoffe/>
+  {/* <EnjoyNewCoffe/> */}
   <Payments/>
   </>
   )

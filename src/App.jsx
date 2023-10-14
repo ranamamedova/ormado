@@ -5,7 +5,7 @@ import Home from "./components/Home"
 const App = () => {
   return (
    <>
-      
+      {/* <Section1/> */}
     <Home/>
    
 

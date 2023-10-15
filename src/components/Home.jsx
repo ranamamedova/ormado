@@ -5,8 +5,7 @@ import OrmadoKaffeSwiper from './OrmadoKaffeSwiper'
 const Home = () => {
   return (
   <>
-  {/* <OrmadoKaffeSwiper/> */}
- 
+  <OrmadoKaffeSwiper/>
   <EnjoyNewCoffe/>
   </>
   )

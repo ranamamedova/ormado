@@ -147,7 +147,7 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-        <hr />
+        <hr className="destkopHr" />
         <nav>
           <div className="hamburgerMenu">
             <button
@@ -170,8 +170,7 @@ const Navbar = () => {
                 />
               </svg>
             </button>
-
-            {/* <div className="d-flex">
+            <div className="d-flex">
               <div class="search-container">
                   <div className="search-icon">
                     <svg
@@ -193,8 +192,7 @@ const Navbar = () => {
                     placeholder="Search"
                   />
                 </div>
-        </div> */}
-            <hr />
+        </div>
             <div
               class="offcanvas offcanvas-start"
               data-bs-backdrop="static"

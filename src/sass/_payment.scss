@@ -108,13 +108,12 @@
             .slicklogo {
                 width: auto;
                 height: auto;
-                margin-top: 0px !important;
+                margin-top: 5px !important;
                 z-index: 1;
 
                 #one {
                     width: 36px;
                     // margin-left: 10px;
-
                 }
 
                 img {
@@ -134,7 +133,8 @@
             align-items: center;
             flex-direction: column;
             margin-top: 5px;
-
+        
+         
             h2 {
                 color: var(--slick);
                 text-align: center;
@@ -223,6 +223,38 @@
             }
         }
 
+        .click {
+            width: auto;
+            height: 24px !important;
+            border-radius: 82.836px;
+            background-color: #E3B142;
+            outline: none !important;
+            margin-top: 25px !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            padding: 6px !important;
+
+
+            h6 {
+                color: #FFF;
+                font-family: Montserrat;
+                font-size: 9.283px !important;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                margin-top: 5px;
+
+            }
+
+
+            
+
+        }
+
+
+      
 
     }
 
@@ -230,6 +262,99 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+
+
+    }
+
+
+
+    .next-slick-arrow,
+    .prev-slick-arrow {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 22px !important;
+        color: white;
+        padding: 10px ;
+        border: none;
+        border-radius: 5px;
+        display: block !important;
+        margin-top:0 !important ;
+    }
+
+    .next-slick-arrow {
+        right: 20px !important;
+        transform: translateY(-20%) rotate(360deg);
+        margin-top: 20px;
+        z-index: 0;
+    }
+
+    .prev-slick-arrow {
+        left: 13px;
+        transform: translateY(-20%) rotate(180deg);
+        z-index: 4;
+        margin-top: 20px;
+    }
+
+
+
+    .slider {
+        margin-bottom: 50px !important;
+
+            .slicklogo {
+                width: auto;
+                height: auto;
+                margin-top: 5px !important;
+                z-index: 1;
+
+                #one {
+                    width: 36px;
+                    // margin-left: 10px !important;
+                }
+
+                img {
+                    width: 37px;
+                    height: 37px;
+                    // margin-left: 5px !important;
+
+                }
+            }
+        }
+
+}
+
+
+@media(max-width:577px){
+    
+    .next-slick-arrow,
+    .prev-slick-arrow {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 22px !important;
+        color: white;
+        padding: 10px ;
+        border: none;
+        border-radius: 5px;
+        display: block !important;
+        margin-top:0 !important ;
+    }
+
+    .next-slick-arrow {
+        right: 20px !important;
+        transform: translateY(-20%) rotate(360deg);
+        margin-top: 20px;
+        z-index: 0;
+    }
+
+    .prev-slick-arrow {
+        left: 16px !important;
+        transform: translateY(-20%) rotate(180deg);
+        z-index: 4;
+        margin-top: 20px;
     }
 }
 
@@ -360,7 +485,7 @@
 
             img {
                 width: 30px;
-                margin-top: 3px !important;
+                margin-top: 6px !important;
             }
         }
 
@@ -409,18 +534,19 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        font-size: 22px;
+        font-size: 22px !important;
         color: white;
         padding: 10px;
         border: none;
         border-radius: 5px;
         display: block !important;
+
     }
 
     .next-slick-arrow {
         right: 18px;
         transform: translateY(-20%) rotate(360deg);
-        margin-top: 20px;
+        margin-top: 14px;
         z-index: 0;
     }
 
@@ -428,8 +554,33 @@
         left: 15px;
         transform: translateY(-20%) rotate(180deg);
         z-index: 4;
-        margin-top: 20px;
+        margin-top: 14px;
     }
+
+
+
+    .slider {
+        width: auto;
+        height: auto;
+
+
+
+        .slicklogo {
+            width: auto;
+            height: auto;
+            margin-top: 14px !important;
+
+            img {
+                width: 30px;
+                margin-top: 7px !important;
+            }
+        }
+
+
+    }
+
+
+
 }
 
 
@@ -462,3 +613,66 @@
        
     }
 }
+
+
+@media(max-width:912px){
+    .click {
+        width: 20% !important;
+        height: 18px !important;
+        border-radius: 32.836px;
+        background-color: #E3B142 !important;
+        outline: none !important;
+        margin-top: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        padding: 4px !important;
+
+
+        h6 {
+            color: #FFF;
+            font-family: Montserrat;
+            font-size: 8.283px !important;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin-top: 7px !important;
+
+        }
+
+    }
+}
+
+// @media(max-width:768px){
+
+//     .next-slick-arrow,
+//     .prev-slick-arrow {
+//         cursor: pointer;
+//         position: absolute !important;
+//         top: 50%;
+//         transform: translateY(-10%);
+//         font-size: 20px;
+//         color: white;
+//         margin-left: 20px;
+//         margin-bottom: 10px;
+//         color: var(--roundplayarrow);
+//         padding: 21px;
+//         border: none;
+//         display: block !important;
+
+
+//     }
+
+//     .next-slick-arrow {
+//         margin-right: -25px;
+//         transform: translateY(-50%) rotate(360deg);
+//     }
+
+//     .prev-slick-arrow {
+//         margin-left: -23px;
+//         transform: translateY(-50%) rotate(180deg);
+//         color: var(--carousellogos);
+//         z-index: 3;
+//     }
+// }

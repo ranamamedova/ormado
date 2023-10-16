@@ -1,4 +1,6 @@
 import React, { useRef, useState } from 'react'
+import Image from '../assets/img/Image.png'
+import quotes from '../assets/img/Quotes.svg'
 
 const TestDetails = () => {
     const [count, setCount] = useState(0)
@@ -6,7 +8,7 @@ const TestDetails = () => {
       {
         text:
           'Quisquam similique molestiae quia quod dolorum et. Aliquid blanditiis voluptatem maxime qui et voluptas minus. Nonprovident pariatur nisi. Repellat voluptas culpa eius.',
-        img: 'Image.png',
+        img: Image,
         name:"Byron Rolfson",
         special:"Regional Solutions Architect"
         
@@ -14,7 +16,7 @@ const TestDetails = () => {
       {
         text:
           'Asperiores voluptatum explicabo vel maxime et consequuntur eveniet nobis. Tempore aperiam dolor aut molestiae soluta modi ut. Hic aspernatur ea uam...',
-          img: 'Image.png',
+          img: Image,
           name:" Rolfson",
           special:" Solutions Architect"
          
@@ -22,7 +24,7 @@ const TestDetails = () => {
       {
         text:
           'Omnis velit quia. Perspiciatis et cupiditate. Voluptatum beatae asperiores dolor magnam fuga. Sed fuga est harum quo nesciunt sint. Optio veniam...',
-          img: 'Image.png',
+          img: Image,
           name:"Byron ",
           special:"Regional  Architect"
       },
@@ -96,7 +98,7 @@ const TestDetails = () => {
                   key={index}
                   ref={(ref) => (itemTags.current[index] = ref)}
                 >
-                  <img src="Quotes.svg" alt="" />
+                  <img src={quotes} alt="" />
                   <p>{data[(count + index) % data.length].text}</p>
                 </div>
               ))}

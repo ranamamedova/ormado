@@ -1,0 +1,132 @@
+.ormadoKaffeSwiper {
+  .container-fluid {
+    .row {
+      .arrowDown {
+        position: relative;
+        svg {
+          position: absolute;
+          bottom: 0;
+          left: -6%;
+          transform: translate(-6%, 0);
+        }
+      }
+      .d-flex {
+        .ormadoKaffeBox {
+          width: 120%;
+          height: 250px;
+          background-image: url("../img/beansbg.png");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          position: relative;
+          transform: translateY(50px);
+
+          .ormadoKaffeText {
+            position: absolute;
+            width: auto;
+            height: auto;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, 0);
+            
+            .ormadoh1 {
+              color: var(--cart-total);
+              font-family: Montserrat;
+              font-size: 60px;
+              font-style: normal;
+              line-height: normal;
+              font-weight: 900;
+            }
+            .kaffehaush1 {
+              color: var(--nav-a);
+              font-family: Montserrat;
+              font-size: 60px;
+              font-style: normal;
+              font-weight: 900;
+              line-height: normal;
+            }
+            .kaffehausp {
+              color: var(--placeholder);
+              font-family: Montserrat;
+              font-size: 12.9px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 19px;
+            }
+            .kaffehausa {
+              padding: 6px 15px;
+              background-color: var(--cart-total);
+              border-radius: 20px 20px 20px 20px;
+              color: var(--bg-white);
+              text-decoration: none;
+              font-family: Montserrat;
+              font-size: small;
+              font-style: normal;
+              font-weight: 700;
+              line-height: normal;
+              position: absolute;
+              bottom: -10px;
+            }
+          }
+        }
+      }
+      img {
+        max-width: 520px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: auto;
+  border-radius: 150px 0px 0px 150px;
+  // background-color: red;
+  position: relative;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: flex;
+  justify-content: end;
+  max-width: 550px !important;
+  width: 100% !important;
+  height: 100%;
+  object-fit: cover;
+  transform: translateX(11%);
+  cursor: pointer;
+}
+.swiper-pagination {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 30px !important;
+  right: 0px !important;
+  left: unset !important;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+
+  .swiper-pagination-bullet {
+    width: 11px;
+    height: 11px;
+    background: var(--bg-white);
+    opacity: 1;
+  }
+  .swiper-pagination-bullet-active {
+    width: 11px;
+    height: 11px;
+    background-color: #4e2922;
+  }
+}

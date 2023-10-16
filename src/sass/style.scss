@@ -10,6 +10,11 @@
   --sign-up:#d2c59d;
   --black:#000 ;
   --nav-a:#4a3024 ;
+  --bg-white:#f1eaea;
+  --slick:#4A3024;
+  --title:#717171;
+  --carousellogos:#979797;
+  --roundplayarrow:#E3B142;
 }
 
 body {
@@ -31,5 +36,8 @@ body {
 // Enjoy New Coffe
 @import "./enjoynewcoffe";
 
+
 // Ormado Kaffe Swiper 
 @import "ormadokaffeswiper" ;
+
+@import "./payment"

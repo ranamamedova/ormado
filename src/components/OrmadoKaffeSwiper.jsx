@@ -12,8 +12,8 @@ const OrmadoKaffeSwiper = () => {
    coffeImg,
    coffeImg,
   ];
-  const textArray = ["Ormado ", "Ormado 2", "Ormado 3"];
-  const textArray1 = ["Kaffehaus", "Kaffehaus", "Kaffehaus"];
+  const textArray = ["ORMADO", "ORMADO", "ORMADO"];
+  const textArray1 = ["KAFFEHAUS", "KAFFEHAUS", "KAFFEHAUS"];
   const animationClasses = [
     'animate__fadeIn',
     'animate__slideInDown',
@@ -69,10 +69,12 @@ const OrmadoKaffeSwiper = () => {
                   />
                 </svg>
                 <Swiper
+                
                   onSlideChange={handleSlideChange}
                   pagination={{
                     clickable: true,
                   }}
+                   
                   modules={[Pagination]}
                   className="mySwiper"
                 >

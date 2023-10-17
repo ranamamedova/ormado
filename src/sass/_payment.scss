@@ -35,9 +35,9 @@
             align-items: center;
             justify-content: center;
             border: none;
-            padding: 11px; 
-   
-     
+            padding: 11px;
+
+
             h6 {
                 color: #FFF;
                 font-family: Montserrat;
@@ -84,7 +84,7 @@
     .iphone {
         flex-shrink: 0;
         margin-top: 5px;
-      
+
     }
 
 
@@ -98,11 +98,11 @@
         margin-top: 10px !important;
 
         .slick-dots {
-            display: none !important;
+            display: none !important;  
         }
 
         .slider {
-        margin-bottom: 50px !important;
+            margin-bottom: 50px !important;
 
             .slicklogo {
                 width: auto;
@@ -132,8 +132,8 @@
             align-items: center;
             flex-direction: column;
             margin-top: 5px;
-        
-         
+
+
             h2 {
                 color: var(--slick);
                 text-align: center;
@@ -192,33 +192,33 @@
 
 
 
-@media(max-width:1202px){
- 
-    .click {
-            width: auto;
-            height: 24px !important;
-            border-radius: 82.836px;
-            background-color: #E3B142;
-            outline: none !important;
-            margin-top: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: none;
-            padding: 11px; 
-   
-     
-            h6 {
-                color: #FFF;
-                font-family: Montserrat;
-                font-size: 10.283px;
-                font-style: normal;
-                font-weight: 700;
-                line-height: normal;
-                margin-top: 5px;
-            }
+@media(max-width:1202px) {
 
+    .click {
+        width: auto;
+        height: 24px !important;
+        border-radius: 82.836px;
+        background-color: #E3B142;
+        outline: none !important;
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        padding: 11px;
+
+
+        h6 {
+            color: #FFF;
+            font-family: Montserrat;
+            font-size: 10.283px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin-top: 5px;
         }
+
+    }
 }
 
 
@@ -279,16 +279,11 @@
             }
 
 
-            
+
 
         }
 
 
-
-
-
-
-      
 
     }
 
@@ -311,11 +306,11 @@
         transform: translateY(-50%);
         font-size: 22px !important;
         color: white;
-        padding: 10px ;
+        padding: 10px;
         border: none;
         border-radius: 5px;
         display: block !important;
-        margin-top:0 !important ;
+        margin-top: 0 !important;
     }
 
     .next-slick-arrow {
@@ -337,31 +332,31 @@
     .slider {
         margin-bottom: 50px !important;
 
-            .slicklogo {
-                width: auto;
-                height: auto;
-                margin-top: 5px !important;
-                z-index: 1;
+        .slicklogo {
+            width: auto;
+            height: auto;
+            margin-top: 5px !important;
+            z-index: 1;
 
-                #one {
-                    width: 36px;
-                    // margin-left: 10px !important;
-                }
+            #one {
+                width: 36px;
+                // margin-left: 10px !important;
+            }
 
-                img {
-                    width: 37px;
-                    height: 37px;
-                    // margin-left: 5px !important;
+            img {
+                width: 37px;
+                height: 37px;
+                // margin-left: 5px !important;
 
-                }
             }
         }
+    }
 
 }
 
 
-@media(max-width:577px){
-    
+@media(max-width:577px) {
+
     .next-slick-arrow,
     .prev-slick-arrow {
         cursor: pointer;
@@ -370,11 +365,11 @@
         transform: translateY(-50%);
         font-size: 22px !important;
         color: white;
-        padding: 10px ;
+        padding: 10px;
         border: none;
         border-radius: 5px;
         display: block !important;
-        margin-top:0 !important ;
+        margin-top: 0 !important;
     }
 
     .next-slick-arrow {
@@ -493,18 +488,18 @@
     }
 
 
-.Slick{
-    width: auto;
-    height: auto;
+    .Slick {
+        width: auto;
+        height: auto;
 
-    .writing{
+        .writing {
 
-        h2{
-            font-size: 33px !important;
+            h2 {
+                font-size: 33px !important;
+            }
         }
     }
-}
-     
+
 
 
     .slider {
@@ -535,11 +530,11 @@
         transform: translateY(-50%);
         font-size: 22px !important;
         color: white;
-        padding: 10px ;
+        padding: 10px;
         border: none;
         border-radius: 5px;
         display: block !important;
-        margin-top:0 !important ;
+        margin-top: 0 !important;
     }
 
     .next-slick-arrow {
@@ -560,7 +555,7 @@
 
 }
 
-@media(max-width:414px){
+@media(max-width:414px) {
 
     .next-slick-arrow,
     .prev-slick-arrow {
@@ -618,7 +613,8 @@
 }
 
 
-@media(max-width:290px){
+@media(max-width:290px) {
+
     .next-slick-arrow,
     .prev-slick-arrow {
         cursor: pointer;
@@ -644,12 +640,12 @@
         left: 15px;
         transform: translateY(-20%) rotate(180deg);
         z-index: 4;
-       
+
     }
 }
 
 
-@media(max-width:912px){
+@media(max-width:912px) {
     .click {
         width: 20% !important;
         height: 18px !important;
@@ -678,35 +674,3 @@
     }
 }
 
-// @media(max-width:768px){
-
-//     .next-slick-arrow,
-//     .prev-slick-arrow {
-//         cursor: pointer;
-//         position: absolute !important;
-//         top: 50%;
-//         transform: translateY(-10%);
-//         font-size: 20px;
-//         color: white;
-//         margin-left: 20px;
-//         margin-bottom: 10px;
-//         color: var(--roundplayarrow);
-//         padding: 21px;
-//         border: none;
-//         display: block !important;
-
-
-//     }
-
-//     .next-slick-arrow {
-//         margin-right: -25px;
-//         transform: translateY(-50%) rotate(360deg);
-//     }
-
-//     .prev-slick-arrow {
-//         margin-left: -23px;
-//         transform: translateY(-50%) rotate(180deg);
-//         color: var(--carousellogos);
-//         z-index: 3;
-//     }
-// }

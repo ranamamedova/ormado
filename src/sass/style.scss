@@ -7,6 +7,7 @@
   --title:#717171;
   --carousellogos:#979797;
   --roundplayarrow:#E3B142;
+  --cakewriting:#4A3024;
 }
 
 body {
@@ -22,4 +23,5 @@ body {
 // Enjoy New Coffe
 @import "./enjoynewcoffe" ;
 
-@import "./payment"
+@import "./payment";
+@import "./cakes"

@@ -41,6 +41,15 @@ body {
 @import "ormadokaffeswiper" ;
 
 // Testimonials
+
 @import 'TestDetails';
 
-@import "./payment"
+// Franchise
+
+@import 'Franchise';
+
+
+
+@import "./payment";
+
+@import "Blog.scss"

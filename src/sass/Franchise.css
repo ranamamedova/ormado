@@ -1,0 +1,87 @@
+section {
+  width: 100%;
+  height: 100vh;
+  margin-top: 100px;
+}
+section .franc-con {
+  display: flex;
+}
+section .franc-con .left {
+  border-radius: 40px 0px 0px 40px;
+  background-color: #4a3024;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  width: 800px;
+}
+section .franc-con .left .icon-7 {
+  position: absolute;
+  right: -40px;
+  top: 40px;
+  width: 170px;
+}
+section .franc-con .left .icon-8 {
+  position: absolute;
+  left: 44px;
+  bottom: 40px;
+  width: 113px;
+  height: 124px;
+}
+section .franc-con .left .text {
+  width: 80%;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+section .franc-con .left .text span {
+  color: #e3b142;
+}
+section .franc-con .left .ormado-about {
+  color: #fff;
+  padding: 0 0 0 50px;
+  font-weight: 400;
+  font-size: 19px;
+}
+section .franc-con .left .ormado-about img {
+  width: 40px;
+}
+section .franc-con .left .ormado-icon img {
+  height: 40px;
+}
+section .franc-con .left .ormado-icon p {
+  color: #fff;
+}
+section .franc-con .right img {
+  width: 100%;
+  border-radius: 0px 40px 40px 0px;
+  height: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+  .franc-con .left .text p {
+    font-size: 19px;
+  }
+  .franc-con .left .ormado-about p {
+    font-size: 13px;
+  }
+  .franc-con .left .ormado-icon img {
+    width: 16px;
+  }
+  .franc-con .left .ormado-icon p {
+    font-size: 7px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .franc-con .left .text p {
+    font-size: 17px;
+  }
+  .franc-con .left .ormado-about p {
+    font-size: 10px;
+  }
+}/*# sourceMappingURL=Franchise.css.map */

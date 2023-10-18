@@ -1,9 +1,8 @@
 .Cakes {
     width: 100%;
     height: auto;
-    position: relative;
     cursor: pointer;
-   background-color: chocolate;
+    position: relative;
 
     .slick-dots {
         display: none !important;
@@ -34,7 +33,7 @@
             text-align: center;
             font-family: Montserrat;
 
-            .cakes{
+            .cakes {
                 color: var(--roundplayarrow);
             }
         }
@@ -42,45 +41,126 @@
 
     }
 
-    .slidertwo{
-        margin-top: 20px !important;
-         width: 100%;
-         height: auto;
-      
 
-//   .card{
-//     width: 100%;
-//     height: auto;
-//   }
-        
+
+}
+
+
+.swiper-button-prev {
+    &::after {
+        font-size: 20px !important;
+        content: "\2190";
+        color: var(--carousellogos);
+
+    }
+
+    position: absolute;
+    width:30px;
+    height: 70px;
+    top: 13px;
+    left: 1200px;
+
+}
+
+
+.swiper-button-next {
+    &::after {
+        content: "\2192";
+        font-size: 20px !important;
+        border: 2px solid var(--cakewriting);
+        border-radius: 30px;
+        color: var(--roundplayarrow);
+
+    }
+
+    width:30px;
+    height: 70px;
+    position: absolute;
+    font-size: 20px !important;
+
+    top: 19px;
+    right: 21px;
+    padding-bottom: 10px;
+    border-radius: 20px !important;
+    //    transform: translateY(-190px);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.card {
+    width: auto;
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 15.862px !important;
+    border: 1.93px solid var(--carousellogos);
+    background: #FFF;
+
+    .image {
+        border-top-left-radius: 15px;
+        /* Adjust the radius as needed */
+        border-top-right-radius: 15px;
+    }
+
+
+    .desc {
+        font-size: 13px !important;
     }
 
 
 
+    .main {
+        display: inline-flex;
+        align-items: flex-start;
+        gap: 23.145px;
 
 
+        .first {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start !important;
 
+            .title {
+                color: var(--cakewriting);
+                font-family: Montserrat;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 700;
+
+            }
+
+            .order {
+                width: auto;
+                display: flex;
+                background-color: var(--roundplayarrow);
+                border-radius: 20px;
+                border: none !important;
+                gap: 20px;
+                color: white;
+            }
+        }
+
+        .second {
+            display: flex;
+            // padding: 23.145px 23.145px 17.359px 23.145px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            // gap: 7.359px;
+            border-radius: 20px;
+            border: 2px solid var(--carousellogos);
+
+        }
+
+
+    }
 }
-
-
-
-
-.slick-prev:before {
-    content: '' !important;
-}
-
-.slick-next:before {
-    content: '' !important;
-}
-
-
-
-
-.slick-prev{
-    display: block !important;
-}
-
-
-
-
-

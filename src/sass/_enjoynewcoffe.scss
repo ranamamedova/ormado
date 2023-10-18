@@ -10,6 +10,11 @@
         width: 100%;
         position: relative;
         margin-top: -60px;
+        @media (max-width:990px){
+          background-color: red !important;
+          margin-top:  -20px;
+        }
+        
         .coffeModal {
           position: absolute;
           top: 80%;
@@ -21,6 +26,7 @@
           border-radius: 20px;
           box-shadow: 0px 4px 15px 0px var(--box-shadow-coffeModal);
           z-index: 1;
+          // display: none;
           .coffeModalText {
             h6 {
               color: var(--coffeModal-txt);
@@ -31,6 +37,7 @@
               font-family: "Montserrat", sans-serif;
               font-weight: 600;
               letter-spacing: 1.2px;
+              
             }
           }
           .row {
@@ -123,6 +130,11 @@
           top: -40px;
           right: 95px;
           transform: translate(-95px, -40px);
+          @media (max-width:1000px){
+            top: -40px;
+            right: 95px;
+            transform: translate(-95px, -40px);
+          }
         }
         .beans {
           position: absolute;
@@ -132,6 +144,12 @@
           width: auto;
           height: auto;
           @include displayCenter;
+          @media (max-width:1000px){
+            bottom: 90%;
+            right: 84%;
+            transform: translate(-84%, -90%);
+          }
+          
         }
         .enjoyCoffeDesch6 {
           color: #e3b142;

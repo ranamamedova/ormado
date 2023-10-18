@@ -13,7 +13,7 @@ const EnjoyNewCoffe = () => {
     <>
       <div className="container-fluid">
         <div className="row">
-          <div className="col-12 col-sm-10 col-md-5 col-lg-5  coffeImgContainer ">
+          <div className="col-12 col-sm-12 col-md-5 col-lg-5 bg-warning  coffeImgContainer ">
             <div className="coffeImg">
               <img src={coffeImg} alt="" className="img-fluid" />
               <div className="coffeModal">
@@ -76,7 +76,7 @@ const EnjoyNewCoffe = () => {
               </div>
             </div>
           </div>
-          <div className="col-12 col-sm-6 col-md-6 col-lg-6  coffeImgContainer1" style={{"marginLeft":"80px"}}>
+          <div className="col-12 col-sm-12 col-md-6 col-lg-6 bg-primary  coffeImgContainer1" >
             <div className="enjoyCoffeDesc">
               <div className="beansBig">
                 <img src={beans3} alt="" />

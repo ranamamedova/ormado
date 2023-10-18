@@ -4,7 +4,7 @@ import OrmadoKaffeSwiper from "./OrmadoKaffeSwiper";
 import Payments from "./Payments";
 import Navbar from "../components/Navbar";
 import TestDetails from "./TestDetails";
-import Cakes from "./Cakes";
+// import Cakes from "./Cakes";
 
 const Home = () => {
   return (
@@ -14,7 +14,7 @@ const Home = () => {
       <EnjoyNewCoffe />
       <Payments />
       <TestDetails />
-      <Cakes />
+      {/* <Cakes /> */}
     </>
   );
 };

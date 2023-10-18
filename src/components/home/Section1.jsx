@@ -1,10 +1,7 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
-import '../../sass/Section1.scss'
 import { Pagination } from 'swiper/modules';
 const Section1 = () => {
   return (
@@ -31,7 +28,6 @@ const Section1 = () => {
         <SwiperSlide>Slide 3</SwiperSlide>
         <SwiperSlide>Slide 4</SwiperSlide>
         <SwiperSlide>Slide 5</SwiperSlide>
-
       </Swiper>
         </div>
       </div>

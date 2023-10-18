@@ -78,11 +78,12 @@
   }
 }
 
-.swiper {
+
+
+.mySwiper {
   width: 100%;
   height: auto;
   border-radius: 150px 0px 0px 150px;
-  // background-color: red;
   position: relative;
 }
 
@@ -97,7 +98,7 @@
   align-items: center;
 }
 
-.swiper-slide img {
+.swiper-slide .imgSwiperCoffe {
   display: flex;
   justify-content: end;
   max-width: 550px !important;

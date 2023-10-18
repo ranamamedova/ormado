@@ -9,19 +9,19 @@ import Blog from "./Blog/Blog";
 
 
 
-// import Cakes from "./Cakes";
+import Cakes from "./Cakes";
 
 const Home = () => {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <OrmadoKaffeSwiper />
-      <EnjoyNewCoffe />
-      <Payments />
-      <TestDetails />
-      {/* <Cakes /> */}
-      <Franchise />
-      <Blog />
+      {/* <EnjoyNewCoffe /> */}
+      {/* <Payments /> */}
+      {/* <TestDetails /> */}
+      <Cakes />
+      {/* <Franchise /> */}
+      {/* <Blog /> */}
     </>
   );
 };

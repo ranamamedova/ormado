@@ -80,7 +80,7 @@ const OrmadoKaffeSwiper = () => {
                 >
                   {images.map((image, index) => (
                     <SwiperSlide key={index}>
-                      <img src={image} alt={`Slide ${index}`} />
+                      <img src={image} className="imgSwiperCoffe" alt={`Slide ${index}`} />
                     </SwiperSlide>
                   ))}
                 </Swiper>

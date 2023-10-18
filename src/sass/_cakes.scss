@@ -1,0 +1,86 @@
+.Cakes {
+    width: 100%;
+    height: auto;
+    position: relative;
+    cursor: pointer;
+   background-color: chocolate;
+
+    .slick-dots {
+        display: none !important;
+    }
+
+
+
+    .Title {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+
+        p {
+            color: var(--carousellogos);
+            text-align: center;
+            font-family: Montserrat;
+            font-size: 15.435px;
+            font-style: normal;
+
+        }
+
+        h4 {
+            color: var(--cakewriting);
+            text-align: center;
+            font-family: Montserrat;
+
+            .cakes{
+                color: var(--roundplayarrow);
+            }
+        }
+
+
+    }
+
+    .slidertwo{
+        margin-top: 20px !important;
+         width: 100%;
+         height: auto;
+      
+
+//   .card{
+//     width: 100%;
+//     height: auto;
+//   }
+        
+    }
+
+
+
+
+
+
+}
+
+
+
+
+.slick-prev:before {
+    content: '' !important;
+}
+
+.slick-next:before {
+    content: '' !important;
+}
+
+
+
+
+.slick-prev{
+    display: block !important;
+}
+
+
+
+
+

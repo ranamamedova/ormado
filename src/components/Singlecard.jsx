@@ -3,26 +3,38 @@ import { Button, Card, Container, Row } from 'react-bootstrap'
 
 
 
-const Singlecard = ({ id, photo, title, desc, price }) => {
+const Singlecard = ({ photo, title, desc, price }) => {
   return (
 
 
-<Container>
+    <Container>
 
-<Card className='card' >
-      <Card.Img height={200} variant="top" src={photo} />
-      <Card.Body>
-        <Card.Title>{title}</Card.Title>
-        <Card.Text>
-          {desc}
-        </Card.Text>
-        <Card.Text>
-          {price}
-        </Card.Text>
-        <Button  variant="primary">{id}</Button>
-      </Card.Body>
-    </Card>
-  
+      <Card className='card ms-5 mt-5' >
+        <Card.Img className='image' height={200} variant="top" src={photo} />
+        <Card.Body >
+
+          <div className="main">
+
+            <div className="first">
+              <Card.Title className='title'>{title}</Card.Title>
+              <Card.Text className='desc'>
+                {desc}
+              </Card.Text>
+              <button className='order'>Order now</button>
+            </div>
+
+            <div className="second">
+              <Card.Text>
+                <p>{price}</p>
+              </Card.Text>
+            </div>
+          </div>
+
+
+
+        </Card.Body>
+      </Card>
+
 
     </Container>
 

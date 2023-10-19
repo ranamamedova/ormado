@@ -1,0 +1,644 @@
+.best-offer{
+    .container1{
+        .text{
+            .text-header{
+                font-size: 60px;
+                color: #979797;
+                span{
+                    color: #E3B142;
+                }
+            }
+            .text-part2{
+                width: 55%;
+                font-size: 20px;
+                color: #979797;
+            }
+        }
+        .btn-arrow{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            button{
+                border-radius: 100%;
+            }
+        }
+        .cards{
+            display: flex;
+            align-items: center;
+            
+            .card{
+                border: 0;
+                position: relative;
+                img{
+                    border-radius: 10%;
+                }
+                .card-background{
+                    background-color: black;
+                    position: absolute;
+                    opacity: 0.4;
+                    border-radius: 10%;
+                    width: 96%;
+                    height: 100%;
+                }
+                    .card-img-overlay{
+                        h1{
+                            color: white !important;
+                        }
+                        h3{
+                            color: white;
+                            i{
+                                color: white;
+                                font-weight: bold;
+                                font-size: 60px;
+                                font-family:Montserrat;
+                                color: #E3B142;
+        
+                            }
+                        }
+                        p{
+                            color: white;
+                            font-size: 20px;
+                        }
+                        button{
+                            border: 0;
+                            border-radius: 20px;
+                            color: white;
+                            background-color: #E3B142;
+                            font-size: 15px;
+                          }
+                    }
+                }
+                
+            
+        }
+        .card-column{
+            .row{
+                .card-body{
+                    .card-text-main{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        h5{
+                            font-family: Montserrat;
+                            font-weight: bold;
+                        }
+                        .line{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            .line-main{
+                                height: 1.5px;
+                                background-color: #979797;
+                            }
+                        }
+                        .card-price{
+                            font-size: 25px;
+                            font-family: Montserrat;
+                            color: #E3B142;
+                        }
+                        
+                    }  
+                    .card-text{
+                        color: #979797;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width:1350px){
+    .best-offer{
+        .container1{
+            .cards{
+                .card{
+                    .card-background{
+                        background-color: black;
+                        position: absolute;
+
+                        opacity: 0.4;
+                        border-radius: 10%;
+                        width: 95.5%;
+                        height: 100%;
+                    }
+                    }
+                    
+                
+            }
+        }
+    }
+}
+@media (max-width:1260px){
+    .best-offer{
+        .container1{
+            .cards{
+                .card{
+                    .card-background{
+                        background-color: black;
+                        position: absolute;
+
+                        opacity: 0.4;
+                        border-radius: 10%;
+                        width: 95%;
+                        height: 100%;
+                    }
+                    .card-img-overlay{
+                        margin-top: 2px !important;
+                    }
+                    }
+                    
+                
+            }
+        }
+    }
+}
+
+@media (max-width:1200px){
+    .best-offer{
+        .container1{
+            .text{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                .text-part2{
+                    width: 80%;
+                    color: #979797;
+                }
+            }
+            .cards{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                
+                .card{
+                    width: 700px;
+                    border: 0;
+                    position: relative;
+                    img{
+                        border-radius: 10%;
+                    }
+                    .card-background{
+                        background-color: black;
+                        position: absolute;
+                        opacity: 0.4;
+                        border-radius: 10%;
+                        width: 96.5%;
+                        height: 100%;
+                    }
+                        .card-img-overlay{
+                            margin-top: 50px !important;
+                            h1{
+                                color: white !important;
+                                font-size: 70px;
+                            }
+                            h3{
+                                color: white;
+                                font-size: 50px;
+                                i{
+                                    color: white;
+                                    font-weight: bold;
+                                    font-size: 70px;
+                                    font-family:Montserrat;
+                                    color: #E3B142;
+            
+                                }
+                            }
+                            p{
+                                color: white;
+                                font-size: 23px;
+                            }
+                            button{
+                                border: 0;
+                                border-radius: 20px;
+                                color: white;
+                                background-color: #E3B142;
+                                font-size: 22px;
+                              }
+                        }
+                    }
+                    
+                
+            }
+        }
+    }
+}
+
+@media (max-width:900px){
+    .best-offer{
+        .container{
+            .text{
+                .text-header{
+                    font-size: 55px;
+                }
+                .text-part2{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+@media (max-width:770px){
+    .best-offer{
+        .container1{
+            .text{
+                .text-header{
+                    font-size: 45px;
+                }
+                .text-part2{
+                    font-size: 13px;
+                }
+            }
+            .cards{
+                .card-column{
+                    .row{
+                        .col-md-3{
+                            display: none;
+                        }
+                     
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:700px){
+    .best-offer{
+        .container1{
+            .cards{
+                .card{
+                    .card-background{
+                        background-color: black;
+                        position: absolute;
+                        opacity: 0.4;
+                        border-radius: 10%;
+                        width: 96%;
+                        height: 100%;
+                    }
+                    .card-img-overlay{
+                        h1{
+                            color: white !important;
+                            font-size: 55px;
+                        }
+                        h3{
+                            color: white;
+                            font-size: 30px;
+                            i{
+                                color: white;
+                                font-weight: bold;
+                                font-size: 55px;
+                                font-family:Montserrat;
+                                color: #E3B142;
+        
+                            }
+                        }
+                        p{
+                            color: white;
+                            font-size: 25px;
+                        }
+                        button{
+                            margin-top: 20px !important;
+                            border: 0;
+                            border-radius: 20px;
+                            color: white;
+                            background-color: #E3B142;
+                            font-size: 20px;
+                          }
+                    }
+                    }
+                    
+                
+            }
+        }
+    }
+}
+
+@media (max-width:620px){
+    .best-offer{
+        .container1{
+            margin-top: 0 !important;
+            padding-top: 0 !important;
+            .cards{
+                .card{
+                    .card-background{
+                        background-color: black;
+                        position: absolute;
+                        opacity: 0.4;
+                        border-radius: 10%;
+                        width: 95.5%;
+                        height: 100%;
+                    }
+                    .card-img-overlay{
+                        h1{
+                            color: white !important;
+                            font-size: 45px;
+                        }
+                        h3{
+                            color: white;
+                            font-size: 30px;
+                            i{
+                                color: white;
+                                font-weight: bold;
+                                font-size: 44px;
+                                font-family:Montserrat;
+                                color: #E3B142;
+        
+                            }
+                        }
+                        p{
+                            color: white;
+                            font-size: 20px;
+                        }
+                        button{
+                            margin-top: 5px !important;
+                            border: 0;
+                            border-radius: 20px;
+                            color: white;
+                            background-color: #E3B142;
+                            font-size: 14px;
+                          }
+                    }
+                    }
+                    
+                
+            }
+        }
+    }
+}
+
+
+@media (max-width:570px){
+    .best-offer{
+        .container1{
+            .text{
+                .text-header{
+                    font-size: 35px;
+                }
+                .text-part2{
+                    font-size: 11px;
+                }
+            }
+            .cards{
+                .card{
+                    .card-background{
+                        background-color: black;
+                        position: absolute;
+                        opacity: 0.4;
+                        border-radius: 10%;
+                        width: 95%;
+                        height: 100%;
+                    }
+                    }
+                    .card-img-overlay{
+                        h1{
+                            color: white !important;
+                        }
+                        h3{
+                            color: white;
+                            i{
+                                color: white;
+                                font-weight: bold;
+                                font-size: 45px;
+                                font-family:Montserrat;
+                                color: #E3B142;
+        
+                            }
+                        }
+                        p{
+                            color: white;
+                            font-size: 15px;
+                        }
+                        button{
+                            border: 0;
+                            border-radius: 20px;
+                            color: white;
+                            background-color: #E3B142;
+                            font-size: 12px;
+                          }
+                    }
+                    .row{
+                        .col-md-9{
+                            .card-body{
+                                .card-text-main{
+                                    .line{
+                                        width: 150px !important;
+                                        height: 2px;
+                                        background-color: #979797;
+                                    }
+                                }
+                            }
+                        }
+                    }  
+                
+            }
+        }
+    }
+}
+
+@media (max-width:510px){
+    .best-offer{
+        .container1{
+            .cards{
+                .card{
+                    .card-background{
+                        background-color: black;
+                        position: absolute;
+                        opacity: 0.4;
+                        border-radius: 10%;
+                        width: 94.5%;
+                        height: 100%;
+                    }
+                    .card-img-overlay{
+                        h1{
+                            color: white !important;
+                        }
+                        h3{
+                            color: white;
+                            i{
+                                color: white;
+                                font-weight: bold;
+                                font-size: 30px;
+                                font-family:Montserrat;
+                                color: #E3B142;
+        
+                            }
+                        }
+                        p{
+                            color: white;
+                            font-size: 12px;
+                        }
+                        button{
+                            border: 0;
+                            border-radius: 20px;
+                            color: white;
+                            background-color: #E3B142;
+                            font-size: 10px;
+                          }
+                    }
+                    }
+                    
+                
+            }
+        }
+    }
+}
+
+@media (max-width:470px){
+    .best-offer{
+        margin-top: 0 !important;
+        .container1{
+            .text{
+                .text-header{
+                    font-size: 25px;
+                }
+                .text-part2{
+                    font-size: 8px;
+                }
+            }
+            .cards{
+                .card{
+                    .card-background{
+                        background-color: black;
+                        position: absolute;
+                        opacity: 0.4;
+                        border-radius: 10%;
+                        width: 93%;
+                        height: 100%;
+                    }
+                    }
+                    .card-text{
+                        display: inline-flex;
+                        align-items: center;
+                        flex-direction: column;
+                        .card-img-overlay{
+                            margin-top: 18px !important;
+                            h1{
+                                color: white !important;
+                                font-size: 30px;
+                            }
+                            h3{
+                                color: white;
+                                font-size: 20px;
+                                i{
+                                    color: white;
+                                    font-weight: bold;
+                                    font-size: 30px;
+                                    font-family:Montserrat;
+                                    color: #E3B142;
+            
+                                }
+                            }
+                            p{
+                                color: white;
+                                font-size: 7px;
+                            }
+                            button{
+                                border: 0;
+                                border-radius: 20px;
+                                color: white;
+                                background-color: #E3B142;
+                                font-size: 10px;
+                                margin-top: 5px!important;
+                                padding-left: 15px !important;
+                                padding-right: 15px !important;
+                              }
+                        }
+                    }
+                    .row{
+                        .col-md-9{
+                            .card-body{
+                                .card-text-main{
+                                    .line{
+                                        width: 50px !important;
+                                        height: 2px;
+                                        background-color: #979797;
+                                    }
+                                }
+                            }
+                        }
+                    }   
+                
+            }
+        }
+    }
+}
+
+@media (max-width:380px){
+    .best-offer{
+        .container1{
+            .text{
+                .text-header{
+                    font-size: 18px;
+                }
+                .text-part2{
+                    font-size: 7px;
+                }
+            }
+            .cards{
+                .card{
+                    .card-background{
+                        background-color: black;
+                        position: absolute;
+                        opacity: 0.4;
+                        border-radius: 10%;
+                        width: 92%;
+                        height: 100%;
+                    }
+                    .card-text{
+                        
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                        .card-img-overlay{
+                            margin-top: 10px !important;
+                            
+                            h1{
+                                color: white !important;
+                                font-size: 25px;
+                            }
+                            h3{
+                                color: white;
+                                font-size: 15px;
+                                i{
+                                    color: white;
+                                    font-weight: bold;
+                                    font-size: 25px;
+                                    font-family:Montserrat;
+                                    color: #E3B142;
+            
+                                }
+                            }
+                            p{
+                                color: white;
+                                font-size: 8px;
+                            }
+                            button{
+                                border: 0;
+                                border-radius: 20px;
+                                margin: 0 !important;
+                                color: white;
+                                background-color: #E3B142;
+                                font-size: 7px;
+                              }
+                        }
+                    }
+                    }
+                }
+                    
+                .row{
+                    .col-md-9{
+                        .card-body{
+                            .card-text-main{
+                                .line{
+                                    width: 40px !important;
+                                    height: 2px;
+                                    background-color: #979797;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+    }
+}

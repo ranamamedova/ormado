@@ -80,55 +80,57 @@
 
 
 
-.mySwiper {
+.mySwiperOrmado {
   width: 100%;
   height: auto;
   border-radius: 150px 0px 0px 150px;
   position: relative;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-
-  /* Center slide text vertically */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.swiper-slide .imgSwiperCoffe {
-  display: flex;
-  justify-content: end;
-  max-width: 550px !important;
-  width: 100% !important;
-  height: 100%;
-  object-fit: cover;
-  transform: translateX(11%);
-  cursor: pointer;
-}
-.swiper-pagination {
-  display: flex;
-  flex-direction: column;
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
   
-  height: 100%;
-  width: 30px !important;
-  right: 0px !important;
-  left: unset !important;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-
-  .swiper-pagination-bullet {
-    width: 11px;
-    height: 11px;
-    background: var(--bg-white);
-    opacity: 1;
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  .swiper-pagination-bullet-active {
-    width: 11px;
-    height: 11px;
-    background-color: #4e2922;
+  
+  .swiper-slide .imgSwiperCoffe {
+    display: flex;
+    justify-content: end;
+    max-width: 550px !important;
+    width: 100% !important;
+    height: 100%;
+    object-fit: cover;
+    transform: translateX(11%);
+    cursor: pointer;
+  }
+  .swiper-pagination {
+    // background-color: red;
+    display: flex;
+    flex-direction: column;
+    
+    height: 100%;
+    width: 30px !important;
+    right: 0px !important;
+    left: unset !important;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  
+    .swiper-pagination-bullet {
+      width: 11px;
+      height: 11px;
+      background: var(--bg-white);
+      opacity: 1;
+    }
+    .swiper-pagination-bullet-active {
+      width: 11px;
+      height: 11px;
+      background-color: #4e2922;
+    }
   }
 }
+
+

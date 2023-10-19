@@ -34,7 +34,7 @@ const Cakes = () => {
 
   return (
     <>
-      <div className="Cakes ">
+      <div className="Cakes mt-5">
         <div className="container">
           <div className="Title ">
             <p>Most Popular</p>
@@ -63,7 +63,7 @@ const Cakes = () => {
             modules={[Navigation]}
             spaceBetween={30}
             slidesPerView={3}
-            className="mySwiper"
+            className="mySwiperCakes"
           >
             {data.map((item) => {
               return (

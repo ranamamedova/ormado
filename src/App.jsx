@@ -1,11 +1,11 @@
 import React from 'react'
-import AppRouter from './router/AppRouter'
-
+import Home from './components/Home'
 
 const App = () => {
   return (
    <>
-     <AppRouter/>
+    <Home/>
+
    </>
   )
 }

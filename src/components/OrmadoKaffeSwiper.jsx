@@ -71,12 +71,14 @@ const OrmadoKaffeSwiper = () => {
                 <Swiper
                 
                   onSlideChange={handleSlideChange}
+               
+                   
+                  modules={[Pagination]}
+                  className="mySwiperOrmado"
                   pagination={{
                     clickable: true,
                   }}
-                   
-                  modules={[Pagination]}
-                  className="mySwiper"
+                  
                 >
                   {images.map((image, index) => (
                     <SwiperSlide key={index}>

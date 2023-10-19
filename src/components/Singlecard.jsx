@@ -9,7 +9,7 @@ const Singlecard = ({ photo, title, desc, price }) => {
 
     <Container>
 
-      <Card className='card ms-5 mt-5' >
+      <Card className='singleCard ms-5 mt-5' >
         <Card.Img className='image' height={200} variant="top" src={photo} />
         <Card.Body >
 

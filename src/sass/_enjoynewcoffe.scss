@@ -143,7 +143,7 @@
           transform: translate(-95%, -70%);
           width: auto;
           height: auto;
-          @include displayCenter;
+          // @include displayCenter;
           @media (max-width:1000px){
             bottom: 90%;
             right: 84%;
@@ -208,7 +208,7 @@
             border-radius: 20px;
             background-color: rgba(227, 177, 66, 1);
             color: #fff;
-            @include displayCenter;
+            // @include displayCenter;
           }
         }
       }

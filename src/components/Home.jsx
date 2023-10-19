@@ -10,18 +10,26 @@ import Blog from "./Blog/Blog";
 
 
 import Cakes from "./Cakes";
+import WhyUs from "./home/WhyUs";
+import BestOffer from "./home/BestOffer"
+import NewSweets from "./home/NewSweets"
 
 const Home = () => {
   return (
     <>
-      {/* <Navbar /> */}
+      <Navbar />
       <OrmadoKaffeSwiper />
-      {/* <EnjoyNewCoffe /> */}
-      {/* <Payments /> */}
-      {/* <TestDetails /> */}
+      <EnjoyNewCoffe />
+      <TestDetails />
+      <Payments />
+      <WhyUs/>
+      <BestOffer/>
+      <NewSweets/>
       <Cakes />
-      {/* <Franchise /> */}
-      {/* <Blog /> */}
+      <Franchise />
+      <Blog />
+
+
     </>
   );
 };

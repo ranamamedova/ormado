@@ -45,46 +45,50 @@
 
 }
 
+.mySwiperCakes{
 
-.swiper-button-prev {
-    &::after {
-        font-size: 20px !important;
-        content: "\2190";
-        color: var(--carousellogos);
-
+    .swiper-button-prev {
+        &::after {
+            font-size: 20px !important;
+            content: "\2190";
+            color: var(--carousellogos);
+    
+        }
+    
+        position: absolute;
+        width:30px;
+        height: 70px;
+        top: 13px;
+        left: 1200px;
+    
     }
-
-    position: absolute;
-    width:30px;
-    height: 70px;
-    top: 13px;
-    left: 1200px;
-
+    
+    
+    .swiper-button-next {
+        &::after {
+            content: "\2192";
+            font-size: 20px !important;
+            border: 2px solid var(--cakewriting);
+            border-radius: 30px;
+            color: var(--roundplayarrow);
+    
+        }
+    
+        width:30px;
+        height: 70px;
+        position: absolute;
+        font-size: 20px !important;
+    
+        top: 19px;
+        right: 21px;
+        padding-bottom: 10px;
+        border-radius: 20px !important;
+        //    transform: translateY(-190px);
+    
+    }
 }
 
 
-.swiper-button-next {
-    &::after {
-        content: "\2192";
-        font-size: 20px !important;
-        border: 2px solid var(--cakewriting);
-        border-radius: 30px;
-        color: var(--roundplayarrow);
-
-    }
-
-    width:30px;
-    height: 70px;
-    position: absolute;
-    font-size: 20px !important;
-
-    top: 19px;
-    right: 21px;
-    padding-bottom: 10px;
-    border-radius: 20px !important;
-    //    transform: translateY(-190px);
-
-}
 
 
 
@@ -95,9 +99,7 @@
 
 
 
-
-
-.card {
+.singleCard {
     width: auto;
     height: auto;
     flex-shrink: 0;

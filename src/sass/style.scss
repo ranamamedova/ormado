@@ -26,30 +26,42 @@ body {
 }
 
 // ANIMATE CSS
-// @import "animate.css";
+@import "animate.css";
 
 // Variable Mixin
-// @import "./variable";
+@import "./variable";
 
 // Navbar
-// @import "./navbar";
+@import "./navbar";
+
+// ORMADO KAFFE SWIPER
+@import "./ormadokaffeswiper" ;
 
 // Enjoy New Coffe
-// @import "./enjoynewcoffe";
+@import "./enjoynewcoffe" ;
 
-// Ormado Kaffe Swiper
-@import "ormadokaffeswiper";
+// PAYMENT
+@import "./payment" ;
 
-// Testimonials
+// CAKES
+@import "./cakes" ;
 
-// @import "TestDetails";
+// TEST DETAILS
+@import "./TestDetails.scss" ;
 
-// Franchise
+// FRANCHISE
+@import "./Franchise.scss";
 
-// @import "Franchise";
+// BLOG
+@import "Blog";
 
-// @import "./payment.scss";
 
-// @import "Blog.scss";
+//WHY US
+@import "./WhyUs.scss";
 
-@import "./cakes";
+//BEST OFFER
+@import  "./BestOffer.scss";
+
+
+//NEW SWEETS
+@import "./NewSweets.scss"

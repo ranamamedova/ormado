@@ -76,7 +76,7 @@ const EnjoyNewCoffe = () => {
               </div>
             </div>
           </div>
-          <div className="col-12 col-sm-12 col-md-6 col-lg-6 bg-primary  coffeImgContainer1" >
+          <div className="col-12 col-sm-12 col-md-6 col-lg-6 coffeImgContainer1" >
             <div className="enjoyCoffeDesc">
               <div className="beansBig">
                 <img src={beans3} alt="" />

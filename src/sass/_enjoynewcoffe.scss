@@ -11,9 +11,7 @@
         position: relative;
         margin-top: -60px;
         @media (max-width:990px){
-          background-color: red !important;
           margin-top: 0px;
-
         }
         
         .coffeModal {
@@ -121,9 +119,12 @@
 
     .coffeImgContainer1 {
       margin-top: 120px;
-     transform: translateX(90px);
+     transform: translate(150px,-50px);
      @media (max-width:1000px){
       transform: translate(90px,-10px);
+    }
+    @media (max-width:768px){
+      display: none;
     }
       .enjoyCoffeDesc {
         position: relative;
@@ -164,7 +165,6 @@
           line-height: normal;
           @media (max-width:1000px){
             font-size: 13px;
-            color: red;
             transform: translateX(3px);
           }
         }
@@ -178,7 +178,6 @@
           font-weight: 600;
           line-height: normal;
           @media (max-width:1000px){
-            color: red;
             font-size: 35px;
           }
         }
@@ -206,6 +205,24 @@
             right: 40px;
             z-index: -1;
             transform: rotate(4deg);
+            @media (max-width:1300px){
+              width: 100px;
+              right: 20px;
+              bottom: 30px;
+              transform: rotate(-4deg);
+            }
+            @media (max-width:1200px){
+              width: 60px;
+              right: 20px;
+              bottom: 32px;
+              transform: rotate(-4deg);
+            }
+            @media (max-width:1110px){
+              width: 55px;
+              right: 7px;
+              bottom: 32px;
+              transform: rotate(-8deg);
+            }
           }
           .active {
             background-color: rgba(227, 177, 66, 1);
@@ -245,10 +262,10 @@
        
        @media (max-width:1000px){
        margin-left: 70% !important;
+       img{
+        width: 70% ;
+       }
      } 
-     &:hover{
-      background-color: red;
-     }
       }
     }
   }
@@ -285,7 +302,6 @@
         max-width: 380px;
         width: 100% !important;
         position: relative;
-        background-color: red !important;
         .coffeModal{
           top: 70%;
           left: 135%;

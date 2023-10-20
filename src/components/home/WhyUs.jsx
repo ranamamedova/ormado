@@ -1,8 +1,8 @@
 import React from "react";
-import icon from "./imgs/Group.jpg";
-import rectangle1 from "./imgs/Rectangle1.png";
-import rectangle2 from "./imgs/Rectangle2.png";
-import whyusimg from "./imgs/whyusimg.png"
+import icon from "../../assets/img/Group.jpg";
+import rectangle1 from "../../assets/img/Rectangle1.png"
+import rectangle2 from "../../assets/img/Rectangle2.png";
+import whyusimg from "../../assets/img/whyusimg.png"
 const WhyUs = () => {
   return (
     <div className="whyus">

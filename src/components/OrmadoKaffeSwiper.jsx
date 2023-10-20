@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import coffeImg from "../img/swiperimg.png";
+import coffeImg from "../assets/img/swiperimg.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";

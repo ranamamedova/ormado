@@ -1,13 +1,13 @@
 import React from "react";
-import coffeImg from "../img/img.png";
-import beans from "../img/beans2.png";
-import beans3 from "../img/beans3.png";
-import beans4 from "../img/beans4.png";
-import beans5 from "../img/beans5.png";
-import drink from "../img/drink.png";
-import drink1 from "../img/drink1.png";
-import drink2 from "../img/drink2.png";
-import arrow from "../img/arrow.png"
+import coffeImg from "../assets/img/img.png" ;
+import beans from "../assets/img/beans2.png" ;
+import beans3 from "../assets/img/beans3.png";
+import beans4 from "../assets/img/beans4.png";
+import beans5 from "../assets/img/beans5.png";
+import drink from "../assets/img/drink.png"  ;
+import drink1 from "../assets/img/drink1.png";
+import drink2 from "../assets/img/drink2.png";
+import arrow from "../assets/img/arrow.png"  ;
 const EnjoyNewCoffe = () => {
   return (
     <>

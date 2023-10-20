@@ -12,7 +12,8 @@
         margin-top: -60px;
         @media (max-width:990px){
           background-color: red !important;
-          margin-top:  -20px;
+          margin-top: 0px;
+
         }
         
         .coffeModal {
@@ -121,6 +122,9 @@
     .coffeImgContainer1 {
       margin-top: 120px;
      transform: translateX(90px);
+     @media (max-width:1000px){
+      transform: translate(90px,-10px);
+    }
       .enjoyCoffeDesc {
         position: relative;
         .beansBig {
@@ -131,9 +135,9 @@
           right: 95px;
           transform: translate(-95px, -40px);
           @media (max-width:1000px){
-            top: -40px;
-            right: 95px;
-            transform: translate(-95px, -40px);
+            top: -55px;
+            right: 15px;
+            transform: translate( -15px, -55px);
           }
         }
         .beans {
@@ -145,9 +149,9 @@
           height: auto;
           // @include displayCenter;
           @media (max-width:1000px){
-            bottom: 90%;
+            bottom: 80%;
             right: 84%;
-            transform: translate(-84%, -90%);
+            transform: translate(-84%, -80%);
           }
           
         }
@@ -158,6 +162,11 @@
           font-style: normal;
           font-weight: 700;
           line-height: normal;
+          @media (max-width:1000px){
+            font-size: 13px;
+            color: red;
+            transform: translateX(3px);
+          }
         }
       }
       .enjoyCoffeTitleDesc {
@@ -168,6 +177,10 @@
           font-style: normal;
           font-weight: 600;
           line-height: normal;
+          @media (max-width:1000px){
+            color: red;
+            font-size: 35px;
+          }
         }
         p {
           color: rgb(163, 163, 163);
@@ -175,6 +188,13 @@
           font-size: 14px;
           font-style: normal;
           line-height: 24px;
+            @media (max-width:1000px){
+              font-size: 15px;
+              line-height: normal;
+              br{
+                display: none;
+              }
+            }
         }
       }
       .row {
@@ -208,18 +228,27 @@
             border-radius: 20px;
             background-color: rgba(227, 177, 66, 1);
             color: #fff;
-            // @include displayCenter;
+            @include displayCenter;
           }
         }
       }
       .beans3{
        margin-left: 20%;
        margin-top: 20px;
+       @media (max-width:1000px){
+          margin-left: -11% !important;
+       }
       }
       .beans4{
        margin-left: 50%;
        margin-top: -170px;
        
+       @media (max-width:1000px){
+       margin-left: 70% !important;
+     } 
+     &:hover{
+      background-color: red;
+     }
       }
     }
   }

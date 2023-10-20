@@ -18,9 +18,6 @@ body {
 // Enjoy New Coffe
 @import "./enjoynewcoffe" ;
 
-//Section1
-@import "./Section1.scss";
-
 //WhyUs
 @import "./WhyUs.scss";
 
@@ -29,4 +26,7 @@ body {
 
 
 //NewSweets
-@import "./NewSweets.scss"
+@import "./NewSweets.scss";
+
+// Footer
+@import "./Footer.scss";

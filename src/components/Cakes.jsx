@@ -58,14 +58,19 @@ const Cakes = () => {
                                 spaceBetween: 30,
                                 
                             },
+                           
                             768: {
-                                slidesPerView: 3,
+                                slidesPerView: 2,
                                 spaceBetween: 40,
                             },
                             1024: {
                                 slidesPerView: 3,
                                 spaceBetween: 40,
                             },
+                     
+
+                       
+
                         }}
 
 
@@ -84,7 +89,7 @@ const Cakes = () => {
                                 <SwiperSlide >
 
                                 
-                                    <Singlecard
+                                    <Singlecard 
                                         id={item.id}
                                         photo={item.photo}
                                         title={item.title}

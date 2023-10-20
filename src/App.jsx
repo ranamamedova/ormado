@@ -1,16 +1,14 @@
-import React from 'react'
-import Home from './components/Home'
+import React from "react";
+
+
+import Home from "./components/Home";
 
 const App = () => {
   return (
-   <>
-      <h1 className='text-center'>
-        Ormado dev Project
-        <Home/>
-      </h1>
-   
-   </>
-  )
-}
+    <>
+      <Home />
+    </>
+  );
+};
 
-export default App
+export default App;

@@ -1,6 +1,7 @@
 import React from 'react'
-import cardmain from "./imgs/Rectangle_bestOffer.png"
-import cardimg from "./imgs/bestOfferCard1.png"
+
+import cardmain from   "../../assets/img/Rectangle_bestOffer.png"
+import cardimg from "../../assets/img/bestOfferCard1.png"
 
 
 const BestOffer = () => {

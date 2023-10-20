@@ -1,19 +1,14 @@
-import React from 'react'
-import WhyUs from './components/home/WhyUs'
-import BestOffer from './components/home/BestOffer'
-import NewSweets from './components/home/NewSweets'
-import Footer from './components/home/Footer'
+import React from "react";
+
+
+import Home from "./components/Home";
 
 const App = () => {
   return (
-   <>
-      <WhyUs />
-      <BestOffer />
-      <NewSweets />
-      <Footer />
-   
-   </>
-  )
-}
+    <>
+      <Home />
+    </>
+  );
+};
 
-export default App
+export default App;

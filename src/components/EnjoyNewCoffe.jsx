@@ -13,7 +13,7 @@ const EnjoyNewCoffe = () => {
     <>
       <div className="container-fluid">
         <div className="row">
-          <div className="col-12 col-sm-12 col-md-5 col-lg-5 bg-warning  coffeImgContainer ">
+          <div className="col-12 col-sm-12 col-md-5 col-lg-5 gi  coffeImgContainer ">
             <div className="coffeImg">
               <img src={coffeImg} alt="" className="img-fluid" />
               <div className="coffeModal">

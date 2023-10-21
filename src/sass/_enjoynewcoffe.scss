@@ -1,11 +1,21 @@
+// html{
+//   overflow-x: hidden;
+// }
 .container-fluid {
-  padding: 2rem 0 0 0 !important;
+  padding: 0 0 0 0 !important;
   .row {
     .coffeImgContainer {
       .coffeImg {
-        max-width: 450px;
+        max-width: 520px;
         width: 100%;
         position: relative;
+        margin-top: -60px;
+        @media (max-width:990px){
+          background-color: red !important;
+          margin-top: 0px;
+
+        }
+        
         .coffeModal {
           position: absolute;
           top: 80%;
@@ -13,10 +23,11 @@
           transform: translate(-155%, -80%);
           width: 230px;
           height: 370px;
-          background-color: var(--bg-white);
+          background-color: #fff;
           border-radius: 20px;
           box-shadow: 0px 4px 15px 0px var(--box-shadow-coffeModal);
           z-index: 1;
+          // display: none;
           .coffeModalText {
             h6 {
               color: var(--coffeModal-txt);
@@ -27,24 +38,123 @@
               font-family: "Montserrat", sans-serif;
               font-weight: 600;
               letter-spacing: 1.2px;
+              
             }
           }
-        }
-        .beans {
-          position: absolute;
-          top: 19%;
-          left: 132%;
-          transform: translate(-132%, -19%);
-          width: auto;
-          height: auto;
-          @include displayCenter;
+          .row {
+            .modalDrink {
+              width: 100%;
+              height: 100%;
+              background-color: rgba(227, 177, 66, 0.2);
+              border-radius: 13px;
+
+              .modalDrinkBox {
+                display: flex;
+                align-items: center;
+                .img {
+                  transform: translateX(-10%);
+                  img {
+                    // position: absolute;
+                    top: 200%;
+                  }
+                }
+              }
+              .modalDrinkText {
+                p {
+                  font-size: 12.2px;
+                  transform: translateX(-15%);
+                  color: #4a3024;
+                  font-family: Montserrat;
+                  font-style: normal;
+                  font-weight: 600;
+                  line-height: 1.3rem;
+                  a {
+                    color: #4a3024;
+                    font-weight: 500;
+                    font-size: 11px;
+                  }
+                }
+              }
+              .modalDrinkGrey {
+                background-color: var(--bg-white);
+                border-radius: 20px;
+                border: 1px solid #d8d7d7;
+                transition: 250ms;
+                &:hover {
+                  background-color: #f9efd9;
+                  cursor: pointer;
+                  border: 1px solid #f9efd9;
+                  .modalDrinkGreyText {
+                    p {
+                      font-size: 12.2px;
+                      transform: translateX(-15%);
+                      color: #4a3024;
+                      font-family: Montserrat;
+                      font-style: normal;
+                      font-weight: 600;
+                      line-height: 1.3rem;
+                      a {
+                        color: #4a3024;
+                        font-weight: 500;
+                        font-size: 11px;
+                      }
+                    }
+                  }
+                }
+              }
+
+              .modalDrinkGreyText {
+                p {
+                  color: #979797;
+                  font-weight: 500;
+                  a {
+                    color: #979797;
+                    font-weight: 500;
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }
 
     .coffeImgContainer1 {
-      margin-top: 140px;
+      margin-top: 120px;
+     transform: translateX(90px);
+     @media (max-width:1000px){
+      transform: translate(90px,-10px);
+    }
       .enjoyCoffeDesc {
+        position: relative;
+        .beansBig {
+          position: absolute;
+          // top: -120px;
+          // right: 20px;
+          top: -40px;
+          right: 95px;
+          transform: translate(-95px, -40px);
+          @media (max-width:1000px){
+            top: -55px;
+            right: 15px;
+            transform: translate( -15px, -55px);
+          }
+        }
+        .beans {
+          position: absolute;
+          bottom: 70%;
+          right: 95%;
+          transform: translate(-95%, -70%);
+          width: auto;
+          height: auto;
+          // @include displayCenter;
+          @media (max-width:1000px){
+            bottom: 80%;
+            right: 84%;
+            transform: translate(-84%, -80%);
+          }
+          
+        }
         .enjoyCoffeDesch6 {
           color: #e3b142;
           font-family: Montserrat;
@@ -52,18 +162,224 @@
           font-style: normal;
           font-weight: 700;
           line-height: normal;
+          @media (max-width:1000px){
+            font-size: 13px;
+            color: red;
+            transform: translateX(3px);
+          }
         }
       }
       .enjoyCoffeTitleDesc {
         h1 {
           color: #54372b;
           font-family: Montserrat;
-          font-size: 71px;
+          font-size: 60px;
           font-style: normal;
           font-weight: 600;
           line-height: normal;
+          @media (max-width:1000px){
+            color: red;
+            font-size: 35px;
+          }
         }
+        p {
+          color: rgb(163, 163, 163);
+          font-family: Montserrat;
+          font-size: 14px;
+          font-style: normal;
+          line-height: 24px;
+            @media (max-width:1000px){
+              font-size: 15px;
+              line-height: normal;
+              br{
+                display: none;
+              }
+            }
+        }
+      }
+      .row {
+        .enjoyFilterTxt {
+          position: relative;
+          img {
+            position: absolute;
+            bottom: 27px;
+            right: 40px;
+            z-index: -1;
+            transform: rotate(4deg);
+          }
+          .active {
+            background-color: rgba(227, 177, 66, 1);
+            border-radius: 20px;
+            color: var(--bg-white);
+            position: relative;
+          }
+          p {
+            color: #979797;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 500;
+            padding: 3px 20px;
+            cursor: pointer;
+          }
+          .moreMenup {
+            font-size: x-small;
+            width: 100px;
+            height: 30px;
+            border-radius: 20px;
+            background-color: rgba(227, 177, 66, 1);
+            color: #fff;
+            @include displayCenter;
+          }
+        }
+      }
+      .beans3{
+       margin-left: 20%;
+       margin-top: 20px;
+       @media (max-width:1000px){
+          margin-left: -11% !important;
+       }
+      }
+      .beans4{
+       margin-left: 50%;
+       margin-top: -170px;
+       
+       @media (max-width:1000px){
+       margin-left: 70% !important;
+     } 
+     &:hover{
+      background-color: red;
+     }
       }
     }
   }
+}
+
+
+@media (max-width:570px) {
+   .container-fluid{
+    .row{
+      .coffeImgContainer{
+       .coffeImg{
+        max-width: 420px;
+        width: 100%;
+        position: relative;
+        background-color: aqua !important;
+        .coffeModal{
+          top: 70%;
+          left: 135%;
+          transform: translate(-135%, -70%);
+          width: 230px;
+          height: 370px;
+        }
+       }
+      }
+    }
+   }
+}
+
+@media (max-width:490px){
+  .container-fluid{
+    .row{
+      .coffeImgContainer{
+       .coffeImg{
+        max-width: 380px;
+        width: 100% !important;
+        position: relative;
+        background-color: red !important;
+        .coffeModal{
+          top: 70%;
+          left: 135%;
+          transform: translate(-135%, -70%);
+          width: 230px;
+          height: 330px;
+          .coffeModalText {
+            h6 {
+              color: var(--coffeModal-txt);
+              font-style: normal;
+              font-weight: 600;
+              line-height: normal;
+              font-size: 16px;
+              font-family: "Montserrat", sans-serif;
+              font-weight: 600;
+              letter-spacing: 1.2px;
+            }
+          }
+          .row {
+            .modalDrink {
+              width: auto;
+              height: auto;
+              background-color: rgba(227, 177, 66, 0.2);
+              border-radius: 13px;
+              .modalDrinkBox {
+                display: flex;
+                align-items: center;
+                padding:  0 !important;
+                .img {
+                  transform: translateX(-10%);
+                  img{
+                    width: 80%;
+                  }
+                }
+              }
+              .modalDrinkText {
+                p {
+                  font-size: 10px;
+                  transform: translateX(-27%);
+                  color: #4a3024;
+                  font-family: Montserrat;
+                  font-style: normal;
+                  font-weight: 600;
+                  line-height: 1.3rem;
+                  a {
+                    color: #4a3024;
+                    font-weight: 500;
+                    font-size: 11px;
+                  }
+                }
+              }
+              .modalDrinkGrey {
+                background-color: var(--bg-white);
+                border-radius: 20px;
+                border: 1px solid #d8d7d7;
+                transition: 250ms;
+                &:hover {
+                  background-color: #f9efd9;
+                  cursor: pointer;
+                  border: 1px solid #f9efd9;
+                  .modalDrinkGreyText {
+                    p {
+                      font-size: 12.2px;
+                      transform: translateX(-15%);
+                      color: #4a3024;
+                      font-family: Montserrat;
+                      font-style: normal;
+                      font-weight: 600;
+                      line-height: 1.3rem;
+                      a {
+                        color: #4a3024;
+                        font-weight: 500;
+                        font-size: 11px;
+                      }
+                    }
+                  }
+                }
+              }
+
+              .modalDrinkGreyText {
+                p {
+                  color: #979797;
+                  font-weight: 500;
+                  a {
+                    color: #979797;
+                    font-weight: 500;
+                  }
+                }
+              }
+            }
+          }
+        }
+       }
+      }
+    }
+   }
 }

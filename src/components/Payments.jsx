@@ -81,7 +81,7 @@ const Payments = () => {
                     <div className=" col-12 col-sm-12 col-md-6 d-flex justify-content-center align-items-center ">
                         <div className="leftside">
                             <div className="title">
-                                <h1>Manage your payments with <span className='mpay'>mpay</span></h1>
+                                <h1>Manage your  <span className='mpay'> payments with mpay</span></h1>
                             </div>
                             <div className="about ">
                                 <h6>It is best to start your day with a cup of coffee. Discover the

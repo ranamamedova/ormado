@@ -3,46 +3,53 @@ import { Button, Card, Container, Row } from 'react-bootstrap'
 
 
 
-const Singlecard = ({id,photo, title, desc, price }) => {
+const Singlecard = ({ id, photo, title, desc, price }) => {
   return (
 
 
-    <Container>
+    <>
+      <Container>
 
-      <Card  className='card   mt-5' >
-        <Card.Img className='image'   variant="top" src={photo} />
-        <Card.Body >
+       
+        
+       
+          <Card className='mycard ms-5 mt-5' >
+            <Card.Img className='image' height={200} variant="top" src={photo} />
+            <Card.Body >
 
-          <div className="main">
+              <div className="main">
 
-            <div className="first">
-             <div className="one">
-             <Card.Title className='title'>{title}</Card.Title>
-              <Card.Text className='desc'>
-                {desc}
-              </Card.Text>
-             </div>
-   <Card.Text className='myprice'>
-                <p>{price}</p>
-              </Card.Text>
-
-            
-            </div>
-
-            <div className="second">
-        <button className='order'> <h6>Order now</h6></button>
-        </div>
-           
-            </div>
-          
+                <div className="first">
+                  <div className="one">
+                    <Card.Title className='title'>{title}</Card.Title>
+                    <Card.Text className='desc'>
+                      {desc}
+                    </Card.Text>
+                  </div>
+                  <Card.Text className='myprice'>
+                    <p>{price}</p>
+                  </Card.Text>
 
 
+                </div>
 
-        </Card.Body>
-      </Card>
+                <div className="second">
+                  <button className='order'> <h6>Order now</h6></button>
+                </div>
+
+              </div>
 
 
-    </Container>
+
+
+            </Card.Body>
+        
+        </Card>
+
+
+
+      </Container>
+    </>
 
   )
 }

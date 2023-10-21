@@ -26,6 +26,29 @@ body {
   overflow-x: hidden;
 }
 
+
+// SCROLL CHANGE
+::-webkit-scrollbar {
+
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #e2e2e2;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #643f3d;
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 // ANIMATE CSS
 @import "animate.css";
 

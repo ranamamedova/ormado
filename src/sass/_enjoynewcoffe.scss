@@ -10,107 +10,169 @@
         width: 100%;
         position: relative;
         margin-top: -60px;
-        @media (max-width:990px){
+        @media (max-width: 990px) {
           margin-top: 0px;
         }
-        
+
         .coffeModal {
           position: absolute;
           top: 80%;
           left: 155%;
           transform: translate(-155%, -80%);
           width: 230px;
-          height: 370px;
+          height: auto;
           background-color: #fff;
           border-radius: 20px;
           box-shadow: 0px 4px 15px 0px var(--box-shadow-coffeModal);
           z-index: 1;
-          // display: none;
+          padding: 10px;
+          @media (max-width: 990px) {
+            width: 200px;
+          }
+          @media (max-width: 768px) {
+            width: 230px;
+            top: 90%;
+            left: 155%;
+            transform: translate(-155%, -90%);
+          }
+          @media (max-width: 490px) {
+            width: 180px;
+            top: 70%;
+            left: 170%;
+            transform: translate(-170%, -70%);
+          }
           .coffeModalText {
             h6 {
               color: var(--coffeModal-txt);
               font-style: normal;
-              font-weight: 600;
               line-height: normal;
-              font-size: 18px;
+              font-size: 16px;
               font-family: "Montserrat", sans-serif;
-              font-weight: 600;
+              font-weight: 700;
               letter-spacing: 1.2px;
-              
+              @media (max-width: 990px) {
+                font-size: 12px;
+              }
+              @media (max-width: 768px) {
+                font-size: 15px;
+              }
+              @media (max-width: 490px) {
+                font-size: 13px;
+                text-align: center;
+              }
             }
           }
-          .row {
-            .modalDrink {
-              width: 100%;
-              height: 100%;
-              background-color: rgba(227, 177, 66, 0.2);
-              border-radius: 13px;
-
-              .modalDrinkBox {
-                display: flex;
-                align-items: center;
-                .img {
-                  transform: translateX(-10%);
-                  img {
-                    // position: absolute;
-                    top: 200%;
-                  }
+          .modelDrinkBox {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            padding: 4px;
+            margin-bottom: 20px;
+            transition: 250ms;
+            border: 1px solid #d3d3d3;
+            .img {
+              transform: translateX(-10%);
+              height: 60px;
+              img {
+                height: 100%;
+                @media (max-width:370px){
+                  width: 60%;
+                  height: 80%;
+                  object-fit: cover;
+                  transform: translate(10px,8px);
                 }
               }
-              .modalDrinkText {
-                p {
-                  font-size: 12.2px;
-                  transform: translateX(-15%);
-                  color: #4a3024;
-                  font-family: Montserrat;
-                  font-style: normal;
-                  font-weight: 600;
-                  line-height: 1.3rem;
-                  a {
-                    color: #4a3024;
-                    font-weight: 500;
-                    font-size: 11px;
-                  }
-                }
-              }
-              .modalDrinkGrey {
-                background-color: var(--bg-white);
-                border-radius: 20px;
-                border: 1px solid #d8d7d7;
+            }
+            .modalDrinkText {
+              p {
+                font-size: 12px;
+                transform: translate(-12%, 17%);
+                color: #979797;
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 18px;
                 transition: 250ms;
-                &:hover {
-                  background-color: #f9efd9;
-                  cursor: pointer;
-                  border: 1px solid #f9efd9;
-                  .modalDrinkGreyText {
-                    p {
-                      font-size: 12.2px;
-                      transform: translateX(-15%);
-                      color: #4a3024;
-                      font-family: Montserrat;
-                      font-style: normal;
-                      font-weight: 600;
-                      line-height: 1.3rem;
-                      a {
-                        color: #4a3024;
-                        font-weight: 500;
-                        font-size: 11px;
-                      }
-                    }
-                  }
-                }
-              }
-
-              .modalDrinkGreyText {
-                p {
+                a {
                   color: #979797;
                   font-weight: 500;
-                  a {
-                    color: #979797;
-                    font-weight: 500;
+                  font-size: 11px;
+                  display: block !important;
+                  transition: 250ms;
+                }
+              }
+              @media (max-width: 990px) {
+                p {
+                  font-size: xx-small;
+                  line-height: 15px;
+                  transform: translate(-15%, 40%);
+                }
+              }
+              @media (max-width: 768px) {
+                p {
+                  font-size: 10px;
+                  line-height: 15px;
+                  transform: translate(-15%, 40%);
+                }
+              }
+              @media (max-width: 490px) {
+                p {
+                  color: brown;
+                  font-size: 7.9px;
+                  line-height: 13px;
+                  transform: translate(-15%, 50%);
+                  a{
+                    font-size: xx-small;
                   }
                 }
               }
+            }
+            &:hover {
+              background-color: rgba(227, 177, 66, 0.2);
+              border: 1px solid rgba(227, 177, 66, 0.2);
+              cursor: pointer;
+              .modalDrinkText {
+                p {
+                  color: #4a3024;
+                  a {
+                    color: #4a3024;
+                  }
+                }
+              }
+            }
+            @media (max-width: 990px) {
+              font-size: 12px;
+              padding: 0;
+            }
+            @media (max-width: 768px) {
+              font-size: 12px;
+              padding: 4px;
+            }
+            @media (max-width: 490px) {
+             padding: 0;
+             margin-bottom: 10px;
+
+            }
+          }
+          .filterModal {
+            width: 100%;
+            height: 30px;
+            border-radius: 10px;
+            background: rgba(228, 228, 228, 0.21);
+            display: flex;
+            justify-content: space-between;
+            // display: none;
+            p {
+              color: #e3b142;
+              font-family: Montserrat;
+              font-size: 11px;
+              font-style: normal;
+              font-weight: 600;
+              line-height: normal;
+              transform: translateY(7px);
+            }
+            svg {
+              transform: translateY(2px);
             }
           }
         }
@@ -119,13 +181,13 @@
 
     .coffeImgContainer1 {
       margin-top: 120px;
-     transform: translate(150px,-50px);
-     @media (max-width:1000px){
-      transform: translate(90px,-10px);
-    }
-    @media (max-width:768px){
-      display: none;
-    }
+      transform: translate(180px, -30px);
+      @media (max-width: 1000px) {
+        transform: translate(90px, -10px);
+      }
+      @media (max-width: 768px) {
+        display: none;
+      }
       .enjoyCoffeDesc {
         position: relative;
         .beansBig {
@@ -135,26 +197,25 @@
           top: -40px;
           right: 95px;
           transform: translate(-95px, -40px);
-          @media (max-width:1000px){
+          @media (max-width: 1000px) {
             top: -55px;
             right: 15px;
-            transform: translate( -15px, -55px);
+            transform: translate(-15px, -55px);
           }
         }
         .beans {
           position: absolute;
           bottom: 70%;
-          right: 95%;
-          transform: translate(-95%, -70%);
+          right: 97%;
+          transform: translate(-97%, -70%);
           width: auto;
           height: auto;
           // @include displayCenter;
-          @media (max-width:1000px){
+          @media (max-width: 1000px) {
             bottom: 80%;
             right: 84%;
             transform: translate(-84%, -80%);
           }
-          
         }
         .enjoyCoffeDesch6 {
           color: #e3b142;
@@ -163,7 +224,7 @@
           font-style: normal;
           font-weight: 700;
           line-height: normal;
-          @media (max-width:1000px){
+          @media (max-width: 1000px) {
             font-size: 13px;
             transform: translateX(3px);
           }
@@ -177,7 +238,7 @@
           font-style: normal;
           font-weight: 600;
           line-height: normal;
-          @media (max-width:1000px){
+          @media (max-width: 1000px) {
             font-size: 35px;
           }
         }
@@ -187,13 +248,13 @@
           font-size: 14px;
           font-style: normal;
           line-height: 24px;
-            @media (max-width:1000px){
-              font-size: 15px;
-              line-height: normal;
-              br{
-                display: none;
-              }
+          @media (max-width: 1000px) {
+            font-size: 15px;
+            line-height: normal;
+            br {
+              display: none;
             }
+          }
         }
       }
       .row {
@@ -205,19 +266,19 @@
             right: 40px;
             z-index: -1;
             transform: rotate(4deg);
-            @media (max-width:1300px){
+            @media (max-width: 1300px) {
               width: 100px;
               right: 20px;
               bottom: 30px;
               transform: rotate(-4deg);
             }
-            @media (max-width:1200px){
+            @media (max-width: 1200px) {
               width: 60px;
               right: 20px;
               bottom: 32px;
               transform: rotate(-4deg);
             }
-            @media (max-width:1110px){
+            @media (max-width: 1110px) {
               width: 55px;
               right: 7px;
               bottom: 32px;
@@ -249,153 +310,65 @@
           }
         }
       }
-      .beans3{
-       margin-left: 20%;
-       margin-top: 20px;
-       @media (max-width:1000px){
+      .beans3 {
+        margin-left: 20%;
+        margin-top: 20px;
+        @media (max-width: 1000px) {
           margin-left: -11% !important;
-       }
+        }
       }
-      .beans4{
-       margin-left: 50%;
-       margin-top: -170px;
-       
-       @media (max-width:1000px){
-       margin-left: 70% !important;
-       img{
-        width: 70% ;
-       }
-     } 
+      .beans4 {
+        margin-left: 60%;
+        margin-top: -170px;
+
+        @media (max-width: 1000px) {
+          margin-left: 70% !important;
+          img {
+            width: 70%;
+          }
+        }
       }
     }
   }
 }
 
-
-@media (max-width:570px) {
-   .container-fluid{
-    .row{
-      .coffeImgContainer{
-       .coffeImg{
-        max-width: 420px;
-        width: 100%;
-        position: relative;
-        background-color: aqua !important;
-        .coffeModal{
-          top: 70%;
-          left: 135%;
-          transform: translate(-135%, -70%);
-          width: 230px;
-          height: 370px;
+@media (max-width: 570px) {
+  .container-fluid {
+    .row {
+      .coffeImgContainer {
+        .coffeImg {
+          max-width: 380px;
+          width: 100%;
+          position: relative;
         }
-       }
       }
     }
-   }
+  }
 }
 
-@media (max-width:490px){
-  .container-fluid{
-    .row{
-      .coffeImgContainer{
-       .coffeImg{
-        max-width: 380px;
-        width: 100% !important;
-        position: relative;
-        .coffeModal{
-          top: 70%;
-          left: 135%;
-          transform: translate(-135%, -70%);
-          width: 230px;
-          height: 330px;
-          .coffeModalText {
-            h6 {
-              color: var(--coffeModal-txt);
-              font-style: normal;
-              font-weight: 600;
-              line-height: normal;
-              font-size: 16px;
-              font-family: "Montserrat", sans-serif;
-              font-weight: 600;
-              letter-spacing: 1.2px;
-            }
-          }
-          .row {
-            .modalDrink {
-              width: auto;
-              height: auto;
-              background-color: rgba(227, 177, 66, 0.2);
-              border-radius: 13px;
-              .modalDrinkBox {
-                display: flex;
-                align-items: center;
-                padding:  0 !important;
-                .img {
-                  transform: translateX(-10%);
-                  img{
-                    width: 80%;
-                  }
-                }
-              }
-              .modalDrinkText {
-                p {
-                  font-size: 10px;
-                  transform: translateX(-27%);
-                  color: #4a3024;
-                  font-family: Montserrat;
-                  font-style: normal;
-                  font-weight: 600;
-                  line-height: 1.3rem;
-                  a {
-                    color: #4a3024;
-                    font-weight: 500;
-                    font-size: 11px;
-                  }
-                }
-              }
-              .modalDrinkGrey {
-                background-color: var(--bg-white);
-                border-radius: 20px;
-                border: 1px solid #d8d7d7;
-                transition: 250ms;
-                &:hover {
-                  background-color: #f9efd9;
-                  cursor: pointer;
-                  border: 1px solid #f9efd9;
-                  .modalDrinkGreyText {
-                    p {
-                      font-size: 12.2px;
-                      transform: translateX(-15%);
-                      color: #4a3024;
-                      font-family: Montserrat;
-                      font-style: normal;
-                      font-weight: 600;
-                      line-height: 1.3rem;
-                      a {
-                        color: #4a3024;
-                        font-weight: 500;
-                        font-size: 11px;
-                      }
-                    }
-                  }
-                }
-              }
-
-              .modalDrinkGreyText {
-                p {
-                  color: #979797;
-                  font-weight: 500;
-                  a {
-                    color: #979797;
-                    font-weight: 500;
-                  }
-                }
-              }
-            }
-          }
+@media (max-width: 490px) {
+  .container-fluid {
+    .row {
+      .coffeImgContainer {
+        .coffeImg {
+          max-width: 300px;
+          width: 100% !important;
+          position: relative;
         }
-       }
       }
     }
-   }
+  }
+}
+@media (max-width: 490px) {
+  .container-fluid {
+    .row {
+      .coffeImgContainer {
+        .coffeImg {
+          max-width: 280px;
+          width: 100% !important;
+          position: relative;
+        }
+      }
+    }
+  }
 }

@@ -13,7 +13,7 @@ const Singlecard = ({ id, photo, title, desc, price }) => {
        
         
        
-          <Card className='mycard ms-5 mt-5' >
+          <Card className='mycard  mt-5' >
             <Card.Img className='image' height={200} variant="top" src={photo} />
             <Card.Body >
 

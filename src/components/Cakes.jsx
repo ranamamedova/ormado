@@ -63,7 +63,7 @@ const Cakes = () => {
             modules={[Navigation]}
             spaceBetween={30}
             slidesPerView={3}
-            className="mySwiperCakes"
+            className="Othercake"
           >
             {data.map((item) => {
               return (

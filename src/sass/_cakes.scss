@@ -4,11 +4,11 @@
     cursor: pointer;
     position: relative;
 
+
+
     .slick-dots {
         display: none !important;
     }
-
-
 
     .Title {
         width: 100%;
@@ -25,81 +25,178 @@
             font-family: Montserrat;
             font-size: 15.435px;
             font-style: normal;
-
+            font-weight: 500;
         }
 
         h4 {
             color: var(--cakewriting);
             text-align: center;
             font-family: Montserrat;
+            font-weight: 700;
 
             .cakes {
                 color: var(--roundplayarrow);
+                font-family: Monstserrat;
+                font-weight: 700;
             }
         }
-
-
     }
-
-
-
 }
 
-.mySwiperCakes{
 
+
+
+.Othercake {
     .swiper-button-prev {
         &::after {
-            font-size: 20px !important;
+            font-size: 17px !important;
             content: "\2190";
             color: var(--carousellogos);
-    
+            font-weight: bold !important;
         }
-    
+
         position: absolute;
-        width:30px;
+        width: 30px;
         height: 70px;
         top: 13px;
         left: 1200px;
-    
+        font-weight: bold;
+
+        @media(max-width:1400px) {
+            left: 1020px;
+        }
+
+        @media(max-width:1300px) {
+            left: 1000px;
+        }
+
+        @media(max-width:1200px) {
+            left: 850px !important;
+        }
+
+        @media(max-width:992px) {
+            left: 450px !important;
+        }
+
+        @media(max-width:912px) {
+            left: 573px !important;
+        }
+
+        @media(max-width:820px) {
+            left: 582px !important;
+        }
+
+        @media(max-width:768px) {
+            left: 580px !important;
+        }
+
+
+        @media(max-width:576px) {
+            left: 420px !important;
+        }
+
+        @media(max-width:540px) {
+            left: 400px !important;
+        }
+
+        @media(max-width:500px) {
+            left: 370px !important;
+        }
+
+        @media(max-width:468px) {
+            left: 330px !important;
+        }
+
+        @media(max-width:435px) {
+            left: 300px !important;
+        }
+
+        @media(max-width:414px) {
+            left: 280px !important;
+        }
+
+        @media(max-width:393px) {
+            left: 270px !important;
+        }
+
+        @media(max-width:390px) {
+            left: 250px !important;
+        }
+
+        @media(max-width:375px) {
+            left: 240px !important;
+        }
+
+        @media(max-width:360px) {
+            left: 240px !important;
+        }
+
+        @media(max-width:330px) {
+            left: 180px !important;
+        }
+
+        @media(max-width:280px) {
+            left: 150px !important;
+        }
+
+
     }
-    
-    
-    .swiper-button-next {
+
+    .swiper-button-prev:hover {
+
         &::after {
-            content: "\2192";
-            font-size: 20px !important;
+
             border: 2px solid var(--cakewriting);
             border-radius: 30px;
             color: var(--roundplayarrow);
-    
+            padding: 5px;
+
+
         }
-    
-        width:30px;
+
+
+    }
+
+
+    .swiper-button-next {
+        &::after {
+            content: "\2192";
+            font-size: 17px !important;
+            border-radius: 30px;
+            color: var(--carousellogos);
+            padding: 5px;
+            font-weight: bold;
+        }
+
+        width: 30px;
         height: 70px;
         position: absolute;
-        font-size: 20px !important;
-    
-        top: 19px;
+        top: 18px;
         right: 21px;
         padding-bottom: 10px;
-        border-radius: 20px !important;
-        //    transform: translateY(-190px);
-    
+        border-radius: 23px !important;
+        font-size: 30px !important;
     }
+
+
+    .swiper-button-next:hover {
+        &::after {
+            border: 2px solid var(--cakewriting);
+            border-radius: 30px;
+            color: var(--roundplayarrow);
+            padding: 5px;
+
+        }
+
+    }
+
+
 }
 
 
 
 
-
-
-
-
-
-
-
-
-.singleCard {
+.mycard {
     width: auto;
     height: auto;
     flex-shrink: 0;
@@ -107,62 +204,303 @@
     border: 1.93px solid var(--carousellogos);
     background: #FFF;
 
+
+
     .image {
+        width: auto;
+        height: auto;
         border-top-left-radius: 15px;
-        /* Adjust the radius as needed */
         border-top-right-radius: 15px;
+
+
     }
-
-
-    .desc {
-        font-size: 13px !important;
-    }
-
-
 
     .main {
-        display: inline-flex;
-        align-items: flex-start;
-        gap: 23.145px;
+        width: 100%;
+        height: auto;
+        gap: 29.145px;
 
 
         .first {
+            width: 100%;
+            height: auto;
             display: flex;
-            flex-direction: column;
-            align-items: flex-start !important;
 
-            .title {
-                color: var(--cakewriting);
-                font-family: Montserrat;
-                font-size: 16px;
-                font-style: normal;
-                font-weight: 700;
+            .one {
+                width: 100%;
+                height: auto;
+
+                .title {
+                    width: 80%;
+                    height: auto;
+                    color: var(--cakewriting);
+                    font-family: Montserrat;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 700;
+
+                    @media(max-width:1200px) {
+                        font-size: 11px;
+                    }
+
+                    @media(max-width:375px) {
+                        font-size: 9.253px !important;
+                    }
+
+                    @media(max-width:450px) {
+                        width: 50px;
+                        height: auto;
+                        font-size: 5.45px;
+                    }
+                }
+
+                .desc {
+                    width: 100%;
+                    height: auto;
+                    font-family: Montserrat;
+                    font-size: 10.717px;
+                    font-style: normal;
+
+                    @media(max-width:1200px) {
+                        font-size: 7.717px !important;
+                    }
+
+                    @media(max-width:992px) {
+                        width: 100%;
+                        height: auto;
+                        font-size: 8px !important;
+                    }
+
+                    @media(max-width:468px) {
+                        width: auto;
+                        height: auto;
+                        font-size: 5.567px !important;
+                    }
+
+                    @media(max-width:375px) {
+                        width: 100%;
+                        height: auto;
+                        font-size: 3px;
+                    }
+
+                    @media(max-width:450px) {
+                        width: 60px !important;
+                        height: auto;
+                        font-size: 2.45px;
+                    }
+
+                    @media(max-width:372px){
+                        justify-content: flex-start !important;
+                        font-size: 2.563px;
+                    }
+
+                }
 
             }
 
-            .order {
-                width: auto;
-                display: flex;
-                background-color: var(--roundplayarrow);
-                border-radius: 20px;
-                border: none !important;
-                gap: 20px;
-                color: white;
+
+            .myprice {
+                width: 40px;
+                height: 30px;
+                padding: 3px 3px;
+                text-align: center;
+                font-weight: 500;
+                border-radius: 10px !important;
+                border: 1.293px solid var(--carousellogos);
+
+                p {
+                    color: var(--roundplayarrow);
+                    font-family: Montserrat;
+
+                    @media(max-width:1200px) {
+                        font-size: 10px !important;
+                        margin-top: 3px !important;
+                    }
+
+                    @media(max-width:468px) {
+                        font-size: 9px !important;
+                        margin-top: 2px !important;
+                        border-radius: 7px !important;
+                    }
+
+                    @media(max-width:510px) {
+                        font-size: 9px !important;
+                        margin-top: 1px !important;
+                    }
+
+                    @media(max-width:436px) {
+                        font-size: 5.56px !important;
+                        margin-top: 0 !important;
+                    }
+
+
+
+
+                }
+
+                @media(max-width:468px) {
+                    width: 30px;
+                    height: 22px !important;
+                    padding: 1px 1px;
+                    margin-top: 2px !important;
+                    margin-left: 18px !important;
+                }
+
+                @media(max-width:1200px) {
+                    width: 40px;
+                    height: 25px;
+                    padding: 2px 2px;
+                    margin-top: 10px;
+                    margin-left: 10px !important;
+                }
+
+                @media(max-width:375px) {
+                    width: 27px;
+                    height: 23px !important;
+                    padding: 2px 2px;
+                    margin-top: 0px !important;
+                    margin-left: 11px !important;
+                    border-radius: 8px !important;
+                    border: 1.293px solid var(--carousellogos);
+                }
+
+
+                @media(max-width:510px) {
+                    width: 25px;
+                    height: 20px !important;
+                    padding: 2px 2px;
+                    margin-bottom: 3px !important;
+                    margin-left: 4px !important;
+                    border-radius: 8px !important;
+                    border: 1.293px solid var(--carousellogos);
+                }
+
+                @media(max-width:436px) {
+                    width: 25px;
+                    height: 20px !important;
+                    padding: 2px 2px;
+                    margin-bottom: 3px !important;
+                    margin-left: 3px !important;
+                    border-radius: 3px !important;
+                    border: 1.293px solid var(--carousellogos);
+                }
+
+                @media(max-width:436px) {
+                    width: 23px;
+                    height: 11px !important;
+                    padding: 2px 2px;
+                    margin-bottom: 2px !important;
+                    margin-left: 0px !important;
+                    margin-right: 10px !important;
+                    border-radius: 49px !important;
+                    border: 1.293px solid var(--carousellogos);
+                }
+
             }
+
+
+
         }
 
         .second {
-            display: flex;
-            // padding: 23.145px 23.145px 17.359px 23.145px;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            // gap: 7.359px;
-            border-radius: 20px;
-            border: 2px solid var(--carousellogos);
+            .order {
+                width: 90px;
+                height: 26px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 72.836px;
+                background-color: var(--roundplayarrow);
+                border: none !important;
+                padding: 2px 15px;
+                margin-top: 15px !important;
+
+                h6 {
+                    color: #FFF;
+                    font-family: Montserrat;
+                    font-size: 10px;
+                    font-style: normal;
+                    font-weight: 500;
+                    text-align: center;
+                    margin-top: 5px;
+
+                    @media(max-width:1200px) {
+                        font-size: 9px;
+                        margin-top: 5px;
+                    }
+
+                    @media(max-width: 468px) {
+                        font-size: 7.32px;
+                        font-weight: 400;
+                    }
+
+                    @media(max-width:992px) {
+                        font-size: 5.32px;
+                        font-weight: 400;
+                        margin-top: 5px !important;
+                    }
+
+                    @media(max-width:375px){
+                        font-size: 6.32px;
+                        font-weight: 300;
+                        margin-top: 7px !important;
+                    }
+                }
+
+                @media(max-width:1200px) {
+                    padding: 2px 10px;
+                }
+
+                @media(max-width:992px) {
+                    width: 50px !important;
+                    height: 17px !important;
+                }
+
+                @media(max-width:468px) {
+                    width: 60px;
+                    height: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 72.836px;
+                    background-color: var(--roundplayarrow);
+                    border: none !important;
+                    padding: 1px 8px;
+                }
+
+                @media(max-width:375px) {
+                    width: 35px !important;
+                    height: 13px !important;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 72.836px;
+                    background-color: var(--roundplayarrow);
+                    border: none !important;
+                    padding: 1px 4px !important;
+                }
+
+                @media(max-width:450px) {
+                    width: 50px !important;
+                    height: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 72.836px;
+                    background-color: var(--roundplayarrow);
+                    border: none !important;
+                    padding: 1px 4px !important;
+                }
+
+            }
+
+            @media(max-width:450px) {
+                width: 100%;
+                height: auto;
+            }
+
 
         }
-
-
     }
+
 }

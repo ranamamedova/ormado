@@ -14,14 +14,16 @@ import Blog from "./Blog/Blog";
 const Home = () => {
   return (
     <>
+     
       <Navbar />
       <OrmadoKaffeSwiper />
-      <EnjoyNewCoffe />
+      {/* <EnjoyNewCoffe /> */}
       <Payments />
       <TestDetails />
       {/* <Cakes /> */}
       <Franchise />
       <Blog />
+  
     </>
   );
 };

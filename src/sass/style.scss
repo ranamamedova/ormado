@@ -1,4 +1,3 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
 :root {
   --box-shadow-coffeModal: rgba(0, 0, 0, 0.25);
@@ -26,16 +25,14 @@ body {
   overflow-x: hidden;
 }
 
-
 // SCROLL CHANGE
 ::-webkit-scrollbar {
-
   width: 5px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #e2e2e2;
+  background: transparent;
 }
 
 /* Handle */
@@ -46,7 +43,7 @@ body {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: #472e2d;
 }
 
 // ANIMATE CSS
@@ -59,22 +56,19 @@ body {
 @import "./navbar";
 
 // ORMADO KAFFE SWIPER
-@import "./ormadokaffeswiper" ;
+@import "./ormadokaffeswiper";
 
 // Enjoy New Coffe
-@import "./enjoynewcoffe" ;
-
-
-//WhyUs
+@import "./enjoynewcoffe";
 
 // PAYMENT
-@import "./payment" ;
+@import "./payment";
 
 // CAKES
-@import "./cakes" ;
+@import "./cakes";
 
 // TEST DETAILS
-@import "./TestDetails.scss" ;
+@import "./TestDetails.scss";
 
 // FRANCHISE
 @import "./Franchise.scss";
@@ -82,13 +76,11 @@ body {
 // BLOG
 @import "Blog";
 
-
 //WHY US
-
 @import "./WhyUs.scss";
 
 //BEST OFFER
-@import  "./BestOffer.scss";
+@import "./BestOffer.scss";
 
 //NewSweets
 @import "./NewSweets.scss";
@@ -97,10 +89,14 @@ body {
 @import "./Footer.scss";
 
 //NEW SWEETS
-@import "./NewSweets.scss" ;
+@import "./NewSweets.scss";
 
 // SWIPER TESNIMONIALS
-@import 'swiper-testimonials';
+@import "swiper-testimonials";
 
-
-
+.swiperMobil{
+  max-width: 400px;
+ width: 100%;
+ height: 400px;
+ background-color: red;
+}

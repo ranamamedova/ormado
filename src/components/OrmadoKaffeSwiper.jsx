@@ -7,17 +7,13 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 const OrmadoKaffeSwiper = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const images = [
-   coffeImg,
-   coffeImg,
-   coffeImg,
-  ];
+  const images = [coffeImg, coffeImg, coffeImg];
   const textArray = ["ORMADO", "ORMADO", "ORMADO"];
   const textArray1 = ["KAFFEHAUS", "KAFFEHAUS", "KAFFEHAUS"];
   const animationClasses = [
-    'animate__fadeIn',
-    'animate__slideInDown',
-    'animate__zoomIn',
+    "animate__fadeIn",
+    "animate__slideInDown",
+    "animate__zoomIn",
   ];
   const handleSlideChange = (swiper) => {
     setCurrentImageIndex(swiper.activeIndex);
@@ -72,7 +68,7 @@ const OrmadoKaffeSwiper = () => {
                 
                   onSlideChange={handleSlideChange}
                
-                   
+                  slidesPerView= {1}
                   modules={[Pagination]}
                   className="mySwiperOrmado"
                   pagination={{
@@ -92,6 +88,10 @@ const OrmadoKaffeSwiper = () => {
           </div>
         </div>
       </div>
+
+   
+
+      
     </>
   );
 };

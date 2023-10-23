@@ -95,8 +95,23 @@ body {
 @import "swiper-testimonials";
 
 .swiperMobil{
-  max-width: 400px;
- width: 100%;
+  // max-width: 400px;
+ width:calc(100% - 60%);
  height: 400px;
- background-color: red;
+ background-color: rgb(243, 135, 135);
+ position: relative;
+ @media (max-width:998px){
+   width: calc(100% - 0%);
+  background-color: blue;
+ }
+ .swiper-pagination{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: calc(100% - 0%);
+  flex-direction: column;
+  gap: 5px;
+ }
 }
+
+

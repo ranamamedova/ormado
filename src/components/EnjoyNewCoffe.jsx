@@ -7,13 +7,13 @@ import beans5 from "../assets/img/beans5.png";
 import drink from "../assets/img/drink.png";
 import drink1 from "../assets/img/drink1.png";
 import drink2 from "../assets/img/drink2.png";
-import arrow from "../assets/img/arrow.png";
+import arrow from "../assets/img/arrow.png"; 
 const EnjoyNewCoffe = () => {
   return (
     <>
       <div className="container-fluid">
         <div className="row">
-          <div className="col-12 col-sm-12 col-md-5 col-lg-5 gi  coffeImgContainer ">
+          <div className="col-12 col-sm-12 col-md-5 col-lg-5 coffeImgContainer ">
             <div className="coffeImg">
               <img src={coffeImg} alt="" className="img-fluid" />
               <div className="coffeModal pb-3">

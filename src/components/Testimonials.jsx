@@ -16,7 +16,7 @@ const Testimonials = () => {
         'Asperiores voluptatum explicabo vel maxime et consequuntur eveniet nobis. Tempore aperiam dolor aut molestiae soluta modi ut. Hic aspernatur ea uam...',
         img: 'Image.png',
         name:" Rolfson",
-        special:" Solutions Architect"
+        special:" Solutions Architect" 
        
     },
     {

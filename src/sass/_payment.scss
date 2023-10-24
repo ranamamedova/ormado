@@ -25,7 +25,7 @@
 
         .click {
             width: auto;
-            height: 27px;
+            height: 21px;
             border-radius: 82.836px;
             background-color: #E3B142;
             outline: none !important;
@@ -34,7 +34,7 @@
             align-items: center;
             justify-content: center;
             border: none;
-            padding: 11px;
+            padding: 13px 9px;
 
 
             h6 {
@@ -44,7 +44,7 @@
                 font-style: normal;
                 font-weight: 700;
                 line-height: normal;
-                margin-top: 5px;
+                margin-top: 7px;
             }
 
         }
@@ -73,7 +73,7 @@
             }
 
             .imgright {
-                width: 30%;
+                width: 34%;
 
             }
 
@@ -85,8 +85,6 @@
         margin-top: 5px;
 
     }
-
-
 
 
     .Slick {
@@ -111,7 +109,6 @@
 
                 #one {
                     width: 36px;
-                    // margin-left: 10px;
                 }
 
                 img {
@@ -152,10 +149,6 @@
 
     }
 
-
-
-
-
     .next-slick-arrow,
     .prev-slick-arrow {
         cursor: pointer;
@@ -166,29 +159,34 @@
         color: white;
         margin-left: 20px;
         margin-bottom: 10px;
-        color: var(--roundplayarrow);
+        color: var(--carousellogos);
         padding: 21px;
         border: none;
         display: none;
 
+  
 
+       
     }
 
     .next-slick-arrow {
         margin-right: -25px;
         transform: translateY(-50%) rotate(360deg);
-    }
 
+        &:hover{
+             color: var(--roundplayarrow) !important;
+        }
+    }
     .prev-slick-arrow {
-        margin-left: -23px;
+        margin-left: -24px;
         transform: translateY(-50%) rotate(180deg);
-        color: var(--carousellogos);
         z-index: 3;
+
+        &:hover{
+            color: var(--roundplayarrow) !important;
+       }
     }
-
-
 }
-
 
 
 @media(max-width:1202px) {
@@ -263,7 +261,7 @@
             align-items: center;
             justify-content: center;
             border: none;
-            padding: 6px !important;
+            padding: 9px !important;
 
 
             h6 {
@@ -339,13 +337,12 @@
 
             #one {
                 width: 36px;
-                // margin-left: 10px !important;
+               
             }
 
             img {
                 width: 37px;
                 height: 37px;
-                // margin-left: 5px !important;
 
             }
         }
@@ -452,8 +449,8 @@
 
 
         .click {
-            width: 17% !important;
-            height: 14px !important;
+            width: 19% !important;
+            height: 17px !important;
             border-radius: 32.836px;
             background-color: #E3B142 !important;
             outline: none !important;
@@ -472,7 +469,7 @@
                 font-style: normal;
                 font-weight: 700;
                 line-height: normal;
-                margin-top: 5px !important;
+                margin-top: 7px !important;
 
             }
 
@@ -504,6 +501,7 @@
     .slider {
         width: auto;
         height: auto;
+        // margin-top: 70px !important;
 
 
 

@@ -25,6 +25,27 @@ body {
   overflow-x: hidden;
 }
 
+// SCROLL CHANGE
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #643f3d;
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #472e2d;
+}
+
 // ANIMATE CSS
 @import "animate.css";
 
@@ -35,22 +56,19 @@ body {
 @import "./navbar";
 
 // ORMADO KAFFE SWIPER
-@import "./ormadokaffeswiper" ;
+@import "./ormadokaffeswiper";
 
 // Enjoy New Coffe
-@import "./enjoynewcoffe" ;
-
-
-//WhyUs
+@import "./enjoynewcoffe";
 
 // PAYMENT
-@import "./payment" ;
+@import "./payment";
 
 // CAKES
-@import "./cakes" ;
+@import "./cakes";
 
 // TEST DETAILS
-@import "./TestDetails.scss" ;
+@import "./TestDetails.scss";
 
 // FRANCHISE
 @import "./Franchise.scss";
@@ -58,13 +76,11 @@ body {
 // BLOG
 @import "Blog";
 
-
 //WHY US
-
 @import "./WhyUs.scss";
 
 //BEST OFFER
-@import  "./BestOffer.scss";
+@import "./BestOffer.scss";
 
 //NewSweets
 @import "./NewSweets.scss";
@@ -73,7 +89,41 @@ body {
 @import "./Footer.scss";
 
 //NEW SWEETS
-@import "./NewSweets.scss" ;
+@import "./NewSweets.scss";
+
+// SWIPER TESNIMONIALS
+@import "swiper-testimonials";
+
+.swiperMobil {
+  // max-width: 400px;
+  width: calc(100% - 20%);
+  height: 400px;
+  background-color: rgb(197, 197, 197);
+  position: relative;
 
 
+  .swiper-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: calc(100% - 0%);
+    flex-direction: column;
+    gap: 20px;
+  }
 
+  .swiper-pagination-bullet {
+    background: red;
+    width: 8px;
+    height: 8px;
+    display: block;
+    opacity: 0.2;
+    transition: all 0.3s;
+    border-radius: 10px;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: #fff;
+    opacity: 1;
+    height: 25px;
+    box-shadow: rgba(0, 0, 0, 0.25);
+  }
+}

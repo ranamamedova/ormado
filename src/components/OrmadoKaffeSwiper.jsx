@@ -2,22 +2,19 @@ import React, { useState } from "react";
 import coffeImg from "../assets/img/swiperimg.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 
+
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 const OrmadoKaffeSwiper = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const images = [
-   coffeImg,
-   coffeImg,
-   coffeImg,
-  ];
+  const images = [coffeImg, coffeImg, coffeImg];
   const textArray = ["ORMADO", "ORMADO", "ORMADO"];
   const textArray1 = ["KAFFEHAUS", "KAFFEHAUS", "KAFFEHAUS"];
   const animationClasses = [
-    'animate__fadeIn',
-    'animate__slideInDown',
-    'animate__zoomIn',
+    "animate__fadeIn",
+    "animate__slideInDown",
+    "animate__zoomIn",
   ];
   const handleSlideChange = (swiper) => {
     setCurrentImageIndex(swiper.activeIndex);
@@ -72,7 +69,7 @@ const OrmadoKaffeSwiper = () => {
                 
                   onSlideChange={handleSlideChange}
                
-                   
+                  slidesPerView= {1}
                   modules={[Pagination]}
                   className="mySwiperOrmado"
                   pagination={{
@@ -92,6 +89,21 @@ const OrmadoKaffeSwiper = () => {
           </div>
         </div>
       </div>
+{/* 
+      <Swiper
+        spaceBetween={30} 
+        slidesPerView={1} 
+        pagination={{ clickable: true }} 
+        modules={[Pagination]}
+        // direction="horizontal"
+        className="swiperMobil"
+      >
+        <SwiperSlide>Slide 1</SwiperSlide>
+        <SwiperSlide>Slide 2</SwiperSlide>
+        <SwiperSlide>Slide 3</SwiperSlide>
+        <SwiperSlide>Slide 4</SwiperSlide>
+      </Swiper> */}
+    
     </>
   );
 };

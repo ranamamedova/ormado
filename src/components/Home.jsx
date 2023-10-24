@@ -17,19 +17,21 @@ import Footer from "./home/Footer";
 const Home = () => {
   return (
     <>
+     
       <Navbar />
       <OrmadoKaffeSwiper />
       <EnjoyNewCoffe />
-      <TestDetails />
       <Payments />
+      <TestDetails />
+      {/* <Payments /> */}
       <WhyUs />
       <BestOffer />
       <NewSweets />
       <Cakes />
       <Franchise />
       <Blog />
+      {/* <Footer /> */}
 
-      <Footer />
     </>
   );
 };

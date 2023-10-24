@@ -87,14 +87,18 @@
   
     .swiper-pagination{
       .swiper-pagination-bullet{
-        background-color: #fff !important;
-        width: 10px;
-        height: 10px;
-        opacity: 1;
+        background: #fff;
+        width: 8px;
+        height: 8px;
+        opacity: 0.8;
+        transition: all 0.3s;
+        border-radius: 10px;
       }
       .swiper-pagination-bullet-active{
-        background-color: #E3B142 !important;
+        background-color: #E3B142;
         opacity: 1;
+        width: 30px;
+        box-shadow: rgba(0, 0, 0, 0.25);
       }
       
     }

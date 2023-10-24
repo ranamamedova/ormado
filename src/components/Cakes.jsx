@@ -45,10 +45,14 @@ const Cakes = () => {
 
           <Swiper
             breakpoints={{
-              10: {
-                slidesPerView: 2,
+              180: {
+                slidesPerView: 1,
                 spaceBetween: 30,
               },
+            390:{
+              slidesPerView: 2,
+              spaceBetween: 40,
+            },
               768: {
                 slidesPerView: 3,
                 spaceBetween: 40,
@@ -57,13 +61,14 @@ const Cakes = () => {
                 slidesPerView: 3,
                 spaceBetween: 40,
               },
+
             }}
             rewind={true}
             navigation={true}
             modules={[Navigation]}
             spaceBetween={30}
             slidesPerView={3}
-            className="mySwiperCakes"
+            className="Othercake"
           >
             {data.map((item) => {
               return (

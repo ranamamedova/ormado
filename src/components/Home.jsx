@@ -1,6 +1,7 @@
 import React from "react";
 import EnjoyNewCoffe from "./EnjoyNewCoffe";
 import OrmadoKaffeSwiper from "./OrmadoKaffeSwiper";
+import ProductCards from "./ProductCards";
 import Payments from "./Payments";
 import Navbar from "../components/Navbar";
 import TestDetails from "./TestDetails";
@@ -21,9 +22,10 @@ const Home = () => {
       <Navbar />
       <OrmadoKaffeSwiper />
       <EnjoyNewCoffe />
+      <ProductCards/>
       <Payments />
       <TestDetails />
-      {/* <Payments /> */}
+      <Payments />
       <WhyUs />
       <BestOffer />
       <NewSweets />

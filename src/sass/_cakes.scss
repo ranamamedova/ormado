@@ -204,7 +204,6 @@
     background: #FFF;
 
 
-
     .image {
         width: auto;
         height: auto;
@@ -309,9 +308,9 @@
 
 
             .myprice {
-                width: 40px;
-                height: 30px;
-                padding: 3px 3px;
+                width: auto;
+                height: 27px;
+                padding: 2px 2px;
                 text-align: center;
                 font-weight: 500;
                 border-radius: 7px !important;
@@ -320,6 +319,8 @@
                 p {
                     color: var(--roundplayarrow);
                     font-family: Montserrat;
+                    margin-top: 3px !important;
+                    font-size: 11px !important;
 
                     @media(max-width:1200px) {
                         font-size: 10px !important;
@@ -359,7 +360,7 @@
 
               
                 @media(max-width:1200px) {
-                    width: 40px;
+                    width: auto;
                     height: 25px;
                     padding: 2px 2px;
                     margin-top: 10px;
@@ -367,17 +368,17 @@
                 }
               
                 @media(max-width:998px){
-                    width: 36px;
+                    width: auto;
                     height: 19px !important;
                     padding: 2px 2px;
                     margin-top: 10px;
-                    margin-left: 10px !important;
+                    margin-left: 5px !important;
                 }
              
 
 
                 @media(max-width:510px) {
-                    width: 25px;
+                    width: auto;
                     height: 20px !important;
                     padding: 2px 2px;
                     margin-bottom: 3px !important;
@@ -387,7 +388,7 @@
                 }
 
                 @media(max-width:468px) {
-                    width: 30px;
+                    width: auto;
                     height: 17px !important;
                     padding: 2px 2px !important;
                     // margin-top: 2px !important;
@@ -396,7 +397,7 @@
                 }
 
                 @media(max-width:450px){
-                    width: 30px;
+                    width: auto;
                     height: 17px !important;
                     padding: 2px 2px !important;
                     // margin-top: 2px !important;
@@ -405,7 +406,7 @@
                 }
 
                 @media(max-width:436px) {
-                    width: 25px;
+                    width: auto;
                     height: 16px !important;
                     padding: 3px 3px !important;  
                     margin-left: 6px !important;
@@ -415,22 +416,37 @@
                 }
 
                 @media(max-width:414px){
-                    width: 23px;
-                    height: 16px !important;
-                    padding: 3px 3px !important;  
-                    margin-left: 5px !important;
-                    border-radius: 4px !important;
+                    width: auto;
+                    height: 14px !important;
+                    padding: 2px 2px !important;  
+                    margin-left: 1px !important;
+                    border-radius: 3px !important;
                     border: 1.293px solid var(--carousellogos);
                     // margin-bottom: 40px !important;
                     margin-top: 6px !important;
                 }
 
+                @media(max-width:393px) {
+                    width: auto !important;
+                    height: 17px !important;
+                    padding: 2px 2px !important;
+                    margin-top: 0px !important;
+                    margin-left: 0px !important;
+                    border-radius: 6px !important;
+                    border: 1.293px solid var(--carousellogos);
+                   
+                }
+
+
+   
+            
+
                 @media(max-width:390px) {
-                    width: 32px !important;
+                    width: auto !important;
                     height: 25px !important;
                     padding: 4px 4px;
                     margin-top: 0px !important;
-                    margin-left: 10px !important;
+                    margin-left: 3px !important;
                     border-radius: 8px !important;
                     border: 1.293px solid var(--carousellogos);
                    

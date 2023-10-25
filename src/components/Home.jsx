@@ -15,6 +15,7 @@ import WhyUs from "./home/WhyUs";
 import BestOffer from "./home/BestOffer"
 import NewSweets from "./home/NewSweets"
 import Footer from "./home/Footer";
+import Faqs from "./Faqs";
 const Home = () => {
   return (
     <>
@@ -31,6 +32,7 @@ const Home = () => {
       <NewSweets />
       <Cakes />
       <Franchise />
+      <Faqs/>
       <Blog />
       <Footer />
 

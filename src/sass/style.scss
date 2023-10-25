@@ -16,6 +16,8 @@
   --carousellogos: #979797;
   --roundplayarrow: #e3b142;
   --cakewriting: #4a3024;
+  --faqwriting:#A7A4A4;
+  --faqcolor:#4E2922;
 }
 
 body {
@@ -75,6 +77,9 @@ body {
 
 // FRANCHISE
 @import "./Franchise.scss";
+
+//Faqs
+@import "./faqs";
 
 // BLOG
 @import "Blog";

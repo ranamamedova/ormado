@@ -8,6 +8,11 @@ header {
       padding: 10px;
       .d-flex {
         gap: 10px;
+        .logo{
+          img{
+            width: 50px;
+          }
+        }
         .search-container {
           display: flex;
           background-color: #fff;

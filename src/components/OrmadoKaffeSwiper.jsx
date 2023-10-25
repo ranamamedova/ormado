@@ -89,13 +89,13 @@ const OrmadoKaffeSwiper = () => {
           </div>
         </div>
       </div>
-
-      {/* <Swiper
+{/* 
+      <Swiper
         spaceBetween={30} 
         slidesPerView={1} 
         pagination={{ clickable: true }} 
         modules={[Pagination]}
-        direction="horizontal"
+        // direction="horizontal"
         className="swiperMobil"
       >
         <SwiperSlide>Slide 1</SwiperSlide>

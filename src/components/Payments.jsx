@@ -113,7 +113,7 @@ const Payments = () => {
                         <p>We have been working with some Fortune 500+ clients</p>
                     </div>
 
-                    <Slider className='slider' {...settings}>
+                    <Slider className='slider my-3' {...settings}>
 
                         <div className="slicklogo d-flex align-items-center justify-content-center ">
                             <img id='one'  src={slick1} alt="" />

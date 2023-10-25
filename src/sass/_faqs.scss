@@ -1,0 +1,98 @@
+.Faqs {
+    width: auto;
+    height: auto;
+    margin-top: 30px;
+
+    .container1 {
+        width: auto;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .Center {
+            max-width: 700px;
+            width: 100%;
+            height: auto;
+
+
+            .title {
+                width: auto;
+                height: auto;
+                display: flex;
+
+
+                .line {
+                    width: 35px;
+                    height: 3px;
+                    background-color: var(--faqcolor);
+                    text-align: center;
+                    margin-top: 9px !important;
+                    border-radius: 4px !important;
+                }
+
+                .upper {
+                    color: #A7A4A4;
+                    font-family: Montserrat;
+                    font-size: 14.68px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    margin-left: 5px ;
+                }
+            }
+
+            .question{
+              max-width: 400px;
+              width: 100%;
+              height: auto;
+
+              h1{
+                color: var(--faqcolor);
+                font-size: 40px !important;
+                font-weight: 700 ;
+              }
+              span{
+                color: var(--faqwriting);
+              }
+            }
+
+           .accordion{
+            width: auto;
+            height: auto;
+            margin-bottom: 40px;
+
+           .accordion-item{
+            
+            .accordion-header{
+                margin-bottom: 0;
+
+                .accordion-button{
+                    background: #FFF;
+                    box-shadow: none;
+                    color: var(--faqcolor);
+                }
+              
+
+              #btn1{
+         
+              }
+                
+            }
+            }
+            #two{
+                margin-top: 20px;
+            }
+
+            #three{
+                margin-top: 20px;
+            }
+
+            #four{
+                margin-top: 20px;
+            }
+
+           }
+        }
+    }
+}

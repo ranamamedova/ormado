@@ -16,6 +16,8 @@
   --carousellogos: #979797;
   --roundplayarrow: #e3b142;
   --cakewriting: #4a3024;
+  --faqwriting:#A7A4A4;
+  --faqcolor:#4E2922;
 }
 
 body {
@@ -61,6 +63,9 @@ body {
 // Enjoy New Coffe
 @import "./enjoynewcoffe";
 
+// PRODUCTS
+@import "./productcards" ;
+
 // PAYMENT
 @import "./payment";
 
@@ -72,6 +77,9 @@ body {
 
 // FRANCHISE
 @import "./Franchise.scss";
+
+//Faqs
+@import "./faqs";
 
 // BLOG
 @import "Blog";
@@ -94,24 +102,36 @@ body {
 // SWIPER TESNIMONIALS
 @import "swiper-testimonials";
 
-.swiperMobil{
+.swiperMobil {
   // max-width: 400px;
- width:calc(100% - 60%);
- height: 400px;
- background-color: rgb(243, 135, 135);
- position: relative;
- @media (max-width:998px){
-   width: calc(100% - 0%);
-  background-color: blue;
- }
- .swiper-pagination{
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  height: calc(100% - 0%);
-  flex-direction: column;
-  gap: 5px;
- }
+  width: calc(100% - 20%);
+  height: 400px;
+  background-color: rgb(197, 197, 197);
+  position: relative;
+
+
+  .swiper-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: calc(100% - 0%);
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .swiper-pagination-bullet {
+    background: red;
+    width: 8px;
+    height: 8px;
+    display: block;
+    opacity: 0.2;
+    transition: all 0.3s;
+    border-radius: 10px;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: #fff;
+    opacity: 1;
+    height: 25px;
+    box-shadow: rgba(0, 0, 0, 0.25);
+  }
 }
-
-

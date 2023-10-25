@@ -8,6 +8,11 @@ header {
       padding: 10px;
       .d-flex {
         gap: 10px;
+        .logo{
+          img{
+            width: 50px;
+          }
+        }
         .search-container {
           display: flex;
           background-color: #fff;
@@ -155,7 +160,7 @@ header {
       gap: 40px;
       li {
         list-style: none;
-        a {
+        a { 
           text-decoration: none;
           font-family: Montserrat;
           font-size: small;

@@ -1,6 +1,7 @@
 import React from "react";
 import EnjoyNewCoffe from "./EnjoyNewCoffe";
 import OrmadoKaffeSwiper from "./OrmadoKaffeSwiper";
+import ProductCards from "./ProductCards";
 import Payments from "./Payments";
 import Navbar from "../components/Navbar";
 import TestDetails from "./TestDetails";
@@ -14,6 +15,7 @@ import WhyUs from "./home/WhyUs";
 import BestOffer from "./home/BestOffer"
 import NewSweets from "./home/NewSweets"
 import Footer from "./home/Footer";
+import Faqs from "./Faqs";
 const Home = () => {
   return (
     <>
@@ -21,6 +23,7 @@ const Home = () => {
       <Navbar />
       <OrmadoKaffeSwiper />
       <EnjoyNewCoffe />
+      <ProductCards/>
       <Payments />
       <TestDetails />
       <Payments />
@@ -29,8 +32,9 @@ const Home = () => {
       <NewSweets />
       <Cakes />
       <Franchise />
+      <Faqs/>
       <Blog />
-      {/* <Footer /> */}
+      <Footer />
 
     </>
   );

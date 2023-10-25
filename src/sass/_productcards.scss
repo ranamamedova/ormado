@@ -1,0 +1,121 @@
+.product-cards {
+  padding: 8%;
+  .title-section {
+    color: gray !important;
+    font-size: 90px;
+    font-weight: 700;
+    span {
+      color: #e3b142;
+    }
+  }
+
+  .card {
+    border: 1px solid #e3b142 !important;
+    position: relative;
+    &::before {
+      content: "";
+      width: 50px;
+      height: 50px;
+      background-color: #e3b142;
+      border-radius: 50%;
+      position: absolute;
+      top: -28px;
+      left: 40%;
+      z-index: -1;
+    }
+    &::after {
+      content: "";
+      width: 50px;
+      height: 30px;
+      background-color: #e3b142;
+      position: absolute;
+      bottom: -15px;
+      left: 40%;
+      z-index: -1;
+    }
+    .card-rentagle {
+      position: relative;
+    }
+
+    .card-energy {
+      position: absolute;
+      top: 17%;
+      right: 1%;
+    }
+    .card-ellipse {
+      position: absolute;
+      top: 24%;
+      right: 2%;
+    }
+    .card-vector {
+      position: absolute;
+      width: 25% !important;
+      height: 13%;
+      top: 6%;
+      left: 38%;
+    }
+    .card-vector1 {
+      position: absolute;
+      width: 17% !important;
+      height: 9%;
+      top: 15%;
+      left: 9%;
+    }
+    .card-vector2 {
+      position: absolute;
+      width: 17% !important;
+      height: 9%;
+      top: 15%;
+      left: 74%;
+    }
+    .card-title {
+      font-size: 15px;
+      font-weight: 700;
+      text-align: center;
+      color: gray;
+    }
+    .card-text {
+      text-align: center;
+      font-size: 22px;
+      font-weight: 700;
+      color: orange;
+    }
+    .btn-card {
+      border: none !important;
+      border-radius: 50% !important;
+      height: 30px;
+      width: 30px;
+      display: flex !important;
+      justify-content: center;
+      align-items: center;
+      background-color: gray;
+      .btn-img {
+        width: 15px;
+      }
+    }
+    .btn-readmore {
+      font-size: 10px !important;
+      border: none !important;
+      border-radius: 79.048px !important;
+      display: flex;
+      align-items: center;
+      border: 0;
+      background-color: var(--coffeModal-txt);
+      color: white;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      width: 70px;
+      height: 28px;
+    }
+  }
+
+  .btn-seeall {
+    background-color: var(--coffeModal-txt) !important;
+    border: none !important;
+    border-radius: 80.925px !important;
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    width: 7rem;
+  }
+}

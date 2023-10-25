@@ -67,7 +67,7 @@ const BestOffer = () => {
                       <div className="line-main col-sm-12 "></div>
                     </div>
                     <div className="card-price">
-                      <b><i>$ </i>20</b>
+                      <b><i>$ </i>20.99</b>
                     </div>
                   </div>
                   <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>

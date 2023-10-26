@@ -23,76 +23,141 @@
 
 
                 .line {
-                    width: 35px;
-                    height: 3px;
+                    width: 31px;
+                    height: 2px;
                     background-color: var(--faqcolor);
                     text-align: center;
-                    margin-top: 9px !important;
+                    margin-top: 13px !important;
                     border-radius: 4px !important;
                 }
 
                 .upper {
-                    color: #A7A4A4;
-                    font-family: Montserrat;
-                    font-size: 14.68px;
-                    font-style: normal;
-                    font-weight: 700;
-                    line-height: normal;
-                    margin-left: 5px ;
+                    margin-left: 5px;
+
+                    h5 {
+                        color: #A7A4A4;
+                        font-family: Montserrat;
+                        font-size: 21.68px !important;
+                        font-style: normal;
+                        font-weight: bold !important;
+                        line-height: normal;
+                    }
                 }
             }
 
-            .question{
-              max-width: 400px;
-              width: 100%;
-              height: auto;
+            .question {
+                max-width: 600px;
+                width: 100%;
+                height: auto;
 
-              h1{
-                color: var(--faqcolor);
-                font-size: 40px !important;
-                font-weight: 700 ;
-              }
-              span{
-                color: var(--faqwriting);
-              }
-            }
-
-           .accordion{
-            width: auto;
-            height: auto;
-            margin-bottom: 40px;
-
-           .accordion-item{
-            
-            .accordion-header{
-                margin-bottom: 0;
-
-                .accordion-button{
-                    background: #FFF;
-                    box-shadow: none;
+                h1 {
                     color: var(--faqcolor);
+                    font-size: 40px !important;
+                    font-weight: 700;
+                    width: 70%;
+
+                    @media(max-width:500px) {
+                        width: 80%;
+
+                    }
+
+                    @media(max-width:432px) {
+                        width: 90%;
+                    }
                 }
-              
 
-              #btn1{
-         
-              }
-                
-            }
-            }
-            #two{
-                margin-top: 20px;
-            }
+                span {
+                    width: 20%;
+                    color: var(--faqwriting);
 
-            #three{
-                margin-top: 20px;
+                    @media(max-width:386px) {
+                        width: 10%;
+                    }
+                }
             }
 
-            #four{
-                margin-top: 20px;
-            }
+            .accordion {
+                width: auto;
+                height: auto;
+                margin-bottom: 40px;
 
-           }
+                .accordion-item {
+                    box-shadow: 1.56px 2px 3.454px 2px rgba(75, 74, 74, 0.2);
+
+                    .accordion-header {
+                        margin-bottom: 0;
+                       
+
+
+                        .accordion-button {
+
+                            background-color: #FFF;
+                            box-shadow: none;
+                            color: var(--faqcolor);
+                            --bs-accordion-btn-icon: none;
+                            --bs-accordion-btn-active-icon: none;
+                            --bs-accordion-btn-icon-transform: rotate(90deg) !important;
+                            
+                            border-radius: 50% !important;
+
+                        }
+
+                        .accordion-button::after {
+                            position: absolute;
+                            content: "\203A";
+                         
+                            margin-right: 0px !important;
+                            color: #FFF;                  
+                            right: 11px !important;
+                            top: 3px !important;
+                            width: 35px;
+                            height: 35px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 50%;
+                            font-size: 29px !important;
+                            color: var(--roundplayarrow);
+                            background-color: #FFF;
+                            box-shadow: 1px 5px 6.45858px 1px rgba(154, 60, 153, 0.2);
+
+                        }
+
+                        .accordion-button:not(.collapsed)::after {
+                            position: absolute;
+                              
+                            font-size: 29px !important;
+                            background-color: var(--roundplayarrow);
+                            color: #FFF;
+                            box-shadow: none !important;
+                             
+
+                        }
+
+
+
+
+                        #one {
+                            margin-top: 20px;
+                        }
+
+                        #two {
+                            margin-top: 20px;
+                        }
+
+                        #three {
+                            margin-top: 20px;
+                        }
+
+                        #four {
+                            margin-top: 20px;
+                        }
+                    }
+
+                }
+
+
+            }
         }
     }
 }

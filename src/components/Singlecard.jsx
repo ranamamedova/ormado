@@ -27,7 +27,7 @@ const Singlecard = ({ id, photo, title, desc, price }) => {
                     </Card.Text>
                   </div>
                   <Card.Text className='myprice'>
-                    <p>{price}</p>
+                    <p className={`${price.length}`}>{price}</p>
                   </Card.Text>
 
 

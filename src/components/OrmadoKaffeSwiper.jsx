@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import coffeImg from "../assets/img/swiperimg.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
@@ -31,10 +30,14 @@ const OrmadoKaffeSwiper = () => {
               >
                 <div className="ormadoKaffeBox">
                   <div className="ormadoKaffeText">
-                    <h1 className="ormadoh1 mt-2">{textArray[currentImageIndex]}</h1>
+                    <h1 className="ormadoh1 mt-2">
+                      {textArray[currentImageIndex]}
+                    </h1>
                     <h1>
-                      <h1 className={` kaffehaush1 animate__animated ${animationClasses[currentImageIndex]}`}>
-                      {textArray1[currentImageIndex]}
+                      <h1
+                        className={` kaffehaush1 animate__animated ${animationClasses[currentImageIndex]}`}
+                      >
+                        {textArray1[currentImageIndex]}
                       </h1>
                     </h1>
                     <p className="kaffehausp mt-3 mb-5">
@@ -65,31 +68,42 @@ const OrmadoKaffeSwiper = () => {
                     fill="#E3B142"
                   />
                 </svg>
-                <Swiper
-                
-                  onSlideChange={handleSlideChange}
-               
-                  slidesPerView= {1}
+                {/* <Swiper
+                  slidesPerView={1}
                   modules={[Pagination]}
                   className="mySwiperOrmado"
                   pagination={{
                     clickable: true,
                   }}
-                  
+                >
+                 
+                </Swiper> */}
+                <Swiper
+                  onSlideChange={handleSlideChange}
+                  spaceBetween={30}
+                  slidesPerView={1}
+                  pagination={{ clickable: true }}
+                  modules={[Pagination]}
+                  className="swiperMobil"
                 >
                   {images.map((image, index) => (
                     <SwiperSlide key={index}>
-                      <img src={image} className="imgSwiperCoffe" alt={`Slide ${index}`} />
+                     <div className="d-flex justify-content-end">
+                     <img
+                        src={image}
+                        className="imgSwiperCoffe"
+                        alt={`Slide ${index}`}
+                      />
+                     </div>
                     </SwiperSlide>
                   ))}
                 </Swiper>
-               
               </div>
             </div>
           </div>
         </div>
       </div>
-{/* 
+      {/* 
       <Swiper
         spaceBetween={30} 
         slidesPerView={1} 
@@ -103,7 +117,7 @@ const OrmadoKaffeSwiper = () => {
         <SwiperSlide>Slide 3</SwiperSlide>
         <SwiperSlide>Slide 4</SwiperSlide>
       </Swiper> */}
-    
+      
     </>
   );
 };

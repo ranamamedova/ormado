@@ -19,7 +19,12 @@
           background-repeat: no-repeat;
           background-size: contain;
           position: relative;
-          transform: translateY(50px);
+          
+          @media (max-width:1100px){
+            width: 120%;
+            height: 180px;
+            transform: translate(20px,-10px);
+          }
 
           .ormadoKaffeText {
             position: absolute;
@@ -36,6 +41,10 @@
               font-style: normal;
               line-height: normal;
               font-weight: 900;
+              @media (max-width:1100px){
+                // background-color: red;
+                font-size: 40px;
+              }
             }
             .kaffehaush1 {
               color: var(--nav-a);
@@ -44,6 +53,11 @@
               font-style: normal;
               font-weight: 900;
               line-height: normal;
+              @media (max-width:1100px){
+                // background-color: red;
+                font-size: 50px;
+                line-height:40px;
+              }
             }
             .kaffehausp {
               color: var(--placeholder);
@@ -52,6 +66,10 @@
               font-style: normal;
               font-weight: 500;
               line-height: 19px;
+              @media (max-width:1100px){
+                line-height: 15px;
+                font-size: 10px;
+              }
             }
             .kaffehausa {
               padding: 6px 15px;
@@ -80,56 +98,41 @@
 
 
 
-.mySwiperOrmado {
-  width: 100%;
+.swiperMobil {
+  width: calc(100% - 0%);
   height: auto;
-  border-radius: 150px 0px 0px 150px;
   position: relative;
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-  
-    /* Center slide text vertically */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+  @media (max-width:1100px){
+    .imgSwiperCoffe{
+      width: 90% !important;
+    }
   }
-  
-  .swiper-slide .imgSwiperCoffe {
-    display: flex;
-    justify-content: end;
-    max-width: 550px !important;
-    width: 100% !important;
-    height: 100%;
-    object-fit: cover;
-    transform: translateX(11%);
-    cursor: pointer;
-  }
+
+
   .swiper-pagination {
-    // background-color: red;
     display: flex;
-    flex-direction: column;
-    
-    height: 100%;
-    width: 30px !important;
-    right: 0px !important;
-    left: unset !important;
-    align-items: center;
     justify-content: center;
-    gap: 5px;
-  
-    .swiper-pagination-bullet {
-      width: 11px;
-      height: 11px;
-      background: var(--bg-white);
-      opacity: 1;
-    }
-    .swiper-pagination-bullet-active {
-      width: 11px;
-      height: 11px;
-      background-color: #4e2922;
-    }
+    align-items: flex-end;
+    height: calc(100% - 0%);
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .swiper-pagination-bullet {
+    background: #fff;
+    width: 9px;
+    height: 9px;
+    display: block;
+    opacity: 0.8;
+    transition: all 0.3s;
+    border-radius: 10px;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: #4e2922;
+    opacity: 1;
+    height: 30px;
+    box-shadow: rgba(0, 0, 0, 0.25);
   }
 }
 

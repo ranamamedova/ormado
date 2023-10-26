@@ -24,7 +24,6 @@ const Home = () => {
       <OrmadoKaffeSwiper />
       <EnjoyNewCoffe />
       <ProductCards/>
-      <Payments />
       <TestDetails />
       <Payments />
       <WhyUs />

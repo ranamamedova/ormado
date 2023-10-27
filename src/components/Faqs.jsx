@@ -29,7 +29,7 @@ const Faqs = () => {
         aria-expanded="true"
         aria-controls="collapseOne"
       >
-       What is Webflow and why is it the best website builder? 
+      <h6> What is Webflow and why is it the best website builder? </h6>
       </button>
 
     </h2>
@@ -39,7 +39,7 @@ const Faqs = () => {
       data-bs-parent="#accordionExample"
     >
       <div className="accordion-body">
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat, veritatis exercitationem commodi sed, voluptatum ullam quisquam laborum beatae dolor iure rem dicta natus animi vero quibusdam, consectetur soluta rerum voluptas placeat adipisci est officiis incidunt. Architecto, eveniet?
+   <p className='lorem1'>   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat, veritatis exercitationem commodi sed, voluptatum ullam quisquam laborum beatae dolor iure rem dicta natus animi vero quibusdam, consectetur soluta rerum voluptas placeat adipisci est officiis incidunt. Architecto, eveniet?</p>
       </div>
     </div>
   </div>
@@ -53,7 +53,7 @@ const Faqs = () => {
         aria-expanded="false"
         aria-controls="collapseTwo"
       >
-       What is your favorite template from BRIX Templates?
+   <h6>    What is your favorite template from BRIX Templates?</h6>
       </button>
     </h2>
     <div
@@ -62,7 +62,7 @@ const Faqs = () => {
       data-bs-parent="#accordionExample"
     >
       <div className="accordion-body">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ex voluptas facilis est illo quis quos iste at magnam qui excepturi ipsa assumenda, ipsam ducimus voluptates natus distinctio provident! Debitis dolore doloribus eveniet animi officiis omnis ad tenetur quae blanditiis!
+     <p className='lorem1'> Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ex voluptas facilis est illo quis quos iste at magnam qui excepturi ipsa assumenda, ipsam ducimus voluptates natus distinctio provident! Debitis dolore doloribus eveniet animi officiis omnis ad tenetur quae blanditiis!</p>
       </div>
     </div>
   </div>
@@ -76,7 +76,7 @@ const Faqs = () => {
         aria-expanded="false"
         aria-controls="collapseThree"
       >
-        How do you clone a Webflow Template from the Showcase?
+       <h6> How do you clone a Webflow Template from the Showcase?</h6>
       </button>
     </h2>
     <div
@@ -85,8 +85,8 @@ const Faqs = () => {
       data-bs-parent="#accordionExample"
     >
       <div className="accordion-body">
-       Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto delectus nobis saepe repellendus magni eligendi veniam nostrum illum rerum quam, unde quod, reiciendis officiis suscipit dignissimos facilis cumque explicabo tenetur culpa sed labore blanditiis quia. Eveniet dignissimos harum consequuntur exercitationem?
-        overflow.
+    <p className='lorem1'>   Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto delectus nobis saepe repellendus magni eligendi veniam nostrum illum rerum quam, unde quod, reiciendis officiis suscipit dignissimos facilis cumque explicabo tenetur culpa sed labore blanditiis quia. Eveniet dignissimos harum consequuntur exercitationem?
+        overflow.</p>
       </div>
     </div>
   </div>
@@ -102,7 +102,7 @@ const Faqs = () => {
         aria-expanded="false"
         aria-controls="collapseThree"
       >
-        How do you clone a Webflow Template from the Showcase?
+    <h6>    How do you clone a Webflow Template from the Showcase?</h6>
       </button>
     </h2>
     <div
@@ -111,8 +111,8 @@ const Faqs = () => {
       data-bs-parent="#accordionExample"
     >
       <div className="accordion-body">
-       Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto delectus nobis saepe repellendus magni eligendi veniam nostrum illum rerum quam, unde quod, reiciendis officiis suscipit dignissimos facilis cumque explicabo tenetur culpa sed labore blanditiis quia. Eveniet dignissimos harum consequuntur exercitationem?
-        overflow.
+      <p className='lorem1'> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto delectus nobis saepe repellendus magni eligendi veniam nostrum illum rerum quam, unde quod, reiciendis officiis suscipit dignissimos facilis cumque explicabo tenetur culpa sed labore blanditiis quia. Eveniet dignissimos harum consequuntur exercitationem?
+        overflow.</p>
       </div>
     </div>
   </div>

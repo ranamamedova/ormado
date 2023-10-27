@@ -4,7 +4,7 @@
         "photo":"https://s3-alpha-sig.figma.com/img/6e45/b968/56768b5667850b49e9df0c47f647648b?Expires=1698624000&Signature=mHWEZZsBqy0W1JWfceSH1SQpykzulVe1qoXWad4ZQki3SU-Oj0f3G5sK-ZXE4MVHD6aqyIXksYc74fYyvPUQ8xPrHk0BqkUpmZJSXQ5Kyu7OGd~ZZtTvjazB3dSJTxKvsoLFEpot4BJIp9wM2sGfjeIRU~Wh-M38xL8jL5dW0MRM8qnJw0J0vqGExpOnZI97x7Pao~NR9Kebu24DXJTZxLQx2eiOLiXT30rF84zd362F7vs~37IzUbCD5IGRfGZ3cW8m-f-m4uPbFWDQd7M84O9AF~yUesQ2SzYheRfunRddJK~voJIAgLuMH9LUxq5u6MdfEqT7qyT7X9umxgu1Jw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
         "title":"Cake",
         "desc":"Et blandit non sit ac egestas risus non.",
-        "price":"20$"
+        "price":"20.99$"
     },
     {
         "id":2,

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 import logo from "../assets/img/logo.png";
 const Navbar = () => {
   // NAV ACTIVE COLOR
@@ -513,27 +514,27 @@ const Navbar = () => {
           <ul>
             <li>
               {" "}
-              <a
-                href="#react"
+              <NavLink
+                to="/"
                 className={`notactive ${active == 0 ? "active" : ""}`}
                 onClick={() => {
                   setActive(0);
                 }}
               >
                 HOME
-              </a>
+              </NavLink>
             </li>
             <li>
               {" "}
-              <a
-                href="#react"
+              <NavLink
+                to="/product"
                 className={`notactive ${active == 1 ? "active" : ""}`}
                 onClick={() => {
                   setActive(1);
                 }}
               >
                 PRODUCT
-              </a>
+              </NavLink>
             </li>
             <li>
               {" "}
@@ -561,15 +562,15 @@ const Navbar = () => {
             </li>
             <li>
               {" "}
-              <a
-                href="#react"
+              <NavLink
+                to="/career"
                 className={`notactive ${active == 4 ? "active" : ""}`}
                 onClick={() => {
                   setActive(4);
                 }}
               >
                 CAREER
-              </a>
+              </NavLink>
             </li>
             <li>
               {" "}
@@ -597,15 +598,15 @@ const Navbar = () => {
             </li>
             <li>
               {" "}
-              <a
-                href="#react"
+              <NavLink
+                to="/contact"
                 className={`notactive ${active == 7 ? "active" : ""}`}
                 onClick={() => {
                   setActive(7);
                 }}
               >
                 CONTACT
-              </a>
+              </NavLink>
             </li>
           </ul>
         </nav>

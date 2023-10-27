@@ -3,7 +3,6 @@ import EnjoyNewCoffe from "./EnjoyNewCoffe";
 import OrmadoKaffeSwiper from "./OrmadoKaffeSwiper";
 import ProductCards from "./ProductCards";
 import Payments from "./Payments";
-import Navbar from "../components/Navbar";
 import TestDetails from "./TestDetails";
 import Franchise from "./Franchise";
 import Blog from "./Blog/Blog";
@@ -19,12 +18,10 @@ import Faqs from "./Faqs";
 const Home = () => {
   return (
     <>
-     
-      <Navbar />
+    
       <OrmadoKaffeSwiper />
       <EnjoyNewCoffe />
       <ProductCards/>
-      <Payments />
       <TestDetails />
       <Payments />
       <WhyUs />

@@ -19,7 +19,12 @@
           background-repeat: no-repeat;
           background-size: contain;
           position: relative;
-          transform: translateY(50px);
+
+          @media (max-width: 1100px) {
+            width: 120%;
+            height: 180px;
+            transform: translate(20px, -10px);
+          }
 
           .ormadoKaffeText {
             position: absolute;
@@ -28,7 +33,7 @@
             top: 0;
             left: 50%;
             transform: translate(-50%, 0);
-            
+
             .ormadoh1 {
               color: var(--cart-total);
               font-family: Montserrat;
@@ -36,6 +41,9 @@
               font-style: normal;
               line-height: normal;
               font-weight: 900;
+              @media (max-width: 1100px) {
+                font-size: 40px;
+              }
             }
             .kaffehaush1 {
               color: var(--nav-a);
@@ -44,6 +52,10 @@
               font-style: normal;
               font-weight: 900;
               line-height: normal;
+              @media (max-width: 1100px) {
+                font-size: 50px;
+                line-height: 40px;
+              }
             }
             .kaffehausp {
               color: var(--placeholder);
@@ -52,6 +64,10 @@
               font-style: normal;
               font-weight: 500;
               line-height: 19px;
+              @media (max-width: 1100px) {
+                line-height: 15px;
+                font-size: 10px;
+              }
             }
             .kaffehausa {
               padding: 6px 15px;
@@ -66,6 +82,10 @@
               line-height: normal;
               position: absolute;
               bottom: -10px;
+              @media (max-width: 880px) {
+                padding: 6px 12px;
+                font-size: x-small;
+              }
             }
           }
         }
@@ -74,63 +94,161 @@
         max-width: 520px;
         width: 100%;
       }
+      .swiperCol {
+        @media (max-width: 768px) {
+          display: none;
+        }
+      }
+      .swiperMobil {
+        width: calc(100% - 0%);
+        height: auto;
+        position: relative;
+
+        @media (max-width: 1100px) {
+          .imgSwiperCoffe {
+            width: 90% !important;
+          }
+        }
+
+        .swiperOpacity {
+          display: none;
+        }
+        @media (max-width: 768px) {
+          .swiperImgBox {
+            width: 100%;
+            height: 360px;
+            background-image: url("../assets/img/mobileswiper.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            .swiperOpacity {
+              position: absolute;
+              top: 0;
+              left: 0;
+              bottom: 0;
+              right: 0;
+              background: rgba(0, 0, 0, 0.63);
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+              .swiperMobileContainer {
+                .ormadoh1Mobile {
+                  color: var(--cart-total);
+                  font-family: Montserrat;
+                  font-size: 35px;
+                  font-style: normal;
+                  line-height: normal;
+                  font-weight: 900;
+                }
+
+                .kaffehaush1Mobile {
+                  color: var(--bg-white);
+                  font-family: Montserrat;
+                  font-size: 45px;
+                  font-style: normal;
+                  font-weight: 900;
+                  line-height: normal;
+                }
+                .kaffehauspMobile {
+                  max-width: 400px;
+                  width: 100%;
+                  color: var(--bg-white);
+                  font-family: Montserrat;
+                  font-size: 12.9px;
+                  font-style: normal;
+                  font-weight: 500;
+                  line-height: 19px;
+                  transform: translateY(-6px);
+                }
+                .kaffehausaBox {
+                  transform: translateY(-30px);
+                  .kaffehausaMobile {
+                    padding: 6px 12px;
+                    background-color: var(--cart-total);
+                    border-radius: 20px 20px 20px 20px;
+                    color: var(--bg-white);
+                    text-decoration: none;
+                    font-family: Montserrat;
+                    font-size: x-small;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                  }
+                }
+              }
+            }
+          }
+          .imgSwiperCoffe {
+            display: none;
+          }
+        }
+
+        .swiper-pagination {
+          display: flex;
+          justify-content: center;
+          align-items: flex-end;
+          height: calc(100% - 0%);
+          flex-direction: column;
+          gap: 10px;
+        }
+
+        .swiper-pagination-bullet {
+          background: #fff;
+          width: 9px;
+          height: 9px;
+          display: block;
+          opacity: 0.8;
+          transition: all 0.3s;
+          border-radius: 10px;
+        }
+        .swiper-pagination-bullet-active {
+          background-color: #4e2922;
+          opacity: 1;
+          height: 30px;
+          box-shadow: rgba(0, 0, 0, 0.25);
+          @media (max-width: 768px) {
+            background-color: var(--cart-total);
+          }
+        }
+      }
+      .arrowDownMobile {
+        display: none;
+        @media (max-width: 768px) {
+          height: 15vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          // width: 100px;
+          // height: 100px;
+          // background-color: #3498db;
+          color: #fff;
+          text-align: center;
+          line-height: 100px;
+          font-size: 18px;
+          position: relative;
+          animation: shake 2s ;
+
+          @keyframes shake {
+            0% {
+              transform: translateY(0);
+            }
+            25% {
+              transform: translateY(-10px);
+            }
+            50% {
+              transform: translateY(10px);
+            }
+            75% {
+              transform: translateY(-10px);
+            }
+            100% {
+              transform: translateY(0);
+            }
+          }
+        }
+      }
     }
   }
 }
-
-
-
-.mySwiperOrmado {
-  width: 100%;
-  height: auto;
-  border-radius: 150px 0px 0px 150px;
-  position: relative;
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-  
-    /* Center slide text vertically */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .swiper-slide .imgSwiperCoffe {
-    display: flex;
-    justify-content: end;
-    max-width: 550px !important;
-    width: 100% !important;
-    height: 100%;
-    object-fit: cover;
-    transform: translateX(11%);
-    cursor: pointer;
-  }
-  .swiper-pagination {
-    // background-color: red;
-    display: flex;
-    flex-direction: column;
-    
-    height: 100%;
-    width: 30px !important;
-    right: 0px !important;
-    left: unset !important;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-  
-    .swiper-pagination-bullet {
-      width: 11px;
-      height: 11px;
-      background: var(--bg-white);
-      opacity: 1;
-    }
-    .swiper-pagination-bullet-active {
-      width: 11px;
-      height: 11px;
-      background-color: #4e2922;
-    }
-  }
-}
-
-

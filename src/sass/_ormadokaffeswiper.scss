@@ -83,7 +83,6 @@
               position: absolute;
               bottom: -10px;
               @media (max-width: 880px) {
-                background-color: red;
                 padding: 6px 12px;
                 font-size: x-small;
               }
@@ -97,7 +96,6 @@
       }
       .swiperCol {
         @media (max-width: 768px) {
-          background-color: red;
           display: none;
         }
       }
@@ -111,6 +109,10 @@
             width: 90% !important;
           }
         }
+
+        .swiperOpacity {
+          display: none;
+        }
         @media (max-width: 768px) {
           .swiperImgBox {
             width: 100%;
@@ -120,18 +122,66 @@
             background-repeat: no-repeat;
             background-size: cover;
             position: relative;
-            .swiperOpacity{
+            .swiperOpacity {
               position: absolute;
               top: 0;
               left: 0;
               bottom: 0;
               right: 0;
               background: rgba(0, 0, 0, 0.63);
-              
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+              .swiperMobileContainer {
+                .ormadoh1Mobile {
+                  color: var(--cart-total);
+                  font-family: Montserrat;
+                  font-size: 35px;
+                  font-style: normal;
+                  line-height: normal;
+                  font-weight: 900;
+                }
+
+                .kaffehaush1Mobile {
+                  color: var(--bg-white);
+                  font-family: Montserrat;
+                  font-size: 45px;
+                  font-style: normal;
+                  font-weight: 900;
+                  line-height: normal;
+                }
+                .kaffehauspMobile {
+                  max-width: 400px;
+                  width: 100%;
+                  color: var(--bg-white);
+                  font-family: Montserrat;
+                  font-size: 12.9px;
+                  font-style: normal;
+                  font-weight: 500;
+                  line-height: 19px;
+                  transform: translateY(-6px);
+                }
+                .kaffehausaBox {
+                  transform: translateY(-30px);
+                  .kaffehausaMobile {
+                    padding: 6px 12px;
+                    background-color: var(--cart-total);
+                    border-radius: 20px 20px 20px 20px;
+                    color: var(--bg-white);
+                    text-decoration: none;
+                    font-family: Montserrat;
+                    font-size: x-small;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                  }
+                }
+              }
             }
           }
           .imgSwiperCoffe {
-           display: none;
+            display: none;
           }
         }
 
@@ -158,6 +208,45 @@
           opacity: 1;
           height: 30px;
           box-shadow: rgba(0, 0, 0, 0.25);
+          @media (max-width: 768px) {
+            background-color: var(--cart-total);
+          }
+        }
+      }
+      .arrowDownMobile {
+        display: none;
+        @media (max-width: 768px) {
+          height: 15vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          // width: 100px;
+          // height: 100px;
+          // background-color: #3498db;
+          color: #fff;
+          text-align: center;
+          line-height: 100px;
+          font-size: 18px;
+          position: relative;
+          animation: shake 2s ;
+
+          @keyframes shake {
+            0% {
+              transform: translateY(0);
+            }
+            25% {
+              transform: translateY(-10px);
+            }
+            50% {
+              transform: translateY(10px);
+            }
+            75% {
+              transform: translateY(-10px);
+            }
+            100% {
+              transform: translateY(0);
+            }
+          }
         }
       }
     }

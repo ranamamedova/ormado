@@ -23,7 +23,7 @@ const OrmadoKaffeSwiper = () => {
       <div className="ormadoKaffeSwiper my-2">
         <div className="container-fluid">
           <div className="row">
-            <div className="col-6 ">
+            <div className="col-6 col-sm-6 col-md-6 col-lg-6 swiperCol">
               <div
                 className="d-flex justify-content-center align-items-center"
                 style={{ height: "70vh" }}
@@ -52,7 +52,7 @@ const OrmadoKaffeSwiper = () => {
                 </div>
               </div>
             </div>
-            <div className="col-6 ">
+            <div className="col-12 col-sm-12 col-md-6 col-lg-6 ">
               <div className="d-flex justify-content-end arrowDown">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -68,16 +68,6 @@ const OrmadoKaffeSwiper = () => {
                     fill="#E3B142"
                   />
                 </svg>
-                {/* <Swiper
-                  slidesPerView={1}
-                  modules={[Pagination]}
-                  className="mySwiperOrmado"
-                  pagination={{
-                    clickable: true,
-                  }}
-                >
-                 
-                </Swiper> */}
                 <Swiper
                   onSlideChange={handleSlideChange}
                   spaceBetween={30}
@@ -88,12 +78,18 @@ const OrmadoKaffeSwiper = () => {
                 >
                   {images.map((image, index) => (
                     <SwiperSlide key={index}>
-                     <div className="d-flex justify-content-end">
+                     <div className="d-flex justify-content-end swiperImgBox">
                      <img
                         src={image}
                         className="imgSwiperCoffe"
                         alt={`Slide ${index}`}
                       />
+                      <p>
+                        
+                      </p>
+                      <div className="swiperOpacity">
+                        test
+                      </div>
                      </div>
                     </SwiperSlide>
                   ))}

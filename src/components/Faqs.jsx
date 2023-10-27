@@ -76,7 +76,7 @@ const Faqs = () => {
         aria-expanded="false"
         aria-controls="collapseThree"
       >
-       <h6> How do you clone a Webflow Template from the Showcase?</h6>
+       <h6 > How do you clone a Webflow Template from the Showcase?</h6>
       </button>
     </h2>
     <div
@@ -102,7 +102,7 @@ const Faqs = () => {
         aria-expanded="false"
         aria-controls="collapseThree"
       >
-    <h6>    How do you clone a Webflow Template from the Showcase?</h6>
+    <h6 id='last'>    How do you clone a Webflow Template from the Showcase?</h6>
       </button>
     </h2>
     <div

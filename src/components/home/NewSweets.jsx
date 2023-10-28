@@ -26,7 +26,7 @@ const NewSweets = () => {
               <div className="swiper-background"></div>
               <div className="swiper-text container">
                 <h1 className='mb-3'>NEW <span>SWEETS</span></h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam </p>
+                <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam </p>
             </div>
             </div></SwiperSlide>
         <SwiperSlide>

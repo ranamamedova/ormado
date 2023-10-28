@@ -194,8 +194,10 @@
               }
           }
           p{
-              width: 60%;
-              font-size: 18px ;
+              width: 80%;
+              font-size: 14px ;
+              text-align: center;
+              font-family: Montserrat;
           }
       }
           .swiper-background{
@@ -221,15 +223,17 @@
           justify-content: center;
           flex-direction: column;
           h1{
-              font-size: 30px;
+              font-size: 40px;
               margin-bottom: 10px !important;
               span{
                   color: #E3B142;
               }
           }
           p{
-              width: 60%;
-              font-size: 15px ;
+            width: 80%;
+            font-size: 13px ;
+            text-align: center;
+            font-family: Montserrat;
           }
       }
           .swiper-background{
@@ -245,6 +249,24 @@
  .mySwiper3{
   .swiper-slide{
     .swiper-main{
+      .swiper-text{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        h1{
+            font-size: 35px;
+            margin-bottom: 10px !important;
+            span{
+                color: #E3B142;
+            }
+        }
+        p{
+          width: 90%;
+          font-size: 12px ;
+          text-align: center;
+          font-family: Montserrat;
+        }
+    }
       .img{
         img{
           border-radius: 32px !important;
@@ -274,14 +296,16 @@
             justify-content: center;
             flex-direction: column;
             h1{
-                font-size: 20px;
+                font-size: 30px;
                 span{
                     color: #E3B142;
                 }
             }
             p{
-                width: 60%;
-                font-size: 12px ;
+                width: 80%;
+                font-size: 10px ;
+                text-align: center;
+                font-family: Montserrat;
             }
         }
       }
@@ -311,9 +335,11 @@
                 }
             }
             p{
-                width: 80%;
-                font-size: 12px ;
+                width: 90%;
+                font-size: 10px ;
                 line-height:normal;
+                text-align: center;
+                font-family: Montserrat;
             }
         }
       }
@@ -345,6 +371,7 @@
             p{
                 width: 90%;
                 font-size: 10px ;
+                
             }
         }
       }

@@ -43,59 +43,58 @@ const data = [
 const Blog = () => {
   const owlCarousel = useRef();
 
- 
   console.log(window.innerWidth);
   const options = {
     autoplay: false,
     items: 3,
     nav: true,
-  
+
     rewind: true,
     autoplay: false,
-    responsive:{
-      0:{
-          items:1
+    responsive: {
+      0: {
+        items: 1,
       },
-      600:{
-          items:2
+      600: {
+        items: 2,
       },
-      1000:{
-          items:3
+      1000: {
+        items: 3,
       },
-      1200:{
-        items:3
-    }
-  }
+      1200: {
+        items: 3,
+      },
+    },
   };
 
   return (
     <div className="blog">
       <div className="title">
-        <h2>Our recent <span>Blog</span></h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
-           Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat.</p>
+        <h3>
+          OUR RECENT <span>BLOG</span>
+        </h3>
+        <p className="mt-4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc
+          ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus
+          amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus
+          tempor, ac nunc libero urna, feugiat.
+        </p>
       </div>
       <div className="container">
         <div className="row">
           <div className="d-flex justify-content-between align-items-center">
-         
             <OwlCarousel
               ref={owlCarousel}
               {...options}
               className="owl-theme"
               loop
-              margin={67}
+              margin={20}
               nav
             >
-           
               {data.map((item, index) => (
                 <BlogCard key={index} item={item} />
               ))}
-              
             </OwlCarousel>
-           
-            
-           
           </div>
         </div>
       </div>

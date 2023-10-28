@@ -538,27 +538,27 @@ const Navbar = () => {
             </li>
             <li>
               {" "}
-              <a
-                href="#react"
+              <NavLink
+                to="/ourstory"
                 className={`notactive ${active == 2 ? "active" : ""}`}
                 onClick={() => {
                   setActive(2);
                 }}
               >
                 OUR STORY
-              </a>
+              </NavLink>
             </li>
             <li>
               {" "}
-              <a
-                href="#react"
+              <NavLink
+                to="/franchise"
                 className={`notactive ${active == 3 ? "active" : ""}`}
                 onClick={() => {
                   setActive(3);
                 }}
               >
                 FRANCHISE
-              </a>
+              </NavLink>
             </li>
             <li>
               {" "}
@@ -574,27 +574,27 @@ const Navbar = () => {
             </li>
             <li>
               {" "}
-              <a
-                href="#react"
+              <NavLink
+                to="/reserve"
                 className={`notactive ${active == 5 ? "active" : ""}`}
                 onClick={() => {
                   setActive(5);
                 }}
               >
                 RESERVE
-              </a>
+              </NavLink>
             </li>
             <li>
               {" "}
-              <a
-                href="#react"
+              <NavLink
+                to="/searchbranch"
                 className={`notactive ${active == 6 ? "active" : ""}`}
                 onClick={() => {
                   setActive(6);
                 }}
               >
                 SEARCH A BRANCH
-              </a>
+              </NavLink>
             </li>
             <li>
               {" "}

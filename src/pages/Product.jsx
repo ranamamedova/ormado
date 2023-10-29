@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
+import BreadCrumb from './BreadCrumb'
 
 const Product = () => {
+
   return (
-    <div>Product</div>
+    <>
+    <BreadCrumb title="PRODUCT DETAILS"/>
+    </>
   )
 }
 

@@ -12,6 +12,7 @@
   .card {
     border: 1px solid #e3b142 !important;
     position: relative;
+    border-radius: 20px;
     &::before {
       content: "";
       width: 50px;

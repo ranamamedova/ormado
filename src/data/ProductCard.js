@@ -2,19 +2,19 @@ let productCard = [
 
     {
       id:0,
-      title:"Ormado Energy Drink",
+      title:"Ormado Energy Drink1",
       price:20.00,
       read:"Read More"
     },
     {
       id:1,
-      title:"Ormado Energy Drink",
+      title:"Ormado Energy Drink2",
       price:20.00,
       read:"Read More"
     },
     {
       id:2,
-      title:"Ormado Energy Drink",
+      title:"Ormado Energy Drink3",
       price:20.00,
       read:"Read More"
     },

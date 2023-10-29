@@ -15,7 +15,6 @@ const ProductCards = () => {
   const [data] = useState(productCard)
   return (
   <>
-    {console.log(data)}
     <div className="product-cards">
       <h2 className="title-section mb-5 ms-3">
         Your <span>Ormado</span>

@@ -134,16 +134,20 @@ header {
             }
           }
           .lang {
-            .langBox {
-              span {
-                color: var(--sign-a);
-                font-family: Montserrat;
-                font-size: small;
-                font-style: normal;
-                font-weight: 500;
-                line-height: normal;
+              .langBox {
+                select{
+                  border: none;
+                  outline: none !important;
+                  color: var(--sign-a);
+                  font-family: Montserrat;
+                  font-size: small;
+                  font-style: normal;
+                  font-weight: 500;
+                  line-height: normal;
+                  cursor: pointer;
+                }
               }
-            }
+            
           }
         }
       }
@@ -236,14 +240,18 @@ header {
             .heart {
               display: none;
             }
-            .lang {
-              transform: translateX(5px);
-              .langBox {
-                span {
-                  font-size: medium;
-                }
-              }
-            }
+
+
+            // .lang {
+            //   transform: translateX(5px);
+            //   .langBox {
+            //     span {
+            //       font-size: medium;
+            //     }
+            //   }
+            // }
+
+            
             .signUp {
               display: none;
             }

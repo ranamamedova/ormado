@@ -5,8 +5,10 @@ const Navbar = () => {
   // NAV ACTIVE COLOR
   const [active, setActive] = useState();
 
-  const langTxt = "AZERBAIJAN";
-  const langTxtSlice = window.innerWidth < 768 ? langTxt.slice(0, 2) : langTxt;
+  const langArr = ["AZERBAIJAN","ENGLISH","GERMANY"];
+  const langArrSlice = langArr.map(fd=>{
+    return window.innerWidth < 768 ? fd.slice (0,2) : fd
+  })
 
   return (
     <>
@@ -111,7 +113,7 @@ const Navbar = () => {
                   </div>
                   <div className="lang">
                     <div className="langBox">
-                      <span>
+                      {/* <span>
                         {langTxtSlice}
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -129,7 +131,14 @@ const Navbar = () => {
                             stroke-linejoin="round"
                           />
                         </svg>
-                      </span>
+                      </span> */}
+                      <select>
+                         {
+                          langArrSlice.map((fd)=>{
+                            return <option>{fd}</option>
+                          })
+                         }
+                      </select>
                     </div>
                   </div>
 

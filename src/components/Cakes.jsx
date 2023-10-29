@@ -9,7 +9,6 @@ import { Navigation } from "swiper/modules";
 
 const Cakes = () => {
   const [data, setData] = useState(product);
-  console.log(data);
 
   //     const mapproduct = ()=>{
   //     data.map((item) => {

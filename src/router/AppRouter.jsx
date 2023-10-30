@@ -9,6 +9,7 @@ import OurStory from '../pages/OurStory'
 import Franchise from '../pages/Franchise'
 import Reserve from '../pages/Reserve'
 import SearchBranch from '../pages/SearchBranch'
+import Footer from "../components/home/Footer"
 
 const AppRouter = () => {
   return (
@@ -25,6 +26,7 @@ const AppRouter = () => {
     <Route  path='/reserve' element={<Reserve/>}></Route>
     <Route  path='/searchbranch' element={<SearchBranch/>}></Route>
    </Routes>
+   <Footer/>
    </BrowserRouter>
    </>
   )   

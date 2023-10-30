@@ -5,10 +5,24 @@ const Navbar = () => {
   // NAV ACTIVE COLOR
   const [active, setActive] = useState();
 
+  // NAVBAR SCROLL BG
+  const [navbarBg,setNavbarBg] = useState(false)
+
+    const scrollNavbar = () =>{
+      if (window.scrollY >= 200) {
+          setNavbarBg(true)
+      } else {
+        setNavbarBg(false)
+      }
+    }
+
+
   const langArr = ["AZERBAIJAN","ENGLISH","GERMANY"];
+
   const langArrSlice = langArr.map(fd=>{
     return window.innerWidth < 768 ? fd.slice (0,2) : fd
   })
+     window.addEventListener('scroll',scrollNavbar)
 
   return (
     <>
@@ -158,7 +172,7 @@ const Navbar = () => {
           </div>
         </div>
         <hr className="destkopHr" />
-        <nav>
+        <nav >
           <div className="hamburgerMenu">
             <button
               class="btn"

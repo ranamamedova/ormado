@@ -30,7 +30,7 @@ const Home = () => {
       <Cakes />
       <Franchise />
       <Blog />
-      {/* <Footer /> */}
+      <Footer />
 
     </>
   );

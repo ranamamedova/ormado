@@ -4,6 +4,18 @@ header {
     color: grey;
   }
   .container-fluid {
+    .navbarActive{
+      background-color: #fff;
+      position: fixed;
+      top: 0; 
+      left: 0;
+      right: 0;
+      transition: 250ms;
+      z-index: 10;
+      width: 101%;
+      border-bottom: 1px solid grey;
+      transform: translateY(0px);
+    }
     .row {
       padding: 10px;
       .d-flex {

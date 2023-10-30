@@ -28,7 +28,7 @@ const Navbar = () => {
     <>
       <header>
         <div className="container-fluid">
-          <div className="row align-items-center">
+          <div className={`row align-items-center ${navbarBg ? "row align-items-center navbarActive" : "row align-items-center"}`}>
             <div className="col-7 ">
               <div className="d-flex align-items-center justify-content-between">
                 <div className="logo">

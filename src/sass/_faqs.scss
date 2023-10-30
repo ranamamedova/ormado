@@ -147,7 +147,21 @@
                 margin-bottom: 40px;
 
                 .accordion-item {
-                    box-shadow: 1.56px 1px 4.454px 1px rgba(115, 113, 113, 0.2) !important;
+                      
+                    
+                    box-shadow: 0px 2.13778px 5.70075px 0px rgba(0, 0, 0, 0.20);
+                    margin-bottom: 15px;
+                    border-radius: 13.988px !important;
+
+
+
+                    .accordion-body {
+                        position: relative;
+                        margin-top: -15px;
+                        z-index: 999999 !important;
+
+
+                    }
 
 
                     .lorem1 {
@@ -186,9 +200,13 @@
 
                 }
 
+
+                
+
                 h6 {
                     font-family: Montserrat;
                     font-size: 15px !important;
+                    margin-top: 8px !important;
 
 
 
@@ -200,14 +218,14 @@
                         font-size: 12px !important;
                     }
 
-                   
+
 
                     @media(max-width:421px) {
                         font-size: 11px !important;
                     }
 
                     @media(max-width:415px) {
-                      font-size: 10.5px !important;
+                        font-size: 10.5px !important;
                     }
 
                     @media(max-width:395px) {
@@ -233,7 +251,29 @@
 
 
                 .accordion-header {
-                    margin-bottom: 0;
+                    // margin-bottom: 10px !important;
+
+
+                    #one {
+                        border-radius: 11.988px !important;
+                        // box-shadow: 0px 1.13778px 3.70075px 0px rgba(130, 54, 54, 0.2);
+
+                    }
+
+                    #two {
+                        border-radius: 11.988px !important;
+                    }
+
+                    #three {
+                        border-radius: 11.988px !important;
+                    }
+
+                    #four {
+                        border-radius: 11.988px !important;
+                    }
+
+
+
 
 
                     .accordion-button {
@@ -244,7 +284,7 @@
                         --bs-accordion-btn-icon: none;
                         --bs-accordion-btn-active-icon: none;
                         --bs-accordion-btn-icon-transform: rotate(90deg) !important;
-                        border-radius: 50% !important;
+
 
 
                     }
@@ -252,7 +292,7 @@
                     .accordion-button::after {
                         position: absolute;
                         content: "\203A";
-                        box-shadow: 1.56px 1px 4.454px 1px rgba(115, 113, 113, 0.2) !important;
+                        box-shadow: 1.56px 1px 4.454px 1px rgba(156, 155, 155, 0.2) !important;
                         margin: 0px !important;
                         padding-left: 3px !important;
                         padding-bottom: 3px !important;
@@ -268,6 +308,7 @@
                         font-size: 25px !important;
                         color: var(--roundplayarrow);
                         background-color: #FFF;
+                        margin-top: 8px !important;
 
 
 
@@ -332,7 +373,7 @@
 
                     }
 
-                    
+
                     .accordion-button:not(.collapsed)::after {
                         position: absolute;
                         font-size: 25px !important;
@@ -362,6 +403,7 @@
                         @media(max-width:391px) {
                             right: 13px !important;
                         }
+
                         @media(max-width:361px) {
                             right: 6px !important;
                         }
@@ -369,21 +411,7 @@
 
                     }
 
-                    #one {
-                        margin-top: 20px;
-                    }
 
-                    #two {
-                        margin-top: 20px;
-                    }
-
-                    #three {
-                        margin-top: 20px;
-                    }
-
-                    #four {
-                        margin-top: 20px;
-                    }
                 }
 
             }

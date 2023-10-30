@@ -9,10 +9,10 @@ import dowlandpng2 from "../../assets/img/download2.png"
 const Footer = () => {
     return (
         <div className='footer mt-5'>
-            <div className="">
                 <footer className="pt-4">
-                    <div className="row g-5">
-                        <div className="footer-part1 col-md-3 mb-2 ms-5">
+                    <div className="footer-parts g-3">
+                        <div className="footer-parts-top">
+                        <div className="footer-part1  mb-2 ms-5">
                             <form>
                                 <img src={logo} alt="error" />
                                 <div className="footer-part1-main d-flex flex-column flex-sm-row w-100 gap-2 mt-4">
@@ -26,7 +26,9 @@ const Footer = () => {
                             </div>
                             
                         </div>
-                        <div className="footer-part2 col-6 col-md-2 mb-2">
+                        <div className="footer-parts-23 ">
+                        <div className="footer-part2 mb-2">
+                            <div className="footer-part2-text">
                             <h6>Services</h6>
                             <ul className="nav flex-column">
                                 <li className="nav-item mb-2"><a href="#" className="nav-link p-0 ">Returns</a></li>
@@ -36,32 +38,45 @@ const Footer = () => {
                                 <li className="nav-item mb-2"><a href="#" className="nav-link p-0 ">Blog</a></li>
                                 <li className="nav-item mb-2"><a href="#" className="nav-link p-0 ">Gallery</a></li>
                             </ul>
+                            </div>
                         </div>
-                        <div className="footer-part3 col-6 col-md-2 mb-2">
+                        <div className="footer-part3 mb-2 me-3">
+                            <div className="footer-part3-text">
                             <h6>Contact</h6>
                             <ul className="nav flex-column">
                                 <li className="nav-item mb-2"><a href="#" className="nav-link p-0 ">sweetdeli@gmail.com</a></li>
                                 <li className="nav-item mb-2"><a href="#" className="nav-link p-0 ">+1-2345-6789</a></li>
                                 <li className="nav-item mb-2"><a href="#" className="nav-link p-0 ">123 Ave, New York, USA</a></li>
                             </ul>
+                            </div>
                         </div>
-                        <div className="footer-part4 col-6 col-md-2 mb-2">
+                        </div>
+                        </div>
+                        <div className="footer-parts-45 ">
+                        <div className="footer-part4 mb-2 me-3">
+                            <div className="footer-part4-text">
                             <h6>WE ACCEPT</h6>
                             <ul className="nav flex-column">
+                                <div className="footer-card-part1">
                                 <li className="nav-item mb-2"><a href="#" className="nav-link p-0 ">
                                     <img src={visa} alt="" />
                                 </a></li>
                                 <li className="nav-item mb-2"><a href="#" className="nav-link p-0 ">
                                     <img src={master} alt="" /></a></li>
+                                </div>
+                                <div className="footer-card-part2 ">
                                 <li className="nav-item mb-2"><a href="#" className="nav-link p-0 ">
                                     <img src={maestro} alt="" />
                                 </a></li>
                                 <li className="nav-item mb-2"><a href="#" className="nav-link p-0 ">
                                     <img src={paypal} alt="" />
                                 </a></li>
+                                </div>
                             </ul>
+                            </div>
                         </div>
-                        <div className="footer-part5 col-6 col-md-2 mb-2">
+                        <div className="footer-part5 mb-2 me-3">
+                            <div className="cards">
                             <h6>Download our Mobile App</h6>
                             <ul className="nav flex-column">
                                 <li className="nav-item mb-2 mt-3"><a href="#" className="nav-link p-0 ">
@@ -71,8 +86,12 @@ const Footer = () => {
                                     <img src={dowlandpng2} alt="error" />
                                 </a></li>
                             </ul>
+                            </div>
                         </div>
-                        <div className="footer-icon ms-5">
+                        </div>
+                        
+                    </div>
+                    <div className="footer-icon ms-5">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="35" height="40" viewBox="0 0 129 129" fill="none">
                                     <path d="M117.826 64.2706C117.826 34.7067 93.8325 10.7129 64.2686 10.7129C34.7048 10.7129 10.7109 34.7067 10.7109 64.2706C10.7109 90.1925 29.1348 111.776 53.5571 116.757V80.3379H42.8456V64.2706H53.5571V50.8812C53.5571 40.5445 61.9656 32.136 72.3023 32.136H85.6917V48.2033H74.9802C72.0345 48.2033 69.6244 50.6134 69.6244 53.559V64.2706H85.6917V80.3379H69.6244V117.56C96.671 114.883 117.826 92.067 117.826 64.2706Z" fill="#4E2922" />
                                 </svg>
@@ -83,12 +102,10 @@ const Footer = () => {
                                     <path d="M64.7307 11.0083C35.3124 11.0083 11.4648 34.8559 11.4648 64.2741C11.4648 93.6924 35.3124 117.54 64.7307 117.54C94.149 117.54 117.997 93.6924 117.997 64.2741C117.997 34.8559 94.149 11.0083 64.7307 11.0083ZM51.6916 86.3517H40.9053V51.6401H51.6916V86.3517ZM46.2319 47.3789C42.8251 47.3789 40.6223 44.9653 40.6223 41.9802C40.6223 38.934 42.8917 36.5925 46.3706 36.5925C49.8495 36.5925 51.9802 38.934 52.0468 41.9802C52.0468 44.9653 49.8495 47.3789 46.2319 47.3789ZM91.0862 86.3517H80.2998V67.115C80.2998 62.6373 78.7352 59.5967 74.8345 59.5967C71.855 59.5967 70.085 61.6552 69.3027 63.6361C69.0141 64.3407 68.942 65.3395 68.942 66.3326V86.3462H58.1501V62.7095C58.1501 58.3761 58.0114 54.7529 57.8672 51.6346H67.2386L67.7324 56.4563H67.9488C69.3692 54.1925 72.8482 50.8523 78.6686 50.8523C85.7651 50.8523 91.0862 55.6073 91.0862 65.8277V86.3517Z" fill="#4E2922" />
                                 </svg>
                         </div>
-                    </div>
-                    <div className="footer-end d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-                        <p className='text-center'>© 2023 Company, Inc. All rights reserved.</p>
+                    <div className="footer-end d-flex flex-column flex-mx-row justify-content-between py-3 my-4 border-top">
+                        <p className='text-center'>Copyright © 2023 <a href="https://webluna.az/"> Webluna Software</a> . Bütün hüquqlar qorunur.</p>
                     </div>
                 </footer>
-            </div>
       
         </div>
     )

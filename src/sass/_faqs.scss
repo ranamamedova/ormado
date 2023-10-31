@@ -149,12 +149,16 @@
                 .accordion-item {
                       
                     
-                    box-shadow: 0px 2.13778px 5.70075px 0px rgba(0, 0, 0, 0.20);
+                    box-shadow: 0px 2.13778px 3.70075px 0px rgba(116, 114, 114, 0.2);
                     margin-bottom: 15px;
                     border-radius: 13.988px !important;
 
 
+                    .show{
+                        box-shadow: 0px 3.13778px 7.70075px 0px rgba(35, 35, 35, 0.2);
+                        border-radius: 9px;
 
+                    }
                     .accordion-body {
                         position: relative;
                         margin-top: -15px;

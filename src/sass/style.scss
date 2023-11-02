@@ -18,6 +18,7 @@
   --cakewriting: #4a3024;
   --faqwriting:#A7A4A4;
   --faqcolor:#4E2922;
+  --whyfranchise:#4A3024;
   
 }
 
@@ -55,6 +56,9 @@ body {
 
 // Variable Mixin
 @import "./variable";
+
+// BREAD CRUMB
+@import "./breadcrumb" ;
 
 // Navbar
 @import "./navbar";
@@ -104,8 +108,17 @@ body {
 // SWIPER TESNIMONIALS
 @import "swiper-testimonials";
 
-// BREAD CRUMB
-@import "./breadcrumb" ;
+// NUTRITION PAGE
+@import "./nutrition" ;
+
+
+
+
+
+
+
+@import "pagefranchise";
+
 
 
 .swiperMobil1{

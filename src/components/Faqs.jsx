@@ -18,8 +18,8 @@ const Faqs = () => {
             </h1>
           </div>
 
-          <div className="accordion" id="accordionExample">
-            <div className="accordion-item">
+          <div className="accordion " id="accordionExample">
+            <div className="accordion-item" id="first">
               <h2 className="accordion-header">
                 <button
                   id="one"
@@ -41,8 +41,8 @@ const Faqs = () => {
                 className="accordion-collapse collapse show"
                 data-bs-parent="#accordionExample"
               >
-                <div className="accordion-body">
-                  <p className="lorem1">
+                <div className="accordion-body ">
+                  <p className="lorem1 ">
                     {" "}
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Quaerat, veritatis exercitationem commodi sed, voluptatum
@@ -53,7 +53,7 @@ const Faqs = () => {
                 </div>
               </div>
             </div>
-            <div className="accordion-item">
+            <div className="accordion-item" id="second">
               <h2 className="accordion-header">
                 <button
                   id="two"
@@ -72,7 +72,7 @@ const Faqs = () => {
                 className="accordion-collapse collapse"
                 data-bs-parent="#accordionExample"
               >
-                <div className="accordion-body">
+                <div className="accordion-body ">
                   <p className="lorem1">
                     {" "}
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -85,7 +85,7 @@ const Faqs = () => {
                 </div>
               </div>
             </div>
-            <div className="accordion-item">
+            <div className="accordion-item" id="third">
               <h2 className="accordion-header">
                 <button
                   id="three"
@@ -121,7 +121,7 @@ const Faqs = () => {
               </div>
             </div>
 
-            <div className="accordion-item">
+            <div className="accordion-item" id="fourth">
               <h2 className="accordion-header">
                 <button
                   id="three"

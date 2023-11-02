@@ -5,16 +5,30 @@ const Navbar = () => {
   // NAV ACTIVE COLOR
   const [active, setActive] = useState();
 
+  // NAVBAR SCROLL BG
+  const [navbarBg,setNavbarBg] = useState(false)
+
+    const scrollNavbar = () =>{
+      if (window.scrollY >= 400) {
+          setNavbarBg(true)
+      } else {
+        setNavbarBg(false)
+      }
+    }
+
+
   const langArr = ["AZERBAIJAN","ENGLISH","GERMANY"];
+
   const langArrSlice = langArr.map(fd=>{
     return window.innerWidth < 768 ? fd.slice (0,2) : fd
   })
+     window.addEventListener('scroll',scrollNavbar)
 
   return (
     <>
       <header>
         <div className="container-fluid">
-          <div className="row align-items-center">
+          <div className={`row align-items-center ${navbarBg ? "row align-items-center navbarActive" : "row align-items-center"}`}>
             <div className="col-7 ">
               <div className="d-flex align-items-center justify-content-between">
                 <div className="logo">
@@ -144,7 +158,7 @@ const Navbar = () => {
 
                   <div className="signIn">
                     <div className="signA">
-                      <a href="#react">SIGN IN</a>
+                      <NavLink to="/signin">SIGN IN</NavLink>
                     </div>
                   </div>
                   <div className="signUp">
@@ -158,7 +172,7 @@ const Navbar = () => {
           </div>
         </div>
         <hr className="destkopHr" />
-        <nav>
+        <nav >
           <div className="hamburgerMenu">
             <button
               class="btn"

@@ -1,0 +1,55 @@
+.singin {
+  margin: 0;
+  .container-fluid {
+    .row {
+      gap: 100px;
+      .signImg {
+        position: relative;
+        .logoTitle {
+          position: absolute;
+          top: 20px;
+          max-width: 500px;
+          width: 100%;
+          h2 {
+            color: #fff;
+            text-align: center;
+            font-family: Montserrat;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 700;
+            // line-height: 178.926px; /* 119.284% */
+            letter-spacing: 1.3px;
+          }
+          .logoImg {
+            img {
+              width: 70px;
+            }
+            @include displayCenter;
+            transform: translateX(13px);
+          }
+        }
+      }
+      .formBox {
+        margin-top: 160px;
+        .formTitle {
+          h5 {
+            color: #27272e;
+            font-family: Montserrat;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 136.023%; /* 139.797px */
+          }
+          p {
+            color: #27272e;
+            font-family: 'Inter', sans-serif;
+            font-size: small;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 162.023%; /* 95.153px */
+          }
+        }
+      }
+    }
+  }
+}

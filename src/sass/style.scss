@@ -56,6 +56,9 @@ body {
 // Variable Mixin
 @import "./variable";
 
+// BREAD CRUMB
+@import "./breadcrumb" ;
+
 // Navbar
 @import "./navbar";
 
@@ -104,8 +107,14 @@ body {
 // SWIPER TESNIMONIALS
 @import "swiper-testimonials";
 
-// BREAD CRUMB
-@import "./breadcrumb" ;
+// NUTRITION PAGE
+@import "./nutrition" ;
+
+
+
+
+
+
 
 
 .swiperMobil1{

@@ -10,6 +10,7 @@ import Franchise from '../pages/Franchise'
 import Reserve from '../pages/Reserve'
 import SearchBranch from '../pages/SearchBranch'
 import Footer from "../components/home/Footer"
+import Nutrition from '../pages/Nutrition'
 
 const AppRouter = () => {
   return (
@@ -25,6 +26,7 @@ const AppRouter = () => {
     <Route  path='/franchise' element={<Franchise/>}></Route>
     <Route  path='/reserve' element={<Reserve/>}></Route>
     <Route  path='/searchbranch' element={<SearchBranch/>}></Route>
+    <Route  path='/nutrition' element={<Nutrition/>}></Route>
    </Routes>
    <Footer/>
    </BrowserRouter>

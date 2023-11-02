@@ -11,6 +11,7 @@ import Reserve from '../pages/Reserve'
 import SearchBranch from '../pages/SearchBranch'
 import Footer from "../components/home/Footer"
 import Nutrition from '../pages/Nutrition'
+import SignIn from '../pages/SignIn'
 
 const AppRouter = () => {
   return (
@@ -27,6 +28,7 @@ const AppRouter = () => {
     <Route  path='/reserve' element={<Reserve/>}></Route>
     <Route  path='/searchbranch' element={<SearchBranch/>}></Route>
     <Route  path='/nutrition' element={<Nutrition/>}></Route>
+    <Route  path='/signin' element={<SignIn/>}></Route>
    </Routes>
    <Footer/>
    </BrowserRouter>

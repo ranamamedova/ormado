@@ -158,7 +158,7 @@ const Navbar = () => {
 
                   <div className="signIn">
                     <div className="signA">
-                      <a href="#react">SIGN IN</a>
+                      <NavLink to="/signin">SIGN IN</NavLink>
                     </div>
                   </div>
                   <div className="signUp">

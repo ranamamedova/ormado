@@ -2,7 +2,7 @@
   margin: 0;
   .container-fluid {
     .row {
-      gap: 100px;
+      gap: 140px;
       .signImg {
         position: relative;
         .logoTitle {
@@ -34,7 +34,7 @@
         .formTitle {
           h5 {
             color: #27272e;
-            font-family: Montserrat;
+            font-family: Inter;
             font-size: 20px;
             font-style: normal;
             font-weight: 600;
@@ -43,26 +43,109 @@
           p {
             color: #27272e;
             font-family: "Inter", sans-serif;
-            font-size: small;
+            font-size: 12px;
             font-style: normal;
             font-weight: 500;
-            line-height: 162.023%; 
+            line-height: 162.023%;
           }
         }
         form {
-          background-color: red;
-          max-width: 400px;
+          max-width: 360px;
           width: 100%;
+          
           label {
             color: #425466;
             font-feature-settings: "clig" off, "liga" off;
             font-family: Inter;
-            font-size:12px;
+            font-size: 12px;
             font-style: normal;
             font-weight: 500;
             line-height: normal;
           }
-          
+
+          input {
+            width: 100%;
+            padding: 8px;
+            border-radius: 50px;
+            background-color: #edf2f7;
+            border: none !important;
+            outline: none;
+            &::placeholder {
+              color: #7a828a;
+              font-feature-settings: "clig" off, "liga" off;
+              font-family: Inter;
+              font-size: 11px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 55.058px;
+              // transform: translateX(px);
+            }
+          }
+          .forgotBox {
+            a {
+              color: #777e90;
+              text-align: right;
+              font-feature-settings: "clig" off, "liga" off;
+              font-family: Inter;
+              font-size: 11px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 44.046px;
+              text-decoration: none;
+            }
+          }
+          .checkBox {
+            display: flex;
+            align-items: center !important;
+            input {
+              width: auto;
+              accent-color: #000;
+            }
+            p {
+              transform: translate(4px, 8px);
+              color: #979797;
+              text-align: right;
+              font-feature-settings: "clig" off, "liga" off;
+              font-family: Montserrat;
+              font-size: 11px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 44.046px; /* 109.091% */
+            }
+          }
+          .singInBox {
+            width: 100%;
+            padding: 10px;
+            background-color: #000;
+            @include displayCenter;
+            border-radius: 50px;
+            a {
+              color: #fcfcfd;
+              text-align: center;
+              font-family: DM Sans;
+              font-size: normal;
+              font-style: normal;
+              font-weight: 700;
+              text-decoration: none;
+              letter-spacing: 1px;
+            }
+          }
+          .account {
+            color: #718096;
+            text-align: right;
+            font-family: Inter;
+            font-size: normal;
+            font-style: normal;
+            font-weight: 600;
+            a {
+              color: #141416;
+              font-family: Inter;
+              font-size: normal;
+              font-style: normal;
+              font-weight: 600;
+              text-decoration: none;
+            }
+          }
         }
       }
     }

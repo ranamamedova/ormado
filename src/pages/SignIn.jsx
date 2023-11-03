@@ -10,8 +10,8 @@ const SignIn = () => {
         <div className="container-fluid">
           <div className="row">
             <div className="col-12 col-sm-5  ">
-              <div className="signImg">
-                <img src={login} alt="" className="img-fluid" />
+              <div className="signImg"> 
+                <img src={login} alt="" className="img-fluid " />
                 <div className="logoTitle ">
                   <div className="logoImg">
                     <Link to="/">

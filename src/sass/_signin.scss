@@ -38,16 +38,31 @@
             font-size: 20px;
             font-style: normal;
             font-weight: 600;
-            line-height: 136.023%; /* 139.797px */
+            line-height: 136.023%;
           }
           p {
             color: #27272e;
-            font-family: 'Inter', sans-serif;
+            font-family: "Inter", sans-serif;
             font-size: small;
             font-style: normal;
-            font-weight: 400;
-            line-height: 162.023%; /* 95.153px */
+            font-weight: 500;
+            line-height: 162.023%; 
           }
+        }
+        form {
+          background-color: red;
+          max-width: 400px;
+          width: 100%;
+          label {
+            color: #425466;
+            font-feature-settings: "clig" off, "liga" off;
+            font-family: Inter;
+            font-size:12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+          
         }
       }
     }

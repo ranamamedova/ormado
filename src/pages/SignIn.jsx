@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import login from "../assets/img/login.png";
 import logo from "../assets/img/logo.png";
+import video from "../assets/img/video.png";
 const SignIn = () => {
   return (
     <>
@@ -41,6 +42,13 @@ const SignIn = () => {
           </div>
         </div>
       </section>
+      <div className="container">
+        <div className="row">
+          <div className="col-5">
+          <img src={video} alt="" className="img-fluid" />
+          </div>
+        </div>
+      </div>
     </>
   );
 };

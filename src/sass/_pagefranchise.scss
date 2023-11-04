@@ -1,118 +1,494 @@
+.width-mysize {
+    width: 70% !important;
+
+    @media(max-width:982px) {
+        width: 100% !important;
+    }
+
+    @media(max-width:592px) {
+        width: 100% !important;
+    }
+
+}
+
+
 .MyFranchise {
     width: 100%;
     height: auto;
-    margin-top: 20px;
-    border-radius: 30px !important;
+    margin-top: 25px;
 
 
-    .leftbox {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 50%;
+
+    .mybox {
+
+        width: 100%;
         height: auto;
-        flex-shrink: 0;
-        background-color: var(--whyfranchise);
-        background-image: url("../assets/img/rightlifw.png");
-        background-position: center;
-        background-size: 60px;
-        background-repeat: no-repeat;
-        background-clip: border-box;
-        background-position-x: 550px;
-        background-position-y: 20px;
+        border-radius: 24px;
 
 
-        background-image: url("../assets/img/leftside.png");
-
-
-
-        .innerbox {
-            width: auto;
+        .leftbox {
             height: auto;
+            position: relative;
+            background-color: var(--whyfranchise);
+            border-bottom-left-radius: 30px;
+            border-top-left-radius: 30px;
+
+
+
+
+            .innerbox {
+                position: absolute;
+                width: 100%;
+                height: auto;
+
+
+                .image-one {
+                    position: absolute;
+                    width: 70px;
+                    height: 70px;
+                    top: 20px;
+                    right: 35px;
+
+                    @media(max-width:768px) {
+                        width: 50px;
+                        height: 50px;
+                    }
+
+                    @media(max-width:592px) {
+                        width: 40px;
+                        height: 40px;
+                    }
+
+                    @media(max-width:526px) {
+                        width: 30px;
+                        height: 30px;
+                    }
+
+                    @media(max-width:487px) {
+                        width: 25px;
+                        height: 25px;
+                    }
+
+                    @media(max-width:411px) {
+                        width: 20px;
+                        height: 20px;
+                    }
+                    
+                    @media(max-width:350px) {
+                        width: 16px;
+                        height: 16px;
+                        right: 25px;
+                    }
+
+                    @media(max-width:290px) {
+                        width: 14px;
+                        height: 14px;
+                        right: 20px;
+                    }
+
+
+                }
+
+                .lefticon {
+                    position: absolute;
+                    width: 60px;
+                    height: 90px;
+                    top: 290px;
+                    left: 29px !important;
+
+                    @media(max-width:768px) {
+                        width: 40px;
+                        height: 70px;
+                        top: 260px;
+                    }
+
+                    @media(max-width:592px) {
+                        width: 30px;
+                        height: 60px;
+                        top: 240px;
+                    }
+
+                    @media(max-width:526px) {
+                        width: 30px;
+                        height: 50px;
+                        top: 250px;
+                    }
+
+
+                    @media(max-width:487px) {
+                        width: 25px;
+                        height: 35px;
+                        top: 210px;
+                    }
+
+                    @media(max-width:411px) {
+                        width: 19px;
+                        height: 29px;
+                        top: 190px;
+                        left: 20px !important;
+                    }
+
+                    @media(max-width:350px) {
+                        width: 14px;
+                        height: 24px;
+                        top: 165px;
+                        left: 18px !important;
+                    }
+
+                    @media(max-width:290px) {
+                        width: 13px;
+                        height: 22px;
+                        top: 135px;
+                        left: 18px !important;
+                    }
+
+
+
+
+                }
+
+                .innerbox1 {
+                    position: absolute;
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    margin-top: 60px;
+
+
+                    @media(max-width:768px) {
+                        margin-top: 80px;
+                    }
+
+                    @media(max-width:592px) {
+                        margin-top: 50px;
+                    }
+
+                    @media(max-width:411px) {
+                        margin-top: 40px;
+                    }
+
+                    @media(max-width:350px) {
+                        margin-top: 30px;
+                    }
+
+                    @media(max-width:290px) {
+                        margin-top: 20px;
+                    }
+
+                    
+
+
+
+                    h1 {
+                        text-align: center;
+                        color: #fff;
+                        font-size: 40px;
+                        font-weight: bold;
+                        font-family: Montserrat;
+
+                        @media(max-width:768px) {
+                            font-size: 30px;
+                        }
+
+                        @media(max-width:592px) {
+
+                            font-size: 27px;
+                        }
+
+                        @media(max-width:487px) {
+                            font-size: 20px;
+                        }
+
+                        @media(max-width:411px) {
+                            font-size: 17px;
+                        }
+
+                        @media(max-width:350px) {
+                            font-size: 14px;
+                        }
+
+                        @media(max-width:290px) {
+                            font-size: 11px;
+                        }
+
+                       
+
+
+
+
+                        .Ormado {
+                            color: var(--roundplayarrow);
+                        }
+                    }
+
+                    p {
+                        width: 80%;
+                        color: #FFF;
+                        text-align: center;
+                        font-family: Montserrat;
+                        font-size: 10px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 140%;
+                        letter-spacing: 1px;
+
+                        @media(max-width:768px) {
+                            font-size: 7px;
+                        }
+
+                        @media(max-width:592px) {
+                            font-size: 8px;
+                            margin-top: 10px;
+                        }
+
+
+                        @media(max-width:487px) {
+                            font-size: 6px;
+                            // margin-top: 10px;
+                        }
+
+                        @media(max-width:350px) {
+                            font-size: 5px;
+                        }
+
+                        @media(max-width:290px) {
+                            font-size: 4px;
+                        }
+
+
+
+
+                    }
+
+                    .footicon {
+                        position: absolute;
+                        transform: translateY(120px);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        transform: translateY(130px);
+                        margin-top: 10px;
+
+                        @media(max-width:487px) {
+                            margin-bottom: 50px !important;
+                           
+
+                        }
+
+                        @media(max-width:411px) {
+                            margin-bottom: 70px !important;
+                            
+
+                        }
+
+                        @media(max-width:350px) {
+                            margin-bottom: 90px !important;
+                            
+                        }
+
+                        @media(max-width:290px) {
+                            margin-bottom: 110px !important;
+                        }
+
+
+
+
+                        .foot {
+                            margin-top: 3px;
+                            width: 25px;
+                            height: 25px;
+
+                            @media(max-width:526px) {
+
+                                width: 20px;
+                                height: 20px;
+                            }
+
+                            @media(max-width:487px) {
+
+                                width: 16px;
+                                height: 16px;
+                            }
+
+
+                            @media(max-width:411px) {
+                                width: 14px;
+                                height: 14px;
+
+                            }
+
+                            @media(max-width:350px) {
+                                width: 11px;
+                                height: 11px;
+                                
+                            }
+                            
+                            @media(max-width:290px) {
+                                width: 10px;
+                                height: 10px;
+                                
+                            }
+
+                          
+    
+
+                           
+
+
+
+
+
+                        }
+
+                        h5 {
+                            margin-top: 10px;
+                            color: #FFF;
+                            font-family: Montserrat;
+                            font-size: 10.639px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 140%;
+                            letter-spacing: 1.073px;
+
+                            @media(max-width:487px) {
+                                font-size: 7px;
+                            }      
+                            @media(max-width:350px) {          
+                                font-size: 5px;
+                            }
+
+                            @media(max-width:290px) {
+                                font-size: 4px;         
+                            }
+
+                           
+
+
+
+                        }
+
+                        @media(max-width:526px) {
+                            margin-top: 4px;
+                        }
+
+
+                    }
+
+
+                }
+            }
+        }
+
+
+        .row>* {
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+        }
+
+        .rightbox {
             display: flex;
             align-items: center;
             justify-content: center;
-            flex-direction: column;
+            height: auto;
+            background-image: url("../assets/img/rightfranchise.png");
+            background-size: cover;
+            background-clip: content-box;
+            background-clip: content-box;
+            background-repeat: no-repeat;
+            border-bottom-right-radius: 30px;
+            border-top-right-radius: 30px;
 
 
-
-
-
-
-            h1 {
-                width: 33% !important;
-                height: auto;
-                color: #FFF;
-                text-align: center;
-                font-size: 30px;
-                font-weight: 600;
-            }
-
-            p {
-                text-align: center;
-            }
-
-
-            .footicon {
+            .innerbox2 {
                 width: auto;
-                height: auto;
+                height: 400px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                flex-direction: column;
 
 
-                img {
-                    width: 30%;
-                    height: 25px;
+                .lastimage {
+                    width: 300px;
+                    height: auto;
+
+                    @media(max-width:768px) {
+                        width: auto;
+                        height: 230px;
+                    }
+
+                    @media(max-width:526px) {
+                        width: auto;
+                        height: 220px;
+                    }
+
+                    @media(max-width:487px) {
+                        width: auto;
+                        height: 180px;
+                    }
+
+                    @media(max-width:411px) {
+                        width: auto;
+                        height: 150px;
+                    }
+                    @media(max-width:350px) {
+                        width: auto;
+                        height: 130px;
+                    }
+
+                    @media(max-width:290px) {
+                        width: auto;
+                        height: 100px;
+                    }
+
+                   
+
+
+
                 }
 
-                h6 {
-                    color: #FFF;
-                    margin-top: 10px;
+                @media(max-width:768px) {
+                    width: auto;
+                    height: 350px;
                 }
+
+
+                @media(max-width:526px) {
+                    width: auto;
+                    height: 320px;
+                }
+
+                @media(max-width:487px) {
+                    width: auto;
+                    height: 280px;
+                }
+
+                @media(max-width:411px) {
+                    width: auto;
+                    height: 250px;
+                }
+
+                @media(max-width:350px) {
+                    width: auto;
+                    height: 220px;
+                }
+
+                @media(max-width:290px) {
+                    width: auto;
+                    height: 180px;
+                }
+
+
+
+
 
             }
 
-
         }
-
-
-
-
-
     }
-
-    .rightbox {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 50%;
-        height: auto;
-        flex-shrink: 0;
-        background-image: url("../assets/img/rightfranchise.png");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-
-
-        .innerbox2 {
-            width: auto;
-            height: 400px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-
-            img {
-                width: 100%;
-                height: 300px;
-
-            }
-        }
-
-    }
-
 
 
 }

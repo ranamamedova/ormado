@@ -43,7 +43,6 @@ const data = [
 const Blog = () => {
   const owlCarousel = useRef();
 
-  console.log(window.innerWidth);
   const options = {
     autoplay: false,
     items: 3,

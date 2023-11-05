@@ -3,6 +3,9 @@
   .container-fluid {
     .row {
       gap: 140px;
+      @media (max-width:998px){
+        gap: 0px;
+      }
       .signImg {
         position: relative;
         .logoTitle {
@@ -19,6 +22,10 @@
             font-weight: 700;
             // line-height: 178.926px; /* 119.284% */
             letter-spacing: 1.3px;
+            @media (max-width:850px){
+              color: #fff;
+              font-size: 20px;
+            }
           }
           .logoImg {
             img {
@@ -26,11 +33,19 @@
             }
             @include displayCenter;
             transform: translateX(13px);
+            @media (max-width:850px){
+              transform: translateX(0px);
+            }
           }
         }
       }
       .formBox {
         margin-top: 160px;
+        @media (max-width:998px){
+          background-color: red ;
+          margin-top: 70px;
+        }
+      
         .formTitle {
           h5 {
             color: #27272e;
@@ -48,11 +63,18 @@
             font-weight: 500;
             line-height: 162.023%;
           }
+          @media (max-width:570px){
+            text-align: center;
+          }
         }
         form {
           max-width: 360px;
           width: 100%;
-          
+          @media (max-width:570px){
+            max-width: 100%;
+            width: 100%;
+            padding:  0 50px;
+          }
           label {
             color: #425466;
             font-feature-settings: "clig" off, "liga" off;
@@ -62,7 +84,15 @@
             font-weight: 500;
             line-height: normal;
           }
-
+          .valid {
+            color: red;
+            font-feature-settings: "clig" off, "liga" off;
+            font-family: Inter;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
           input {
             width: 100%;
             padding: 8px;
@@ -116,18 +146,28 @@
           .singInBox {
             width: 100%;
             padding: 10px;
-            background-color: #000;
+            border: 1px solid #141416;
             @include displayCenter;
             border-radius: 50px;
-            a {
-              color: #fcfcfd;
+            transition: 250ms;
+            button {
+              background-color: transparent;
+              border: none;
+              color: #000;
               text-align: center;
-              font-family: DM Sans;
-              font-size: normal;
+              font-family: INTER;
+              font-size: 12px;
               font-style: normal;
-              font-weight: 700;
+              font-weight: 600;
               text-decoration: none;
               letter-spacing: 1px;
+            }
+            &:hover {
+              background-color: #000;
+              border: 1px solid #141416;
+              button {
+                color: #fcfcfd;
+              }
             }
           }
           .account {
@@ -145,6 +185,136 @@
               font-weight: 600;
               text-decoration: none;
             }
+          }
+        }
+      }
+
+      .formBoxUp {
+        margin-top: 20px;
+        .formTitle {
+          h3 {
+            color: #27272e;
+            font-family: Inter;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 600;
+            // line-height: 136.023%;
+          }
+          p {
+            color: #27272e;
+            font-family: "Inter", sans-serif;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 162.023%;
+          }
+        }
+        form {
+          max-width: 360px;
+          width: 100%;
+
+          label {
+            color: #425466;
+            font-feature-settings: "clig" off, "liga" off;
+            font-family: Inter;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+
+          input {
+            width: 100%;
+            padding: 8px;
+            border-radius: 50px;
+            background-color: #edf2f7;
+            border: none !important;
+            outline: none;
+            &::placeholder {
+              color: #7a828a;
+              font-feature-settings: "clig" off, "liga" off;
+              font-family: Inter;
+              font-size: 11px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 55.058px;
+              // transform: translateX(px);
+            }
+          }
+          .checkBox {
+            display: flex;
+            align-items: center !important;
+            input {
+              width: auto;
+              accent-color: #000;
+            }
+            p {
+              transform: translate(4px, 15px);
+              color: #425466;
+              text-align: left;
+              font-family: Inter;
+              font-size: 11px;
+              font-style: normal;
+              font-weight: 400;
+              span {
+                color: #425466;
+                font-weight: 700;
+              }
+            }
+          }
+          .singInBox {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #141416;
+            @include displayCenter;
+            border-radius: 50px;
+            transition: 250ms;
+            a {
+              color: #000;
+              text-align: center;
+              font-family: INTER;
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 600;
+              text-decoration: none;
+              letter-spacing: 1px;
+            }
+            i {
+              font-size: 17px;
+            }
+            &:hover {
+              background-color: #000;
+              border: 1px solid #141416;
+              cursor: pointer;
+              a {
+                color: #fff;
+              }
+            }
+          }
+          .account {
+            color: #718096;
+            text-align: right;
+            font-family: Inter;
+            font-size: normal;
+            font-style: normal;
+            font-weight: 600;
+            a {
+              color: #141416;
+              font-family: Inter;
+              font-size: normal;
+              font-style: normal;
+              font-weight: 600;
+              text-decoration: none;
+            }
+          }
+          .passTxt {
+            color: #718096;
+            font-feature-settings: "clig" off, "liga" off;
+            font-family: Inter;
+            font-size: x-small;
+            font-style: normal;
+            font-weight: 400;
+            // line-height: 40.839px; /* 109.091% */
           }
         }
       }

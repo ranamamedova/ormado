@@ -2,8 +2,9 @@ import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { Pagination } from 'swiper/modules';
+import { EffectFade,Pagination } from 'swiper/modules';
 import newSweet from "../../assets/img/Rectangle603.png"
+import 'swiper/css/effect-fade';
 
 
 const NewSweets = () => {
@@ -12,10 +13,11 @@ const NewSweets = () => {
         <div className='px-5'>
       <Swiper
         spaceBetween={30}
+        effect={'fade'}
         pagination={{
           clickable: true,
         }}
-        modules={[Pagination]}
+        modules={[EffectFade,Pagination]}
         className="mySwiper3 "
       >
         <SwiperSlide className='swiper-slide'>

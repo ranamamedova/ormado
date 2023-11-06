@@ -44,8 +44,6 @@ const Franchise = () => {
               </div>
             </div>
 
-
-
           </div>
         </div>
 

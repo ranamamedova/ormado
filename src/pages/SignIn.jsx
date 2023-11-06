@@ -1,10 +1,14 @@
 import React from "react";
+import { useEffect } from "react";
 import { useState } from "react";
-import { Link, NavLink, useNavigate } from "react-router-dom";
+import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 import login from "../assets/img/login.png";
 import logo from "../assets/img/logo.png";
 
 const SignIn = () => {
+  const location = useLocation();
+  console.log(location.pathname);
+
   const data = {
     email: "admin@gmail.com",
     pass: "123",
@@ -13,15 +17,15 @@ const SignIn = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [check, setCheck] = useState(false);
-
   const [valid, setValid] = useState(false);
   const [passValid, setPassValid] = useState(false);
-
+  const [passValid2, setPassValid2] = useState(false);
   const [signIn, setSignIn] = useState(true);
-  const navigate = useNavigate();
+
+  const [passAcc, setPassAcc] = useState("");
+
   const handleClick = () => {
     setSignIn(!signIn);
-    navigate(signIn ? "/signin" : "/signup");
   };
   const checkFunc = () => {
     setCheck(!check);
@@ -47,6 +51,24 @@ const SignIn = () => {
         }
       }
     }
+  };
+
+  useEffect(() => {
+    if (location.pathname == "/signup") {
+      setSignIn(false);
+    }
+  }, []);
+
+  const formSubmitAcc = (e) => {
+    e.preventDefault();
+      if (passAcc == "") {
+          setPassValid2(true)
+        } else if( passAcc.length < 8){
+              alert("minimum 8 simvol")
+        }
+         else {
+          setPassValid2(false)
+      }
   };
 
   return (
@@ -150,7 +172,7 @@ const SignIn = () => {
                     <h3>Create your account</h3>
                     <p>It’s free and easy</p>
                   </div>
-                  <form className="mt-4 ">
+                  <form className="mt-4 " onSubmit={formSubmitAcc}>
                     <label className="">Full name</label>
                     <br />
                     <input type="text" placeholder="Enter your name" />
@@ -164,20 +186,32 @@ const SignIn = () => {
                     <br />
                     <label className="mt-4">Password</label>
                     <br />
-                    <input type="password" placeholder="Type your password" />
+                    <input
+                      type="password"
+                      placeholder="Type your password"
+                      onChange={(e) => {
+                        setPassAcc(e.target.value);
+                      }}
+                    />
                     <span className="passTxt">
                       Must be 8 characters at least
                     </span>
+                    <p className="passTxt" style={{"color":"red","fontWeight":"bold"}}>{passValid2 ? "Şifrə boş buraxıla bilməz !" : ""}</p>
                     <div className="checkBox mt-2 mb-4">
                       <input type="checkbox" />
                       <p className="ms-1">
-                        By creating an account means you agree to the{" "}
-                        <span>Terms and Conditions</span>, and our{" "}
-                        <span>Privacy Policy</span>
+                        By creating an account means you agree to the
+                        <span style={{ cursor: "pointer" }}>
+                          Terms and Conditions
+                        </span>
+                        , and our
+                        <span style={{ cursor: "pointer" }}>
+                          Privacy Policy
+                        </span>
                       </p>
                     </div>
                     <div className="singInBox">
-                      <a href="#react">Sign Up</a>
+                      <button type="submit">Sign Up</button>
                     </div>
 
                     <div className="singInBox my-3">

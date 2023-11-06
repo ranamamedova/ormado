@@ -269,7 +269,21 @@
             @include displayCenter;
             border-radius: 50px;
             transition: 250ms;
+            button {
+              background-color: transparent;
+              border: none;
+              color: #000;
+              text-align: center;
+              font-family: INTER;
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 600;
+              text-decoration: none;
+              letter-spacing: 1px;
+              
+            }
             a {
+              
               color: #000;
               text-align: center;
               font-family: INTER;
@@ -287,6 +301,9 @@
               border: 1px solid #141416;
               cursor: pointer;
               a {
+                color: #fff;
+              }
+              button{
                 color: #fff;
               }
             }

@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination } from "swiper/modules";
+import { Pagination,EffectFade } from "swiper/modules";
 const OrmadoKaffeSwiper = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const images = [coffeImg, coffeImg, coffeImg];
@@ -73,8 +73,9 @@ const OrmadoKaffeSwiper = () => {
                   spaceBetween={30}
                   slidesPerView={1}
                   pagination={{ clickable: true }}
-                  modules={[Pagination]}
+                  modules={[EffectFade,Pagination]}
                   className="swiperMobil"
+                  effect={'fade'}
                 >
                   {images.map((image, index) => (
                     <SwiperSlide key={index}>

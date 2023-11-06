@@ -45,22 +45,34 @@
         .img{
           position: relative;
           img{
-          border-radius: 70px !important;
-          @media (max-width:945px){
-            border-radius: 60px !important;
+          border-radius: 65px !important;
+          @media (max-width:1110px){
+            border-radius: 45px !important;
           }
-          @media (max-width:600px){
-            border-radius: 50px !important;
+          @media (max-width:900px){
+            border-radius: 40px !important;
           }
-          @media (max-width:450px){
+          @media (max-width:650px){
             border-radius: 35px !important;
           }
-          @media (max-width:390px){
+          @media (max-width:500px){
             border-radius: 30px !important;
           }
-          @media (max-width:350px){
+          @media (max-width:400px){
             border-radius: 20px !important;
           }
+          // @media (max-width:600px){
+          //   border-radius: 50px !important;
+          // }
+          // @media (max-width:450px){
+          //   border-radius: 35px !important;
+          // }
+          // @media (max-width:390px){
+          //   border-radius: 30px !important;
+          // }
+          // @media (max-width:350px){
+          //   border-radius: 20px !important;
+          // }
           }
         }
           .swiper-background{
@@ -74,22 +86,37 @@
               bottom: 0;
               left: 0;
               right: 0;
-              border-radius: 70px;
-              @media (max-width:945px){
-                border-radius: 60px;
+              border-radius: 67px;
+              @media (max-width:1110px){
+                border-radius: 45px !important;
               }
-              @media (max-width:600px){
-                border-radius: 50px ;
+              @media (max-width:900px){
+                border-radius: 40px !important;
               }
-              @media (max-width:450px){
-                border-radius: 35px ;
+              @media (max-width:650px){
+                border-radius: 35px !important;
               }
-              @media (max-width:390px){
-                border-radius: 30px ;
+              @media (max-width:500px){
+                border-radius: 30px !important;
               }
-              @media (max-width:350px){
-                border-radius: 20px ;
+              @media (max-width:400px){
+                border-radius: 20px !important;
               }
+              // @media (max-width:945px){
+              //   border-radius: 60px;
+              // }
+              // @media (max-width:600px){
+              //   border-radius: 50px ;
+              // }
+              // @media (max-width:450px){
+              //   border-radius: 35px ;
+              // }
+              // @media (max-width:390px){
+              //   border-radius: 30px ;
+              // }
+              // @media (max-width:350px){
+              //   border-radius: 20px ;
+              // }
           }
           .swiper-text{
               position: absolute;

@@ -21,9 +21,10 @@ const BestOffer = () => {
       setindex(newIndex);
     }
   };
-
+   const [window,setWindow] = useState()
 
   return (
+   <>
     <div className='best-offer mt-5 p-5'>
       <div className="container1 mt-3 pt-5">
         <div className="text">
@@ -96,6 +97,7 @@ const BestOffer = () => {
         </div>
       </div>
     </div>
+   </>
   )
 }
 

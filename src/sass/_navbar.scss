@@ -243,7 +243,7 @@ header {
         .navbarDetails {
           .d-flex {
             display: flex;
-            justify-content: end !important;
+            justify-content: flex-end !important;
             flex-direction: row-reverse;
 
             .signIn {

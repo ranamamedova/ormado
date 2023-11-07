@@ -19,7 +19,6 @@
 
 
 
-
     .mybox {
         width: 100%;
         height: auto;
@@ -30,8 +29,8 @@
             height: auto;
             position: relative;
             background-color: var(--whyfranchise);
-            border-bottom-left-radius: 30px;
-            border-top-left-radius: 30px;
+            border-bottom-left-radius: 39px !important;
+            border-top-left-radius: 39px !important;
 
 
 
@@ -387,13 +386,6 @@
 
 
 
-
-
-
-
-
-
-
                         }
 
                         h5 {
@@ -466,8 +458,9 @@
             background-clip: content-box;
             background-clip: content-box;
             background-repeat: no-repeat;
-            border-bottom-right-radius: 30px;
-            border-top-right-radius: 30px;
+            border-bottom-right-radius: 34px;
+            border-top-right-radius: 34px;
+
 
 
             .innerbox2 {

@@ -9,6 +9,7 @@ const CreateAccount = () => {
    const [passValid,setPassValid] = useState(false)
    const [passLength,setPassLength] = useState(false)
    const [emailValid,setEmailValid] = useState(false)
+   const [nameValid,setNameValid] = useState(false)
 
     const formSubmit =(e)=>{
         e.preventDefault() ;
@@ -64,7 +65,13 @@ const CreateAccount = () => {
                   <form className="mt-4 " onSubmit={formSubmit}>
                     <label className="">Full name</label>
                     <br />
-                    <input type="text" placeholder="Enter your name" />
+                    <input 
+                    type="text" 
+                    placeholder="Enter your name"
+                     onChange={(e)=>{
+                      setNameValid(e.target.value)
+                     }}
+                    />
                     <br />
                     <label className="mt-4">E-mail or phone number</label>
                     <br />
@@ -75,7 +82,7 @@ const CreateAccount = () => {
                         setEmail(e.target.value)
                       }} 
                     />
-                      <p className="passTxt" style={{"color":"red","fontWeight":"bold"}}>{emailValid ? "E-mail boş buraxıla bilməz !" : ""}</p>
+                      <span className="passTxt" style={{"color":"red","fontWeight":"bold"}}>{emailValid ? "E-mail boş buraxıla bilməz !" : ""}</span>
                     <br />
                     <label className="mt-4">Password</label>
                     <br />
@@ -89,7 +96,8 @@ const CreateAccount = () => {
                     <span className="passTxt" style={{ color: passLength ? 'red' : '#000',fontWeight: passLength ? "bold":"normal" }}>
                      Minimum 8 herf olmalidir
                     </span>
-                    <p className="passTxt" style={{"color":"red","fontWeight":"bold"}}>{passValid ? "Şifrə boş buraxıla bilməz !" : ""}</p>
+                    <br />
+                    <span className="passTxt" style={{"color":"red","fontWeight":"bold"}}>{passValid ? "Şifrə boş buraxıla bilməz !" : ""}</span>
                     <div className="checkBox mt-2 mb-4">
                       <input type="checkbox" />
                       <p className="ms-1">

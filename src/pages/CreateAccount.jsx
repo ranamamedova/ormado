@@ -40,8 +40,8 @@ const CreateAccount = () => {
                 setEmailValid(false)
                 setNameValid(false)
                 setPassLength(true)
-            } 
-            
+            }   
+               
             else {
                 alert("success")
                 setPassValid(false)

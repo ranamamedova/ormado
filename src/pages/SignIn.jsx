@@ -31,7 +31,7 @@ const SignIn = () => {
         setPassValid(false);
       } else if (password != data.pass) {
         setPassValid(true);
-        setValid(false);
+        setValid(false);  
       } else {
         if (email == data.email && password == data.pass) {
           alert("E-mail və şifrə Düzgündür");

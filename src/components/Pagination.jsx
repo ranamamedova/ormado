@@ -31,7 +31,7 @@ const Pagination = () => {
     const newOffset = (event.selected * itemsPerPage) % data.length;
     setItemOffset(newOffset);
   };
-  return (
+  return ( 
     <>
       <div>
         {currentItems.map((fd) => (
@@ -49,6 +49,7 @@ const Pagination = () => {
         pageCount={pageCount}
         previousLabel={previous}
         renderOnZeroPageCount={null}
+        breakClassName="break"
 
         containerClassName="pagination"
         pageLinkClassName="previous-num"

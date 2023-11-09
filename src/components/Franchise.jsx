@@ -1,9 +1,7 @@
 import React from "react";
 
 import latte from "../assets/img/screenFull.png";
-import v8 from "../assets/img/Vector (8).svg";
 import g6 from "../assets/img/Group (6).svg";
-
 import g7 from "../assets/img/Group (7).svg";
 import g8 from "../assets/img/Group (8).svg";
 

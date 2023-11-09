@@ -1,118 +1,607 @@
+.width-mysize {
+    width: 70% !important;
+
+    @media(max-width:982px) {
+        width: 85% !important;
+    }
+
+    @media(max-width:592px) {
+        width: 90% !important;
+    }
+
+}
+
+
 .MyFranchise {
     width: 100%;
     height: auto;
-    margin-top: 20px;
-    border-radius: 30px !important;
+    margin-top: 27px;
 
 
-    .leftbox {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 50%;
+
+    .mybox {
+        width: 100%;
         height: auto;
-        flex-shrink: 0;
-        background-color: var(--whyfranchise);
-        background-image: url("../assets/img/rightlifw.png");
-        background-position: center;
-        background-size: 60px;
-        background-repeat: no-repeat;
-        background-clip: border-box;
-        background-position-x: 550px;
-        background-position-y: 20px;
+        border-radius: 24px;
 
 
-        background-image: url("../assets/img/leftside.png");
-
-
-
-        .innerbox {
-            width: auto;
+        .leftbox {
             height: auto;
+            position: relative;
+            background-color: var(--whyfranchise);
+            border-bottom-left-radius: 39px !important;
+            border-top-left-radius: 39px !important;
+
+
+
+
+            .innerbox {
+                position: absolute;
+                width: 100%;
+                height: auto;
+
+
+
+                .image-one {
+                    position: absolute;
+                    width: 70px;
+                    height: 70px;
+                    top: 23px;
+                    right: 35px;
+
+                    @media(max-width:1125px) {
+                        width: 60px;
+                        height: 60px;
+                    }
+
+                    @media(max-width:768px) {
+                        width: 50px;
+                        height: 50px;
+                    }
+
+                    @media(max-width:592px) {
+                        width: 40px;
+                        height: 40px;
+                        right: 27px;
+                    }
+
+                    @media(max-width:526px) {
+                        width: 30px;
+                        height: 30px;
+                    }
+
+                    @media(max-width:487px) {
+                        width: 25px;
+                        height: 25px;
+                    }
+
+                    @media(max-width:411px) {
+                        width: 20px;
+                        height: 20px;
+
+                    }
+
+                    @media(max-width:350px) {
+                        width: 16px;
+                        height: 16px;
+                        right: 25px;
+                    }
+
+                    @media(max-width:290px) {
+                        width: 14px;
+                        height: 14px;
+                        right: 12px;
+                        top: 15px;
+                    }
+
+
+                }
+
+                .lefticon {
+                    position: absolute;
+                    width: 70px;
+                    height: 90px;
+                    top: 290px;
+                    left: 29px !important;
+
+
+                    @media(max-width:1125px) {
+                        width: 50px;
+                        height: 70px;
+                        top: 250px;
+                        left: 27px !important;
+                    }
+
+                    @media(max-width:768px) {
+                        width: 40px;
+                        height: 60px;
+                        top: 240px;
+                        left: 25px !important;
+                    }
+
+                    @media(max-width:592px) {
+                        width: 30px;
+                        height: 50px;
+                        top: 240px;
+                    }
+
+                    @media(max-width:526px) {
+                        width: 30px;
+                        height: 40px;
+                        top: 230px;
+                    }
+
+
+                    @media(max-width:487px) {
+                        width: 25px;
+                        height: 35px;
+                        top: 180px;
+                    }
+
+                    @media(max-width:411px) {
+                        width: 23px;
+                        height: 28px;
+                        top: 169px;
+                        left: 20px !important;
+                    }
+
+                    @media(max-width:350px) {
+                        width: 18px;
+                        height: 23px;
+                        top: 137px;
+                        left: 18px !important;
+                    }
+
+                    @media(max-width:290px) {
+                        width: 16px;
+                        height: 22px;
+                        top: 111px;
+                        left: 18px !important;
+                    }
+
+
+
+
+                }
+
+                .innerbox1 {
+                    position: absolute;
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    margin-top: 60px;
+
+
+
+
+                    @media(max-width:768px) {
+                        margin-top: 70px;
+                    }
+
+                    @media(max-width:592px) {
+                        margin-top: 50px;
+                    }
+
+                    @media(max-width:592px) {
+                        margin-top: 45px;
+                    }
+
+                    @media(max-width:487px) {
+                        margin-top: 42px;
+                    }
+
+                    @media(max-width:411px) {
+                        margin-top: 40px;
+                    }
+
+                    @media(max-width:350px) {
+                        margin-top: 30px;
+                    }
+
+                    @media(max-width:290px) {
+                        margin-top: 20px;
+                    }
+
+
+
+
+
+                    h1 {
+                        text-align: center;
+                        color: #fff;
+                        font-size: 40px;
+                        font-family: Montserrat;
+                        font-style: normal;
+                        font-weight: 900;
+                        line-height: normal;
+                        text-transform: uppercase;
+
+                        @media(max-width:1125px) {
+                            font-size: 35px;
+                        }
+
+
+                        @media(max-width:768px) {
+                            font-size: 27px;
+                        }
+
+                        @media(max-width:592px) {
+
+                            font-size: 27px;
+                        }
+
+                        @media(max-width:487px) {
+                            font-size: 20px;
+                        }
+
+                        @media(max-width:411px) {
+                            font-size: 17px;
+                        }
+
+                        @media(max-width:350px) {
+                            font-size: 13px;
+                        }
+
+                        @media(max-width:290px) {
+                            font-size: 11px;
+                        }
+
+
+
+
+
+
+                        .Ormado {
+                            color: var(--roundplayarrow);
+                        }
+                    }
+
+                    p {
+                        width: 70%;
+                        color: #FFF;
+                        text-align: center;
+                        font-family: Montserrat;
+                        font-size: 10px;
+                        font-style: normal;
+                        font-weight: 200;
+                        line-height: 110%;
+                        margin-top: 12px;
+
+
+                        @media(max-width:1125px) {
+                            font-size: 9px;
+                        }
+
+                        @media(max-width:768px) {
+                            font-size: 7px;
+                        }
+
+                        @media(max-width:592px) {
+                            font-size: 8px;
+                            margin-top: 10px;
+                        }
+
+
+                        @media(max-width:487px) {
+                            font-size: 6px;
+                            // margin-top: 10px;
+                        }
+
+                        @media(max-width:350px) {
+                            font-size: 5px;
+                        }
+
+                        @media(max-width:290px) {
+                            font-size: 4px;
+                        }
+
+                    }
+
+                    .footicon {
+                        position: absolute;
+                        // transform: translateY(120px);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        transform: translateY(150px);
+
+                        @media(max-width:1125px) {
+                            margin-bottom: 40px !important;
+                        }
+
+                        @media(max-width:768px) {
+                            margin-bottom: 50px !important;
+                        }
+
+                        @media(max-width:526px) {
+                            margin-bottom: 70px !important;
+                        }
+
+
+                        @media(max-width:487px) {
+                            margin-bottom: 120px !important;
+                        }
+
+                        @media(max-width:411px) {
+                            margin-bottom: 153px !important;
+
+
+                        }
+
+                        @media(max-width:350px) {
+                            margin-bottom: 176px !important;
+
+                        }
+
+                        @media(max-width:290px) {
+                            margin-bottom: 195px !important;
+                        }
+
+
+
+
+                        .foot {
+                            margin-top: 3px;
+                            width: 23px;
+
+                            @media(max-width:1125px) {
+                                width: 21px;
+
+                            }
+
+                            @media(max-width:768px) {
+                                width: 18px;
+
+                            }
+
+
+                            @media(max-width:526px) {
+
+                                width: 16px;
+                            }
+
+                            @media(max-width:487px) {
+
+                                width: 16px;
+                            }
+
+
+                            @media(max-width:411px) {
+                                width: 12px;
+
+                            }
+
+                            @media(max-width:350px) {
+                                width: 10px;
+
+                            }
+
+                            @media(max-width:290px) {
+                                width: 7px;
+
+                            }
+
+
+
+                        }
+
+                        h5 {
+                            margin-top: 10px;
+                            color: #FFF;
+                            font-family: Montserrat;
+                            font-size: 10.639px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 6%;
+                            letter-spacing: 1.073px;
+
+                            @media(max-width:768px) {
+                                font-size: 9px;
+                            }
+
+
+                            @media(max-width:526px) {
+                                font-size: 7px;
+                            }
+
+                            @media(max-width:411px) {
+                                font-size: 5.21px;
+                            }
+
+
+
+                            @media(max-width:350px) {
+                                font-size: 5px;
+                            }
+
+                            @media(max-width:290px) {
+                                font-size: 4px;
+                                font-weight: 500;
+                                line-height: 2%;
+                                letter-spacing: 0.073px;
+                            }
+
+
+
+
+
+                        }
+
+                        @media(max-width:526px) {
+                            margin-top: 4px;
+                        }
+
+
+                    }
+
+
+                }
+            }
+
+
+            @media(max-width:411px) {
+                border-bottom-left-radius: 23px !important;
+                border-top-left-radius: 23px !important;
+            }
+
+            @media(max-width:390px) {
+                border-bottom-left-radius: 21px !important;
+                border-top-left-radius: 21px !important;
+            }
+
+
+
+
+        }
+
+
+        .row>* {
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+
+            @media(max-width:411px) {
+                padding-left: 0px !important;
+                padding-right: 7px !important;
+            }
+        }
+
+        .rightbox {
             display: flex;
             align-items: center;
             justify-content: center;
-            flex-direction: column;
+            height: auto;
+            background-image: url("../assets/img/rightfranchise.png");
+            background-size: cover;
+            background-clip: content-box;
+            background-clip: content-box;
+            background-repeat: no-repeat;
+            border-bottom-right-radius: 34px;
+            border-top-right-radius: 34px;
 
 
 
-
-
-
-            h1 {
-                width: 33% !important;
-                height: auto;
-                color: #FFF;
-                text-align: center;
-                font-size: 30px;
-                font-weight: 600;
-            }
-
-            p {
-                text-align: center;
-            }
-
-
-            .footicon {
+            .innerbox2 {
                 width: auto;
-                height: auto;
+                height: 400px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                flex-direction: column;
 
 
-                img {
-                    width: 30%;
-                    height: 25px;
+                .lastimage {
+                    width: 300px;
+                    height: auto;
+
+                    @media(max-width:1125px) {
+                        width: auto;
+                        height: 230px;
+                    }
+
+                    @media(max-width:768px) {
+                        width: auto;
+                        height: 220px;
+                    }
+
+                    @media(max-width:768px) {
+                        width: auto;
+                        height: 200px;
+                    }
+
+                    @media(max-width:526px) {
+                        width: auto;
+                        height: 170px;
+                    }
+
+
+                    @media(max-width:487px) {
+                        width: auto;
+                        height: 130px;
+                    }
+
+                    @media(max-width:411px) {
+                        width: auto;
+                        height: 115px;
+                    }
+
+                    @media(max-width:350px) {
+                        width: auto;
+                        height: 90px;
+                    }
+
+                    @media(max-width:290px) {
+                        width: auto;
+                        height: 75px;
+                    }
+
+
+
+
+
                 }
 
-                h6 {
-                    color: #FFF;
-                    margin-top: 10px;
+
+                @media(max-width:1125px) {
+                    width: auto;
+                    height: 340px;
                 }
+
+
+                @media(max-width:768px) {
+                    width: auto;
+                    height: 330px;
+                }
+
+                @media(max-width:592px) {
+                    width: auto;
+                    height: 315px;
+                }
+
+
+
+                @media(max-width:526px) {
+                    width: auto;
+                    height: 280px;
+                }
+
+                @media(max-width:487px) {
+                    width: auto;
+                    height: 230px;
+                }
+
+                @media(max-width:411px) {
+                    width: auto;
+                    height: 210px;
+                }
+
+                @media(max-width:350px) {
+                    width: auto;
+                    height: 170px;
+                }
+
+                @media(max-width:290px) {
+                    width: auto;
+                    height: 140px;
+                }
+
+
+
+
 
             }
 
-
-        }
-
-
-
-
-
-    }
-
-    .rightbox {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 50%;
-        height: auto;
-        flex-shrink: 0;
-        background-image: url("../assets/img/rightfranchise.png");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-
-
-        .innerbox2 {
-            width: auto;
-            height: 400px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-
-            img {
-                width: 100%;
-                height: 300px;
-
+            @media(max-width:411px) {
+                border-bottom-right-radius: 25px;
+                border-top-right-radius: 25px;
             }
+
+
+
         }
-
     }
-
 
 
 }

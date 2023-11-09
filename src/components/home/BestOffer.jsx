@@ -8,12 +8,15 @@ const BestOffer = () => {
   const [index, setindex] = useState(0);
   const n = 3;
 
+
+
   const nextSlide = () => {
     const newIndex = index + n;
     if (newIndex < bestofferData.length) {
       setindex(newIndex);
     }
   };
+
 
   const prevSlide = () => {
     const newIndex = index - n;

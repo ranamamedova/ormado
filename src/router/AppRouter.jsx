@@ -12,14 +12,19 @@ import SearchBranch from '../pages/SearchBranch'
 import Footer from "../components/home/Footer"
 import Nutrition from '../pages/Nutrition'
 import SignIn from '../pages/SignIn'
+import Layout from '../components/Layout'
+import { useState } from 'react'
+import CreateAccount from '../pages/CreateAccount'
 
 const AppRouter = () => {
   return (
    <>
    <BrowserRouter>
-   <Navbar/>
    <Routes>
+
+    <Route  path='/' element={<Layout/>}>
     <Route  path='/' element={<Home/>}></Route>
+    <Route  path='/contact' element={<Contact/>}></Route>
     <Route  path='/contact' element={<Contact/>}></Route>
     <Route  path='/career' element={<Career/>}></Route>
     <Route  path='/product' element={<Product/>}></Route>
@@ -28,9 +33,11 @@ const AppRouter = () => {
     <Route  path='/reserve' element={<Reserve/>}></Route>
     <Route  path='/searchbranch' element={<SearchBranch/>}></Route>
     <Route  path='/nutrition' element={<Nutrition/>}></Route>
-    <Route  path='/signin' element={<SignIn/>}></Route>
+    </Route>
+    
+    <Route  path='/signin' element={<SignIn />}></Route>
+    <Route  path='/signup' element={<CreateAccount />}></Route>
    </Routes>
-   <Footer/>
    </BrowserRouter>
    </>
   )   

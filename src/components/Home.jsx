@@ -14,10 +14,11 @@ import WhyUs from "./home/WhyUs";
 import BestOffer from "./home/BestOffer"
 import NewSweets from "./home/NewSweets"
 import Faqs from "./Faqs";
+import Pagination from "./Pagination";
 const Home = () => {
   return (
     <>
-    
+{/*     
       <OrmadoKaffeSwiper />
       <EnjoyNewCoffe />
       <ProductCards/>
@@ -29,7 +30,8 @@ const Home = () => {
       <Cakes />
       <Franchise />
       <Faqs/>
-      <Blog />
+      <Blog /> */}
+      <Pagination/>
 
     </>
   );

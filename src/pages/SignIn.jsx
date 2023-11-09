@@ -12,9 +12,8 @@ const SignIn = () => {
   };
 
   const [email, setEmail] = useState("");
-
-
   const [password, setPassword] = useState("");
+ 
   const [check, setCheck] = useState(false);
   const [valid, setValid] = useState(false);
   const [passValid, setPassValid] = useState(false);
@@ -32,7 +31,7 @@ const SignIn = () => {
         setPassValid(false);
       } else if (password != data.pass) {
         setPassValid(true);
-        setValid(false);
+        setValid(false);  
       } else {
         if (email == data.email && password == data.pass) {
           alert("E-mail və şifrə Düzgündür");

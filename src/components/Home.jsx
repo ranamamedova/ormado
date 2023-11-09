@@ -14,6 +14,7 @@ import WhyUs from "./home/WhyUs";
 import BestOffer from "./home/BestOffer"
 import NewSweets from "./home/NewSweets"
 import Faqs from "./Faqs";
+import Pagination from "./Pagination";
 const Home = () => {
   return (
     <>
@@ -30,6 +31,7 @@ const Home = () => {
       <Franchise />
       <Faqs/>
       <Blog />
+
 
     </>
   );

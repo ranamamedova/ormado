@@ -5,17 +5,25 @@ import { Link, NavLink,} from "react-router-dom"
 const CreateAccount = () => {
    const [pass,setPass] = useState('')
    const [email,setEmail] = useState('')
+   const [name,setName] = useState('')
+   const [check,setCheck] = useState(false)
 
    const [passValid,setPassValid] = useState(false)
    const [passLength,setPassLength] = useState(false)
    const [emailValid,setEmailValid] = useState(false)
+   const [nameValid,setNameValid] = useState(false)
+
+    const checkFunc =()=>{
+      setCheck(!check)
+    }
 
     const formSubmit =(e)=>{
         e.preventDefault() ;
-        if (pass == "" || email == "") {
-            //   alert("Email ve pasword bos ola bilmez")
+        if (pass == "" || email == "" || name == "" || !check) {
+              alert("Melumatlari doldurun")
               setPassValid(true)
               setEmailValid(true)
+              setNameValid(true)
               setPassLength(false)
               if(pass != ""){
                   setPassValid(false)
@@ -23,15 +31,19 @@ const CreateAccount = () => {
                 if(email != ""){
                     setEmailValid(false)
                 }
+                if(name != ""){
+                   setNameValid(false)
+                }
             } else if(pass.length < 8){
                 // alert("Minimum 8 herf olmalidir")
                 setPassValid(false)
-                setPassLength(true)
                 setEmailValid(false)
-            } 
-            
+                setNameValid(false)
+                setPassLength(true)
+            }   
+               
             else {
-                // alert("success")
+                alert("success")
                 setPassValid(false)
                 setPassLength(false)
         }
@@ -64,7 +76,14 @@ const CreateAccount = () => {
                   <form className="mt-4 " onSubmit={formSubmit}>
                     <label className="">Full name</label>
                     <br />
-                    <input type="text" placeholder="Enter your name" />
+                    <input 
+                    type="text" 
+                    placeholder="Enter your name"
+                     onChange={(e)=>{
+                      setName(e.target.value)
+                     }}
+                    />
+                      <span className="passTxt" style={{"color":"red","fontWeight":"bold"}}>{nameValid ? "Ad boş buraxıla bilməz !" : ""}</span>
                     <br />
                     <label className="mt-4">E-mail or phone number</label>
                     <br />
@@ -75,7 +94,7 @@ const CreateAccount = () => {
                         setEmail(e.target.value)
                       }} 
                     />
-                      <p className="passTxt" style={{"color":"red","fontWeight":"bold"}}>{emailValid ? "E-mail boş buraxıla bilməz !" : ""}</p>
+                      <span className="passTxt" style={{"color":"red","fontWeight":"bold"}}>{emailValid ? "E-mail boş buraxıla bilməz !" : ""}</span>
                     <br />
                     <label className="mt-4">Password</label>
                     <br />
@@ -86,12 +105,17 @@ const CreateAccount = () => {
                         setPass(e.target.value)
                       }} 
                     />
-                    <span className="passTxt" style={{ color: passLength ? 'red' : '#000',fontWeight: passLength ? "bold":"normal" }}>
-                     Minimum 8 herf olmalidir
+                    <span className="passTxt" style={{ color: passLength ? 'red' : '#718096',fontWeight: passLength ? "bold":"normal" }}>
+                    Must be 8 characters at least
                     </span>
-                    <p className="passTxt" style={{"color":"red","fontWeight":"bold"}}>{passValid ? "Şifrə boş buraxıla bilməz !" : ""}</p>
+                    <br />
+                    <span className="passTxt" style={{"color":"red","fontWeight":"bold"}}>{passValid ? "Şifrə boş buraxıla bilməz !" : ""}</span>
                     <div className="checkBox mt-2 mb-4">
-                      <input type="checkbox" />
+                      <input type="checkbox"
+                        onChange={checkFunc}
+                        checked={check}
+                        className="checkbox"
+                      />
                       <p className="ms-1">
                         By creating an account means you agree to the
                         <span style={{ cursor: "pointer" }}>

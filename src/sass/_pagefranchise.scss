@@ -7,7 +7,8 @@
 
     @media(max-width:592px) {
         width: 90% !important;
-    }
+    } 
+     
 
 }
 
@@ -16,8 +17,7 @@
     width: 100%;
     height: auto;
     margin-top: 27px;
-
-
+   margin-bottom: 100px;
 
 
     .mybox {
@@ -30,8 +30,8 @@
             height: auto;
             position: relative;
             background-color: var(--whyfranchise);
-            border-bottom-left-radius: 30px;
-            border-top-left-radius: 30px;
+            border-bottom-left-radius: 39px !important;
+            border-top-left-radius: 39px !important;
 
 
 
@@ -79,6 +79,7 @@
                     @media(max-width:411px) {
                         width: 20px;
                         height: 20px;
+
                     }
 
                     @media(max-width:350px) {
@@ -90,7 +91,8 @@
                     @media(max-width:290px) {
                         width: 14px;
                         height: 14px;
-                        right: 20px;
+                        right: 12px;
+                        top: 15px;
                     }
 
 
@@ -152,9 +154,9 @@
                     }
 
                     @media(max-width:290px) {
-                        width: 13px;
+                        width: 16px;
                         height: 22px;
-                        top: 135px;
+                        top: 111px;
                         left: 18px !important;
                     }
 
@@ -301,7 +303,7 @@
 
                     .footicon {
                         position: absolute;
-                        transform: translateY(120px);
+                        // transform: translateY(120px);
                         display: flex;
                         justify-content: center;
                         align-items: center;
@@ -337,7 +339,7 @@
                         }
 
                         @media(max-width:290px) {
-                            margin-bottom: 110px !important;
+                            margin-bottom: 195px !important;
                         }
 
 
@@ -380,16 +382,9 @@
                             }
 
                             @media(max-width:290px) {
-                                width: 9px;
+                                width: 7px;
 
                             }
-
-
-
-
-
-
-
 
 
 
@@ -402,7 +397,7 @@
                             font-size: 10.639px;
                             font-style: normal;
                             font-weight: 700;
-                            line-height: 10%;
+                            line-height: 6%;
                             letter-spacing: 1.073px;
 
                             @media(max-width:768px) {
@@ -418,7 +413,7 @@
                                 font-size: 5.21px;
                             }
 
-      
+
 
                             @media(max-width:350px) {
                                 font-size: 5px;
@@ -426,6 +421,9 @@
 
                             @media(max-width:290px) {
                                 font-size: 4px;
+                                font-weight: 500;
+                                line-height: 2%;
+                                letter-spacing: 0.073px;
                             }
 
 
@@ -444,12 +442,32 @@
 
                 }
             }
+
+
+            @media(max-width:411px) {
+                border-bottom-left-radius: 23px !important;
+                border-top-left-radius: 23px !important;
+            }
+
+            @media(max-width:390px) {
+                border-bottom-left-radius: 21px !important;
+                border-top-left-radius: 21px !important;
+            }
+
+
+
+
         }
 
 
         .row>* {
             padding-left: 0px !important;
             padding-right: 0px !important;
+
+            @media(max-width:411px) {
+                padding-left: 0px !important;
+                padding-right: 7px !important;
+            }
         }
 
         .rightbox {
@@ -462,8 +480,9 @@
             background-clip: content-box;
             background-clip: content-box;
             background-repeat: no-repeat;
-            border-bottom-right-radius: 30px;
-            border-top-right-radius: 30px;
+            border-bottom-right-radius: 34px;
+            border-top-right-radius: 34px;
+
 
 
             .innerbox2 {
@@ -516,7 +535,7 @@
 
                     @media(max-width:290px) {
                         width: auto;
-                        height: 100px;
+                        height: 75px;
                     }
 
 
@@ -546,7 +565,7 @@
 
                 @media(max-width:526px) {
                     width: auto;
-                    height: 290px;
+                    height: 280px;
                 }
 
                 @media(max-width:487px) {
@@ -566,7 +585,7 @@
 
                 @media(max-width:290px) {
                     width: auto;
-                    height: 180px;
+                    height: 140px;
                 }
 
 
@@ -574,6 +593,13 @@
 
 
             }
+
+            @media(max-width:411px) {
+                border-bottom-right-radius: 25px;
+                border-top-right-radius: 25px;
+            }
+
+
 
         }
     }

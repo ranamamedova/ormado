@@ -4,12 +4,16 @@ import footicon from "../assets/img/franchiseicon.png"
 import lefticon from "../assets/img/leftside.png"
 import rightlife from "../assets/img/rightlifw.png"
 import TestDetails from '../components/TestDetails'
+import Watch from '../components/Watch'
+import Map from "../components/Map"
+import Faqs from "../components/Faqs"
+
 const Franchise = () => {
   return (
 
 
 <>
-<div className="MyFranchise">
+<div className="MyFranchise ">
 
 <div className="width-mysize mybox">
   <div className="container">
@@ -51,7 +55,12 @@ const Franchise = () => {
 
 </div>
 </div>
-<TestDetails/>
+<TestDetails  />
+<Watch/>
+{/* <Map/> */}
+<Faqs/>
+
+
 </>
 
 

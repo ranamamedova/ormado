@@ -3,6 +3,8 @@ import { useEffect } from "react";
 import { useState } from "react";
 import ReactPaginate from "react-paginate";
 
+
+
 const Pagination = () => {
   const [data, setData] = useState([]);
   const previous = (

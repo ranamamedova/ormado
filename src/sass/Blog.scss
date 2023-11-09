@@ -35,7 +35,7 @@
 
       .owl-prev {
         position: absolute;
-        left: -52px;
+        left: -50px;
         top: 290px;
         background: url("../assets/img/ic_round-play-arrow.svg") !important;
         background-size: cover;
@@ -43,6 +43,14 @@
         width: 40px;
         background-repeat: no-repeat;
         // background-color: red !important;
+        @media (max-width: 500px){
+          left: -60px;
+          top: 180px;
+        }
+        @media (max-width: 350px){
+          left: -80px;
+          top: 160px;
+        }
         span {
           color: transparent;
         }
@@ -56,6 +64,14 @@
         background-repeat: no-repeat;
         height: 40px;
         width: 40px;
+        @media (max-width: 500px){
+          right: -8;
+          top: 180px;
+        }
+        @media (max-width: 350px){
+          right: 10px;
+          top: 160px;
+        }
         span {
           color: transparent;
         }
@@ -73,15 +89,40 @@
         @media (max-width:992px){
           margin-left: 10px !important;
         }
+        .owl-item{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
         button {
           border: none;
           background-color: transparent;
+          
+        }
+        .owl-prev{
+          @media (max-width:590px){
+            margin-left: 10px !important;
+          }
+          @media (max-width:576px){
+            margin-left: 70px !important;
+          }
+        }
+        .owl-next{
+          right: 23px;
         }
 
         .blogCard {
           max-width: 350px;
           padding: 10px 0px 0px 0px;
           height: 600px;
+          @media (max-width: 500px){
+            height: 400px;
+            width: 250px;
+          }
+          @media (max-width: 390px){
+            height: 400px;
+            width: 200px;
+          }
 
           .card-img {
             border-radius: 40px;
@@ -89,6 +130,9 @@
             img {
               width: 100%;
               height: 100%;
+              @media (max-width: 500px){
+                width: 80%;
+              }
             }
           }
           .card-bottom {
@@ -103,6 +147,9 @@
               h2 {
                 font-weight: 600;
                 font-size: 23px;
+                @media (max-width: 500px){
+                  font-size: 18px;
+                }
               }
             }
             .card-date {
@@ -119,11 +166,15 @@
                   font-size: 12px;
                 }
               }
+
             }
             .card-about {
               p {
                 font-size: 14px;
                 font-weight: 400;
+                @media (max-width: 500px){
+                  font-size: 10px;
+                }
               }
             }
             a {
@@ -132,6 +183,9 @@
               font-weight: 600;
               padding-bottom: 5px;
               border-bottom: 1px solid #4a3024;
+              @media (max-width: 500px){
+                font-size: 13px;
+              }
             }
           }
         }

@@ -50,13 +50,10 @@ const Pagination = () => {
         previousLabel={previous}
         renderOnZeroPageCount={null}
         breakClassName="break"
-
         containerClassName="pagination"
         pageLinkClassName="previous-num"
-
         previousClassName="page-num"
         nextClassName="page-num"
-        
         activeLinkClassName="active"
         activeClassName="test"
       />

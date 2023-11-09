@@ -114,6 +114,7 @@ const CreateAccount = () => {
                       <input type="checkbox"
                         onChange={checkFunc}
                         checked={check}
+                        className="checkbox"
                       />
                       <p className="ms-1">
                         By creating an account means you agree to the

@@ -5,12 +5,8 @@ import ReactPaginate from "react-paginate";
 
 const Pagination = () => {
   const [data, setData] = useState([]);
-  const previous = (
-    <i className="fa-solid fa-chevron-left"></i>
-  );
-  const next = (
-    <i class="fa-solid fa-chevron-right"></i>
-  );
+  const previous = <i className="fa-solid fa-chevron-left"></i>;
+  const next = <i class="fa-solid fa-chevron-right"></i>;
   const [currentItems, setCurrentItems] = useState([]);
   const [pageCount, setPageCount] = useState(0);
   const [itemOffset, setItemOffset] = useState(0);
@@ -31,7 +27,7 @@ const Pagination = () => {
     const newOffset = (event.selected * itemsPerPage) % data.length;
     setItemOffset(newOffset);
   };
-  return ( 
+  return (
     <>
       <div>
         {currentItems.map((fd) => (

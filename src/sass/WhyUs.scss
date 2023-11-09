@@ -58,13 +58,22 @@
                     flex-direction: column;
                     background-color: transparent !important;
                     border: 0;
+                    width: 75%;
                     position: absolute;
-                    bottom: -210px;
-                    width: 60%;
-                    .card-img{
-                        filter:saturate(0.7);
-                    }
                     .card-img-overlay{
+                        
+                        .card-img{
+                            filter:saturate(0.7);
+                            width: 75%;
+                            height: 320px;
+                            border-radius: 30px;
+
+                            //   API BACKGROUND
+                            // background-color: aqua;
+                            // box-shadow: 0px 0px 25px -5px rgba(0,0,0,0.57);
+                        }
+                        width: 100%;
+                        height: 350px;
                         display: flex;
                         align-items: center;
                         justify-content: center;
@@ -121,118 +130,18 @@
         .whyus-main{
             .whyus-part2{
                 .whyus-img{
-                    bottom:-300px
-                }
-                .part2-main{
-                    .whyus-text{
-                        .text-header{
-                            font-size: 60px;
-                        }
-                        .text-center{
-                            font-size: 19px;
-                        }
-                    }
-                    
-                }
-            }
-        }
-    }
-}
-@media (max-width:1777px){
-    .whyus{
-        .whyus-main{
-            .whyus-part2{
-                .whyus-img{
-                    bottom:-260px
-                }
-                .part2-main{
-                    .whyus-text{
-                        .text-header{
-                            font-size: 60px;
-                        }
-                        .text-center{
-                            font-size: 19px;
-                        }
-                    }
-                    
-                }
-            }
-        }
-    }
-}
-@media (max-width:1400px){
-    .whyus{
-        .whyus-main{
-            .whyus-part2{
-                .whyus-img{
-                    bottom:-170px
-                }
-                .part2-main{
-                    .whyus-text{
-                        .text-header{
-                            font-size: 60px;
-                        }
-                        .text-center{
-                            font-size: 19px;
-                        }
-                    }
-                    
-                }
-            }
-        }
-    }
-}
-@media (max-width:1500px){
-    .whyus{
-        .whyus-main{
-            .whyus-part2{
-                .whyus-img{
-                    bottom:-200px
-                }
-                .part2-main{
-                    .whyus-text{
-                        .text-header{
-                            font-size: 60px;
-                        }
-                        .text-center{
-                            font-size: 19px;
-                        }
-                    }
-                    
-                }
-            }
-        }
-    }
-}
-@media (max-width:1600px){
-    .whyus{
-        .whyus-main{
-            .whyus-part2{
-                .whyus-img{
-                    bottom:-230px
-                }
-                .part2-main{
-                    .whyus-text{
-                        .text-header{
-                            font-size: 60px;
-                        }
-                        .text-center{
-                            font-size: 19px;
-                        }
-                    }
-                    
-                }
-            }
-        }
-    }
-}
+                    bottom:185px !important;
+                    .card-img-overlay{
+                        height: 270px;
+                        .card-img{
+                            height: 330px;
+                            width: 60%;
 
-@media (max-width:1380px){
-    .whyus{
-        .whyus-main{
-            .whyus-part2{
-                .whyus-img{
-                    bottom:-140px
+                            // API IMG
+                            // height: 300px;
+                            // width: 75%;
+                        }
+                    }
                 }
                 .part2-main{
                     .whyus-text{
@@ -249,37 +158,155 @@
         }
     }
 }
+// @media (max-width:1777px){
+//     .whyus{
+//         .whyus-main{
+//             .whyus-part2{
+//                 .whyus-img{
+//                     bottom:-260px
+//                 }
+//                 .part2-main{
+//                     .whyus-text{
+//                         .text-header{
+//                             font-size: 60px;
+//                         }
+//                         .text-center{
+//                             font-size: 19px;
+//                         }
+//                     }
+                    
+//                 }
+//             }
+//         }
+//     }
+// }
+// @media (max-width:1400px){
+//     .whyus{
+//         .whyus-main{
+//             .whyus-part2{
+//                 .whyus-img{
+//                     bottom:-170px
+//                 }
+//                 .part2-main{
+//                     .whyus-text{
+//                         .text-header{
+//                             font-size: 60px;
+//                         }
+//                         .text-center{
+//                             font-size: 19px;
+//                         }
+//                     }
+                    
+//                 }
+//             }
+//         }
+//     }
+// }
+// @media (max-width:1500px){
+//     .whyus{
+//         .whyus-main{
+//             .whyus-part2{
+//                 .whyus-img{
+//                     bottom:-200px
+//                 }
+//                 .part2-main{
+//                     .whyus-text{
+//                         .text-header{
+//                             font-size: 60px;
+//                         }
+//                         .text-center{
+//                             font-size: 19px;
+//                         }
+//                     }
+                    
+//                 }
+//             }
+//         }
+//     }
+// }
+// @media (max-width:1600px){
+//     .whyus{
+//         .whyus-main{
+//             .whyus-part2{
+//                 .whyus-img{
+//                     bottom:-230px
+//                 }
+//                 .part2-main{
+//                     .whyus-text{
+//                         .text-header{
+//                             font-size: 60px;
+//                         }
+//                         .text-center{
+//                             font-size: 19px;
+//                         }
+//                     }
+                    
+//                 }
+//             }
+//         }
+//     }
+// }
 
-@media (max-width:1350px){
-    .whyus{
-        .whyus-main{
-            .whyus-part1{
-                img{
-                    width: 190px;
-                    height: 190px;
-                }
-            }
-            .whyus-part2{
-                .whyus-img{
-                    bottom:-160px
-                }
-            }
-            .whyus-part3{
-                img{
-                    width: 110px;
-                    height: 110px;
-                }
-            }
-        }
-    }
-}
+// @media (max-width:1380px){
+//     .whyus{
+//         .whyus-main{
+//             .whyus-part2{
+//                 .whyus-img{
+//                     bottom:-140px
+//                 }
+//                 .part2-main{
+//                     .whyus-text{
+//                         .text-header{
+//                             font-size: 60px;
+//                         }
+//                         .text-center{
+//                             font-size: 19px;
+//                         }
+//                     }
+                    
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// @media (max-width:1350px){
+//     .whyus{
+//         .whyus-main{
+//             .whyus-part1{
+//                 img{
+//                     width: 190px;
+//                     height: 190px;
+//                 }
+//             }
+//             .whyus-part2{
+//                 .whyus-img{
+//                     bottom:190px
+//                 }
+//             }
+//             .whyus-part3{
+//                 img{
+//                     width: 110px;
+//                     height: 110px;
+//                 }
+//             }
+//         }
+//     }
+// }
 @media (max-width:1150px){
     .whyus{
         .whyus-main{
             height: 450px;
             .whyus-part2{
                 .whyus-img{
-                    bottom:-110px
+                    bottom:-140px;
+                    .card-img-overlay{
+                        height: 270px;
+                        .card-img{
+                            height: 250px;
+                            width: 80%;
+                        }
+                    }
                 }
                 .part2-main{
                     .whyus-text{
@@ -296,52 +323,66 @@
         }
     }
 }
-@media (max-width:1040px){
-    .whyus{
-        .whyus-main{
-            .whyus-part2{
-                .whyus-img{
-                    bottom:-120px
-                }
-            }
-        }
-    }
-}
-@media (max-width:990px){
-    .whyus{
-        .whyus-main{
-            .whyus-part2{
-                .whyus-img{
-                    bottom:-80px !important
-                }
-                .part2-main{
-                    .whyus-text{
-                        .text-header{
-                            font-size: 50px;
-                        }
-                        .text-center{
-                            font-size: 15px;
-                        }
-                    }
+// @media (max-width:1040px){
+//     .whyus{
+//         .whyus-main{
+//             .whyus-part2{
+//                 .whyus-img{
+//                     bottom:-120px
+//                 }
+//             }
+//         }
+//     }
+// }
+// @media (max-width:990px){
+//     .whyus{
+//         .whyus-main{
+//             .whyus-part2{
+//                 .whyus-img{
+//                     bottom:-80px !important
+//                 }
+//                 .part2-main{
+//                     .whyus-text{
+//                         .text-header{
+//                             font-size: 50px;
+//                         }
+//                         .text-center{
+//                             font-size: 15px;
+//                         }
+//                     }
                     
-                }
-            }
-        }
-    }
-}
+//                 }
+//             }
+//         }
+//     }
+// }
 @media (max-width:920px){
     .whyus{
         .whyus-main{
-            height: 400px;
             .whyus-part1{
                 img{
                    width: 170px;
                    height: 170px;
+                   margin-left: 50px;
                 }
             }
             .whyus-part2{
+                .part2-main{
+                    .whyus-text{
+                        .text-header{
+                            b{
+                                height: 60px;
+                            }
+                        }
+                    }
+                }
                 .whyus-img{
-                    bottom:-100px !important;
+                    bottom:185px !important;
+                    .card-img-overlay{
+                        .card-img{
+                            height: 225px;
+                        }
+                    }
                 }
             }
             .whyus-part3{
@@ -353,9 +394,63 @@
         }
     }
 }
+@media (max-width:750px){
+    .whyus{
+        .whyus-main{
+            .whyus-part1{
+                img{
+                   width: 160px;
+                   height: 160px;
+                   margin-left: 100px;
+                }
+            }
+            .whyus-part2{
+                .whyus-img{
+                    bottom:185px !important;
+                    .card-img-overlay{
+                        height: 270px;
+                        .card-img{
+                            height: 200px;
+                            width: 80%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:500px){
+    .whyus{
+        .whyus-main{
+            .whyus-part1{
+                img{
+                   width: 160px;
+                   height: 160px;
+                   margin-left: 100px;
+                }
+            }
+            .whyus-part2{
+                
+                .whyus-img{
+                    bottom:185px !important;
+                    .card-img-overlay{
+                        height: 270px;
+                        .card-img{
+                            height: 170px;
+                            width: 90%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media (max-width:780px){
     .whyus{
         .whyus-main{
+            height: 450px;
             .whyus-part2{
                 .whyus-img{
                     bottom:-55px
@@ -375,6 +470,34 @@
         }
     }
 }
+@media (max-width:350px){
+    .whyus{
+        .whyus-main{
+            height: 350px;
+            .whyus-part2{
+                .whyus-img{
+                    bottom:180px !important;
+                    .card-img-overlay{
+                        .card-img{
+                            height: 140px;
+                        }
+                    }
+                }
+                .part2-main{
+                    .whyus-text{
+                        .text-header{
+                            font-size: 30px;
+                        }
+                        .text-center{
+                            font-size: 12px;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}
 @media (max-width:695px){
     .whyus{
         .whyus-main{
@@ -382,42 +505,6 @@
                 img{
                     width: 150px;
                     height: 150px;
-                }
-            }
-            .whyus-part2{
-                .whyus-img{
-                    bottom:-80px;
-                    width: 80%;
-                    .round-btn-part1{
-                        position: absolute;
-                        width: 45px;
-                        height: 45px;
-                        border-radius: 100%;
-                        background-color: white;
-                        opacity: 0.4;
-                    }
-                    .round-btn-part2{
-                        position: absolute;
-                        width: 35px;
-                        height: 35px;
-                        border-radius: 100%;
-                        background-color: white;
-                        opacity: 0.7;
-                    }
-                    .round-btn-part3{
-                        position: absolute;
-                        width: 25px;
-                        height: 25px;
-                        border-radius: 100%;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        background-color: white;
-                        opacity: 1;
-                        img{
-                            width: 15px;
-                        }
-                    }
                 }
             }
             .whyus-part3{
@@ -429,19 +516,7 @@
         }
     }
 }
-@media (max-width:590px){
-    .whyus{
-        .whyus-main{
-            height: 300px;
-            .whyus-part2{
-                .whyus-img{
-                    width: 70%;
-                    bottom:- 50px !important; 
-                }
-            }
-        }
-    }
-}
+
 @media (max-width:510px){
     .whyus{
         .whyus-main{
@@ -449,22 +524,6 @@
                 img{
                     width: 130px;
                     height: 130px;
-                }
-            }
-            .whyus-part2{
-                .whyus-img{
-                    bottom:-60px
-                }
-                .part2-main{
-                    .whyus-text{
-                        .text-header{
-                            font-size: 40px;
-                        }
-                        .text-center{
-                            font-size: 12px;
-                        }
-                    }
-                    
                 }
             }
             .whyus-part3{
@@ -485,35 +544,12 @@
                     height: 110px;
                 }
             }
-            .whyus-part2{
-                .whyus-img{
-                    bottom:-50px;
-                    width: 90%;
-                }
-                .part2-main{
-                    .whyus-text{
-                        .text-header{
-                            font-size: 30px;
-                        }
-                        .text-center{
-                            font-size: 12px;
-                        }
-                    }
-                    
-                }
-            }
         }
     }
 }
 @media (max-width:380px){
     .whyus{
         .whyus-main{
-            height: 300px;
-            .whyus-part2{
-                .whyus-img{
-                    bottom:-40px
-                }
-            }
             .whyus-part3{
                 img{
                     width: 40px;
@@ -531,24 +567,6 @@
                     width: 90px;
                     height: 90px;
                 }
-            }
-            .whyus-part2{
-                .whyus-img{
-                    bottom:-20px;
-                    
-                }
-            }
-            .part2-main{
-                .whyus-text{
-                    .text-header{
-                        font-size: 20px;
-                    }
-                    .text-center{
-                        font-size: 5px;
-                    }
-                }
-                
-            }
             .whyus-part3{
                 img{
                     width: 20px;
@@ -557,4 +575,5 @@
             }
         }
     }
+}
 }

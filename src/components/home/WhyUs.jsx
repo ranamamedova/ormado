@@ -25,8 +25,8 @@ const WhyUs = () => {
             </div>
           </div>
           <div className="whyus-img card text-bg-dark">
-            <img src={whyusimg} className="card-img " alt="..." />
             <div className="card-img-overlay">
+                <img src={whyusimg} className="card-img " alt="..." />
               <div className="round-btn-part1"></div>
               <div className="round-btn-part2"></div>
               <div className="round-btn-part3">

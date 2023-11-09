@@ -24,22 +24,20 @@ const BestOffer = () => {
       setindex(newIndex);
     }
   };
-
+   const [window,setWindow] = useState()
 
   return (
+   <>
     <div className='best-offer mt-5 p-5'>
       <div className="container1 mt-3 pt-5">
         <div className="text">
           <p className='text-header'><b>GET THE BEST <span>OFFER</span></b></p>
           <p className='text-part2'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam </p>
         </div>
-        <div className="btn-arrow">
-          <button onClick={prevSlide} disabled={index === 0}><i className="fa-solid fa-arrow-left "></i></button>
-          <button onClick={nextSlide} disabled={index + n >= bestofferData.length}><i className="fa-solid fa-arrow-right"></i></button>
-          </div>
-        <div className="cards row">
+        
+        <div className="cards row  ">
           
-          <div className="card-part1 ms-3">
+          <div className="card-part1 ms-3 mt-4">
             <div className="background-black"></div>
             <div className="card-main">
                 <div className="card-main-text">
@@ -68,10 +66,14 @@ const BestOffer = () => {
           
 
           <div className="card-column card col-md-7 ">
+          <div className="btn-arrow ">
+          <button onClick={prevSlide} disabled={index === 0}><i className="fa-solid fa-arrow-left "></i></button>
+          <button onClick={nextSlide} disabled={index + n >= bestofferData.length}><i className="fa-solid fa-arrow-right"></i></button>
+          </div>
           
-            <div className="row" data-aos="fade-left">
+            <div className="row" >
               {bestofferData.slice(index, index + n).map((item,i)=>(
-                <div className='card-part2'>
+                <div className='card-part2' effect={'fade'}>
                 <div className="card-img col-md-3 col-lg-3 " >
                  <img src={item.photo} className="img-fluid rounded-start m-1" alt="..." />
                 </div>
@@ -98,6 +100,7 @@ const BestOffer = () => {
         </div>
       </div>
     </div>
+   </>
   )
 }
 

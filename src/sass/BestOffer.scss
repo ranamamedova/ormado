@@ -144,6 +144,8 @@
             justify-content: flex-end;
             @media (max-width:945px){
                 width: 100%;
+                margin-top: 30px;
+                margin-bottom: 10px;
             }
             button{
                 width: 40px;
@@ -420,9 +422,9 @@
             }
             .row{
                 margin: 0;
+                margin-bottom: 10px;
                 @media (max-width:945px){
                     gap: 25px;
-                    margin-top: 60px;
                 }
                 .card-part2{
                     display: flex;

@@ -163,7 +163,7 @@ const Navbar = () => {
                   </div>
                   <div className="signUp">
                     <div className="signA">
-                      <a href="#react">SIGN UP</a>
+                      <NavLink to="/signup">SIGN UP</NavLink>
                     </div>
                   </div>
                 </div>

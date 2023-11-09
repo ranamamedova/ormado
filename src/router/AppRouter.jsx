@@ -13,6 +13,8 @@ import Footer from "../components/home/Footer"
 import Nutrition from '../pages/Nutrition'
 import SignIn from '../pages/SignIn'
 import Layout from '../components/Layout'
+import { useState } from 'react'
+import CreateAccount from '../pages/CreateAccount'
 
 const AppRouter = () => {
   return (
@@ -33,7 +35,8 @@ const AppRouter = () => {
     <Route  path='/nutrition' element={<Nutrition/>}></Route>
     </Route>
     
-    <Route  path='/signin' element={<SignIn/>}></Route>
+    <Route  path='/signin' element={<SignIn />}></Route>
+    <Route  path='/signup' element={<CreateAccount />}></Route>
    </Routes>
    </BrowserRouter>
    </>

@@ -1,11 +1,14 @@
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
-import { Link, NavLink,} from "react-router-dom";
+import { Link, NavLink, useNavigate,} from "react-router-dom";
 import login from "../assets/img/login.png";
 import logo from "../assets/img/logo.png";
 
 const SignIn = () => {
+  const userEmail = localStorage.getItem("userEmail")
+  const navigate = useNavigate()
+
   const data = {
     email: "admin@gmail.com",
     pass: "123",
@@ -34,9 +37,11 @@ const SignIn = () => {
         setValid(false);  
       } else {
         if (email == data.email && password == data.pass) {
-          alert("E-mail və şifrə Düzgündür");
           setValid(false);
           setPassValid(false);
+          localStorage.setItem("userEmail",email)
+          localStorage.setItem("userPassword",password)
+          navigate("/contact")
         } else {
           alert("Email ve Password sehvdir");
         }
@@ -74,6 +79,7 @@ const SignIn = () => {
                     <input
                       type="email"
                       placeholder="Type your e-mail or phone number"
+                      value={email}
                       onChange={(e) => {
                         setEmail(e.target.value);
                       }}
@@ -86,6 +92,7 @@ const SignIn = () => {
                     <input
                       type="password"
                       placeholder="Type your password"
+                      value={password}
                       onChange={(e) => {
                         setPassword(e.target.value);
                       }}
@@ -120,7 +127,9 @@ const SignIn = () => {
               </div>
             </div>
           </div>
+          <p>{userEmail}</p>
         </section>
+        <iframe src="https://my.atlist.com/map/05dad012-ff66-4c0c-9ba2-c3371449776b?share=true" allow="geolocation 'self' https://my.atlist.com" width="100%" height="400px" frameborder="0" scrolling="no" allowfullscreen></iframe>
     </>
   );
 };

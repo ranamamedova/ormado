@@ -1,8 +1,12 @@
 import React from 'react'
+import Ormadolocation from '../components/Ormadolocation'
 
 const OurStory = () => {
   return (
-    <div>OurStory</div>
+    <>
+    <Ormadolocation/>
+    
+    </>
   )
 }
 

@@ -15,6 +15,7 @@ import SignIn from '../pages/SignIn'
 import Layout from '../components/Layout'
 import { useState } from 'react'
 import CreateAccount from '../pages/CreateAccount'
+import Gallery from '../pages/Gallery'
 
 const AppRouter = () => {
   return (
@@ -33,6 +34,7 @@ const AppRouter = () => {
     <Route  path='/reserve' element={<Reserve/>}></Route>
     <Route  path='/searchbranch' element={<SearchBranch/>}></Route>
     <Route  path='/nutrition' element={<Nutrition/>}></Route>
+    <Route  path='/gallery' element={<Gallery />}></Route>
     </Route>
     
     <Route  path='/signin' element={<SignIn />}></Route>

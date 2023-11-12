@@ -17,11 +17,15 @@ const Pagination = () => {
   const itemsPerPage = 5;
 
   useEffect(() => {
+
+    //SELCAN BUNU SILERSEN 
     fetch("https://jsonplaceholder.typicode.com/posts")
       .then((res) => res.json())
       .then((res) => {
         setData(res);
       });
+
+
     const endOffset = itemOffset + itemsPerPage;
     setCurrentItems(data.slice(itemOffset, endOffset));
     setPageCount(Math.ceil(data.length / itemsPerPage));

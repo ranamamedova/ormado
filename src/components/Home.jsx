@@ -32,6 +32,8 @@ const Home = () => {
       <Faqs/>
       <Blog />
 
+      <Pagination/>
+
 
     </>
   );

@@ -7,7 +7,7 @@ import category from "../data/CategoryData";
 const Category = () => {
   const [drop, setDrop] = useState(false);
 
-  const [data] = useState(category);
+  const [data,setData] = useState(category);
   const previous = <i className="fa-solid fa-chevron-left"></i>;
   const next = <i class="fa-solid fa-chevron-right"></i>;
   const [currentItems, setCurrentItems] = useState([]);
@@ -24,6 +24,14 @@ const Category = () => {
     const newOffset = (event.selected * itemsPerPage) % data.length;
     setItemOffset(newOffset);
   };
+  
+  const filterItem =(findCategory)=>{
+      const uptadeCategory = data.filter((oldCategory)=>{
+        return oldCategory.category == findCategory
+      })
+      setData(uptadeCategory)
+  }
+
   return (
     <>
       <section className="category" style={{ margin: "0" }}>
@@ -34,7 +42,7 @@ const Category = () => {
               <a href="#react">ALL CATEGORIES </a>
             </li>
             <li>
-              <a href="#react">LATTE </a>
+              <a href="#react" onClick={()=>filterItem("LATTE")}>LATTE </a>
             </li>
             <li>
               <a href="#react">CAPPUCCINO </a>

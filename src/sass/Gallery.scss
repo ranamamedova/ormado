@@ -8,8 +8,11 @@
     @media (max-width: 1300px){
         background-position-x:100% ;
     }
-    @media (max-width: 550px){
-        background-size: 35px;
+    @media (max-width: 650px){
+        background-size: 30px;
+    }
+    @media (max-width: 570px){
+        background-size: 15px;
     }
     .rosdting-house-header{
         background-image: url(../assets/img/beans3.png);
@@ -77,13 +80,9 @@
                 background-size: 80px;
             }
             @media (max-width: 550px){
-                grid-template-columns: 100%;
-                background-size: 50px;
-                background-position-x: 100%;
-            }
-            @media (max-width: 390px){
-                background-size: 45px;
-                background-position-x: 100%;
+                // grid-template-columns: 100%;
+                background-size: 30px;
+                background-position-x: 85%;
             }
             
             .card-img{
@@ -98,14 +97,23 @@
                     @media (max-width: 992px){
                         max-width: 210px;
                     }
-                    @media (max-width: 650px){
-                        max-width: 180px;
-                    }
-                    @media (max-width: 550px){
+                    @media (max-width: 800px){
                         max-width: 240px;
                     }
-                    @media (max-width: 350px){
-                        max-width: 200px;
+                    @media (max-width: 650px){
+                        max-width: 210px;
+                    }
+                    @media (max-width: 550px){
+                        max-width: 180px;
+                    }
+                    @media (max-width: 415px){
+                        max-width: 160px;
+                    }
+                    @media (max-width: 360px){
+                        max-width: 140px;
+                    }
+                    @media (max-width: 325px){
+                        max-width: 120px;
                     }
                 }
             }

@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import gallerydata from '../data/galleryData'
 import Breadcrumb from "../pages/BreadCrumb"
+import Faqs from '../components/Faqs'
+
 
 const Gallery = () => {
     const [visible,setVisible] = useState(7)
@@ -11,7 +13,7 @@ const Gallery = () => {
   return (
     <>
         <Breadcrumb title="Gallery" />
-        <div className="roasting-house">
+        <div className="roasting-house mb-5">
             <div className="rosdting-house-header">
               <h1 className='pt-5'>Ormado Roasting House</h1>
               <h5 className='pb-5'>{visible} Photos</h5>
@@ -29,6 +31,7 @@ const Gallery = () => {
                 </div>
             </div>
         </div>
+        <Faqs />
     </>
   )
 }

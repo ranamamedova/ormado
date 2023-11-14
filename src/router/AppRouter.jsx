@@ -17,6 +17,8 @@ import { useState } from 'react'
 import CreateAccount from '../pages/CreateAccount'
 import Category from '../pages/Category'
 import Pagination from '../components/Pagination'
+import Gallery from '../pages/Gallery'
+
 
 const AppRouter = () => {
   return (
@@ -36,7 +38,9 @@ const AppRouter = () => {
     <Route  path='/searchbranch' element={<SearchBranch/>}></Route>
     <Route  path='/nutrition' element={<Nutrition/>}></Route>
     <Route  path='/category' element={<Category/>}></Route>
-    <Route  path='/pagination' element={<Pagination/>}></Route>
+
+    <Route  path='/gallery' element={<Gallery />}></Route>
+
     </Route>
     
     <Route  path='/signin' element={<SignIn />}></Route>

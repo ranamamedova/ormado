@@ -1,0 +1,36 @@
+.pagination{
+    gap: 15px;
+    @include displayCenter;
+    .previous-num{
+      width: 24px;
+      height: 25px;
+      color: #D1D1D1;
+      border-radius:50px;
+      border: 1px solid #D1D1D1;
+      @include displayCenter ;
+      transform: 250ms;
+      text-decoration: none;
+    }
+    .active{
+      color: #E3B142;
+      border: 1px solid #E3B142 ;
+      transition: 0s !important;
+    }
+    .page-num{
+      width: 23px;
+      height: 25px;
+      border-radius:50px;
+      border: 1px solid #D1D1D1;
+      @include displayCenter ;
+      transform: 250ms;
+      i{
+        color: #979797;
+        font-size: 11px;
+      }
+      &:hover{
+        i{
+          color: #E3B142;
+        }
+      }
+    }
+  }

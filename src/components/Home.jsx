@@ -18,7 +18,7 @@ import Pagination from "./Pagination";
 const Home = () => {
   return (
     <>
-{/*     
+    
       <OrmadoKaffeSwiper />
       <EnjoyNewCoffe />
       <ProductCards/>
@@ -30,8 +30,10 @@ const Home = () => {
       <Cakes />
       <Franchise />
       <Faqs/>
-      <Blog /> */}
+      <Blog />
+
       <Pagination/>
+
 
     </>
   );

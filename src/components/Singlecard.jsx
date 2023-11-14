@@ -10,8 +10,7 @@ const Singlecard = ({ id, photo, title, desc, price }) => {
     <>
       <Container>
 
-       
-        
+      
        
           <Card className='mycard  mt-5' >
             <Card.Img className='image' height={200} variant="top" src={photo} />

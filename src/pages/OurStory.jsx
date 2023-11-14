@@ -8,7 +8,7 @@ const OurStory = () => {
   <div className="container-fluid">
  OUR STORY
   </div>
-  {/* <Ormadolocation/> */}
+  <Ormadolocation/>
   </>
   )
 }

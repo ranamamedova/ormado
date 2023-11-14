@@ -1,31 +1,30 @@
-.mysize-width{
+.mysize-width {
     width: 75% !important;
     height: auto;
 
-    @media(max-width:1096px){
+    @media(max-width:1096px) {
         width: 80% !important;
     }
 
-    @media(max-width:992px){
+    @media(max-width:992px) {
         width: 90% !important;
     }
 
-    @media(max-width:768px){
+    @media(max-width:768px) {
         width: 95% !important;
     }
 
-    @media(max-width:576px){
+    @media(max-width:576px) {
         width: 80% !important;
     }
 
-    @media(max-width:395px){
+    @media(max-width:395px) {
         width: 90% !important;
     }
 
-    @media(max-width:295px){
+    @media(max-width:295px) {
         width: 98% !important;
     }
-
 
 
 
@@ -60,7 +59,7 @@
             }
 
             @media(max-width:768px) {
-                height: 370px;
+                height: 390px;
             }
 
             @media(max-width:576px) {
@@ -71,13 +70,13 @@
 
             }
 
-            @media(max-width:395px){
+            @media(max-width:395px) {
                 height: 350px;
                 margin-bottom: 20px;
             }
 
-            @media(max-width:295px){
-                height: 290px;
+            @media(max-width:295px) {
+                height: 290px !important;
                 margin-bottom: 15px;
             }
 
@@ -92,16 +91,19 @@
                 width: auto;
                 display: flex;
                 flex-direction: column;
-                margin-top: 30px;
+                margin-top: 28px;
 
-                @media(max-width:576px){
+                @media(max-width:576px) {
                     margin-top: 23px !important;
                 }
 
-                @media(max-width:295px){
+                @media(max-width:295px) {
                     margin-top: 18px !important;
                 }
 
+
+               
+       
 
 
 
@@ -115,29 +117,38 @@
                     h6 {
 
                         font-family: Montserrat;
-                        font-size: 9px;
-                        font-style: normal;
-                        font-weight: 600;
-                        line-height: normal;
+                        font-size: 10px;
+                        line-height: 10px;
+
 
                         @media(max-width:992px) {
                             font-size: 7px;
+                            line-height: 9px;
                         }
 
                         @media(max-width:768px) {
-                            font-size: 5px;
+                            font-size: 6px;
+                            line-height: 6px;
                         }
 
                         @media(max-width:576px) {
-                            font-size: 6px;
+                            font-size: 8px;
                         }
 
+                        @media(max-width:440px) {
+                            font-size: 7px;
+                        }
+
+
+
                         @media(max-width:395px) {
-                            font-size: 5px;
+                            font-size: 6px;
+                            line-height: 6px;
                         }
 
                         @media(max-width:295px) {
-                            font-size: 4px;
+                            font-size: 5px;
+                            line-height: 4px;
                         }
 
 
@@ -152,19 +163,19 @@
                         content: "";
                         left: -8% !important;
                         width: 1px;
-                        height: 333px;
+                        height: 320px !important;
                         background-color: #FFF;
                         z-index: 99999999;
 
 
                         @media(max-width:992px) {
                             width: 1px;
-                            height: 290px;
+                            height: 300px !important;
                         }
 
                         @media(max-width:768px) {
                             width: 1px;
-                            height: 265px;
+                            height: 255px !important;
                         }
 
                         @media(max-width:576px) {
@@ -174,29 +185,74 @@
 
                         @media(max-width:395px) {
                             width: 1px;
-                            height: 250px;
-                        }
-  
-                        
-                        @media(max-width:295px) {
-                            width: 1px;
-                            height: 205px;
+                            height: 240px !important;
                         }
 
-                       
+
+                        @media(max-width:295px) {
+                            width: 1px;
+                            height: 190px !important;
+                        }
+
+
                     }
 
 
 
                     .circleCard {
                         position: absolute;
-                        width: 6px;
-                        height: 6px;
+                        width: 5px;
+                        height: 5px;
                         border-radius: 50%;
                         background-color: #FFF;
-                        left: -9.2%;
+                        left: -8.6%;
                         top: 0;
 
+                        @media(max-width:992px){
+                            position: absolute;
+                            width: 5px;
+                            height: 5px;
+                            border-radius: 50%;
+                            background-color: #FFF;
+                            left: -9%;
+                            top: 0;
+                        }
+
+
+                        @media(max-width:768px) {
+                            position: absolute;
+                            width: 5px;
+                            height: 5px;
+                            border-radius: 50%;
+                            background-color: #FFF;
+                            left: -9.2%;
+                            top: 0;
+
+                        }
+                        @media(max-width:576px) {
+                            position: absolute;
+                            width: 5px;
+                            height: 5px;
+                            border-radius: 50%;
+                            background-color: #FFF;
+                            left: -8.7%;
+                            top: 0;
+
+                        }
+
+                        @media(max-width:595px) {
+                            position: absolute;
+                            width: 5px;
+                            height: 5px;
+                            border-radius: 50%;
+                            background-color: #FFF;
+                            left: -9%;
+                            top: 0;
+
+                        }
+
+
+                        
 
                     }
 
@@ -210,8 +266,8 @@
                     width: 100%;
                     height: auto;
                     color: #FFF;
-                   margin-top: 15px;
-                   background-color: red;
+                    margin-top: 15px;
+
 
 
                     &::before {
@@ -226,49 +282,100 @@
                     h6 {
 
                         font-family: Montserrat;
-                        font-size: 9px;
-                        font-style: normal;
-                        font-weight: 600;
-                        line-height: normal;
+                        font-size: 10px;
+                        line-height: 10px;
 
                         @media(max-width:992px) {
                             font-size: 7px;
+                            line-height: 9px;
                         }
 
                         @media(max-width:768px) {
-                            font-size: 5px;
+                            font-size: 6px;
+                            line-height: 6px;
                         }
 
+
                         @media(max-width:576px) {
+                            font-size: 8px;
+                        }
+
+                        @media(max-width:440px) {
+                            font-size: 7px;
+                        }
+                        @media(max-width:395px) {
                             font-size: 6px;
                         }
 
-                        @media(max-width:395px) {
+                        @media(max-width:295px) {
                             font-size: 5px;
+                            line-height: 4px;
                         }
 
-                        @media(max-width:295px) {
-                            font-size: 4px;
-                        }
                     }
 
 
 
                     .circleCard {
                         position: absolute;
-                        width: 6px;
-                        height: 6px;
+                        width: 5px;
+                        height: 5px;
                         border-radius: 50%;
                         background-color: #FFF;
-                        left: -9.2%;
+                        left: -8.6%;
                         top: 0;
+
+
+                        @media(max-width:992px){
+                            position: absolute;
+                            width: 5px;
+                            height: 5px;
+                            border-radius: 50%;
+                            background-color: #FFF;
+                            left: -9%;
+                            top: 0;
+                        }
+
+
+                        @media(max-width:768px) {
+                            position: absolute;
+                            width: 5px;
+                            height: 5px;
+                            border-radius: 50%;
+                            background-color: #FFF;
+                            left: -9.2%;
+                            top: 0;
+
+                        }
+
+                        @media(max-width:576px) {
+                            position: absolute;
+                            width: 5px;
+                            height: 5px;
+                            border-radius: 50%;
+                            background-color: #FFF;
+                            left: -8.7%;
+                            top: 0;
+
+                        }
+
+                        @media(max-width:595px) {
+                            position: absolute;
+                            width: 5px;
+                            height: 5px;
+                            border-radius: 50%;
+                            background-color: #FFF;
+                            left: -9%;
+                            top: 0;
+
+                        }
                     }
 
-                    @media(max-width:395px){
+                    @media(max-width:395px) {
                         margin-top: 10px;
                     }
 
-                    @media(max-width:295px){
+                    @media(max-width:295px) {
                         margin-top: 3px;
                     }
 
@@ -346,7 +453,7 @@
                 }
 
                 @media(max-width:576px) {
-                 
+
                     width: 13px;
                     height: 13px;
                     bottom: 8%;
@@ -373,7 +480,7 @@
                     right: 10%;
                     border: 3px white solid;
                 }
-              
+
                 @media(max-width:768px) {
                     width: 16px;
                     height: 16px;
@@ -461,16 +568,16 @@
                     border-bottom-left-radius: 35px !important;
                     border-top-left-radius: 35px !important;
                     margin-bottom: 30px;
-    
+
                 }
 
-                @media(max-width:395px){
+                @media(max-width:395px) {
                     height: 350px;
 
-                    
+
                 }
 
-                @media(max-width:295px){   
+                @media(max-width:295px) {
                     height: 290px;
 
                 }

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import story from "../assets/img/ourstory.png"
 import blast from "../assets/img/blast.png"
 import Ormadolocation from "../components/Ormadolocation"
@@ -7,8 +7,18 @@ import icon from "../assets/img/pngwing3.png"
 import blastLeft from "../assets/img/coffee_blast.png"
 import blastRight from "../assets/img/coffee_blast2.png"
 import Watch from "../components/Watch"
+import gallerydata from '../data/galleryData'
 const OurStory = () => {
+  const [currentItems, setCurrentItems] = useState([]);
+  const [itemOffset, setItemOffset] = useState(0);
+  const itemsPerPage = 6;
+  const endOffset = itemOffset + itemsPerPage;
+
+  useEffect(() => {
+    setCurrentItems(gallerydata.slice(itemOffset, endOffset));
+  }, [itemOffset]);
   return (
+
     <>
   <div className="container-fluid ">
     <div className="ourstory-section1">
@@ -32,8 +42,32 @@ const OurStory = () => {
       </div>
     </div>
     <Watch />
+    <div className="ourstory-section3 mb-5">
+        <div className="ourstory-section3-cards mb-5">
+          <div className="ourstory-section3-cardmain mb-5">
+            {currentItems.slice(0,4).map((item,index)=>(
+              <div className={`card-img ${
+                index % 2 === 1 ? "mt-5 pt-5" : "mt-0"
+              }`} >
+              <img src={item.photo} alt="error" />
+              </div>
+            ))}
+          </div>
+        </div>
+    </div>
+    <Ormadolocation/>
+    <div className="ourstory-section4">
+      <div className="ourstory-section4-text1">
+        <h1 className='mb-2'>MISSION</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+      </div>
+      <div className="ourstory-section4-text2 mt-5">
+        <h1 className='mb-2'>VISION</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+      </div>
+    </div>
   </div>
-  <Ormadolocation/>
+  
   </>
   )
 }

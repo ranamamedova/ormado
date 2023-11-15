@@ -7,6 +7,7 @@ import TestDetails from '../components/TestDetails'
 import Watch from '../components/Watch'
 import Map from "../components/Map"
 import Faqs from "../components/Faqs"
+import Ormadolocation from '../components/Ormadolocation'
 
 const Franchise = () => {
   return (
@@ -59,7 +60,7 @@ const Franchise = () => {
 </div>
 <TestDetails  />
 <Watch/>
-{/* <Map/> */}
+<Ormadolocation/>
 <Faqs/>
 
 

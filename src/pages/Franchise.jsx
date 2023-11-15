@@ -7,6 +7,7 @@ import TestDetails from '../components/TestDetails'
 import Watch from '../components/Watch'
 import Map from "../components/Map"
 import Faqs from "../components/Faqs"
+import Ormadolocation from '../components/Ormadolocation'
 
 const Franchise = () => {
   return (
@@ -15,13 +16,14 @@ const Franchise = () => {
 <>
 <div className="MyFranchise ">
 
-<div className="width-mysize mybox">
+<div  className="width-mysize mybox">
   <div className="container">
     <div className="row ">
 
 
 
-      <div className="leftbox col-6">
+  
+<div  className="leftbox col-6">
         <div className="innerbox">
           <img src={rightlife} alt="" className='img-fluid image-one' />
           <div className="innerbox1">
@@ -48,16 +50,17 @@ const Franchise = () => {
           <img  className='lastimage img-fluid' src={inner} alt="" />
         </div>
       </div>
+</div>
 
     </div>
   </div>
 
 
-</div>
+
 </div>
 <TestDetails  />
 <Watch/>
-{/* <Map/> */}
+<Ormadolocation/>
 <Faqs/>
 
 

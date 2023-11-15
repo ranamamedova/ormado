@@ -119,6 +119,23 @@ body {
 // FRANCHISE PAGE
 @import "pagefranchise";
 
+// Gallery
+@import "Gallery";
+
+
+// WATCH PAGE
+@import "watch";
+
+// CATEGORY PAGE
+@import "./category" ;
+
+@import "ormadolocation";
+
+@import "ourstory" ;
+
+
+@import "pagination" ;
+
 
 // WATCH PAGE
 @import "watch";
@@ -134,6 +151,7 @@ body {
     margin-top: 20px;
   }
 }
+
 
 .pagination{
   gap: 15px;
@@ -171,3 +189,4 @@ body {
     }
   }
 }
+

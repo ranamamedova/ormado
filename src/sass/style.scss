@@ -116,6 +116,9 @@ body {
 // SIGN IN
 @import "./signin" ;
 
+//Create Account
+@import "./createaccount";
+
 // FRANCHISE PAGE
 @import "pagefranchise";
 
@@ -125,6 +128,8 @@ body {
 
 // CATEGORY PAGE
 @import "./category" ;
+
+
 
 @import "ormadolocation";
 

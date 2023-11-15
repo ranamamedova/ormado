@@ -2,17 +2,25 @@
   margin: 0;
   .container-fluid {
     .row {
-      gap: 140px;
-      @media (max-width:998px){
-        gap: 0px;
+      gap: 100px;
+      @media (max-width:768px){
+        gap: 50px;
       }
+
+    
       .signImg {
+
+       
+        
+
         position: relative;
         .logoTitle {
           position: absolute;
           top: 20px;
           max-width: 500px;
           width: 100%;
+
+
           h2 {
             color: #fff;
             text-align: center;
@@ -22,10 +30,16 @@
             font-weight: 700;
             // line-height: 178.926px; /* 119.284% */
             letter-spacing: 1.3px;
-            @media (max-width:850px){
-              color: #fff;
+          
+            @media(max-width:1254px){
+              font-size: 25px;
+            }
+
+            @media(max-width:950px){
               font-size: 20px;
             }
+
+
           }
           .logoImg {
             img {
@@ -37,14 +51,44 @@
               transform: translateX(0px);
             }
           }
+
+
+
         }
+
+
+
       }
+
+
+
       .formBox {
-        margin-top: 160px;
-        @media (max-width:998px){
-          background-color: red ;
-          margin-top: 70px;
+
+        margin-top: 100px;
+      
+        @media(max-width:1062px){
+          margin-top: 60px;
         }
+
+
+        @media(max-width:950px){
+          margin-top: 40px !important;
+          margin-right: 50px;
+        }
+
+        @media(max-width:865px){
+          margin-top: 20px !important;
+         
+        }
+
+        @media(max-width:768px){
+          margin-top: 10px !important;
+         
+        }
+
+
+
+
       
         .formTitle {
           h5 {
@@ -54,6 +98,15 @@
             font-style: normal;
             font-weight: 600;
             line-height: 136.023%;
+
+            @media(max-width:1254px){
+              font-size: 18px;
+            }
+
+            
+        @media(max-width:950px){
+          font-size: 15px;
+        }
           }
           p {
             color: #27272e;
@@ -62,6 +115,16 @@
             font-style: normal;
             font-weight: 500;
             line-height: 162.023%;
+
+            @media(max-width:1254px){
+              font-size: 11px;
+            }
+
+            @media(max-width:950px){
+              font-size: 10px;
+            }
+
+
           }
           @media (max-width:570px){
             text-align: center;
@@ -83,6 +146,18 @@
             font-style: normal;
             font-weight: 500;
             line-height: normal;
+
+
+            @media(max-width:1254px){
+              font-size: 11px;
+            }
+
+            @media(max-width:950px){
+              font-size: 10px;
+            }
+
+
+
           }
           .valid {
             color: red;
@@ -92,6 +167,8 @@
             font-style: normal;
             font-weight: 500;
             line-height: normal;
+
+          
           }
           input {
             width: 100%;
@@ -109,6 +186,14 @@
               font-weight: 500;
               line-height: 55.058px;
               // transform: translateX(px);
+
+              @media(max-width:950px){
+                font-size: 10px;
+              }
+ 
+
+             
+
             }
           }
           .forgotBox {
@@ -122,6 +207,11 @@
               font-weight: 400;
               line-height: 44.046px;
               text-decoration: none;
+
+
+              @media(max-width:950px){
+                font-size: 10px;
+              }
             }
           }
           .checkBox {
@@ -141,6 +231,10 @@
               font-style: normal;
               font-weight: 400;
               line-height: 44.046px; /* 109.091% */
+
+              @media(max-width:950px){
+                font-size: 10px;
+              }
             }
           }
           .singInBox {
@@ -150,6 +244,15 @@
             @include displayCenter;
             border-radius: 50px;
             transition: 250ms;
+ 
+             @media(max-width:1254px){
+              padding: 7px;
+             }
+
+             @media(max-width:1254px){
+              padding: 6px;
+            }
+
             button {
               background-color: transparent;
               border: none;
@@ -161,6 +264,16 @@
               font-weight: 600;
               text-decoration: none;
               letter-spacing: 1px;
+
+              @media(max-width:1254px){
+                font-size: 12px;
+               }
+             
+               @media(max-width:950px){
+                font-size: 11px;
+               }
+          
+
             }
             &:hover {
               background-color: #000;
@@ -170,13 +283,25 @@
               }
             }
           }
+
           .account {
-            color: #718096;
-            text-align: right;
-            font-family: Inter;
-            font-size: normal;
-            font-style: normal;
-            font-weight: 600;
+         
+
+            .tag{
+          color: #718096;
+          text-align: right;
+          font-family: Inter;
+          font-style: normal;
+          font-weight: 600;
+
+
+@media(max-width:682px){
+  font-size: 11px;
+}
+
+            }
+
+        
             a {
               color: #141416;
               font-family: Inter;
@@ -184,6 +309,10 @@
               font-style: normal;
               font-weight: 600;
               text-decoration: none;
+
+              @media(max-width:1254px){
+                font-weight: 600;
+              }
             }
           }
         }
@@ -211,6 +340,7 @@
         }
         form {
           max-width: 360px;
+          
           width: 100%;
 
           label {
@@ -332,6 +462,8 @@
             font-style: normal;
             font-weight: 400;
             // line-height: 40.839px; /* 109.091% */
+
+          
           }
         }
       }

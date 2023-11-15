@@ -6,7 +6,7 @@ const Ormadolocation = () => {
             <div className="mysize-width boxcontainer">
                 <div className="container">
                     <div className="row">
-                        <div className="leftmap col-12 col-sm-6 col-md-6 ">
+                        <div className="leftmap col-12 col-sm-6 col-md-6  ">
 
                             <div className="one">
 

@@ -56,7 +56,7 @@ const CreateAccount = () => {
       <section className="singin">
         <div className="container-fluid">
           <div className="row">
-            <div className="col-12 col-sm-5 col-md-5  ">
+            <div className="col-12 col-sm-5 col-md-6 col-lg-5 ">
               <div className="signImg">
                 <img src={login} alt="" className="img-fluid" />
                 <div className="logoTitle ">
@@ -69,7 +69,7 @@ const CreateAccount = () => {
                 </div>
               </div>
             </div>
-            <div className="col-12 col-sm-5 col-md-5 ">
+            <div className="col-12 col-sm-6 col-md-3 col-lg-5 ">
               <div className="formBoxUp ">
                 <div className="formTitle">
                   <h3>Create your account</h3>

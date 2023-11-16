@@ -5,17 +5,18 @@
 
     .signImg {
         position: relative;
+        height: 100vh;
 
         .logoTitle {
             position: absolute;
-
-
+            
         }
     }
 
 
+
     .formBoxUp {
-        @media(max-width:938px){
+        @media(max-width:938px) {
             margin-bottom: 20px;
         }
 
@@ -35,27 +36,27 @@
 
         }
 
-        .form{
-          .singInBox{
-          margin-bottom: 20px;
-
-          
-          @media(max-width:1041px) {
-            margin-bottom: 15px;
-        }
-
-          
-          }
+        .form {
+            .singInBox {
+                margin-bottom: 20px;
 
 
-          .label2{
-            margin-top: 15px;
-          }
+                @media(max-width:1041px) {
+                    margin-bottom: 15px;
+                }
 
-          
-          .label3{
-            margin-top: 15px;
-          }
+
+            }
+
+
+            .label2 {
+                margin-top: 15px;
+            }
+
+
+            .label3 {
+                margin-top: 15px;
+            }
         }
 
     }

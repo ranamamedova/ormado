@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter,Route, Routes } from 'react-router-dom'
 import Home from '../components/Home'
-import Navbar from '../components/Navbar'
+// import Navbar from '../components/Navbar'
 import Contact from '../pages/Contact'
 import Career from '../pages/Career'
 import Product from '../pages/Product'
@@ -9,14 +9,15 @@ import OurStory from '../pages/OurStory'
 import Franchise from '../pages/Franchise'
 import Reserve from '../pages/Reserve'
 import SearchBranch from '../pages/SearchBranch'
-import Footer from "../components/home/Footer"
+// import Footer from "../components/home/Footer"
 import Nutrition from '../pages/Nutrition'
 import SignIn from '../pages/SignIn'
 import Layout from '../components/Layout'
-import { useState } from 'react'
+// import { useState } from 'react'
 import CreateAccount from '../pages/CreateAccount'
 import Category from '../pages/Category'
 import Pagination from '../components/Pagination'
+import Gallery from '../pages/Gallery'
 
 const AppRouter = () => {
   return (
@@ -36,7 +37,9 @@ const AppRouter = () => {
     <Route  path='/searchbranch' element={<SearchBranch/>}></Route>
     <Route  path='/nutrition' element={<Nutrition/>}></Route>
     <Route  path='/category' element={<Category/>}></Route>
+    <Route  path='/gallery' element={<Gallery />}></Route>
     <Route  path='/pagination' element={<Pagination/>}></Route>
+    <Route  path='/gallery' element={<Gallery />}></Route>
     </Route>
     
     <Route  path='/signin' element={<SignIn />}></Route>

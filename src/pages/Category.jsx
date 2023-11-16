@@ -4,6 +4,7 @@ import ReactPaginate from "react-paginate";
 import blog from "../assets/img/Blog3.png";
 import Faqs from "../components/Faqs";
 import category from "../data/CategoryData";
+import Ormadolocation from "../components/Ormadolocation"
 const Category = () => {
   const [drop, setDrop] = useState(false);
 
@@ -130,6 +131,7 @@ const Category = () => {
         </div>
       </div>
       <Faqs />
+      <Ormadolocation/>
     </>
   );
 };

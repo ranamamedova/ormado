@@ -1,0 +1,165 @@
+
+.roasting-house{
+    background-image: url(../assets/img/beans2.png);
+    background-repeat: no-repeat;
+    background-position-x: 97%;
+    background-position-y: 20%;
+    width: 100%;
+    @media (max-width: 1300px){
+        background-position-x:100% ;
+    }
+    @media (max-width: 650px){
+        background-size: 30px;
+    }
+    @media (max-width: 570px){
+        background-size: 15px;
+    }
+    .rosdting-house-header{
+        background-image: url(../assets/img/beans3.png);
+        background-repeat: no-repeat;
+        background-position-x: 18%;
+        background-position-y: 100%;
+        
+        h1{
+            text-align: center;
+            color: #4e2922;
+            font-family: Montserrat;
+            font-weight: bold;
+        }
+        h5{
+            text-align: center;
+            color: #D1D1D1;
+            font-family: Montserrat;
+        }
+        @media (max-width: 1100px){
+            background-position-x: 12%;
+            h1{
+                font-size: 25px;
+            }
+            h5{
+                font-size: 20px;
+            }
+        }
+        @media (max-width: 800px){
+            background-position-x: 8%;
+            background-size: 80px;
+            h1{
+                font-size: 20px;
+            }
+            h5{
+                font-size: 15px;
+            }
+        }
+        @media (max-width: 550px){
+            background-position-x: 4%;
+            background-size: 40px;
+            h1{
+                font-size: 15px;
+            }
+            h5{
+                font-size: 10px;
+            }
+        }
+    }
+    
+    .roasting-house-cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .roasting-house-cardmain{
+            display: grid;
+            grid-template-columns: 33.3% 33.3% 33.3%;
+            row-gap: 50px;
+            background-image: url(../assets/img/beans5.png);
+            background-repeat: no-repeat;
+            background-position-x: 90%;
+            background-position-y: 98%;
+            background-size: 100px;
+            @media (max-width: 800px){
+                grid-template-columns: 50% 50%;
+                background-size: 80px;
+            }
+            @media (max-width: 550px){
+                // grid-template-columns: 100%;
+                background-size: 30px;
+                background-position-x: 85%;
+            }
+            
+            .card-img{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img{
+                    max-width: 350px;
+                    @media (max-width: 1215px){
+                        max-width: 250px;
+                    }
+                    @media (max-width: 992px){
+                        max-width: 210px;
+                    }
+                    @media (max-width: 800px){
+                        max-width: 240px;
+                    }
+                    @media (max-width: 650px){
+                        max-width: 210px;
+                    }
+                    @media (max-width: 550px){
+                        max-width: 180px;
+                    }
+                    @media (max-width: 415px){
+                        max-width: 160px;
+                    }
+                    @media (max-width: 360px){
+                        max-width: 140px;
+                    }
+                    @media (max-width: 325px){
+                        max-width: 120px;
+                    }
+                }
+            }
+        }
+        .roasting-house-button{
+            width: 100%;
+            height: 100px;
+            background-image: url(../assets/img/beans3.png);
+            background-size: 70px;
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-position-x: 10%;
+            background-position-y: 90%;
+            @media (max-width: 800px){
+                background-size: 50px;
+            }
+            @media (max-width: 550px){
+                background-size: 30px;
+            }
+            
+            button{
+                width: 200px;
+                height: 40px;
+                border: 0;
+                color: white;
+                background-color: #4e2922;
+                border-radius: 20px;
+                font-family: Montserrat;
+                font-weight: bold;
+                @media (max-width: 800px){
+                    width: 150px;
+                    height: 35px;
+                    font-size: 15px;
+                }
+                @media (max-width: 550px){
+                    width: 100px;
+                    height: 30px;
+                    font-size: 10px;
+                }
+                
+    
+            }
+        }
+        
+    }
+    
+}

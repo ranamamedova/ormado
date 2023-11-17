@@ -2,11 +2,18 @@
     width: auto;
     height: auto;
     // background-color: aqua;
+
+
+    .mysize{
+      @media(max-width:1042px){
+
+      }
+    }
  
 
       .myiframe{
-      width: 100%;
-      height: 350px;
+      width: 80%;
+      height: 400px;
       
       }
 

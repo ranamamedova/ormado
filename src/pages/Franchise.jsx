@@ -9,62 +9,63 @@ import Map from "../components/Map"
 import Faqs from "../components/Faqs"
 import Ormadolocation from '../components/Ormadolocation'
 
+
 const Franchise = () => {
   return (
 
 
-<>
-<div className="MyFranchise ">
+    <>
+      <div className="MyFranchise ">
 
-<div  className="width-mysize mybox">
-  <div className="container">
-    <div className="row ">
+        <div className="width-mysize mybox">
+          <div className="container">
+            <div className="row ">
 
 
 
-  
-<div  className="leftbox col-6">
-        <div className="innerbox">
-          <img src={rightlife} alt="" className='img-fluid image-one' />
-          <div className="innerbox1">
-            <h1>Why <br /> <span className='Ormado'>Ormado</span> <br />Franchise ?</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
 
-            <div className="footicon">
-                          
-               <img className='img-fluid foot' src={footicon} alt="" />
+              <div className="leftbox col-6">
+                <div className="innerbox">
+                  <img src={rightlife} alt="" className='img-fluid image-one' />
+                  <div className="innerbox1">
+                    <h1>Why <br /> <span className='Ormado'>Ormado</span> <br />Franchise ?</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
 
-               <h5>INQUIRE NOW</h5>
+                    <div className="footicon">
+
+                      <img className='img-fluid foot' src={footicon} alt="" />
+
+                      <h5>INQUIRE NOW</h5>
+                    </div>
+
+                  </div>
+                  <img src={lefticon} alt="" className='img-fluid lefticon' />
+
+
+                </div>
+
+              </div>
+
+              <div className="rightbox col-6">
+                <div className="innerbox2">
+                  <img className='lastimage img-fluid' src={inner} alt="" />
+                </div>
+              </div>
             </div>
 
           </div>
-          <img src={lefticon} alt="" className='img-fluid lefticon' />
-
-
         </div>
 
+
+
       </div>
-
-      <div className="rightbox col-6">
-        <div className="innerbox2">
-          <img  className='lastimage img-fluid' src={inner} alt="" />
-        </div>
-      </div>
-</div>
-
-    </div>
-  </div>
+      <TestDetails />
+      <Watch />
+      <Ormadolocation />
+      <Faqs />
 
 
-
-</div>
-<TestDetails  />
-<Watch/>
-<Ormadolocation/>
-<Faqs/>
-
-
-</>
+    </>
 
 
 

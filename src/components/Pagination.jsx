@@ -1,64 +1,119 @@
-import React from "react";
-import { useEffect } from "react";
-import { useState } from "react";
-import ReactPaginate from "react-paginate";
+import axios from 'axios';
+
+
+import React, { useEffect, useState } from 'react'
+
+
+const renderdata = (event) => {
+  return (
+    <div className="row">
+      {event.map((item, i) => {
+
+        return (
+          <div key={i} className="col-12 col-md-3 g-5"><img width={300} height={300} src={item.url} alt="" /></div>
+        )
+
+      })}
+    </div>
+  )
+}
+
 
 const Pagination = () => {
   const [data, setData] = useState([]);
-  const previous = <i className="fa-solid fa-chevron-left"></i>;
-  const next = <i class="fa-solid fa-chevron-right"></i>;
-  const [currentItems, setCurrentItems] = useState([]);
-  const [pageCount, setPageCount] = useState(0);
-  const [itemOffset, setItemOffset] = useState(0);
-  const itemsPerPage = 5;
+  const [currentpage, setCurrentpage] = useState(1);       // hal-hazirdaki sehive
+  const [itemsperpage, setItemsperpage] = useState(4);  //her sehivedeki cardlarin sayidir 
+
+
+
+
+  const indexoflastitem = currentpage * itemsperpage // meselen 12ci inddex ucun 3cu sehive * 4 
+
+  const indexoffirstitem = indexoflastitem - itemsperpage //12-4  3 cu sehivede ilk element menasini verecek
+
+  const currentitems = data.slice(indexoffirstitem, indexoflastitem);         //gorunenn cardlardir
+
+
+  // Math.ceil(data.length/itemsperpage)   umumi datalara gore buutonlarin sayini texmini gotrur.
+
+
+ const handleClick =(sehivenomresi) =>{
+    setCurrentpage(sehivenomresi);
+ }
+
+
+
+  const pagebuttons = [];
+
+  for (let i = 0; i <= Math.ceil(data.length / itemsperpage -1); i++) {
+
+    pagebuttons.push(
+      <button key={i}
+        className='btn btn-primary ms-2 mt-2'
+        onClick={()=>handleClick(i+1)}
+        >{i+1}</button>
+    )
+
+  }
+
+
+  const handleprevclick =(sehivenomresi) =>{
+    setCurrentpage(sehivenomresi -1 )
+  }
+  
+
+  const handlenextclick=(sehivenomresi) =>{
+    setCurrentpage(sehivenomresi+1)
+  }
+
+
+
 
   useEffect(() => {
-
-    //SELCAN BUNU SILERSEN 
-    fetch("https://jsonplaceholder.typicode.com/posts")
-      .then((res) => res.json())
-      .then((res) => {
-        setData(res);
-      });
+    axios.get("https://jsonplaceholder.typicode.com/albums/1/photos")
+      .then(res => {
+        setData(res.data)
+      })
+  },[])
 
 
-    const endOffset = itemOffset + itemsPerPage;
-    setCurrentItems(data.slice(itemOffset, endOffset));
-    setPageCount(Math.ceil(data.length / itemsPerPage));
-  }, [itemOffset, , itemsPerPage, data]);
 
-  const handlePageClick = (event) => {
-    const newOffset = (event.selected * itemsPerPage) % data.length;
-    setItemOffset(newOffset);
-  };
+
   return (
     <>
       <div>
-        {currentItems.map((fd) => (
-          <div className="d-flex" key={fd.id}>
-            <span>{fd.id}</span>
-            <p className="ms-2">{fd.title}</p>
+        <h1 className='text-center'>Pagination</h1>
+        <div className="container">
+          <div className="row">
+            {renderdata(currentitems)}
           </div>
-        ))}
-      </div>
-      <ReactPaginate
-        breakLabel="..."
-        nextLabel={next}
-        onPageChange={handlePageClick}
-        pageRangeDisplayed={2}
-        pageCount={pageCount}
-        previousLabel={previous}
-        renderOnZeroPageCount={null}
-        breakClassName="break"
-        containerClassName="pagination"
-        pageLinkClassName="previous-num"
-        previousClassName="page-num"
-        nextClassName="page-num"
-        activeLinkClassName="active"
-        activeClassName="test"
-      />
-    </>
-  );
-};
+        </div>
 
-export default Pagination;
+      </div>
+
+
+      <div className="buttons">
+        <div className="container">
+
+            <button  
+              onClick={()=>handleprevclick()}
+            className='btn btn-danger ms-2 mt-2'>Previous </button>
+
+          {pagebuttons}
+
+          <button  onClick={()=>handlenextclick()} className='btn btn-success ms-2 mt-2'>Next</button>
+
+        </div>
+      </div>
+
+
+
+
+    </>
+
+
+
+  )
+}
+
+export default Pagination

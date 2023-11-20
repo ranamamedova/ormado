@@ -32,7 +32,7 @@ const Home = () => {
       <Faqs/>
       <Blog />
 
-      <Pagination/>
+      {/* <Pagination/> */}
 
 
     </>

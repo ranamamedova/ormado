@@ -10,6 +10,7 @@ import Watch from "../components/Watch"
 import gallerydata from '../data/galleryData'
 import imageOurstory from '../assets/img/ImageOurstory.png'
 import vector from "../assets/img/VectorOurstory.svg"
+import FAQ from "../components/Faqs"
 const OurStory = () => {
   const [currentItems, setCurrentItems] = useState([]);
   const [itemOffset, setItemOffset] = useState(0);
@@ -102,8 +103,9 @@ const OurStory = () => {
         </div>
       </div>
     </div>
+    
   </div>
-  
+  <FAQ />
   </>
   )
 }

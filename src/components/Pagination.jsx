@@ -10,7 +10,7 @@ const renderdata = (event) => {
       {event.map((item, i) => {
 
         return (
-          <div key={i} className="col-12 col-md-3 g-5"><img width={300} height={300} src={item.url} alt="" /></div>
+          <div key={i} className="col-12 col-md-3 g-5"><img width={300} height={300} src={item.image} alt="" /></div>
         )
 
       })}
@@ -22,7 +22,7 @@ const renderdata = (event) => {
 const Pagination = () => {
   const [data, setData] = useState([]);
   const [currentpage, setCurrentpage] = useState(1);       // hal-hazirdaki sehive
-  const [itemsperpage, setItemsperpage] = useState(4);  //her sehivedeki cardlarin sayidir 
+  const [itemsperpage, setItemsperpage] = useState(3);  //her sehivedeki cardlarin sayidir 
 
 
 
@@ -37,44 +37,63 @@ const Pagination = () => {
   // Math.ceil(data.length/itemsperpage)   umumi datalara gore buutonlarin sayini texmini gotrur.
 
 
- const handleClick =(sehivenomresi) =>{
-    setCurrentpage(sehivenomresi);
- }
 
+  const handleClick = (sehivenomresi) => {
+    setCurrentpage(sehivenomresi);
+  }
 
 
   const pagebuttons = [];
 
-  for (let i = 0; i <= Math.ceil(data.length / itemsperpage -1); i++) {
+  for (let i = 0; i < Math.ceil(data.length / itemsperpage); i++) {
 
     pagebuttons.push(
       <button key={i}
         className='btn btn-primary ms-2 mt-2'
-        onClick={()=>handleClick(i+1)}
-        >{i+1}</button>
+        onClick={() => handleClick(i +1)}
+      >{i + 1}</button>
     )
 
   }
 
+  console.log("Sehivenin nomresi",currentpage);
+  console.log("bizim hesablamamiz",Math.ceil(data.length / itemsperpage))
+  // console.log("bizim hesablamamiz222",parseFloat(data.length / itemsperpage,2))
+  // console.log("bizim data len",data.length )
 
-  const handleprevclick =(sehivenomresi) =>{
-    setCurrentpage(sehivenomresi -1 )
+  // const handleprevclick = (sehivenomresi) => {
+
+  //   if(sehivenomresi!==1){
+  //     setCurrentpage(sehivenomresi - 1)
+  //   }
+  // }
+  const handleprevclick = () => {
+
+    if(currentpage!==1){
+      setCurrentpage(currentpage - 1)
+    }
   }
-  
 
-  const handlenextclick=(sehivenomresi) =>{
-    setCurrentpage(sehivenomresi+1)
+
+  const handlenextclick = (sehivenomresi) => {
+
+    if(!(sehivenomresi>=Math.ceil(data.length / itemsperpage))){
+      setCurrentpage(sehivenomresi + 1)
+    }
+    
   }
 
 
 
 
   useEffect(() => {
-    axios.get("https://jsonplaceholder.typicode.com/albums/1/photos")
-      .then(res => {
+    // axios.get("https://jsonplaceholder.typicode.com/albums/1/photos")
+    axios.get("https://fakestoreapi.com/products")
+    .then(res => {
         setData(res.data)
+        console.log(res.data);
       })
-  },[])
+  }, [])
 
 
 
@@ -95,13 +114,14 @@ const Pagination = () => {
       <div className="buttons">
         <div className="container">
 
-            <button  
-              onClick={()=>handleprevclick()}
+          <button
+
+            onClick={() => handleprevclick()}
             className='btn btn-danger ms-2 mt-2'>Previous </button>
 
           {pagebuttons}
 
-          <button  onClick={()=>handlenextclick()} className='btn btn-success ms-2 mt-2'>Next</button>
+          <button onClick={() => handlenextclick(currentpage)} className='btn btn-success ms-2 mt-2'>Next</button>
 
         </div>
       </div>

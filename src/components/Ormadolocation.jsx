@@ -1,6 +1,8 @@
 import React from 'react'
 
 const Ormadolocation = () => {
+
+
     return (
         <div className="ormadolocation ">
             <div className="mysize-width boxcontainer">
@@ -8,21 +10,10 @@ const Ormadolocation = () => {
                     <div className="row">
                         <div className="leftmap col-12 col-sm-6 col-md-6  ">
 
-                            <div className="one">
-
-                            </div>
-
-                            <div className="two">
-
-                            </div>
-
-                            <div className="three">
-
-                            </div>
-
-                            <div className="four">
-
-                            </div>
+                            <div className="one"></div>
+                            <div className="two"></div>
+                            <div className="three"></div>
+                            <div className="four"></div>
 
                             <div className="text-box">
 
@@ -68,19 +59,13 @@ const Ormadolocation = () => {
                             </div>
                         </div>
 
-                        <div  className="rightmap  col-12 col-sm-6 col-md-6 ">
-                            <iframe  className='myiframe ' src="https://my.atlist.com/map/f77aa50c-84cd-47b8-a0e1-8b31387435e8?share=true img-fluid" allow="geolocation 'self' https://my.atlist.com/" frameborder="0" scrolling="no" allowfullscreen></iframe>
+                        <div className="rightmap  col-12 col-sm-6 col-md-6 ">
+                            <iframe className='myiframe' title="My Map" src="https://my.atlist.com/map/f77aa50c-84cd-47b8-a0e1-8b31387435e8?share=true " allow="geolocation 'self' https://my.atlist.com/" frameborder="0" scrolling="no" allowFullScreen></iframe>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-
-
-
-
-
 
 
     )

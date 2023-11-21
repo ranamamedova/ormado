@@ -4,7 +4,7 @@ const Reserve = () => {
   return (
     <>
     <BreadCrumb title={"Reserve"}/>
-    <div className="reserve my-5">
+    {/* <div className="reserve my-5">
         <div className="row">
             <div className="col-12 col-sm-12 col-md-6">
              <div className="image-coffee" >
@@ -59,7 +59,7 @@ const Reserve = () => {
               </div>
                 
         </div>
-    </div>
+    </div> */}
     </>
   )
 }

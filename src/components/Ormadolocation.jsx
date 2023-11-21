@@ -4,7 +4,6 @@ import { useState } from 'react'
 
 
 
-
 const Ormadolocation = () => {
 
     const [data,setData] =useState(filterdata);
@@ -15,6 +14,8 @@ const Ormadolocation = () => {
         })
            setData(updateitems);
         }
+
+
     console.log("click et");
 
     return (
@@ -37,7 +38,7 @@ const Ormadolocation = () => {
                                     <h6>baku@ormado.de</h6>
                                     <h6>+994502535563</h6>
                                     <h6>09:00 - 17:00</h6>
-                                    <h6>23-29 Yusif Memmedaliyev, Baku, 1005 Azerbaijan</h6>
+                                    <h6> <i className="fa-solid fa-location-dot"></i>  23-29 Yusif Memmedaliyev, Baku, 1005 Azerbaijan</h6>
                                     <div className="circleCard"></div>
 
                                 </div>
@@ -47,7 +48,7 @@ const Ormadolocation = () => {
                                     <h6>zefirmall@ormado.de</h6>
                                     <h6>+994513708225</h6>
                                     <h6>09:00 - 17:00</h6>
-                                    <h6>Xarici Dairevi Yol 8, Baku, Azerbaijan</h6>
+                                    <h6> <i class="fa-solid fa-location-dot"></i> Xarici Dairevi Yol 8, Baku, Azerbaijan</h6>
                                     <div className="circleCard"></div>
                                 </div>
 
@@ -56,7 +57,7 @@ const Ormadolocation = () => {
                                     <h6>odessa@ormado.com</h6>
                                     <h6>+4917685589190</h6>
                                     <h6>09:00 - 17:00</h6>
-                                    <h6>Spyrydonivs'ka Str. 2, Odessa, 65000 Ukraine</h6>
+                                    <h6> <i className="fa-solid fa-location-dot"></i> Spyrydonivs'ka Str. 2, Odessa, 65000 Ukraine</h6>
                                     <div className="circleCard"></div>
                                 </div>
 
@@ -65,7 +66,7 @@ const Ormadolocation = () => {
                                     <h6>einbecker@ormado.de</h6>
                                     <h6>+4917685589190</h6>
                                     <h6>09:00 - 17:00</h6>
-                                    <h6>Einbecker Str. 18, 10317 Berlin, Germany</h6>
+                                    <h6><i className="fa-solid fa-location-dot"></i> Einbecker Str. 18, 10317 Berlin, Germany</h6>
                                     <div className="circleCard"></div>
                                 </div>
 
@@ -76,7 +77,7 @@ const Ormadolocation = () => {
                      
 
 
-               {data.map((item,i)=>{
+               {data.slice(0,1).map((item,i)=>{
                 return (
                     <div className="rightmap  col-12 col-sm-6 col-md-6 ">
                     <iframe className='myiframe' title="My Map" src={item.mapSrc} allow="geolocation 'self' https://my.atlist.com/" frameborder="0" scrolling="no" allowFullScreen></iframe>

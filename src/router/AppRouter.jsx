@@ -18,6 +18,7 @@ import CreateAccount from '../pages/CreateAccount'
 import Category from '../pages/Category'
 import Pagination from '../components/Pagination'
 import Gallery from '../pages/Gallery'
+import ProductDetails from '../pages/ProductDetails'
 
 const AppRouter = () => {
   return (
@@ -31,6 +32,7 @@ const AppRouter = () => {
     <Route  path='/contact' element={<Contact/>}></Route>
     <Route  path='/career' element={<Career/>}></Route>
     <Route  path='/product' element={<Product/>}></Route>
+    <Route  path='/productdetails' element={<ProductDetails/>}></Route>
     <Route  path='/ourstory' element={<OurStory/>}></Route>
     <Route  path='/franchise' element={<Franchise/>}></Route>
     <Route  path='/reserve' element={<Reserve/>}></Route>

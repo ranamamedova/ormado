@@ -15,7 +15,7 @@ import BestOffer from "./home/BestOffer"
 import NewSweets from "./home/NewSweets"
 import Faqs from "./Faqs";
 import Pagination from "./Pagination";
-import Place from "./Place";
+// import Place from "./Place";
 const Home = () => {
   return (
     <>
@@ -34,7 +34,7 @@ const Home = () => {
       <Blog />
 
       {/* <Pagination/> */}
-      <Place/>
+      {/* <Place/> */}
 
 
     </>

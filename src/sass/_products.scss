@@ -1,0 +1,132 @@
+.products-page {
+    .col-md-9 {
+        .img-transparent {
+            position: relative;
+
+            img {
+                width: 100%;
+                display: block;
+            }
+
+            .img-background {
+                position: absolute;
+                top: 0;
+                background-color: #000;
+                border-radius: 20px;
+                opacity: 0.4;
+                width: auto;
+                height: 100%;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+            }
+
+            .img-text-context {
+                position: absolute;
+                top: 30%;
+                left: 5%;
+
+                h4 {
+                    color: #fff;
+                    font-size: 20px;
+                    font-family: 'Montserrat';
+                }
+
+                h2 {
+                    color: #fff;
+                    font-size: 30px;
+                    font-family: 'Montserrat';
+                    font-weight: 700;
+                }
+
+                button {
+                    font-size: 12px;
+                    font-family: 'Montserrat';
+                    color: #fff;
+                    background-color: #E3B142;
+                    border: none;
+                    border-radius: 20px;
+                    padding: 7px 30px;
+                }
+            }
+        }
+
+        .sort-divs {
+            .sort-by-featured {
+                label {
+                    color: #D1D1D1;
+                    font-family: 'Montserrat';
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 600;
+                    margin-top: 5.5px;
+                }
+                select{
+                    background: none;
+                    width: 80px;
+                    color: #D1D1D1;
+                    font-family: 'Montserrat';
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:991px) {
+    .products-page {
+        .col-md-9 {
+            .img-transparent {
+                .img-text-context {
+                    position: absolute;
+                    top: 20%;
+                    left: 5%;
+
+                    h4 {
+                        font-size: 16px;
+                    }
+
+                    h2 {
+                        font-size: 24px;
+                    }
+
+                    button {
+                        padding: 5px 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:450px) {
+    .products-page {
+        .col-md-9 {
+            .img-transparent {
+                .img-text-context {
+                    position: absolute;
+                    top: 10%;
+                    left: 5%;
+
+                    h4 {
+                        font-size: 12px;
+                        margin-bottom: 4px;
+                    }
+
+                    h2 {
+                        font-size: 18px;
+                        margin-bottom: 4px;
+                    }
+
+                    button {
+                        font-size: 8px;
+                        padding: 5px 30px;
+                    }
+                }
+            }
+        }
+    }
+}

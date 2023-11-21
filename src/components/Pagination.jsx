@@ -1,64 +1,139 @@
-import React from "react";
-import { useEffect } from "react";
-import { useState } from "react";
-import ReactPaginate from "react-paginate";
+import axios from 'axios';
+
+
+import React, { useEffect, useState } from 'react'
+
+
+const renderdata = (event) => {
+  return (
+    <div className="row">
+      {event.map((item, i) => {
+
+        return (
+          <div key={i} className="col-12 col-md-3 g-5"><img width={300} height={300} src={item.image} alt="" /></div>
+        )
+
+      })}
+    </div>
+  )
+}
+
 
 const Pagination = () => {
   const [data, setData] = useState([]);
-  const previous = <i className="fa-solid fa-chevron-left"></i>;
-  const next = <i class="fa-solid fa-chevron-right"></i>;
-  const [currentItems, setCurrentItems] = useState([]);
-  const [pageCount, setPageCount] = useState(0);
-  const [itemOffset, setItemOffset] = useState(0);
-  const itemsPerPage = 5;
+  const [currentpage, setCurrentpage] = useState(1);       // hal-hazirdaki sehive
+  const [itemsperpage, setItemsperpage] = useState(3);  //her sehivedeki cardlarin sayidir 
+
+
+
+
+  const indexoflastitem = currentpage * itemsperpage // meselen 12ci inddex ucun 3cu sehive * 4 
+
+  const indexoffirstitem = indexoflastitem - itemsperpage //12-4  3 cu sehivede ilk element menasini verecek
+
+  const currentitems = data.slice(indexoffirstitem, indexoflastitem);         //gorunenn cardlardir
+
+
+  // Math.ceil(data.length/itemsperpage)   umumi datalara gore buutonlarin sayini texmini gotrur.
+
+
+
+  const handleClick = (sehivenomresi) => {
+    setCurrentpage(sehivenomresi);
+  }
+
+
+  const pagebuttons = [];
+
+  for (let i = 0; i < Math.ceil(data.length / itemsperpage); i++) {
+
+    pagebuttons.push(
+      <button key={i}
+        className='btn btn-primary ms-2 mt-2'
+        onClick={() => handleClick(i +1)}
+      >{i + 1}</button>
+    )
+
+  }
+
+  console.log("Sehivenin nomresi",currentpage);
+  console.log("bizim hesablamamiz",Math.ceil(data.length / itemsperpage))
+  // console.log("bizim hesablamamiz222",parseFloat(data.length / itemsperpage,2))
+  // console.log("bizim data len",data.length )
+
+  // const handleprevclick = (sehivenomresi) => {
+
+  //   if(sehivenomresi!==1){
+  //     setCurrentpage(sehivenomresi - 1)
+  //   }
+  // }
+  const handleprevclick = () => {
+
+    if(currentpage!==1){
+      setCurrentpage(currentpage - 1)
+    }
+  }
+
+
+  const handlenextclick = (sehivenomresi) => {
+
+    if(!(sehivenomresi>=Math.ceil(data.length / itemsperpage))){
+      setCurrentpage(sehivenomresi + 1)
+    }
+    
+  }
+
+
+
 
   useEffect(() => {
+    // axios.get("https://jsonplaceholder.typicode.com/albums/1/photos")
+    axios.get("https://fakestoreapi.com/products")
+    .then(res => {
+        setData(res.data)
+        console.log(res.data);
+      })
+  }, [])
 
-    //SELCAN BUNU SILERSEN 
-    fetch("https://jsonplaceholder.typicode.com/posts")
-      .then((res) => res.json())
-      .then((res) => {
-        setData(res);
-      });
 
 
-    const endOffset = itemOffset + itemsPerPage;
-    setCurrentItems(data.slice(itemOffset, endOffset));
-    setPageCount(Math.ceil(data.length / itemsPerPage));
-  }, [itemOffset, , itemsPerPage, data]);
 
-  const handlePageClick = (event) => {
-    const newOffset = (event.selected * itemsPerPage) % data.length;
-    setItemOffset(newOffset);
-  };
   return (
     <>
       <div>
-        {currentItems.map((fd) => (
-          <div className="d-flex" key={fd.id}>
-            <span>{fd.id}</span>
-            <p className="ms-2">{fd.title}</p>
+        <h1 className='text-center'>Pagination</h1>
+        <div className="container">
+          <div className="row">
+            {renderdata(currentitems)}
           </div>
-        ))}
-      </div>
-      <ReactPaginate
-        breakLabel="..."
-        nextLabel={next}
-        onPageChange={handlePageClick}
-        pageRangeDisplayed={2}
-        pageCount={pageCount}
-        previousLabel={previous}
-        renderOnZeroPageCount={null}
-        breakClassName="break"
-        containerClassName="pagination"
-        pageLinkClassName="previous-num"
-        previousClassName="page-num"
-        nextClassName="page-num"
-        activeLinkClassName="active"
-        activeClassName="test"
-      />
-    </>
-  );
-};
+        </div>
 
-export default Pagination;
+      </div>
+
+
+      <div className="buttons">
+        <div className="container">
+
+          <button
+
+            onClick={() => handleprevclick()}
+            className='btn btn-danger ms-2 mt-2'>Previous </button>
+
+          {pagebuttons}
+
+          <button onClick={() => handlenextclick(currentpage)} className='btn btn-success ms-2 mt-2'>Next</button>
+
+        </div>
+      </div>
+
+
+
+
+    </>
+
+
+
+  )
+}
+
+export default Pagination

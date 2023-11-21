@@ -17,7 +17,8 @@ const category = [
         read:"1K read",
         desc:"Aenean eleifend ante maecenas pulvinar montes lorem et pede dis dolor pretium donec dictum. Vici consequat justo enim. Venenatis eget adipiscing.",
         read:"Read More",
-        category:"LATTE"
+        category:"LATTE",
+       
     },
     {
         id:1,

@@ -1,32 +1,37 @@
 import React from 'react'
+import filterdata from "../data/filterdata"
+import { useState } from 'react'
+
+
+
 
 const Ormadolocation = () => {
+
+    const [data,setData] =useState(filterdata);
+
+    const filteritems=(newitem)=>{
+        const updateitems = filterdata.filter((natureitem,i)=>{
+            return natureitem.mapSrc ==newitem;
+        })
+           setData(updateitems);
+        }
+    console.log("click et");
+
     return (
         <div className="ormadolocation ">
             <div className="mysize-width boxcontainer">
                 <div className="container">
                     <div className="row">
-                        <div className="leftmap col-12 col-sm-6 col-md-6 ">
+                        <div className="leftmap col-12 col-sm-6 col-md-6  ">
 
-                            <div className="one">
-
-                            </div>
-
-                            <div className="two">
-
-                            </div>
-
-                            <div className="three">
-
-                            </div>
-
-                            <div className="four">
-
-                            </div>
+                            <div className="one"></div>
+                            <div className="two"></div>
+                            <div className="three"></div>
+                            <div className="four"></div>
 
                             <div className="text-box">
 
-                                <div className="firststage">
+                                <div onClick={()=>filteritems(filterdata[0].mapSrc)} className="firststage">
 
                                     <h6>Ormado Kaffeehaus Baku | Yusif Memmedaliyev</h6>
                                     <h6>baku@ormado.de</h6>
@@ -37,7 +42,7 @@ const Ormadolocation = () => {
 
                                 </div>
 
-                                <div style={{ color: "white" }} className="secondstage ">
+                                <div  onClick={()=>filteritems(filterdata[1].mapSrc)}  style={{ color: "white" }} className="secondstage ">
                                     <h6>Ormado Kaffeehaus Baku I Zefir Mall</h6>
                                     <h6>zefirmall@ormado.de</h6>
                                     <h6>+994513708225</h6>
@@ -46,7 +51,7 @@ const Ormadolocation = () => {
                                     <div className="circleCard"></div>
                                 </div>
 
-                                <div className="thirdstage  ">
+                                <div  onClick={()=>filteritems(filterdata[2].mapSrc)} className="thirdstage  ">
                                     <h6>Ormado Kaffeehaus Odessa</h6>
                                     <h6>odessa@ormado.com</h6>
                                     <h6>+4917685589190</h6>
@@ -55,7 +60,7 @@ const Ormadolocation = () => {
                                     <div className="circleCard"></div>
                                 </div>
 
-                                <div className="fourthstage ">
+                                <div  onClick={()=>filteritems(filterdata[0].mapSrc)} className="fourthstage ">
                                     <h6>Ormado Kaffeehaus Berlin | Einbecker</h6>
                                     <h6>einbecker@ormado.de</h6>
                                     <h6>+4917685589190</h6>
@@ -68,19 +73,22 @@ const Ormadolocation = () => {
                             </div>
                         </div>
 
-                        <div  className="rightmap  col-12 col-sm-6 col-md-6 ">
-                            <iframe  className='myiframe ' src="https://my.atlist.com/map/f77aa50c-84cd-47b8-a0e1-8b31387435e8?share=true img-fluid" allow="geolocation 'self' https://my.atlist.com/" frameborder="0" scrolling="no" allowfullscreen></iframe>
-                        </div>
+                     
+
+
+               {data.map((item,i)=>{
+                return (
+                    <div className="rightmap  col-12 col-sm-6 col-md-6 ">
+                    <iframe className='myiframe' title="My Map" src={item.mapSrc} allow="geolocation 'self' https://my.atlist.com/" frameborder="0" scrolling="no" allowFullScreen></iframe>
+                </div>
+                )
+               })}
+
+
                     </div>
                 </div>
             </div>
         </div>
-
-
-
-
-
-
 
 
     )

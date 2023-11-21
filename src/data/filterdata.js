@@ -22,10 +22,8 @@ const locations = [
       phone: '+4917685589190',
       hours: '09:00 - 17:00',
       address: 'Spyrydonivs\'ka Str. 2, Odessa, 65000 Ukraine',
-      mapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d770859.8685954385!2d27.763565073025845!3d40.999622369181154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa7040068086b%3A0xe1ccfe98bc01b0d0!2zxLBzdGFuYnVsLCBJc3RhbmJ1bCBpbGksIFTDvHJraXnJmQ!5e0!3m2!1saz!2saz!4v1700476356176!5m2!1saz!2saz" ,
+      mapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24311.84309014848!2d49.83275993160742!3d40.387127310728914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d608afa6217%3A0x5db17242f9b9744f!2sOrmado%20Kaffeehaus!5e0!3m2!1saz!2saz!4v1700565109118!5m2!1saz!2saz" ,   
     }
-
-  ];
-
+    ]
 
   export default locations;

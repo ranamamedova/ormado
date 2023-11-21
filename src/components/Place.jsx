@@ -1,31 +1,29 @@
 import React from 'react'
-
-import filterdata from "../data/filterdata";
-import { useState } from 'react';
+import filterdata from "../data/filterdata"
+import { useState } from 'react'
 
 const Place = () => {
-  const [data,setData] =useState(filterdata);
+
+const [data,setData] =useState(filterdata);
 
 
-
-  const filterinfo=(a)=>{
-    console.log("Isleyir");
-   const newitems = filterdata.find((item)=>{
-    return item.mapSrc == a;
+const filtermethod=(item)=>{
+   const newitems=filterdata.filter((olditem,i)=>{
+    return olditem.mapSrc==item;
    })
 
    setData(newitems);
-     
-  }
+}
 
-
-console.log("menimdatam",data);
+console.log("click edin");
 
   return (
-    <>
-   <div className="text-box">
+   <>
+    
+   
+    <div className="text-box">
 
-<div onClick={()=>filterinfo(filterdata[0].mapSrc)} className="firststage">
+<div onClick={()=>filtermethod()} className="firststage ">
 
     <h6>Ormado Kaffeehaus Baku | Yusif Memmedaliyev</h6>
     <h6>baku@ormado.de</h6>
@@ -36,7 +34,7 @@ console.log("menimdatam",data);
 
 </div>
 
-<div style={{ color: "white" }} className="secondstage ">
+<div  className="secondstage mt-5">
     <h6>Ormado Kaffeehaus Baku I Zefir Mall</h6>
     <h6>zefirmall@ormado.de</h6>
     <h6>+994513708225</h6>
@@ -45,7 +43,7 @@ console.log("menimdatam",data);
     <div className="circleCard"></div>
 </div>
 
-<div className="thirdstage  ">
+<div className="thirdstage mt-5 ">
     <h6>Ormado Kaffeehaus Odessa</h6>
     <h6>odessa@ormado.com</h6>
     <h6>+4917685589190</h6>
@@ -54,7 +52,7 @@ console.log("menimdatam",data);
     <div className="circleCard"></div>
 </div>
 
-<div className="fourthstage ">
+<div className="fourthstage mt-5">
     <h6>Ormado Kaffeehaus Berlin | Einbecker</h6>
     <h6>einbecker@ormado.de</h6>
     <h6>+4917685589190</h6>
@@ -64,26 +62,9 @@ console.log("menimdatam",data);
 </div>
 
 
-{/* {data.map((item,i)=>{
-    return(
-        <>
-        <h1>{item.address}</h1>
-        <iframe src={item.mapSrc} frameborder="0"></iframe>
-        </>
-    )
-})} */}
-
-   <>
-   <h1>{data.address}</h1>
-   <iframe src={data.mapSrc} frameborder="0"></iframe>
-   </>
-
 </div>
-
-    
-    
-    
-    </>
+   
+   </>
   )
 }
 

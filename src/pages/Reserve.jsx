@@ -67,7 +67,13 @@ const Reserve = () => {
           <div className="reserve-style col-12 col-sm-12 col-md-6 order-md-1 order-2">
             <div className="image-coffee">
               <img src={require('../assets/img/sidenav-bg.png')} alt=""/>
-              <div className="overlay-text text-center">WELCOME TO ORMADO KAFFEEHAUS</div>
+             <div className="overlay ">
+             <div className="overlay-img ">
+                <img src={require('../assets/img/logo.png')} alt="" />
+              </div>
+             <h2 className="overlay-text text-center mt-3">WELCOME TO ORMADO KAFFEEHAUS</h2>
+              
+             </div>
             </div>
           </div>
           <div className="reserve-form-tabel col-12 col-sm-12 col-md-6 order-md-2 order-1 my-3">

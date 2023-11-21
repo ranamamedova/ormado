@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import story from "../assets/img/ourstory.png"
 import blast from "../assets/img/blast.png"
 import Ormadolocation from "../components/Ormadolocation"
@@ -7,8 +7,21 @@ import icon from "../assets/img/pngwing3.png"
 import blastLeft from "../assets/img/coffee_blast.png"
 import blastRight from "../assets/img/coffee_blast2.png"
 import Watch from "../components/Watch"
+import gallerydata from '../data/galleryData'
+import imageOurstory from '../assets/img/ImageOurstory.png'
+import vector from "../assets/img/VectorOurstory.svg"
+import FAQ from "../components/Faqs"
 const OurStory = () => {
+  const [currentItems, setCurrentItems] = useState([]);
+  const [itemOffset, setItemOffset] = useState(0);
+  const itemsPerPage = 6;
+  const endOffset = itemOffset + itemsPerPage;
+
+  useEffect(() => {
+    setCurrentItems(gallerydata.slice(itemOffset, endOffset));
+  }, [itemOffset]);
   return (
+
     <>
   <div className="container-fluid ">
     <div className="ourstory-section1">
@@ -32,8 +45,67 @@ const OurStory = () => {
       </div>
     </div>
     <Watch />
+    <div className="ourstory-section3 mb-5">
+        <div className="ourstory-section3-cards mb-5">
+          <div className="ourstory-section3-cardmain mb-5">
+            {currentItems.slice(0,4).map((item,index)=>(
+              <div className={`card-img ${
+                index % 2 === 1 ? "mt-5 pt-5" : "mt-0"
+              }`} >
+              <img src={item.photo} alt="error" />
+              </div>
+            ))}
+          </div>
+        </div>
+    </div>
+    <Ormadolocation/>
+    <div className="ourstory-section4">
+      <div className="ourstory-section4-text1">
+        <h1 className='mb-2'>MISSION</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+      </div>
+      <div className="ourstory-section4-text2 mt-5">
+        <h1 className='mb-2'>VISION</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+      </div>
+    </div>
+    <div className="ourstory-section5 ">
+      <div className="ourstory-section5-cards ">
+        <div className="card-part1 mt-4">
+          
+            <div className="background-black"></div>
+            <img  src={imageOurstory} alt="" />
+            <div className="card-main">
+              <img src={vector} alt="error" />
+            </div>
+          </div>
+      </div>
+      <div className="ourstory-section5-text">
+        
+          <h1 className='mb-5 ms-5'>WE ARE PERFECT TEAM FOR HOME INTERIOR DECORATION</h1>
+          <div className="text-main mb-5">
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+          <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+        </div>
+        <div className="text-number mt-4">
+          <div className="experience">
+            <h2 className='mb-3'>15Y</h2>
+            <p>Experience</p>
+          </div>
+          <div className="bestteam">
+            <h2 className='mb-3'>25+</h2>
+            <p>Best Team</p>
+          </div>
+          <div className="totalclient">
+            <h2 className='mb-3'>500+</h2>
+            <p>Total Client</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
   </div>
-  <Ormadolocation/>
+  <FAQ />
   </>
   )
 }

@@ -8,6 +8,7 @@ import Watch from '../components/Watch'
 import Map from "../components/Map"
 import Faqs from "../components/Faqs"
 import Ormadolocation from '../components/Ormadolocation'
+import { Link } from 'react-router-dom'
 
 
 const Franchise = () => {
@@ -31,12 +32,12 @@ const Franchise = () => {
                     <h1>Why <br /> <span className='Ormado'>Ormado</span> <br />Franchise ?</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
 
-                    <div className="footicon">
-
+               <Link to="/franchiseform" className='footicon'>
+               {/* <div className="footicon" style={{"cursor":"pointer"}}> */}
                       <img className='img-fluid foot' src={footicon} alt="" />
-
                       <h5>INQUIRE NOW</h5>
-                    </div>
+                    {/* </div> */}
+               </Link>
 
                   </div>
                   <img src={lefticon} alt="" className='img-fluid lefticon' />

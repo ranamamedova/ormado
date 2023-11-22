@@ -16,7 +16,7 @@ const Ormadolocation = () => {
     });
     setData(updateitems);
   };
-  console.log("click et");
+  // console.log("click et");
 
   return (
 

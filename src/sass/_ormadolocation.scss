@@ -106,13 +106,13 @@
        
 
 
-
+             
                 .firststage {
                     position: relative !important;
                     width: 100%;
                     height: auto;
-                    color: var(--roundplayarrow);
-
+                    color: #fff;
+                   cursor: pointer;
 
                     h6 {
 
@@ -335,7 +335,7 @@
                     height: auto;
                     color: #FFF;
                     margin-top: 15px;
-
+                    cursor: pointer;
 
 
                     &::before {
@@ -507,7 +507,9 @@
                 @media(max-width:992px) {
                     margin-left: 15px;
                 }
-
+          .active{
+            color: var(--roundplayarrow) ;
+          }
             }
 
 

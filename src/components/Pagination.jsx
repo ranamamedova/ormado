@@ -62,8 +62,8 @@ const Pagination = () => {
 
 
   const handlenextclick = () => {
-    if (!(currentpage>=Math.ceil(data.length/itemsperpage))) {
-      setCurrentpage(currentpage+1)
+    if (!(currentpage >= Math.ceil(data.length / itemsperpage))) {
+      setCurrentpage(currentpage + 1)
     }
   }
 

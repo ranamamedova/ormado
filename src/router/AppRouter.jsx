@@ -18,6 +18,7 @@ import CreateAccount from '../pages/CreateAccount'
 import Category from '../pages/Category'
 import Pagination from '../components/Pagination'
 import Gallery from '../pages/Gallery'
+import ProductDetails from '../pages/ProductDetails'
 
 const AppRouter = () => {
   return (
@@ -40,6 +41,7 @@ const AppRouter = () => {
     <Route  path='/gallery' element={<Gallery />}></Route>
     <Route  path='/pagination' element={<Pagination/>}></Route>
     <Route  path='/gallery' element={<Gallery />}></Route>
+    <Route  path='/productDetails' element={<ProductDetails />}></Route>
     </Route>
     
     <Route  path='/signin' element={<SignIn />}></Route>

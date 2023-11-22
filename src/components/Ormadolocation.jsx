@@ -48,7 +48,7 @@ const Ormadolocation = () => {
                                     <h6>zefirmall@ormado.de</h6>
                                     <h6>+994513708225</h6>
                                     <h6>09:00 - 17:00</h6>
-                                    <h6> <i class="fa-solid fa-location-dot"></i> Xarici Dairevi Yol 8, Baku, Azerbaijan</h6>
+                                    <h6> <i className="fa-solid fa-location-dot "></i> <span className='ms-1'>Xarici Dairevi Yol 8, Baku, Azerbaijan</span></h6>
                                     <div className="circleCard"></div>
                                 </div>
 

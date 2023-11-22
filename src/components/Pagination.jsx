@@ -1,6 +1,4 @@
 import axios from 'axios';
-
-
 import React, { useEffect, useState } from 'react'
 
 
@@ -18,13 +16,10 @@ const renderdata = (event) => {
   )
 }
 
-
 const Pagination = () => {
   const [data, setData] = useState([]);
   const [currentpage, setCurrentpage] = useState(1);       // hal-hazirdaki sehive
-  const [itemsperpage, setItemsperpage] = useState(3);  //her sehivedeki cardlarin sayidir 
-
-
+  const [itemsperpage, setItemsperpage] = useState(4);  //her sehivedeki cardlarin sayidir 
 
 
   const indexoflastitem = currentpage * itemsperpage // meselen 12ci inddex ucun 3cu sehive * 4 
@@ -34,12 +29,12 @@ const Pagination = () => {
   const currentitems = data.slice(indexoffirstitem, indexoflastitem);         //gorunenn cardlardir
 
 
-  // Math.ceil(data.length/itemsperpage)   umumi datalara gore buutonlarin sayini texmini gotrur.
+  // Math.ceil(data.length/itemsperpage)   umumi datalara gore butonlarin sayini texmini gotrur.
 
 
 
-  const handleClick = (sehivenomresi) => {
-    setCurrentpage(sehivenomresi);
+  const handleClick = (a) => {
+    setCurrentpage(a);
   }
 
 
@@ -50,46 +45,33 @@ const Pagination = () => {
     pagebuttons.push(
       <button key={i}
         className='btn btn-primary ms-2 mt-2'
-        onClick={() => handleClick(i +1)}
+        onClick={() => handleClick(i + 1)}
       >{i + 1}</button>
     )
 
   }
 
-  console.log("Sehivenin nomresi",currentpage);
-  console.log("bizim hesablamamiz",Math.ceil(data.length / itemsperpage))
-  // console.log("bizim hesablamamiz222",parseFloat(data.length / itemsperpage,2))
-  // console.log("bizim data len",data.length )
+  console.log("Sehivenin nomresi", currentpage);
 
-  // const handleprevclick = (sehivenomresi) => {
 
-  //   if(sehivenomresi!==1){
-  //     setCurrentpage(sehivenomresi - 1)
-  //   }
-  // }
   const handleprevclick = () => {
-
-    if(currentpage!==1){
+    if (currentpage !== 1) {
       setCurrentpage(currentpage - 1)
     }
   }
 
 
-  const handlenextclick = (sehivenomresi) => {
-
-    if(!(sehivenomresi>=Math.ceil(data.length / itemsperpage))){
-      setCurrentpage(sehivenomresi + 1)
+  const handlenextclick = () => {
+    if (!(currentpage>=Math.ceil(data.length/itemsperpage))) {
+      setCurrentpage(currentpage+1)
     }
-    
   }
 
 
 
-
   useEffect(() => {
-    // axios.get("https://jsonplaceholder.typicode.com/albums/1/photos")
     axios.get("https://fakestoreapi.com/products")
-    .then(res => {
+      .then(res => {
         setData(res.data)
         console.log(res.data);
       })
@@ -121,17 +103,12 @@ const Pagination = () => {
 
           {pagebuttons}
 
-          <button onClick={() => handlenextclick(currentpage)} className='btn btn-success ms-2 mt-2'>Next</button>
+          <button onClick={() => handlenextclick()} className='btn btn-success ms-2 mt-2'>Next</button>
 
         </div>
       </div>
 
-
-
-
     </>
-
-
 
   )
 }

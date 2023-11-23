@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import BreadCrumb from './BreadCrumb'
 
-import Pagination from '../components/Pagination'
+// import Pagination from '../components/Pagination'
 
 const Product = () => {
 
@@ -15,7 +15,7 @@ const Product = () => {
       Nutrition
     </NavLink>
 
-    <Pagination/>
+    {/* <Pagination/> */}
     </>
   )
 }

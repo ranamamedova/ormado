@@ -4,7 +4,7 @@ import ReactPaginate from "react-paginate";
 import blog from "../assets/img/Blog3.png";
 import Faqs from "../components/Faqs";
 import category from "../data/CategoryData";
-import Ormadolocation from "../components/Ormadolocation"
+import Ormadolocation from "../pages/Ormadolocation"
 const Category = () => {
   const [drop, setDrop] = useState(false);
 

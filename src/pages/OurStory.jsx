@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import story from "../assets/img/ourstory.png"
 import blast from "../assets/img/blast.png"
-import Ormadolocation from "../components/Ormadolocation"
+import Ormadolocation from "../pages/Ormadolocation"
 import ormadoImg from "../assets/img/ormado.png"
 import icon from "../assets/img/pngwing3.png"
 import blastLeft from "../assets/img/coffee_blast.png"
@@ -41,7 +41,7 @@ const OurStory = () => {
     <div className="ourstory-img">
       {
         data.map(fd=>{
-          return <img src={fd.image} alt="error" className='img-fluid'/>
+          return <img src={fd.image} alt="error" className='img-fluid tex'/>
         })
       }
     </div>

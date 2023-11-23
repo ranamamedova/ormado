@@ -27,6 +27,10 @@ const OurStory = () => {
     .then((res)=>{
       console.log(res.data.data)
       setData(res.data.data)
+    }) 
+    
+    .catch((err)=>{
+      console.log(err)
     })
   }, [itemOffset]);
   return (

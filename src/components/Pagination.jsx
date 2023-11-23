@@ -67,13 +67,20 @@ const Pagination = () => {
     }
   }
 
-
+  const [loading , setLoading] = useState(true);
+  const [error , setError] = useState();
 
   useEffect(() => {
     axios.get("https://fakestoreapi.com/products")
       .then(res => {
+        // console.log(res);
         setData(res.data)
         console.log(res.data);
+        setLoading(false)
+      })
+      .catch(res =>{
+        setLoading(false)
+        setError(true);
       })
   }, [])
 
@@ -86,7 +93,27 @@ const Pagination = () => {
         <h1 className='text-center'>Pagination</h1>
         <div className="container">
           <div className="row">
-            {renderdata(currentitems)}
+            {
+              loading 
+                ?
+                <h2 className='text-center py-2 my-2 bg-success text-white'>Loading</h2>
+                :
+                (
+                  error  ?
+                  <h2 className='text-center py-2 my-2 bg-danger text-white'>Not Found 404</h2>
+
+                  :
+                  (
+                    data.length == 0 ?
+                    <h2>Məhsul yoxdur !!</h2>
+
+                    :
+
+                    renderdata(currentitems)
+                  )
+                )
+
+            }
           </div>
         </div>
 

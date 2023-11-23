@@ -11,7 +11,7 @@ const Ormadolocation = () => {
 
     useEffect(() => {
         filteritems(filterdata[0].mapSrc)
-    },[])
+    }, [])
 
 
 

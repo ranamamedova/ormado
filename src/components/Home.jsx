@@ -11,9 +11,8 @@ import WhyUs from "./home/WhyUs";
 import BestOffer from "./home/BestOffer"
 import NewSweets from "./home/NewSweets"
 import Faqs from "./Faqs";
-import Examplefilter from "../pages/Examplefilter";
 
-// import Place from "./Place";
+
 const Home = () => {
   return (
     <>
@@ -30,7 +29,7 @@ const Home = () => {
       <Franchise />
       <Faqs/>
       <Blog />
-      <Examplefilter/>
+     
 
    
 

@@ -5,9 +5,8 @@ import lefticon from "../assets/img/leftside.png"
 import rightlife from "../assets/img/rightlifw.png"
 import TestDetails from '../components/TestDetails'
 import Watch from '../components/Watch'
-import Map from "../components/Map"
 import Faqs from "../components/Faqs"
-import Ormadolocation from '../components/Ormadolocation'
+import Ormadolocation from "../pages/Ormadolocation"
 
 
 const Franchise = () => {
@@ -61,7 +60,7 @@ const Franchise = () => {
       </div>
       <TestDetails />
       <Watch />
-      <Ormadolocation />
+      <Ormadolocation/>
       <Faqs />
 
 

@@ -1,9 +1,9 @@
 .franchiseform {
   .container {
     .row {
-        @media (max-width:768px){
-            flex-direction: column-reverse !important;
-        }
+      @media (max-width: 768px) {
+        flex-direction: column-reverse !important;
+      }
       .franchiseFormImg {
         .img {
           border-radius: 50px;
@@ -44,10 +44,10 @@
           color: #979797;
           text-align: center;
           font-family: Montserrat;
-          font-size: 40px;
+          font-size: 45px;
           font-style: normal;
           font-weight: 900;
-          line-height: normal;
+          line-height: 50px;
           span {
             color: #e3b142;
             font-family: Montserrat;
@@ -69,14 +69,16 @@
           font-size: small;
           font-style: normal;
           font-weight: 400;
-          line-height: 140%; 
+          line-height: 140%;
           letter-spacing: 0.881px;
+          padding-bottom: 20px;
+          border-bottom: 1px dashed #979797;
         }
       }
       .formInput {
         position: relative;
         input {
-          max-width: 250px;
+          // max-width: 50px;
           width: 100%;
           padding: 10px;
           border-radius: 20px;
@@ -97,6 +99,47 @@
           font-weight: 500;
           line-height: normal;
         }
+      }
+    }
+    .formRow {
+      padding-bottom: 20px;
+      border-bottom: 1px dashed #979797;
+      @media (max-width: 768px) {
+        flex-direction: row !important;
+      }
+    }
+    .d-flex {
+      .checkBox {
+        accent-color: #000;
+      }
+      p {
+        color: #979797;
+        font-family: Montserrat;
+        font-size: small;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        span {
+          color: #4a3024;
+          font-family: Montserrat;
+          font-size: small;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          cursor: pointer;
+        }
+      }
+      .submitBtn {
+        border-radius: 50px;
+        background-color: #4a3024;
+        color: #fff;
+        font-family: Montserrat;
+        font-size: normal;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        padding: 10px;
+        border: none;
       }
     }
   }

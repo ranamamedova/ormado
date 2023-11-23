@@ -9,12 +9,12 @@ const Product = () => {
 
   return (
     <>
-    <BreadCrumb title="PRODUCT DETAILS"/>
+    <BreadCrumb title="PRODUCT"/>
     <NavLink to="/nutrition">
       Nutrition
     </NavLink>
-
-   
+    <hr/>
+    <NavLink to="/productdetails">ProductDetails</NavLink>
     </>
   )
 }

@@ -33,6 +33,7 @@ const AppRouter = () => {
     <Route  path='/contact' element={<Contact/>}></Route>
     <Route  path='/career' element={<Career/>}></Route>
     <Route  path='/product' element={<Product/>}></Route>
+    <Route  path='/productdetails' element={<ProductDetails/>}></Route>
     <Route  path='/ourstory' element={<OurStory/>}></Route>
     <Route  path='/franchise' element={<Franchise/>}></Route>
     <Route  path='/reserve' element={<Reserve/>}></Route>

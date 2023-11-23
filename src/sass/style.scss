@@ -74,6 +74,9 @@ body {
 // PRODUCTS
 @import "./productcards" ;
 
+//Products Details
+@import "./productdetails" ;
+
 // PAYMENT
 @import "./payment";
 
@@ -149,7 +152,7 @@ body {
 @import "./category" ;
 
 //Product Details
-@import "./ProductDetails.scss";
+// @import "./ProductDetails.scss";
 
 
 // Reserve

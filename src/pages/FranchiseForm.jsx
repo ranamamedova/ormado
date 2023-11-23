@@ -1,9 +1,10 @@
 import React from "react";
 import franchise from "../assets/img/franchiseform.png";
+import Faqs from "../components/Faqs"
 const FranchiseForm = () => {
   return (
     <>
-      <section className="franchiseform">
+      <section className="franchiseform pb-5">
         <div className="container">
           <div className="row  justify-content-center g-5">
             <div className="col-12 col-sm-6 ">
@@ -95,6 +96,7 @@ const FranchiseForm = () => {
           </div>
         </div>
       </section>
+      <Faqs/>
     </>
   );
 };

@@ -622,7 +622,7 @@ const Navbar = () => {
             <li>
               {" "}
               <NavLink
-                to="/contact"
+                to="/contacts"
                 className={`notactive ${active == 7 ? "active" : ""}`}
                 onClick={() => {
                   setActive(7);

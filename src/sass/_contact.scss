@@ -1,0 +1,63 @@
+@mixin sameinput{
+        background-color: #4A3024;
+        border-bottom:1px solid #F2F2F2;
+        color: white;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        line-height: 1cm;
+        font-size: 12px;
+        margin: 10px;
+        outline: none;
+
+}
+
+
+.diascuss{
+    font-family: Montserrat;
+    background-color: #4A3024;
+    display: flex;
+    justify-content: space-evenly;
+    h1{
+        font-size: 95px;
+        line-height: 3cm;
+       opacity: 30%;
+       color: transparent;
+       -webkit-text-stroke-width: 1px;
+       -webkit-text-stroke-color: #fff;
+       font-weight: 900;
+       
+    }
+    h2{
+        font-weight: 700;
+        font-size: 30px;
+    }
+   
+    input{
+        @include sameinput();
+    }
+    select{
+        @include sameinput();
+        
+    }
+    ::placeholder {
+        color: #fff;
+        opacity: 1; 
+      }
+ 
+   .endl{
+    display: flex;
+    flex-direction: column;
+    
+    button{
+        background-color: #FECF08;
+        color: #fff;
+        border: none;
+        border-radius: 20px;
+        width: 80px;
+        height: 27px;
+        font-size: 10px;
+        font-weight: 700;
+    }
+   }
+}

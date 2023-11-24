@@ -41,7 +41,7 @@ const SignIn = () => {
           setPassValid(false);
           localStorage.setItem("userEmail",email)
           localStorage.setItem("userPassword",password)
-          navigate("/contact")
+          navigate("/myaccount")
         } else {
           alert("Email ve Password sehvdir");
         }

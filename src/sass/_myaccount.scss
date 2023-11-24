@@ -1,0 +1,33 @@
+.myaccount {
+  .container {
+    .row {
+      .accountBox {
+        .title {
+          h3 {
+            color: #979797;
+            font-family: Montserrat;
+            font-size: normal;
+            font-style: normal;
+            font-weight: 700;
+            // line-height: 138.896px;
+            span {
+              color: #e3b142;
+            }
+          }
+        }
+      }
+      .formDetails {
+        form {
+          p {
+            color: #979797;
+            font-family: Montserrat;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 700;
+            // line-height: 75.912px; /* 158.428% */
+          }
+        }
+      }
+    }
+  }
+}

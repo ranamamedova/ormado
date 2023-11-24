@@ -55,7 +55,7 @@ const CreateAccount = () => {
     <>
       <section className="singin">
         <div className="container-fluid">
-          <div className="row">
+          <div className="row ">
             <div className="col-12 col-sm-5 col-md-6 col-lg-5 ">
               <div className="signImg">
                 <img src={login} alt="" className="img-fluid" />

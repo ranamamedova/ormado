@@ -133,12 +133,12 @@ body {
 @import "./category" ;
 
 
-
+// Ormado Location
 @import "ormadolocation";
 
 @import "ourstory" ;
 
-
+//Pagination
 @import "pagination" ;
 
 
@@ -152,6 +152,9 @@ body {
 @import "./ProductDetails.scss";
 // Reserve
 @import "./reserve";
+
+//locationcontact
+@import "./locationcontact";
 
 
 

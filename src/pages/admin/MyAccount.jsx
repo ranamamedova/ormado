@@ -33,7 +33,7 @@ const MyAccount = () => {
               <div className="accountBox">
                 <div className="title">
                   <h3>
-                    Hello,<span>Tamerlan</span>
+                    Hello,<span>Webluna</span>
                   </h3>
                   <div className="accountInfo">
                     <div
@@ -217,9 +217,9 @@ const MyAccount = () => {
           </div>
         </div>
       </section>
-      <button
+      {/* <button
        onClick={logoutFunc}
-      >Log out</button>
+      >Log out</button> */}
     </>
   );
 };

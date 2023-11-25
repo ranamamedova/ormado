@@ -74,6 +74,11 @@ body {
 // PRODUCTS
 @import "./productcards" ;
 
+//Products Details
+@import "./productdetails" ;
+
+@import "./products" ;
+
 // PAYMENT
 @import "./payment";
 
@@ -148,13 +153,17 @@ body {
 // CATEGORY PAGE
 @import "./category" ;
 
-//Product Details
-@import "./ProductDetails.scss";
+
+
+
 // Reserve
 @import "./reserve";
 
 //locationcontact
 @import "./locationcontact";
+
+
+@import "./franchiseform" ;
 
 
 

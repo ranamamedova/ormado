@@ -1,12 +1,11 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
 import ReactPaginate from "react-paginate";
-import blog from "../assets/img/Blog3.png";
-import Faqs from "../components/Faqs";
 import category from "../data/CategoryData";
 import Ormadolocation from "../pages/Ormadolocation"
 const Category = () => {
   const [drop, setDrop] = useState(false);
+  const [active,setActive] = useState('')
 
   const [data,setData] = useState(category);
   const previous = <i className="fa-solid fa-chevron-left"></i>;
@@ -24,10 +23,11 @@ const Category = () => {
   const handlePageClick = (event) => {
     const newOffset = (event.selected * itemsPerPage) % data.length;
     setItemOffset(newOffset);
+    window.scrollTo({top:100,behavior:"smooth"})
   };
   
   const filterItem =(findCategory)=>{
-      const uptadeCategory = data.filter((oldCategory)=>{
+      const uptadeCategory = category.filter((oldCategory)=>{
         return oldCategory.category == findCategory
       })
       setData(uptadeCategory)
@@ -40,22 +40,40 @@ const Category = () => {
         <div className="categoryContainer">
           <ul>
             <li>
-              <a href="#react">ALL CATEGORIES </a>
+              <a href="#react" className={`${active == 6 ? "active" : ""}`} onClick={()=>{
+                setData(category)
+                setActive(6)
+              }}>ALL CATEGORIES </a>
             </li>
             <li>
-              <a href="#react" onClick={()=>filterItem("LATTE")}>LATTE </a>
+              <a href="#react" className={`${active == 1 ? "active" : ""}`} onClick={()=>{
+                filterItem("LATTE")
+                setActive(1)
+              }}>LATTE </a>
             </li>
             <li>
-              <a href="#react">CAPPUCCINO </a>
+              <a href="#react" className={`${active == 2 ? "active" : ""}`} onClick={()=>{
+                filterItem("CAPPUCCINO")
+                setActive(2)
+              }}>CAPPUCCINO </a>
             </li>
             <li>
-              <a href="#react">AMERICANO </a>
+              <a href="#react" className={`${active == 3 ? "active" : ""}`} onClick={()=>{
+                filterItem("AMERICANO")
+                setActive(3)
+              }}>AMERICANO </a>
             </li>
             <li>
-              <a href="#react">ESPRESSO </a>
+              <a href="#react" className={`${active == 4 ? "active" : ""}`} onClick={()=>{
+                filterItem("ESPRESSO")
+                setActive(4)
+              }}>ESPRESSO </a>
             </li>
             <li>
-              <a href="#react">ARABICA </a>
+              <a href="#react" className={`${active == 5 ? "active" : ""}`} onClick={()=>{
+                filterItem("ARABICA")
+                setActive(5)
+              }}>ARABICA </a>
             </li>
             <li>
               <a
@@ -130,8 +148,6 @@ const Category = () => {
           />
         </div>
       </div>
-      <Faqs />
-      <Ormadolocation/>
     </>
   );
 };

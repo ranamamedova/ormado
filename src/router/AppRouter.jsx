@@ -19,6 +19,7 @@ import Category from '../pages/Category'
 import Pagination from '../components/Pagination'
 import Gallery from '../pages/Gallery'
 import ProductDetails from '../pages/ProductDetails'
+import FranchiseForm from '../pages/FranchiseForm'
 
 const AppRouter = () => {
   return (
@@ -32,6 +33,7 @@ const AppRouter = () => {
     <Route  path='/contact' element={<Contact/>}></Route>
     <Route  path='/career' element={<Career/>}></Route>
     <Route  path='/product' element={<Product/>}></Route>
+    <Route  path='/productdetails' element={<ProductDetails/>}></Route>
     <Route  path='/ourstory' element={<OurStory/>}></Route>
     <Route  path='/franchise' element={<Franchise/>}></Route>
     <Route  path='/reserve' element={<Reserve/>}></Route>
@@ -42,6 +44,8 @@ const AppRouter = () => {
     <Route  path='/pagination' element={<Pagination/>}></Route>
     <Route  path='/gallery' element={<Gallery />}></Route>
     <Route  path='/productDetails' element={<ProductDetails />}></Route>
+    <Route  path='/franchiseform' element={<FranchiseForm />}></Route>
+
     </Route>
     
     <Route  path='/signin' element={<SignIn />}></Route>

@@ -11,7 +11,11 @@ import gallerydata from '../data/galleryData'
 import imageOurstory from '../assets/img/ImageOurstory.png'
 import vector from "../assets/img/VectorOurstory.svg"
 import FAQ from "../components/Faqs"
+import axios from 'axios'
 const OurStory = () => {
+   const [data,setData] = useState([])
+
+
   const [currentItems, setCurrentItems] = useState([]);
   const [itemOffset, setItemOffset] = useState(0);
   const itemsPerPage = 6;
@@ -19,6 +23,15 @@ const OurStory = () => {
 
   useEffect(() => {
     setCurrentItems(gallerydata.slice(itemOffset, endOffset));
+    axios.get("https://ormado.webluna.space/api/client/about")
+    .then((res)=>{
+      console.log(res.data.data)
+      setData(res.data.data)
+    }) 
+    
+    .catch((err)=>{
+      console.log(err)
+    })
   }, [itemOffset]);
   return (
 
@@ -26,7 +39,11 @@ const OurStory = () => {
   <div className="container-fluid ">
     <div className="ourstory-section1">
     <div className="ourstory-img">
-      <img src={ormadoImg} alt="error" className='img-fluid'/>
+      {
+        data.map(fd=>{
+          return <img src={fd.image} alt="error" className='img-fluid tex'/>
+        })
+      }
     </div>
     <div className="ourstory-main ">
       <img src={blastLeft} alt="error" className='blastLeft'/>

@@ -103,6 +103,11 @@
                         line-height: 10px;
                         color: var(--roundplayarrow);
 
+                        @media(max-width:1025px) {
+                            font-size: 10px;
+                            line-height: 10px;
+                        }
+
 
                         @media(max-width:992px) {
                             font-size: 7px;
@@ -141,6 +146,11 @@
                         height: 320px !important;
                         background-color: var(--carousellogos);
                         z-index: 99999999;
+
+                        @media(max-width:1025px) {
+                            width: 1px;
+                            height: 330px !important;
+                        }
 
                         @media(max-width:992px) {
                             width: 1px;
@@ -288,6 +298,13 @@
                         font-size: 11px;
                         line-height: 10px;
                         color: var(--carousellogos);
+
+                        @media(max-width:1025px) {
+                            font-size: 10px;
+                            line-height: 10px;
+                        }
+
+
 
                         @media(max-width:992px) {
                             font-size: 7px;
@@ -546,10 +563,8 @@
                 @media(max-width:992px) {
                     width: 18px;
                     height: 18px;
-
                     bottom: 9%;
                     right: 6%;
-
                 }
 
                 @media(max-width:768px) {
@@ -557,7 +572,6 @@
                     height: 14px;
                     bottom: 5%;
                     right: 6%;
-
                 }
 
                 @media(max-width:576px) {
@@ -568,7 +582,6 @@
                 }
             }
         }
-
 
         .rightmap {
             position: relative;
@@ -582,7 +595,6 @@
                 position: relative;
                 width: 100%;
                 @include displayCenter;
-
 
                 .myimage-0 {
                     position: absolute;
@@ -606,8 +618,6 @@
                         height: 150px !important;
                     }
 
-
-
                 }
 
                 .myimage-1 {
@@ -627,11 +637,10 @@
                     }
 
                     @media(max-width:750px) {
-                        
+
                         width: 130px !important;
                         height: 150px !important;
                     }
-
 
                 }
 
@@ -673,6 +682,22 @@
                         height: 150px !important;
                     }
 
+                    @media(max-width:650px) {
+                        top: 50%;
+                        left: 58%;
+                        width: 130px !important;
+                        height: 150px !important;
+                    }
+
+                    @media(max-width:490px){
+                        top: 50%;
+                        left: 63%;
+                    }
+
+                    @media(max-width:424px){
+                        top: 50%;
+                        left: 68%;
+                    }
 
                 }
 
@@ -708,6 +733,21 @@
                         width: 130px !important;
                         height: 150px !important;
                     }
+
+                    @media(max-width:650px) {
+                        left: 68%;
+                        width: 130px !important;
+                        height: 150px !important;
+                    }
+
+                    @media(max-width:490px){
+                        left: 74%;
+                    }
+
+                    @media(max-width:424px){
+                        left: 80%;
+                    }
+
 
 
 

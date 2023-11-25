@@ -10,7 +10,7 @@ const Contact = () => {
   // const [login, setLogin] = useState(false);
   // const email = localStorage.getItem("userEmail");
   // const password = localStorage.getItem("userPassword");
-  // const navigate = useNavigate();   
+  // const navigate = useNavigate();
   // useEffect(() => {
   //   if (email && password) {
   //     setLogin(true);
@@ -38,8 +38,7 @@ const Contact = () => {
         ></iframe>
       </div>
       } */}
-   
-     <Locationincontact/>
+      <Locationincontact/>
     </>
 
     

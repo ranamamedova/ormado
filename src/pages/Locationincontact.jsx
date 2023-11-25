@@ -74,15 +74,9 @@ const Locationincontact = () => {
                                     {data.map((item, i) => {
                                             return (
                                                 <img className={`myimage-${i}`} src={item.image} alt="" />
-
                                             )
                                         })}
-                                    </div>
-                                 
-                                     
-                                   
-
-                              
+                                    </div>                   
                             </div>
                         </div>
                     </div>

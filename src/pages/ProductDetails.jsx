@@ -1,7 +1,11 @@
 import BreadCrumb from "../pages/BreadCrumb";
 import ProductImg from "../assets/img/Product Image.png";
+import ProductImg2 from "../assets/img/Image (2).png";
+import ProductImg3 from "../assets/img/Image (3).png";
+import ProductImg4 from "../assets/img/Image (4).png";
 import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import Faqs from '../components/Faqs';
 
 import "swiper/css";
 import "swiper/css/free-mode";
@@ -190,6 +194,7 @@ const ProductDetails = () => {
             </div>
           </div>
           <hr />
+
           <div className="related-products row">
             <h6>Related Products</h6>
             <span>
@@ -208,14 +213,62 @@ const ProductDetails = () => {
                 />
               </svg>
             </span>
-            <div className="related-single-cards">
-              <div className="col-sm-12 col-md-6 col-lg-3 single-card row">
-                <div>
+            <div className="related-single-cards row g-3">
+              <div className="col-sm-12 col-md-6  col-lg-3 single-card mx-1 row g-3">
+                <div className="discount-red-button">
+                  <div className="discount-price">50% Off</div>
+                </div>
+                <div className="card-images">
                   <img
                     src={ProductImg}
-                    style={{ width: "70%" }}
+                    style={{ width: "100%" }}
                     alt="ProductImg"
                   />
+                </div>
+                <div className="top-icons">
+                  <div className="top-icon">
+                    <div className="backgroundIcon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 52 51"
+                        fill="none"
+                      >
+                        <path
+                          d="M26.0184 44.0129C-15.6998 20.9544 13.5035 -4.07699 26.0184 11.7513C38.535 -4.077 67.7383 20.9544 26.0184 44.0129Z"
+                          stroke="#979797"
+                          stroke-width="3.75472"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div className="top-icon mt-2">
+                    <div className="backgroundIcon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 52 51"
+                        fill="none"
+                      >
+                        <path
+                          d="M26.0197 9.10254C10.375 9.10254 4.11719 25.2705 4.11719 25.2705C4.11719 25.2705 10.375 41.4348 26.0197 41.4348C41.6644 41.4348 47.9222 25.2705 47.9222 25.2705C47.9222 25.2705 41.6644 9.10254 26.0197 9.10254V9.10254Z"
+                          stroke="#979797"
+                          stroke-width="3.75472"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M26.0215 33.0929C28.0962 33.0929 30.0858 32.2688 31.5528 30.8018C33.0197 29.3348 33.8439 27.3452 33.8439 25.2706C33.8439 23.196 33.0197 21.2063 31.5528 19.7393C30.0858 18.2724 28.0962 17.4482 26.0215 17.4482C23.9469 17.4482 21.9573 18.2724 20.4903 19.7393C19.0234 21.2063 18.1992 23.196 18.1992 25.2706C18.1992 27.3452 19.0234 29.3348 20.4903 30.8018C21.9573 32.2688 23.9469 33.0929 26.0215 33.0929V33.0929Z"
+                          stroke="#979797"
+                          stroke-width="3.75472"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
                 </div>
                 <div className="features">
                   <div className="price-part">
@@ -225,22 +278,22 @@ const ProductDetails = () => {
                         <div className="real-price">14.99$</div>
                         <div className="line-price">20.99$</div>
                       </div>
-                        <div className="bag-icon">
-                            <svg
-                               xmlns="http://www.w3.org/2000/svg"
-                               width="20"
-                               height="20"
-                               viewBox="0 0 48 48"
-                               fill="none"
-                             >
-                             <path
-                               d="M13.9438 19.4603H6.71188L1.89062 45.9772H45.2819L40.4607 19.4603H33.2288M13.9438 19.4603V12.2285C13.9438 6.90304 18.2609 2.58594 23.5863 2.58594V2.58594C28.9117 2.58594 33.2288 6.90304 33.2288 12.2285V19.4603M13.9438 19.4603H33.2288M13.9438 19.4603V26.6922M33.2288 19.4603V26.6922"
-                               stroke="#979797"
-                               stroke-width="3"
-                               stroke-linecap="round"
-                               stroke-linejoin="round"
-                             />
-                            </svg>
+                      <div className="bag-icon">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 48 48"
+                            fill="none"
+                          >
+                            <path
+                              d="M13.9438 19.4603H6.71188L1.89062 45.9772H45.2819L40.4607 19.4603H33.2288M13.9438 19.4603V12.2285C13.9438 6.90304 18.2609 2.58594 23.5863 2.58594V2.58594C28.9117 2.58594 33.2288 6.90304 33.2288 12.2285V19.4603M13.9438 19.4603H33.2288M13.9438 19.4603V26.6922M33.2288 19.4603V26.6922"
+                              stroke="#979797"
+                              stroke-width="3"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
                       </div>
                     </div>
                     <div className="star-review">
@@ -253,13 +306,61 @@ const ProductDetails = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-sm-12 col-md-6 col-lg-3 single-card row">
-                <div>
+              <div className="col-sm-12 col-md-6  col-lg-3 single-card mx-1 row g-3">
+                {/* <div className="discount-red-button">
+                  <div className="discount-price">50% Off</div>
+                </div> */}
+                <div className="card-images">
                   <img
-                    src={ProductImg}
-                    style={{ width: "70%" }}
+                    src={ProductImg2}
+                    style={{ width: "100%" }}
                     alt="ProductImg"
                   />
+                </div>
+                <div className="top-icons">
+                  <div className="top-icon">
+                    <div className="backgroundIcon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 52 51"
+                        fill="none"
+                      >
+                        <path
+                          d="M26.0184 44.0129C-15.6998 20.9544 13.5035 -4.07699 26.0184 11.7513C38.535 -4.077 67.7383 20.9544 26.0184 44.0129Z"
+                          stroke="#979797"
+                          stroke-width="3.75472"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div className="top-icon mt-2">
+                    <div className="backgroundIcon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 52 51"
+                        fill="none"
+                      >
+                        <path
+                          d="M26.0197 9.10254C10.375 9.10254 4.11719 25.2705 4.11719 25.2705C4.11719 25.2705 10.375 41.4348 26.0197 41.4348C41.6644 41.4348 47.9222 25.2705 47.9222 25.2705C47.9222 25.2705 41.6644 9.10254 26.0197 9.10254V9.10254Z"
+                          stroke="#979797"
+                          stroke-width="3.75472"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M26.0215 33.0929C28.0962 33.0929 30.0858 32.2688 31.5528 30.8018C33.0197 29.3348 33.8439 27.3452 33.8439 25.2706C33.8439 23.196 33.0197 21.2063 31.5528 19.7393C30.0858 18.2724 28.0962 17.4482 26.0215 17.4482C23.9469 17.4482 21.9573 18.2724 20.4903 19.7393C19.0234 21.2063 18.1992 23.196 18.1992 25.2706C18.1992 27.3452 19.0234 29.3348 20.4903 30.8018C21.9573 32.2688 23.9469 33.0929 26.0215 33.0929V33.0929Z"
+                          stroke="#979797"
+                          stroke-width="3.75472"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
                 </div>
                 <div className="features">
                   <div className="price-part">
@@ -269,22 +370,22 @@ const ProductDetails = () => {
                         <div className="real-price">14.99$</div>
                         <div className="line-price">20.99$</div>
                       </div>
-                        <div className="bag-icon">
-                            <svg
-                               xmlns="http://www.w3.org/2000/svg"
-                               width="20"
-                               height="20"
-                               viewBox="0 0 48 48"
-                               fill="none"
-                             >
-                             <path
-                               d="M13.9438 19.4603H6.71188L1.89062 45.9772H45.2819L40.4607 19.4603H33.2288M13.9438 19.4603V12.2285C13.9438 6.90304 18.2609 2.58594 23.5863 2.58594V2.58594C28.9117 2.58594 33.2288 6.90304 33.2288 12.2285V19.4603M13.9438 19.4603H33.2288M13.9438 19.4603V26.6922M33.2288 19.4603V26.6922"
-                               stroke="#979797"
-                               stroke-width="3"
-                               stroke-linecap="round"
-                               stroke-linejoin="round"
-                             />
-                            </svg>
+                      <div className="bag-icon">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 48 48"
+                            fill="none"
+                          >
+                            <path
+                              d="M13.9438 19.4603H6.71188L1.89062 45.9772H45.2819L40.4607 19.4603H33.2288M13.9438 19.4603V12.2285C13.9438 6.90304 18.2609 2.58594 23.5863 2.58594V2.58594C28.9117 2.58594 33.2288 6.90304 33.2288 12.2285V19.4603M13.9438 19.4603H33.2288M13.9438 19.4603V26.6922M33.2288 19.4603V26.6922"
+                              stroke="#979797"
+                              stroke-width="3"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
                       </div>
                     </div>
                     <div className="star-review">
@@ -297,13 +398,61 @@ const ProductDetails = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-sm-12 col-md-6 col-lg-3 single-card row">
-                <div>
+              <div className="col-sm-12 col-md-6  col-lg-3 single-card mx-1 row g-3">
+                {/* <div className="discount-red-button">
+                  <div className="discount-price">50% Off</div>
+                </div> */}
+                <div className="card-images">
                   <img
-                    src={ProductImg}
-                    style={{ width: "70%" }}
+                    src={ProductImg3}
+                    style={{ width: "100%" }}
                     alt="ProductImg"
                   />
+                </div>
+                <div className="top-icons">
+                  <div className="top-icon">
+                    <div className="backgroundIcon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 52 51"
+                        fill="none"
+                      >
+                        <path
+                          d="M26.0184 44.0129C-15.6998 20.9544 13.5035 -4.07699 26.0184 11.7513C38.535 -4.077 67.7383 20.9544 26.0184 44.0129Z"
+                          stroke="#979797"
+                          stroke-width="3.75472"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div className="top-icon mt-2">
+                    <div className="backgroundIcon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 52 51"
+                        fill="none"
+                      >
+                        <path
+                          d="M26.0197 9.10254C10.375 9.10254 4.11719 25.2705 4.11719 25.2705C4.11719 25.2705 10.375 41.4348 26.0197 41.4348C41.6644 41.4348 47.9222 25.2705 47.9222 25.2705C47.9222 25.2705 41.6644 9.10254 26.0197 9.10254V9.10254Z"
+                          stroke="#979797"
+                          stroke-width="3.75472"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M26.0215 33.0929C28.0962 33.0929 30.0858 32.2688 31.5528 30.8018C33.0197 29.3348 33.8439 27.3452 33.8439 25.2706C33.8439 23.196 33.0197 21.2063 31.5528 19.7393C30.0858 18.2724 28.0962 17.4482 26.0215 17.4482C23.9469 17.4482 21.9573 18.2724 20.4903 19.7393C19.0234 21.2063 18.1992 23.196 18.1992 25.2706C18.1992 27.3452 19.0234 29.3348 20.4903 30.8018C21.9573 32.2688 23.9469 33.0929 26.0215 33.0929V33.0929Z"
+                          stroke="#979797"
+                          stroke-width="3.75472"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
                 </div>
                 <div className="features">
                   <div className="price-part">
@@ -313,22 +462,22 @@ const ProductDetails = () => {
                         <div className="real-price">14.99$</div>
                         <div className="line-price">20.99$</div>
                       </div>
-                        <div className="bag-icon">
-                            <svg
-                               xmlns="http://www.w3.org/2000/svg"
-                               width="20"
-                               height="20"
-                               viewBox="0 0 48 48"
-                               fill="none"
-                             >
-                             <path
-                               d="M13.9438 19.4603H6.71188L1.89062 45.9772H45.2819L40.4607 19.4603H33.2288M13.9438 19.4603V12.2285C13.9438 6.90304 18.2609 2.58594 23.5863 2.58594V2.58594C28.9117 2.58594 33.2288 6.90304 33.2288 12.2285V19.4603M13.9438 19.4603H33.2288M13.9438 19.4603V26.6922M33.2288 19.4603V26.6922"
-                               stroke="#979797"
-                               stroke-width="3"
-                               stroke-linecap="round"
-                               stroke-linejoin="round"
-                             />
-                            </svg>
+                      <div className="bag-icon">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 48 48"
+                            fill="none"
+                          >
+                            <path
+                              d="M13.9438 19.4603H6.71188L1.89062 45.9772H45.2819L40.4607 19.4603H33.2288M13.9438 19.4603V12.2285C13.9438 6.90304 18.2609 2.58594 23.5863 2.58594V2.58594C28.9117 2.58594 33.2288 6.90304 33.2288 12.2285V19.4603M13.9438 19.4603H33.2288M13.9438 19.4603V26.6922M33.2288 19.4603V26.6922"
+                              stroke="#979797"
+                              stroke-width="3"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
                       </div>
                     </div>
                     <div className="star-review">
@@ -341,13 +490,61 @@ const ProductDetails = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-sm-12 col-md-6 col-lg-3 single-card row">
-                <div>
+              <div className="col-sm-12 col-md-6  col-lg-3 single-card mx-1 row g-3">
+                {/* <div className="discount-red-button">
+                  <div className="discount-price">50% Off</div>
+                </div> */}
+                <div className="card-images">
                   <img
-                    src={ProductImg}
-                    style={{ width: "70%" }}
+                    src={ProductImg4}
+                    style={{ width: "100%" }}
                     alt="ProductImg"
                   />
+                </div>
+                <div className="top-icons">
+                  <div className="top-icon">
+                    <div className="backgroundIcon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 52 51"
+                        fill="none"
+                      >
+                        <path
+                          d="M26.0184 44.0129C-15.6998 20.9544 13.5035 -4.07699 26.0184 11.7513C38.535 -4.077 67.7383 20.9544 26.0184 44.0129Z"
+                          stroke="#979797"
+                          stroke-width="3.75472"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div className="top-icon mt-2">
+                    <div className="backgroundIcon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 52 51"
+                        fill="none"
+                      >
+                        <path
+                          d="M26.0197 9.10254C10.375 9.10254 4.11719 25.2705 4.11719 25.2705C4.11719 25.2705 10.375 41.4348 26.0197 41.4348C41.6644 41.4348 47.9222 25.2705 47.9222 25.2705C47.9222 25.2705 41.6644 9.10254 26.0197 9.10254V9.10254Z"
+                          stroke="#979797"
+                          stroke-width="3.75472"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M26.0215 33.0929C28.0962 33.0929 30.0858 32.2688 31.5528 30.8018C33.0197 29.3348 33.8439 27.3452 33.8439 25.2706C33.8439 23.196 33.0197 21.2063 31.5528 19.7393C30.0858 18.2724 28.0962 17.4482 26.0215 17.4482C23.9469 17.4482 21.9573 18.2724 20.4903 19.7393C19.0234 21.2063 18.1992 23.196 18.1992 25.2706C18.1992 27.3452 19.0234 29.3348 20.4903 30.8018C21.9573 32.2688 23.9469 33.0929 26.0215 33.0929V33.0929Z"
+                          stroke="#979797"
+                          stroke-width="3.75472"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
                 </div>
                 <div className="features">
                   <div className="price-part">
@@ -357,22 +554,22 @@ const ProductDetails = () => {
                         <div className="real-price">14.99$</div>
                         <div className="line-price">20.99$</div>
                       </div>
-                        <div className="bag-icon">
-                            <svg
-                               xmlns="http://www.w3.org/2000/svg"
-                               width="20"
-                               height="20"
-                               viewBox="0 0 48 48"
-                               fill="none"
-                             >
-                             <path
-                               d="M13.9438 19.4603H6.71188L1.89062 45.9772H45.2819L40.4607 19.4603H33.2288M13.9438 19.4603V12.2285C13.9438 6.90304 18.2609 2.58594 23.5863 2.58594V2.58594C28.9117 2.58594 33.2288 6.90304 33.2288 12.2285V19.4603M13.9438 19.4603H33.2288M13.9438 19.4603V26.6922M33.2288 19.4603V26.6922"
-                               stroke="#979797"
-                               stroke-width="3"
-                               stroke-linecap="round"
-                               stroke-linejoin="round"
-                             />
-                            </svg>
+                      <div className="bag-icon">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 48 48"
+                            fill="none"
+                          >
+                            <path
+                              d="M13.9438 19.4603H6.71188L1.89062 45.9772H45.2819L40.4607 19.4603H33.2288M13.9438 19.4603V12.2285C13.9438 6.90304 18.2609 2.58594 23.5863 2.58594V2.58594C28.9117 2.58594 33.2288 6.90304 33.2288 12.2285V19.4603M13.9438 19.4603H33.2288M13.9438 19.4603V26.6922M33.2288 19.4603V26.6922"
+                              stroke="#979797"
+                              stroke-width="3"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
                       </div>
                     </div>
                     <div className="star-review">
@@ -387,11 +584,11 @@ const ProductDetails = () => {
               </div>
             </div>
 
-            
             <RelatedProducts />
           </div>
         </div>
       </section>
+      <Faqs/>
     </>
   );
 };

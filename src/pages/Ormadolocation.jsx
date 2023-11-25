@@ -10,18 +10,31 @@ const Ormadolocation = () => {
 
 
     useEffect(() => {
-        filteritems(filterdata[0].mapSrc)
+        filteritems("odessa@ormado.com");
     }, [])
 
+ 
+
+    // const filteritems = (newitem) => {
+    //     const updateitems = filterdata.filter((a, i) => {
+    //         return a.mapSrc == newitem;
+    //     });
+    //     setData(updateitems);
+    // };
+    // console.log(data);
 
 
-    const filteritems = (newitem) => {
-        const updateitems = filterdata.filter((a, i) => {
-            return a.mapSrc == newitem;
-        });
-        setData(updateitems);
-    };
-    console.log("click et");
+  const filteritems =(searchitem) =>{
+    if (searchitem==="All") {
+        setData(filterdata)
+    }else{
+        const newitems = filterdata.filter((item)=>item.email==searchitem)
+        setData(newitems);
+    }
+  }
+
+
+  console.log(data);
 
     return (
 
@@ -43,7 +56,7 @@ const Ormadolocation = () => {
                                 <div className="text-box">
                                     <div
                                         onClick={() => {
-                                            filteritems(filterdata[0].mapSrc);
+                                            filteritems("baku@ormado.de");
                                             setActive(0);
                                         }}
                                         className={`firststage ${active == 0 ? "active" : ""}`}
@@ -58,7 +71,7 @@ const Ormadolocation = () => {
 
                                     <div
                                         onClick={() => {
-                                            filteritems(filterdata[1].mapSrc)
+                                            filteritems("zefirmall@ormado.de")
                                             setActive(1);
                                         }}
                                         className={`secondstage ${active == 1 ? "active" : ""} `}
@@ -73,7 +86,7 @@ const Ormadolocation = () => {
 
                                     <div
                                         onClick={() => {
-                                            filteritems(filterdata[2].mapSrc);
+                                            filteritems("odessa@ormado.com");
                                             setActive(2);
                                         }}
                                         className={`thirdstage ${active == 2 ? "active" : ""} `}
@@ -88,7 +101,7 @@ const Ormadolocation = () => {
 
                                     <div
                                         onClick={() => {
-                                            filteritems(filterdata[3].mapSrc);
+                                            filteritems("einbecker@ormado.de");
                                             setActive(3);
                                         }}
                                         className={`fourthstage ${active == 3 ? "active" : ""}`}

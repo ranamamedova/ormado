@@ -9,16 +9,34 @@ const Locationincontact = () => {
     return (
         <>
 
+
+            <div className="Map col-12 col-sm-12 col-md-12">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24317.605986667986!2d49.80059587431641!3d40.3711593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d36c2814e59%3A0x6aeb078b24a612a2!2sOrmado%20Kaffeehaus!5e0!3m2!1saz!2saz!4v1700899217022!5m2!1saz!2saz"
+                    width={1600}
+                    height={450}
+                    style={{ border: 0 }}
+                    allowFullScreen=""
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                />
+
+            </div>
+
+
+
+
+
+
             <div className="locationcontact ">
-                <div className="mysize-width boxcontainer">
+
+                <div className=" boxcontainer mysize-width">
+
                     <div className="container">
                         <div className="row">
                             <div className="leftmap col-12 col-sm-4 col-md-4  ">
-
-
                                 <div className="text-box">
                                     <div
-
                                         className='firststage'
                                     >
                                         <h6>Ormado Kaffeehaus Baku | Yusif Memmedaliyev</h6>
@@ -70,20 +88,20 @@ const Locationincontact = () => {
 
                             <div className="rightmap  col-12 col-sm-8 col-md-8 ">
                                 <div className="commonphoto ">
-                                  
+
                                     {data.map((item, i) => {
-                                            return (
-                                                <img className={`myimage-${i}`} src={item.image} alt="" />
-                                            )
-                                        })}
-                                    </div>                   
+                                        return (
+                                            <img className={`myimage-${i}`} src={item.image} alt="" />
+                                        )
+                                    })}
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-          
+
 
         </>
     )

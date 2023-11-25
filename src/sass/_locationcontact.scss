@@ -29,17 +29,36 @@
 
 }
 
+
+.Map {
+    width: 100%;
+    height: auto !important;
+    @include displayCenter;
+
+}
+
+
+
 .locationcontact {
     width: auto;
     height: auto;
-    margin-top: 40px !important;
     display: flex;
     justify-content: center;
 
+    .map {
+        width: auto;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
 
     .boxcontainer {
         width: 100%;
         height: auto;
+        margin-top: 40px !important;
+        display: flex;
+        justify-content: center;
+
 
         .leftmap {
             height: 490px;
@@ -689,12 +708,12 @@
                         height: 150px !important;
                     }
 
-                    @media(max-width:490px){
+                    @media(max-width:490px) {
                         top: 50%;
                         left: 63%;
                     }
 
-                    @media(max-width:424px){
+                    @media(max-width:424px) {
                         top: 50%;
                         left: 68%;
                     }
@@ -740,11 +759,11 @@
                         height: 150px !important;
                     }
 
-                    @media(max-width:490px){
+                    @media(max-width:490px) {
                         left: 74%;
                     }
 
-                    @media(max-width:424px){
+                    @media(max-width:424px) {
                         left: 80%;
                     }
 

@@ -9,22 +9,37 @@ import contact4 from "../assets/img/contact4.png"
 const contact = [
     {
         id: 0,
-        image: contact1
+        image: contact1,
+        image: contact2,
+        image: contact3,
+        image:contact4,
+        
     },
 
     {
         id: 1,
-        image: contact2
+        image: contact1,
+        image: contact2,
+        image:contact4,
+        image: contact3,
+       
     },
 
     {
         id: 2,
-        image: contact3
+        image: contact1,
+        image: contact3,
+        image:contact4,
+        image: contact2,
     },
 
     {
         id: 3,
-        image: contact4
+        image:contact4,
+        image: contact2,
+        image: contact3,
+        image: contact1,
+       
     }
 
 

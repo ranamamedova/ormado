@@ -49,6 +49,12 @@ const SignIn = () => {
     }
   };
 
+  useEffect(()=>{
+    if (localStorage.getItem("userEmail") && localStorage.getItem("userPassword")) {
+       navigate("/myaccount")
+    }
+   },[])
+  
   return (
     <>
         <section className="singin">

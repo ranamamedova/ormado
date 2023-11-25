@@ -1,10 +1,32 @@
 import React from 'react'
 import contact from '../data/contact';
 import { useState } from 'react'
+import { useEffect } from 'react';
+// import filterdata from "../data/filterdata"
 
 const Locationincontact = () => {
 
-    const [data, setData] = useState(contact);
+    const [data, setData] = useState([]);
+
+
+    useEffect(() => {
+        filteritems("All")
+    }, [])
+
+
+    const filteritems = (searchitem) => {
+        if (searchitem == "All") {
+            setData(contact)
+        }
+
+        else {
+            const newitems = contact.filter((item) => item.place == searchitem)
+            setData(newitems)
+        }
+
+        console.log(data);
+
+    }
 
     return (
         <>
@@ -24,10 +46,6 @@ const Locationincontact = () => {
             </div>
 
 
-
-
-
-
             <div className="locationcontact ">
 
                 <div className=" boxcontainer mysize-width">
@@ -36,7 +54,7 @@ const Locationincontact = () => {
                         <div className="row">
                             <div className="leftmap col-12 col-sm-4 col-md-4  ">
                                 <div className="text-box">
-                                    <div
+                                    <div onClick={() => filteritems("Baku")}
                                         className='firststage'
                                     >
                                         <h6>Ormado Kaffeehaus Baku | Yusif Memmedaliyev</h6>
@@ -47,7 +65,7 @@ const Locationincontact = () => {
                                         <div className="circleCard"></div>
                                     </div>
 
-                                    <div
+                                    <div onClick={() => filteritems("Arab")}
 
                                         className='secondstage'
                                     >
@@ -59,7 +77,7 @@ const Locationincontact = () => {
                                         <div className="circleCard"></div>
                                     </div>
 
-                                    <div
+                                    <div onClick={() => filteritems("Odessa")}
 
                                         className="thirdstage"
                                     >
@@ -71,7 +89,7 @@ const Locationincontact = () => {
                                         <div className="circleCard"></div>
                                     </div>
 
-                                    <div
+                                    <div onClick={() => filteritems("Berlin")}
 
                                         className='fourthstage'
                                     >

@@ -68,7 +68,7 @@ const Reserve = () => {
             <div className="image-coffee">
               <img src={require('../assets/img/sidenav-bg.png')} alt=""/>
              <div className="overlay ">
-             <div className="overlay-img ">
+             <div className="overlay-img mb-4">
                 <img src={require('../assets/img/logo.png')} alt="" />
               </div>
              <h2 className="overlay-text text-center mt-3">WELCOME TO ORMADO KAFFEEHAUS</h2>

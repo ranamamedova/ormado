@@ -74,6 +74,13 @@ body {
 // PRODUCTS
 @import "./productcards" ;
 
+//Products Details
+@import "./productdetails" ;
+
+@import "./products" ;
+
+@import "./rangeslider" ;
+
 // PAYMENT
 @import "./payment";
 
@@ -102,7 +109,6 @@ body {
 @import "./NewSweets.scss";
 
 // Footer 
-// @import "./footer" ;
 @import "./footer.scss" ;
 
 //NEW SWEETS
@@ -149,10 +155,16 @@ body {
 // CATEGORY PAGE
 @import "./category" ;
 
-// Reserve Page
-@import "reserve";
+@import "./contact" ;
 
 
+// Reserve
+@import "./reserve";
+
+
+@import "./franchiseform" ;
+
+@import "./myaccount" ;
 
 .swiperMobil1{
   margin-top: 200px;
@@ -198,4 +210,6 @@ body {
     }
   }
 }
+
+
 

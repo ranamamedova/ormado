@@ -280,10 +280,10 @@
             }
             .myprice {
                 width: auto;
-                height: 27px;
+                height: 26px;
                 padding: 2px 2px;
                 text-align: center;
-                font-weight: 500;
+                font-weight: 600;
                 border-radius: 7px !important;
                 border: 1px solid var(--carousellogos);
 
@@ -291,7 +291,7 @@
                     color: var(--roundplayarrow);
                     font-family: Montserrat;
                     margin-top: 3px !important;
-                    font-size: 11px !important;
+                    font-size: 10px !important;
 
                     @media(max-width:1200px) {
                         font-size: 10px !important;

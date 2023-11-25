@@ -2,11 +2,15 @@
     width: auto;
     height: auto;
 
-
+.container-fluid{
+    .row{
+        @media (max-width:768px){
+            flex-direction: column-reverse;
+        }
+        
     .signImg {
         position: relative;
         height: 100vh;
-
         .logoTitle {
             position: absolute;
 
@@ -17,7 +21,10 @@
         @media(max-width:938px) {
             margin-bottom: 20px;
         }
-
+         @media (max-width:768px){
+            @include displayCenter ;
+            flex-direction: column;
+         }
         .formTitle {
 
             h3 {
@@ -56,5 +63,7 @@
         }
 
     }
+    }
+}
 
 }

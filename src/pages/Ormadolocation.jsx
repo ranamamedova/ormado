@@ -5,7 +5,6 @@ import filterdata from "../data/filterdata";
 const Ormadolocation = () => {
     const [data, setData] = useState([]);
     const [active, setActive] = useState();
-    const [loading, setLoading] = useState(false);
 
 
 
@@ -13,7 +12,7 @@ const Ormadolocation = () => {
         filteritems("odessa@ormado.com");
     }, [])
 
- 
+
 
     // const filteritems = (newitem) => {
     //     const updateitems = filterdata.filter((a, i) => {
@@ -24,17 +23,17 @@ const Ormadolocation = () => {
     // console.log(data);
 
 
-  const filteritems =(searchitem) =>{
-    if (searchitem==="All") {
-        setData(filterdata)
-    }else{
-        const newitems = filterdata.filter((item)=>item.email==searchitem)
-        setData(newitems);
+    const filteritems = (searchitem) => {
+        if (searchitem === "All") {
+            setData(filterdata)
+        } else {
+            const newitems = filterdata.filter((item) => item.email === searchitem)
+            setData(newitems);
+        }
     }
-  }
 
 
-  console.log(data);
+    console.log(data);
 
     return (
 
@@ -59,7 +58,7 @@ const Ormadolocation = () => {
                                             filteritems("baku@ormado.de");
                                             setActive(0);
                                         }}
-                                        className={`firststage ${active == 0 ? "active" : ""}`}
+                                        className={`firststage ${active === 0 ? "active" : ""}`}
                                     >
                                         <h6>Ormado Kaffeehaus Baku | Yusif Memmedaliyev</h6>
                                         <h6>baku@ormado.de</h6>
@@ -74,7 +73,7 @@ const Ormadolocation = () => {
                                             filteritems("zefirmall@ormado.de")
                                             setActive(1);
                                         }}
-                                        className={`secondstage ${active == 1 ? "active" : ""} `}
+                                        className={`secondstage ${active === 1 ? "active" : ""} `}
                                     >
                                         <h6>Ormado Kaffeehaus Baku I Zefir Mall</h6>
                                         <h6>zefirmall@ormado.de</h6>
@@ -89,7 +88,7 @@ const Ormadolocation = () => {
                                             filteritems("odessa@ormado.com");
                                             setActive(2);
                                         }}
-                                        className={`thirdstage ${active == 2 ? "active" : ""} `}
+                                        className={`thirdstage ${active === 2 ? "active" : ""} `}
                                     >
                                         <h6>Ormado Kaffeehaus Odessa</h6>
                                         <h6>odessa@ormado.com</h6>
@@ -104,7 +103,7 @@ const Ormadolocation = () => {
                                             filteritems("einbecker@ormado.de");
                                             setActive(3);
                                         }}
-                                        className={`fourthstage ${active == 3 ? "active" : ""}`}
+                                        className={`fourthstage ${active === 3 ? "active" : ""}`}
                                     >
                                         <h6>Ormado Kaffeehaus Berlin | Einbecker</h6>
                                         <h6>einbecker@ormado.de</h6>

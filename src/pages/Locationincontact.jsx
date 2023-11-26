@@ -2,46 +2,74 @@ import React from 'react'
 import contact from '../data/contact';
 import { useState } from 'react'
 import { useEffect } from 'react';
-// import filterdata from "../data/filterdata"
+import map from "../data/map"
 
 const Locationincontact = () => {
 
     const [data, setData] = useState([]);
+    const [active, setActive] = useState();
+
 
 
     useEffect(() => {
-        filteritems("All")
-    }, [])
+        filteritems('All'); filtermap('up');
+    }, []);
 
 
     const filteritems = (searchitem) => {
-        if (searchitem == "All") {
+        if (searchitem === 'All') {
             setData(contact)
         }
-
         else {
-            const newitems = contact.filter((item) => item.place == searchitem)
+            const newitems = contact.filter((item) => item.place === searchitem)
             setData(newitems)
         }
 
-        console.log(data);
+    }
+
+
+
+    const filtermap = (finditem) => {
+        if (finditem === 'up') {
+            setData(map)
+        }
+        else {
+            const updateitems = map.filter((item) => item.email === finditem)
+            setData(updateitems)
+        }
 
     }
+
+
+    useEffect(() => {
+        console.log(data);
+    }, [data])
 
     return (
         <>
 
 
             <div className="Map col-12 col-sm-12 col-md-12">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24317.605986667986!2d49.80059587431641!3d40.3711593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d36c2814e59%3A0x6aeb078b24a612a2!2sOrmado%20Kaffeehaus!5e0!3m2!1saz!2saz!4v1700899217022!5m2!1saz!2saz"
-                    width={1600}
-                    height={450}
-                    style={{ border: 0 }}
-                    allowFullScreen=""
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                />
+
+
+                {data.map((item, i) => {
+                    return (
+
+                        <iframe
+                            className='myiframe mt-3'
+                            src={item.map}
+                            // width={1500}
+                            // height={450}
+                            style={{ border: 0 }}
+                            allowFullScreen=""
+                            loading="lazy"
+                            referrerPolicy="no-referrer-when-downgrade"
+                            title="Ormado Kaffeehaus Location on Google Maps"
+                        />
+
+                    )
+                })}
+
 
             </div>
 
@@ -54,8 +82,13 @@ const Locationincontact = () => {
                         <div className="row">
                             <div className="leftmap col-12 col-sm-4 col-md-4  ">
                                 <div className="text-box">
-                                    <div onClick={() => filteritems("Baku")}
-                                        className='firststage'
+                                    <div onClick={() => {
+                                        filteritems("Baku");
+                                        filtermap("baku@ormado.de");
+                                        setActive(0);
+                                    }}
+                                        className={`firststage ${active === 0 ? "active" : ""}`}
+
                                     >
                                         <h6>Ormado Kaffeehaus Baku | Yusif Memmedaliyev</h6>
                                         <h6>baku@ormado.de</h6>
@@ -65,9 +98,9 @@ const Locationincontact = () => {
                                         <div className="circleCard"></div>
                                     </div>
 
-                                    <div onClick={() => filteritems("Arab")}
+                                    <div onClick={() => { filteritems("Arab"); filtermap("zefirmall@ormado.de"); setActive(1) }}
 
-                                        className='secondstage'
+                                        className={`secondstage ${active === 1 ? "active" : ""}`}
                                     >
                                         <h6>Ormado Kaffeehaus Baku I Zefir Mall</h6>
                                         <h6>zefirmall@ormado.de</h6>
@@ -77,9 +110,9 @@ const Locationincontact = () => {
                                         <div className="circleCard"></div>
                                     </div>
 
-                                    <div onClick={() => filteritems("Odessa")}
+                                    <div onClick={() => { filteritems("Odessa"); filtermap("odessa@ormado.com"); setActive(2) }}
 
-                                        className="thirdstage"
+                                        className={`thirdstage ${active === 2 ? "active" : ""}`}
                                     >
                                         <h6>Ormado Kaffeehaus Odessa</h6>
                                         <h6>odessa@ormado.com</h6>
@@ -89,9 +122,9 @@ const Locationincontact = () => {
                                         <div className="circleCard"></div>
                                     </div>
 
-                                    <div onClick={() => filteritems("Berlin")}
+                                    <div onClick={() => { filteritems("Berlin"); filtermap("einbecker@ormado.de"); setActive(3) }}
 
-                                        className='fourthstage'
+                                        className={`fourthstage ${active === 3 ? "active" : ""}`}
                                     >
                                         <h6>Ormado Kaffeehaus Berlin | Einbecker</h6>
                                         <h6>einbecker@ormado.de</h6>
@@ -110,6 +143,8 @@ const Locationincontact = () => {
                                     {data.map((item, i) => {
                                         return (
                                             <img className={`myimage-${i}`} src={item.image} alt="" />
+
+
                                         )
                                     })}
                                 </div>

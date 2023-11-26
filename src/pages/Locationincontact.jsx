@@ -10,9 +10,9 @@ const Locationincontact = () => {
     const [active, setActive] = useState();
 
 
-
+// filtermapla filteritemsin yerini deysende asinxron meselesi ortaya cixir
     useEffect(() => {
-        filteritems('All'); filtermap('up');
+        filtermap('baku@ormado.de'); filteritems('All');
     }, []);
 
 

@@ -34,7 +34,7 @@
     width: 100%;
     height: auto !important;
     @include displayCenter;
-    background-color: aqua;
+    
 
     .myiframe{
        width: 1600px;
@@ -133,7 +133,7 @@
                         font-family: Montserrat;
                         font-size: 11px;
                         line-height: 10px;
-                        color: var(--roundplayarrow);
+                        color: var(--carousellogos);
 
                         @media(min-width:1600px){
                             font-size: 12px;
@@ -317,6 +317,7 @@
                     width: 100%;
                     height: auto;
                     color: #FFF;
+                    // color:green;
                     margin-top: 15px;
                     cursor: pointer;
 
@@ -335,6 +336,7 @@
                         font-size: 11px;
                         line-height: 10px;
                         color: var(--carousellogos);
+
 
                         @media(max-width:1025px) {
                             font-size: 10px;
@@ -487,8 +489,12 @@
                 }
 
                 .myactive {
-                    color: var(--roundplayarrow) !important;
-
+                     h6{
+                        color: var(--roundplayarrow) !important;
+                     }
+                     
+                    
+            
                 }
             }
 
@@ -844,3 +850,9 @@
         }
     }
 }
+
+
+
+// .myactive{
+//     color: red !important;
+// }

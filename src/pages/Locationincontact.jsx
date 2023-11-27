@@ -1,29 +1,31 @@
 import React from 'react'
 import { useState } from 'react'
 import { useEffect } from 'react';
-import map from "../data/map"
+import myData from "../data/myData"
 
 const Locationincontact = () => {
 
     const [datamap, setDatamap] = useState([]);
     const [dataImg, setDataImg] = useState([]);
 
-    const [active, setActive] = useState();
+    const [active, setActive] = useState(0);
 
 
     // filtermapla filteritemsin yerini deysende asinxron meselesi ortaya cixir
 
     useEffect(() => {
-        filteritems('All');filtermap(0);
+        filteritems('All'); filtermap(0);
     }, [])
 
 
+    console.log("menimActiveim: ", active);
+
     const filteritems = (searchitem) => {
         if (searchitem === 'All') {
-            setDataImg(map);
+            setDataImg(myData);
         }
         else {
-            const newitems = map.filter((item) => item.id === searchitem)
+            const newitems = myData.filter((item) => item.id === searchitem)
             setDataImg(newitems)
         }
 
@@ -32,10 +34,10 @@ const Locationincontact = () => {
 
     const filtermap = (finditem) => {
         if (finditem === 'up') {
-            setDatamap(map)
+            setDatamap(myData)
         }
         else {
-            const updateitems = map.filter((item) => item.id === finditem)
+            const updateitems = myData.filter((item) => item.id === finditem)
             setDatamap(updateitems)
         }
 
@@ -80,32 +82,43 @@ const Locationincontact = () => {
                     <div className="container">
                         <div className="row">
                             <div className="leftmap col-12 col-sm-4 col-md-4  ">
-                          
 
 
-                                    {/* {apidata.map((item,i)=>{
-                                        return(
+
+                                <div className="text-box">
+                                    {myData.map((item, i) => {
+
+                                        return (
                                             <div onClick={() => {
                                                 filteritems(i);
                                                 filtermap(i);
                                                 setActive(i);
                                             }}
-                                                className={`firststage ${active === 0 ? 'myactive' : ""}`}
-        
+                                                className={`${i == 0 ?
+                                                    "firststage "
+                                                    : i == 1 ?
+                                                        "secondstage "
+                                                        : i == 2 ?
+                                                            "thirdstage "
+                                                            : i == 3 ?
+                                                                "fourthstage " : " "
+                                                    } ${active === i ? ' myactive' : ""}`}
+
                                             >
-                                                <h6>{apidata.name}</h6>
-                                                <h6>{apidata.email}</h6>
-                                                <h6>{apidata.nomre}</h6>
-                                                <h6>09:00 - 17:00</h6>
-                                                <h6> <i className="fa-solid fa-location-dot"></i> <span className="ms-1">23-29 Yusif Memmedaliyev, Baku, 1005 Azerbaijan</span></h6>
+                                                <h6>{item.name}</h6>
+                                                <h6>{item.email}</h6>
+                                                <h6>{item.phone}</h6>
+                                                <h6>{item.hours}</h6>
+                                                <h6> <i className="fa-solid fa-location-dot"></i> <span className="ms-1">{item.address}</span></h6>
                                                 <div className="circleCard"></div>
                                             </div>
                                         )
-                                    })} */}
-                          
-                              
+                                    })}
+                                </div>
 
-                                    <div className="text-box">
+
+
+                                {/* <div className="text-box">
                                     <div onClick={() => {
                                         filteritems(0);
                                         filtermap(0);
@@ -157,41 +170,41 @@ const Locationincontact = () => {
                                         <h6><i className="fa-solid fa-location-dot"></i> <span className="ms-1">Einbecker Str. 18, 10317 Berlin, Germany</span></h6>
                                         <div className="circleCard"></div>
                                     </div>
-                                </div>
+                                </div> */}
 
 
 
-                               
+
                             </div>
 
 
-{/* <img src="/static/media/contact1.1243855218a280db36b3.png" alt="" /> */}
+                            {/* <img src="/static/media/contact1.1243855218a280db36b3.png" alt="" /> */}
                             <div className="rightmap  col-12 col-sm-8 col-md-8 ">
                                 <div className="commonphoto ">
 
-{console.log(dataImg,"burabax")}
+                                    {console.log(dataImg, "burabax")}
                                     {dataImg.map((item) => {
-                                       
+
 
                                         console.log(item.place);
                                         console.log(item.image[0]);
-                                        return(
+                                        return (
 
-                                            item.image.map((img,i)=>{
+                                            item.image.map((img, i) => {
                                                 console.log(img);
-                                                   return (
-                                                       <img className={`myimage-${i}`} src={img} alt="" />
+                                                return (
+                                                    <img className={`myimage-${i}`} src={img} alt="" />
 
-                                                    )
+                                                )
 
                                             })
                                         )
                                         // return(
 
 
-                                            
-                                            // <img width={70} height={70} src={item.image[0]} alt="" />
-                                            // )
+
+                                        // <img width={70} height={70} src={item.image[0]} alt="" />
+                                        // )
 
                                     })}
                                 </div>

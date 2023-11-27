@@ -14,10 +14,6 @@ import Faqs from "./Faqs";
 
 
 
-
-
-
-
 const Home = () => {
   return (
     <>

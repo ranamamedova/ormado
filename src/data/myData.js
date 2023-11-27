@@ -4,7 +4,7 @@ import contact3 from "../assets/img/contact3.png";
 import contact4 from "../assets/img/contact4.png";
 
 
-const map = [
+const myData = [
     {
       id:0,
       name: 'Ormado Kaffeehaus Baku | Yusif Memmedaliyev',
@@ -48,4 +48,4 @@ const map = [
     }
     ]
 
-  export default map;
+  export default myData;

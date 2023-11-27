@@ -74,6 +74,13 @@ body {
 // PRODUCTS
 @import "./productcards" ;
 
+//Products Details
+@import "./productdetails" ;
+
+@import "./products" ;
+
+@import "./rangeslider" ;
+
 // PAYMENT
 @import "./payment";
 
@@ -102,8 +109,8 @@ body {
 @import "./NewSweets.scss";
 
 // Footer 
-@import "./footer" ;
- 
+@import "./footer.scss" ;
+
 //NEW SWEETS
 @import "./NewSweets.scss";
    
@@ -115,6 +122,9 @@ body {
 
 // SIGN IN
 @import "./signin" ;
+
+//Create Account
+@import "./createaccount";
 
 // FRANCHISE PAGE
 @import "pagefranchise";
@@ -128,6 +138,8 @@ body {
 
 // CATEGORY PAGE
 @import "./category" ;
+
+
 
 @import "ormadolocation";
 
@@ -143,10 +155,18 @@ body {
 // CATEGORY PAGE
 @import "./category" ;
 
-//Product Details
-@import "./BlogDetails.scss";
+@import "./contact" ;
 
 
+// Reserve
+@import "./reserve";
+
+
+@import "./BlogDetails.scss" ;
+
+@import "./franchiseform" ;
+
+@import "./myaccount" ;
 
 .swiperMobil1{
   margin-top: 200px;
@@ -192,4 +212,6 @@ body {
     }
   }
 }
+
+
 

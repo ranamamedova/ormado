@@ -17,7 +17,8 @@ const category = [
         read:"1K read",
         desc:"Aenean eleifend ante maecenas pulvinar montes lorem et pede dis dolor pretium donec dictum. Vici consequat justo enim. Venenatis eget adipiscing.",
         read:"Read More",
-        category:"LATTE"
+        category:"LATTE",
+       
     },
     {
         id:1,
@@ -126,7 +127,8 @@ const category = [
         date:"June 28, 2023",
         read:"1K read",
         desc:"Aenean eleifend ante maecenas pulvinar montes lorem et pede dis dolor pretium donec dictum. Vici consequat justo enim. Venenatis eget adipiscing.",
-        read:"Read More"
+        read:"Read More",
+        category:"LATTE"
     },
     {
         id:12,
@@ -135,7 +137,8 @@ const category = [
         date:"June 28, 2023",
         read:"1K read",
         desc:"Aenean eleifend ante maecenas pulvinar montes lorem et pede dis dolor pretium donec dictum. Vici consequat justo enim. Venenatis eget adipiscing.",
-        read:"Read More"
+        read:"Read More",
+        category:"CAPPUCCINO"
     },
     {
         id:13,
@@ -144,7 +147,8 @@ const category = [
         date:"June 28, 2023",
         read:"1K read",
         desc:"Aenean eleifend ante maecenas pulvinar montes lorem et pede dis dolor pretium donec dictum. Vici consequat justo enim. Venenatis eget adipiscing.",
-        read:"Read More"
+        read:"Read More",
+        category:"AMERICANO"
     },
     {
         id:14,
@@ -153,7 +157,8 @@ const category = [
         date:"June 28, 2023",
         read:"1K read",
         desc:"Aenean eleifend ante maecenas pulvinar montes lorem et pede dis dolor pretium donec dictum. Vici consequat justo enim. Venenatis eget adipiscing.",
-        read:"Read More"
+        read:"Read More",
+        category:"ESPRESSO"
     },
     {
         id:15,
@@ -162,7 +167,8 @@ const category = [
         date:"June 28, 2023",
         read:"1K read",
         desc:"Aenean eleifend ante maecenas pulvinar montes lorem et pede dis dolor pretium donec dictum. Vici consequat justo enim. Venenatis eget adipiscing.",
-        read:"Read More"
+        read:"Read More",
+        category:"ARABICA"
     },
     {
         id:16,
@@ -171,7 +177,8 @@ const category = [
         date:"June 28, 2023",
         read:"1K read",
         desc:"Aenean eleifend ante maecenas pulvinar montes lorem et pede dis dolor pretium donec dictum. Vici consequat justo enim. Venenatis eget adipiscing.",
-        read:"Read More"
+        read:"Read More",
+        category:"CAPPUCCINO"
     },
     {
         id:17,
@@ -180,7 +187,8 @@ const category = [
         date:"June 28, 2023",
         read:"1K read",
         desc:"Aenean eleifend ante maecenas pulvinar montes lorem et pede dis dolor pretium donec dictum. Vici consequat justo enim. Venenatis eget adipiscing.",
-        read:"Read More"
+        read:"Read More",
+        category:"LATTE"
     },
     {
         id:18,
@@ -189,7 +197,8 @@ const category = [
         date:"June 28, 2023",
         read:"1K read",
         desc:"Aenean eleifend ante maecenas pulvinar montes lorem et pede dis dolor pretium donec dictum. Vici consequat justo enim. Venenatis eget adipiscing.",
-        read:"Read More"
+        read:"Read More",
+        category:"AMERICANO"
     },
     {
         id:19,
@@ -198,7 +207,8 @@ const category = [
         date:"June 28, 2023",
         read:"1K read",
         desc:"Aenean eleifend ante maecenas pulvinar montes lorem et pede dis dolor pretium donec dictum. Vici consequat justo enim. Venenatis eget adipiscing.",
-        read:"Read More"
+        read:"Read More",
+        category:"ESPRESSO"
     },
     {
         id:20,
@@ -207,7 +217,8 @@ const category = [
         date:"June 28, 2023",
         read:"1K read",
         desc:"Aenean eleifend ante maecenas pulvinar montes lorem et pede dis dolor pretium donec dictum. Vici consequat justo enim. Venenatis eget adipiscing.",
-        read:"Read More"
+        read:"Read More",
+        category:"LATTE"
     },
     {
         id:0,
@@ -216,7 +227,8 @@ const category = [
         date:"June 28, 2023",
         read:"1K read",
         desc:"Aenean eleifend ante maecenas pulvinar montes lorem et pede dis dolor pretium donec dictum. Vici consequat justo enim. Venenatis eget adipiscing.",
-        read:"Read More"
+        read:"Read More",
+        category:"CAPPUCCINO"
     },
     {
         id:1,
@@ -225,7 +237,8 @@ const category = [
         date:"June 28, 2023",
         read:"1K read",
         desc:"Aenean eleifend ante maecenas pulvinar montes lorem et pede dis dolor pretium donec dictum. Vici consequat justo enim. Venenatis eget adipiscing.",
-        read:"Read More"
+        read:"Read More",
+        category:"ESPRESSO"
     },
     {
         id:2,
@@ -234,7 +247,8 @@ const category = [
         date:"June 28, 2023",
         read:"1K read",
         desc:"Aenean eleifend ante maecenas pulvinar montes lorem et pede dis dolor pretium donec dictum. Vici consequat justo enim. Venenatis eget adipiscing.",
-        read:"Read More"
+        read:"Read More",
+        category:"LATTE"
     },
     {
         id:3,
@@ -243,7 +257,8 @@ const category = [
         date:"June 28, 2023",
         read:"1K read",
         desc:"Aenean eleifend ante maecenas pulvinar montes lorem et pede dis dolor pretium donec dictum. Vici consequat justo enim. Venenatis eget adipiscing.",
-        read:"Read More"
+        read:"Read More",
+        category:"CAPPUCCINO"
     },
     {
         id:4,
@@ -252,7 +267,8 @@ const category = [
         date:"June 28, 2023",
         read:"1K read",
         desc:"Aenean eleifend ante maecenas pulvinar montes lorem et pede dis dolor pretium donec dictum. Vici consequat justo enim. Venenatis eget adipiscing.",
-        read:"Read More"
+        read:"Read More",
+        category:"AMERICANO"
     },
     {
         id:5,
@@ -261,7 +277,8 @@ const category = [
         date:"June 28, 2023",
         read:"1K read",
         desc:"Aenean eleifend ante maecenas pulvinar montes lorem et pede dis dolor pretium donec dictum. Vici consequat justo enim. Venenatis eget adipiscing.",
-        read:"Read More"
+        read:"Read More",
+        category:"ESPRESSO"
     },
     {
         id:6,
@@ -270,7 +287,8 @@ const category = [
         date:"June 28, 2023",
         read:"1K read",
         desc:"Aenean eleifend ante maecenas pulvinar montes lorem et pede dis dolor pretium donec dictum. Vici consequat justo enim. Venenatis eget adipiscing.",
-        read:"Read More"
+        read:"Read More",
+        category:"ARABICA"
     },
     {
         id:7,
@@ -279,7 +297,8 @@ const category = [
         date:"June 28, 2023",
         read:"1K read",
         desc:"Aenean eleifend ante maecenas pulvinar montes lorem et pede dis dolor pretium donec dictum. Vici consequat justo enim. Venenatis eget adipiscing.",
-        read:"Read More"
+        read:"Read More",
+        category:"ARABICA"
     },
     {
         id:8,
@@ -288,7 +307,8 @@ const category = [
         date:"June 28, 2023",
         read:"1K read",
         desc:"Aenean eleifend ante maecenas pulvinar montes lorem et pede dis dolor pretium donec dictum. Vici consequat justo enim. Venenatis eget adipiscing.",
-        read:"Read More"
+        read:"Read More",
+        category:"LATTE"
     },
     {
         id:9,
@@ -297,7 +317,8 @@ const category = [
         date:"June 28, 2023",
         read:"1K read",
         desc:"Aenean eleifend ante maecenas pulvinar montes lorem et pede dis dolor pretium donec dictum. Vici consequat justo enim. Venenatis eget adipiscing.",
-        read:"Read More"
+        read:"Read More",
+        category:"CAPPUCCINO"
     },
     {
         id:10,
@@ -306,7 +327,8 @@ const category = [
         date:"June 28, 2023",
         read:"1K read",
         desc:"Aenean eleifend ante maecenas pulvinar montes lorem et pede dis dolor pretium donec dictum. Vici consequat justo enim. Venenatis eget adipiscing.",
-        read:"Read More"
+        read:"Read More",
+        category:"AMERICANO"
     },
     {
         id:11,
@@ -315,7 +337,8 @@ const category = [
         date:"June 28, 2023",
         read:"1K read",
         desc:"Aenean eleifend ante maecenas pulvinar montes lorem et pede dis dolor pretium donec dictum. Vici consequat justo enim. Venenatis eget adipiscing.",
-        read:"Read More"
+        read:"Read More",
+        category:"ARABICA"
     },
     {
         id:12,

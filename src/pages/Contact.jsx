@@ -13,8 +13,8 @@ const Contact = () => {
   <div className="row ">
     <div className="col-12 col-sm-6 col-md-4 my-5 order-md-1 order-2 ">
       <h1 >contact  us</h1>
-     <h2 className="mb-3">Have a project! Let’s diascuss </h2>
-     <p >Thank you for getting in touch!  Kindly.  Fill the form, have a great day!</p>
+     <h2 className="my-4">Have a project! Let’s diascuss </h2>
+     <p >Thank you for getting in touch! <span>Kindly.</span>    Fill the form, have a great day!</p>
     </div>
      <div className="col-12 col-sm-6 col-md-4 my-5 order-md-2 order-1">
       <div className="left-one ">

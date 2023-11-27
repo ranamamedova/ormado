@@ -46,7 +46,7 @@
     //   font-family: Montserrat;
        @media (max-width:767px){
         position: static;
-        font-size: 80px;
+        font-size: 70px;
         width: 70%;
         line-height: 2cm;
     }
@@ -61,8 +61,14 @@
         }
     }
     p{
-        width: 50%;
+        width: 55%;
         font-family: Montserrat;
+        span {
+            display: block;
+          }
+        @media (max-width:767px){
+            width: 50%;
+        }
     }
    .col-12{
     @media (max-width:767px){
@@ -75,7 +81,7 @@
 
     input{
         @include sameinput();
-        
+      
     }
     select{
         @include sameinput();
@@ -107,6 +113,11 @@
         height: 27px;
         font-size: 10px;
         font-weight: 700;
+        margin-left: 10px;
+        @media (max-width:767px){
+       margin-left: 0;
+            
+         }
     }
    }
    }

@@ -8,6 +8,17 @@
   hr{
     color: rgba(151, 148, 148, 0.481);
   }
+  .carousel-section{
+    .carousel-root{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+  
+
+  
+
   .details-product{
     max-width: 900px;
     width: 100%;

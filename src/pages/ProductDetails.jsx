@@ -4,67 +4,89 @@ import ProductImg2 from "../assets/img/Image (2).png";
 import ProductImg3 from "../assets/img/Image (3).png";
 import ProductImg4 from "../assets/img/Image (4).png";
 import React, { useRef, useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
 import Faqs from '../components/Faqs';
-
-import "swiper/css";
-import "swiper/css/free-mode";
-import "swiper/css/navigation";
-import "swiper/css/thumbs";
-import { FreeMode, Navigation, Thumbs } from "swiper/modules";
-
 import RelatedProducts from "../components/RelatedProducts";
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import { Carousel } from 'react-responsive-carousel';
+
+// import "swiper/css";
+// import "swiper/css/free-mode";
+// import "swiper/css/navigation";
+// import "swiper/css/thumbs";
+// import { FreeMode, Navigation, Thumbs } from "swiper/modules";
+// import { Swiper, SwiperSlide } from "swiper/react";
+
+
 const ProductDetails = () => {
-  const [thumbsSwiper, setThumbsSwiper] = useState(null);
+  // const [thumbsSwiper, setThumbsSwiper] = useState(null);
   return (
     <>
       <BreadCrumb title="PRODUCT DETAILS" />
       <section className="ProductDetails">
         <div className="container-fluid">
           <div className="row justify-content-center">
-            <div className="col-sm-12 col-md-6 d-flex justify-content-center">
-              <Swiper
-                style={{
-                  "--swiper-navigation-color": "#fff",
-                  "--swiper-pagination-color": "#fff",
-                }}
-                loop={true}
-                spaceBetween={10}
-                navigation={true}
-                thumbs={{ swiper: thumbsSwiper }}
-                modules={[FreeMode, Navigation, Thumbs]}
-                className="productswiper"
-              >
-                <SwiperSlide>
-                  <img src={ProductImg} style={{ width: "60%" }} />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src={ProductImg} style={{ width: "60%" }} />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src={ProductImg} style={{ width: "60%" }} />
-                </SwiperSlide>
-              </Swiper>
-              <Swiper
-                // onSwiper={setThumbsSwiper}
-                loop={true}
-                spaceBetween={10}
-                slidesPerView={4}
-                freeMode={true}
-                watchSlidesProgress={true}
-                modules={[FreeMode, Navigation, Thumbs]}
-                className="productswipermain"
-              >
-                <SwiperSlide>
-                  <img src={ProductImg} style={{ width: "60px" }} />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src={ProductImg} style={{ width: "60px" }} />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src={ProductImg} style={{ width: "60px" }} />
-                </SwiperSlide>
-              </Swiper>
+            <div className="col-sm-12 col-md-6 d-flex justify-content-center " >
+              <div className="carousel-section">
+                <Carousel>
+                    <div>
+                        <img src={ProductImg} style={{width:'50%'}}/>
+                      
+                    </div>
+                    <div>
+                        <img src={ProductImg} style={{width:'50%'}}/>
+                      
+                    </div>
+                    <div>
+                        <img src={ProductImg} style={{width:'50%'}}/>
+                      
+                    </div>
+                </Carousel>
+              </div>
+      {/* <Swiper
+        style={{
+          '--swiper-navigation-color': '#fff',
+          '--swiper-pagination-color': '#fff',
+
+        }}
+        loop={true}
+        spaceBetween={10}
+        navigation={true}
+        thumbs={{ swiper: thumbsSwiper }}
+        modules={[FreeMode, Navigation, Thumbs]}
+        className="mainSwiper"
+      >
+        <SwiperSlide>
+          <img src="https://swiperjs.com/demos/images/nature-1.jpg"  style={{width:"50%"}}/>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://swiperjs.com/demos/images/nature-2.jpg" style={{width:"50%"}} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://swiperjs.com/demos/images/nature-3.jpg"  style={{width:"50%"}}/>
+        </SwiperSlide>
+      </Swiper>
+      <Swiper
+          //  onSwiper={setThumbsSwiper}
+        loop={true}
+        spaceBetween={10}
+        slidesPerView={4}
+        freeMode={true}
+        watchSlidesProgress={true}
+        modules={[FreeMode, Navigation, Thumbs]}
+        className="right-swiper"
+      >
+        <SwiperSlide>
+          <img src={ProductImg2} style={{width:"50%"}}/>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://swiperjs.com/demos/images/nature-2.jpg" style={{width:"50%"}}/>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://swiperjs.com/demos/images/nature-3.jpg" style={{width:"50%"}}/>
+        </SwiperSlide>
+
+      </Swiper> */}
+
             </div>
             <div className="col-sm-12 col-md-6 d-flex justify-content-center">
               <div className="details-product">

@@ -44,9 +44,9 @@ const Locationincontact = () => {
     }
 
 
-    // useEffect(() => {
-    //     console.log(data);
-    // }, [data])
+    useEffect(() => {
+        console.log(datamap);
+    }, [datamap])
 
     return (
         <>
@@ -75,17 +75,17 @@ const Locationincontact = () => {
 
             </div>
 
-            <div className="locationcontact ">
+            <div className="locationcontact">
 
                 <div className=" boxcontainer mysize-width">
 
                     <div className="container">
                         <div className="row">
-                            <div className="leftmap col-12 col-sm-4 col-md-4  ">
+                            <div className="leftmap  col-12 col-sm-4 col-md-4  ">
 
 
 
-                                <div className="text-box">
+                                <div className="text-box ">
                                     {myData.map((item, i) => {
 
                                         return (
@@ -179,34 +179,38 @@ const Locationincontact = () => {
 
 
                             {/* <img src="/static/media/contact1.1243855218a280db36b3.png" alt="" /> */}
-                            <div className="rightmap  col-12 col-sm-8 col-md-8 ">
-                                <div className="commonphoto ">
-
-                                    {console.log(dataImg, "burabax")}
-                                    {dataImg.map((item) => {
-
-
-                                        console.log(item.place);
-                                        console.log(item.image[0]);
-                                        return (
-
-                                            item.image.map((img, i) => {
-                                                console.log(img);
-                                                return (
-                                                    <img className={`myimage-${i}`} src={img} alt="" />
-
-                                                )
-
-                                            })
-                                        )
-                                        // return(
+                            <div className="rightmap  col-12 col-sm-8 col-md-8  ">
+                                <div className="commonphoto  ">
+                                   
+                                        {console.log(dataImg, "burabax")}
+                                        {dataImg.map((item) => {
 
 
+                                               console.log(item.place);
+                                               console.log(item.image[0]);
+                                             return (
 
-                                        // <img width={70} height={70} src={item.image[0]} alt="" />
-                                        // )
+                                                item.image.map((img, i) => {
+                                                    console.log(img);
+                                                    return (
+                                                        <div className='siz'><img className={`myimage-${i}`} src={img} alt="" /></div>
 
-                                    })}
+
+                                                    )
+
+                                                })
+                                            )
+                                            // return(
+
+
+
+                                            // <img width={70} height={70} src={item.image[0]} alt="" />
+                                            // )
+
+                                        })}
+                                    
+
+
                                 </div>
                             </div>
                         </div>

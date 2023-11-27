@@ -361,6 +361,9 @@
         max-width: 300px;
         width: 100%;
         height: 450px;
+        max-width: 300px;
+        width: 100%;
+        height: 450px;
         border: 2px solid #E6E6E6;
         background: #FFF;
         border-radius: 20.025px;
@@ -392,7 +395,37 @@
             transition: .3s ease-in-out;
           }
         }
+        border-radius: 20.025px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        .discount-red-button{
+          max-width: 800px;
+          width: 100%;
+          align-items: center;
+          margin-top: 10px;
+          
+          .discount-price{
+            position:absolute;
+            border-radius: 86.783px;
+            background: #FF3A44;
+            color: #FFF;
+            padding: 2px 8px 2px 8px;
+            margin-right: 200px;
+            white-space: nowrap;
+          }
+        }
+        .card-images{
+          img{
+            -webkit-transform: scale(1);
+            transform: scale(1);
+            -webkit-transition: .3s ease-in-out;
+            transition: .3s ease-in-out;
+          }
+        }
         .features{
+          max-width: 400px;
           max-width: 400px;
           width: 100%;
           display: flex;

@@ -1,6 +1,6 @@
 import React from 'react'
 import BreadCrumb from './BreadCrumb'
-import Ormadolocation from '../components/Ormadolocation'
+import Ormadolocation from "../pages/Ormadolocation"
 
 
 const SearchBranch = () => {

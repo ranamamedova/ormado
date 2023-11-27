@@ -10,10 +10,15 @@ const Locationincontact = () => {
     const [active, setActive] = useState();
 
 
-// filtermapla filteritemsin yerini deysende asinxron meselesi ortaya cixir
+    // filtermapla filteritemsin yerini deysende asinxron meselesi ortaya cixir
     useEffect(() => {
-        filtermap('baku@ormado.de'); filteritems('All');
+        filtermap('up');
     }, []);
+
+
+    useEffect(() => {
+        filteritems('All');
+    }, [])
 
 
     const filteritems = (searchitem) => {
@@ -26,7 +31,6 @@ const Locationincontact = () => {
         }
 
     }
-
 
 
     const filtermap = (finditem) => {
@@ -70,9 +74,7 @@ const Locationincontact = () => {
                     )
                 })}
 
-
             </div>
-
 
             <div className="locationcontact ">
 
@@ -87,7 +89,7 @@ const Locationincontact = () => {
                                         filtermap("baku@ormado.de");
                                         setActive(0);
                                     }}
-                                        className={`firststage ${active === 0 ? "active" : ""}`}
+                                        className={`firststage ${active === 0 ? 'myactive' : ""}`}
 
                                     >
                                         <h6>Ormado Kaffeehaus Baku | Yusif Memmedaliyev</h6>
@@ -100,7 +102,7 @@ const Locationincontact = () => {
 
                                     <div onClick={() => { filteritems("Arab"); filtermap("zefirmall@ormado.de"); setActive(1) }}
 
-                                        className={`secondstage ${active === 1 ? "active" : ""}`}
+                                        className={`secondstage ${active === 1 ? 'myactive' : ""}`}
                                     >
                                         <h6>Ormado Kaffeehaus Baku I Zefir Mall</h6>
                                         <h6>zefirmall@ormado.de</h6>
@@ -112,7 +114,7 @@ const Locationincontact = () => {
 
                                     <div onClick={() => { filteritems("Odessa"); filtermap("odessa@ormado.com"); setActive(2) }}
 
-                                        className={`thirdstage ${active === 2 ? "active" : ""}`}
+                                        className={`thirdstage ${active === 2 ? 'myactive' : ""}`}
                                     >
                                         <h6>Ormado Kaffeehaus Odessa</h6>
                                         <h6>odessa@ormado.com</h6>
@@ -124,7 +126,7 @@ const Locationincontact = () => {
 
                                     <div onClick={() => { filteritems("Berlin"); filtermap("einbecker@ormado.de"); setActive(3) }}
 
-                                        className={`fourthstage ${active === 3 ? "active" : ""}`}
+                                        className={`fourthstage ${active === 3 ? 'myactive' : ""}`}
                                     >
                                         <h6>Ormado Kaffeehaus Berlin | Einbecker</h6>
                                         <h6>einbecker@ormado.de</h6>
@@ -153,7 +155,6 @@ const Locationincontact = () => {
                     </div>
                 </div>
             </div>
-
 
 
         </>

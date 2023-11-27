@@ -34,6 +34,7 @@
     width: 100%;
     height: auto !important;
     @include displayCenter;
+    background-color: aqua;
 
     .myiframe{
        width: 1600px;
@@ -485,7 +486,7 @@
                     margin-left: 15px;
                 }
 
-                .active {
+                .myactive {
                     color: var(--roundplayarrow) !important;
 
                 }

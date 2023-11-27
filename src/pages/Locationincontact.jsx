@@ -1,33 +1,30 @@
 import React from 'react'
-import contact from '../data/contact';
 import { useState } from 'react'
 import { useEffect } from 'react';
 import map from "../data/map"
 
 const Locationincontact = () => {
 
-    const [data, setData] = useState([]);
+    const [datamap, setDatamap] = useState([]);
+    const [dataImg, setDataImg] = useState([]);
+
     const [active, setActive] = useState();
 
 
     // filtermapla filteritemsin yerini deysende asinxron meselesi ortaya cixir
-    useEffect(() => {
-        filtermap('up');
-    }, []);
-
 
     useEffect(() => {
-        filteritems('All');
+        filteritems('All');filtermap(0);
     }, [])
 
 
     const filteritems = (searchitem) => {
         if (searchitem === 'All') {
-            setData(contact)
+            setDataImg(map);
         }
         else {
-            const newitems = contact.filter((item) => item.place === searchitem)
-            setData(newitems)
+            const newitems = map.filter((item) => item.id === searchitem)
+            setDataImg(newitems)
         }
 
     }
@@ -35,19 +32,19 @@ const Locationincontact = () => {
 
     const filtermap = (finditem) => {
         if (finditem === 'up') {
-            setData(map)
+            setDatamap(map)
         }
         else {
-            const updateitems = map.filter((item) => item.email === finditem)
-            setData(updateitems)
+            const updateitems = map.filter((item) => item.id === finditem)
+            setDatamap(updateitems)
         }
 
     }
 
 
-    useEffect(() => {
-        console.log(data);
-    }, [data])
+    // useEffect(() => {
+    //     console.log(data);
+    // }, [data])
 
     return (
         <>
@@ -56,11 +53,11 @@ const Locationincontact = () => {
             <div className="Map col-12 col-sm-12 col-md-12">
 
 
-                {data.map((item, i) => {
+                {datamap.map((item, i) => {
                     return (
 
                         <iframe
-                            className='myiframe mt-3'
+                            className='myiframe '
                             src={item.map}
                             // width={1500}
                             // height={450}
@@ -83,10 +80,35 @@ const Locationincontact = () => {
                     <div className="container">
                         <div className="row">
                             <div className="leftmap col-12 col-sm-4 col-md-4  ">
-                                <div className="text-box">
+                          
+
+
+                                    {/* {apidata.map((item,i)=>{
+                                        return(
+                                            <div onClick={() => {
+                                                filteritems(i);
+                                                filtermap(i);
+                                                setActive(i);
+                                            }}
+                                                className={`firststage ${active === 0 ? 'myactive' : ""}`}
+        
+                                            >
+                                                <h6>{apidata.name}</h6>
+                                                <h6>{apidata.email}</h6>
+                                                <h6>{apidata.nomre}</h6>
+                                                <h6>09:00 - 17:00</h6>
+                                                <h6> <i className="fa-solid fa-location-dot"></i> <span className="ms-1">23-29 Yusif Memmedaliyev, Baku, 1005 Azerbaijan</span></h6>
+                                                <div className="circleCard"></div>
+                                            </div>
+                                        )
+                                    })} */}
+                          
+                              
+
+                                    <div className="text-box">
                                     <div onClick={() => {
-                                        filteritems("Baku");
-                                        filtermap("baku@ormado.de");
+                                        filteritems(0);
+                                        filtermap(0);
                                         setActive(0);
                                     }}
                                         className={`firststage ${active === 0 ? 'myactive' : ""}`}
@@ -100,7 +122,7 @@ const Locationincontact = () => {
                                         <div className="circleCard"></div>
                                     </div>
 
-                                    <div onClick={() => { filteritems("Arab"); filtermap("zefirmall@ormado.de"); setActive(1) }}
+                                    <div onClick={() => { filteritems(1); filtermap(1); setActive(1) }}
 
                                         className={`secondstage ${active === 1 ? 'myactive' : ""}`}
                                     >
@@ -112,7 +134,7 @@ const Locationincontact = () => {
                                         <div className="circleCard"></div>
                                     </div>
 
-                                    <div onClick={() => { filteritems("Odessa"); filtermap("odessa@ormado.com"); setActive(2) }}
+                                    <div onClick={() => { filteritems(2); filtermap(2); setActive(2) }}
 
                                         className={`thirdstage ${active === 2 ? 'myactive' : ""}`}
                                     >
@@ -124,7 +146,7 @@ const Locationincontact = () => {
                                         <div className="circleCard"></div>
                                     </div>
 
-                                    <div onClick={() => { filteritems("Berlin"); filtermap("einbecker@ormado.de"); setActive(3) }}
+                                    <div onClick={() => { filteritems(3); filtermap(3); setActive(3) }}
 
                                         className={`fourthstage ${active === 3 ? 'myactive' : ""}`}
                                     >
@@ -136,18 +158,41 @@ const Locationincontact = () => {
                                         <div className="circleCard"></div>
                                     </div>
                                 </div>
+
+
+
+                               
                             </div>
 
 
+{/* <img src="/static/media/contact1.1243855218a280db36b3.png" alt="" /> */}
                             <div className="rightmap  col-12 col-sm-8 col-md-8 ">
                                 <div className="commonphoto ">
 
-                                    {data.map((item, i) => {
-                                        return (
-                                            <img className={`myimage-${i}`} src={item.image} alt="" />
+{console.log(dataImg,"burabax")}
+                                    {dataImg.map((item) => {
+                                       
 
+                                        console.log(item.place);
+                                        console.log(item.image[0]);
+                                        return(
 
+                                            item.image.map((img,i)=>{
+                                                console.log(img);
+                                                   return (
+                                                       <img className={`myimage-${i}`} src={img} alt="" />
+
+                                                    )
+
+                                            })
                                         )
+                                        // return(
+
+
+                                            
+                                            // <img width={70} height={70} src={item.image[0]} alt="" />
+                                            // )
+
                                     })}
                                 </div>
                             </div>

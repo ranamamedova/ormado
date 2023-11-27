@@ -20,6 +20,7 @@ import Pagination from '../components/Pagination'
 import Gallery from '../pages/Gallery'
 import ProductDetails from '../pages/ProductDetails'
 import FranchiseForm from '../pages/FranchiseForm'
+import MyAccount from '../pages/admin/MyAccount'
 
 const AppRouter = () => {
   return (
@@ -45,10 +46,12 @@ const AppRouter = () => {
     <Route  path='/gallery' element={<Gallery />}></Route>
     <Route  path='/productDetails' element={<ProductDetails />}></Route>
     <Route  path='/franchiseform' element={<FranchiseForm />}></Route>
+    <Route  path='/myaccount' element={<MyAccount />}></Route>
+    <Route  path='/signin' element={<MyAccount />}></Route>
 
     </Route>
     
-    <Route  path='/signin' element={<SignIn />}></Route>
+    {/* <Route  path='/signin' element={<SignIn />}></Route> */}
     <Route  path='/signup' element={<CreateAccount />}></Route>
    </Routes>
    </BrowserRouter>

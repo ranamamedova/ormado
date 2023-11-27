@@ -2,6 +2,7 @@
         background-color: #4A3024;
         border-bottom:1px solid #F2F2F2;
         color: white;
+        font-family: Montserrat;
         border-top: none;
         border-left: none;
         border-right: none;
@@ -11,7 +12,7 @@
         outline: none;
         width: 100%;
         @media (max-width:767px){
-            width: 80%;
+            width: 60%;
         }
 
 }
@@ -26,30 +27,42 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    position: relative;
     @media (max-width:767px){
         justify-content: center;
     }
     h1{
         font-size: 130px;
-        line-height: 3cm;
+        line-height: 4cm;
        opacity: 30%;
        color: transparent;
        -webkit-text-stroke-width: 0.5px;
        -webkit-text-stroke-color: #fff;
        font-weight: 900;
+       width: 50%;
        position: absolute;
-       bottom: 35%;
+       bottom: 20%;
        left: 15%;
     //   font-family: Montserrat;
        @media (max-width:767px){
         position: static;
         font-size: 80px;
+        width: 70%;
+        line-height: 2cm;
     }
     }
     h2{
         font-weight: 700;
-        font-size: 30px;
-        position: relative;
+        font-size: 30px;  
+        font-family: Montserrat;
+        width: 70%;
+        @media (max-width:767px){
+            width: 50%;
+        }
+    }
+    p{
+        width: 50%;
+        font-family: Montserrat;
     }
    .col-12{
     @media (max-width:767px){
@@ -59,8 +72,7 @@
        flex-direction: column;
     }
      .left-one{
-   
-    
+
     input{
         @include sameinput();
         
@@ -78,9 +90,13 @@
    .endl{
     display: flex;
     flex-direction: column;
-    // align-items: center;
-    // justify-content: center;
-   
+    
+    @media (max-width:767px){
+       
+        align-items: center;
+        justify-content: center;
+        
+     }
     
     button{
         background-color: #FECF08;

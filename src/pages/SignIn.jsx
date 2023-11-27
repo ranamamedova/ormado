@@ -41,7 +41,7 @@ const SignIn = () => {
           setPassValid(false);
           localStorage.setItem("userEmail",email)
           localStorage.setItem("userPassword",password)
-          navigate("/contact")
+          navigate("/myaccount")
         } else {
           alert("Email ve Password sehvdir");
         }
@@ -49,12 +49,18 @@ const SignIn = () => {
     }
   };
 
+  useEffect(()=>{
+    if (localStorage.getItem("userEmail") && localStorage.getItem("userPassword")) {
+       navigate("/myaccount")
+    }
+   },[])
+  
   return (
     <>
         <section className="singin">
           <div className="container-fluid">
             <div className="row">
-              <div className="col-12 col-sm-7 col-md-5 col-lg-5   ">
+              <div className="col-12 col-sm-6 col-md-5 col-lg-5   ">
                 <div className="signImg">
                   <img src={login} alt="" className="img-fluid" />
                   <div className="logoTitle ">
@@ -87,7 +93,7 @@ const SignIn = () => {
                     <p className="valid mt-1">
                       {valid ? "E-mail yanlışdır" : " "}
                     </p>
-                    <label className="mt-4">Password</label>
+                    <label className="mt-3">Password</label>
                     <br />
                     <input
                       type="password"
@@ -114,9 +120,9 @@ const SignIn = () => {
                     <div className="singInBox">
                       <button type="submit">Sign In</button>
                     </div>
-                    <div className="account d-flex justify-content-center mt-5">
-                      <p>
-                        Don’t have an account?{" "}
+                    <div className="account d-flex justify-content-center mt-3">
+                      <p className="tag">
+                        Don’t have an account?{" "}  
                         <NavLink to="/signup" >
                           Sign Up
                         </NavLink>
@@ -129,7 +135,7 @@ const SignIn = () => {
           </div>
           <p>{userEmail}</p>
         </section>
-        <iframe src="https://my.atlist.com/map/05dad012-ff66-4c0c-9ba2-c3371449776b?share=true" allow="geolocation 'self' https://my.atlist.com" width="100%" height="400px" frameborder="0" scrolling="no" allowfullscreen></iframe>
+      
     </>
   );
 };

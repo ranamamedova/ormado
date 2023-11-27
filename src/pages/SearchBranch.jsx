@@ -1,8 +1,14 @@
 import React from 'react'
+import BreadCrumb from './BreadCrumb'
+import Ormadolocation from "../pages/Ormadolocation"
+
 
 const SearchBranch = () => {
   return (
-    <div>SearchBranch</div>
+    <div>
+     <BreadCrumb title={"Search A Branch"}/>
+     <Ormadolocation/>
+    </div>
   )
 }
 

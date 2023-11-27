@@ -2,31 +2,19 @@ import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 import { useLocation, useNavigate } from "react-router";
+import BreadCrumb from "./BreadCrumb";
 
 const Contact = () => {
-  const location = useLocation();
-  const [login, setLogin] = useState(false);
-  const email = localStorage.getItem("userEmail");
-  const password = localStorage.getItem("userPassword");
-  const navigate = useNavigate();
-  useEffect(() => {
-    if (email && password) {
-      setLogin(true);
-    } else {
-      setLogin(false);
-      if (location.pathname === "/contact") {
-        navigate("/signin");
-      }
-    }
-  }, []);
+
   return (
     <>
+    <BreadCrumb title="Contact" isOtherPage={true} />
 <div className="diascuss text-light ">
   <div className="row ">
     <div className="col-12 col-sm-6 col-md-4 my-5 order-md-1 order-2 ">
-      <h1 >contact <br /> us</h1>
-     <h2>Have a project! Let’s diascuss </h2>
-     <p >Thank you for getting in touch! <br /> Kindly. <br /> Fill the form, have a great day!</p>
+      <h1 >contact  us</h1>
+     <h2 className="mb-3">Have a project! Let’s diascuss </h2>
+     <p >Thank you for getting in touch!  Kindly.  Fill the form, have a great day!</p>
     </div>
      <div className="col-12 col-sm-6 col-md-4 my-5 order-md-2 order-1">
       <div className="left-one ">
@@ -66,25 +54,14 @@ const Contact = () => {
       </div>
       <div className="endl d-flex flex-directions-column">
       <input type="text" name="" id="" placeholder="Message" className="message "/>
-        <button type="submit">Submit</button>
+        <button type="submit" className="mt-3">Submit</button>
       </div>
       </div>
     </div>
   </div>
 </div>
-      {
-        login && <div>
-        <iframe
-          src="https://my.atlist.com/map/f77aa50c-84cd-47b8-a0e1-8b31387435e8?share=true"
-          allow="geolocation 'self' https://my.atlist.com/"
-          width="100%"
-          height="400px"
-          frameborder="0"
-          scrolling="no"
-          allowfullscreen
-        ></iframe>
-      </div>
-      }
+    
+      
     </>
   );
 };

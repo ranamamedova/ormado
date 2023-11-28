@@ -35,15 +35,16 @@
     height: auto !important;
     @include displayCenter;
 
-    .myrelative {
+    .mynative {
         position: relative;
 
     }
 
 
-    .myiframe {
+    .mymap {
         width: 1600px;
         height: 490px;
+
         @media(min-width:1600px) {
             width: 2000px !important;
         }
@@ -68,7 +69,7 @@
             animation-duration: 4s;
             animation-timing-function: linear;
             animation-iteration-count: infinite;
-               margin-top: 150px;
+            margin-top: 150px;
 
             @keyframes sass {
 

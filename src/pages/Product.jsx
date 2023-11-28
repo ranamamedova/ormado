@@ -9,6 +9,9 @@ import drink1 from "../assets/img/drink1.png";
 import drink2 from "../assets/img/drink2.png";
 import RangeSlider from '../components/RangeSlider'
 
+
+
+
 const Product = () => {
   const [showCategories, setShowCategories] = useState(true);
 
@@ -199,6 +202,7 @@ const Product = () => {
           </div>
         </div>
       </section>
+
     </>
   )
 }

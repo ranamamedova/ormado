@@ -44,7 +44,7 @@ const Locationincontact = () => {
 
             <div className="Map col-12 col-sm-12 col-md-12">
 
-                <div className="myrelative myiframe">
+                <div className="mynative mymap">
 
                     <div className="logoimage">
                         <img className='myimg' src="http://localhost:3000/static/media/logo.3d1574839a4f7d4adc4b.png" alt="" />
@@ -54,7 +54,7 @@ const Locationincontact = () => {
                         return (
 
                             <iframe
-                                className='myiframe'
+                                className='mymap'
                                 src={item.map}
                                 style={{ border: 0 }}
                                 allowFullScreen=""
@@ -166,39 +166,21 @@ const Locationincontact = () => {
                                 </div> */}
 
 
-
-
                             </div>
 
-
-                            {/* <img src="/static/media/contact1.1243855218a280db36b3.png" alt="" /> */}
                             <div className="rightmap  col-12 col-sm-8 col-md-8  ">
                                 <div className="commonphoto  ">
-
-                                    {/* {console.log(dataImg, "burabax")} */}
                                     {dataImg.map((item) => {
-
-
-                                        // console.log(item.place);
-                                        // console.log(item.image[0]);
                                         return (
 
                                             item.image.map((img, i) => {
-                                                // console.log(img);
+
                                                 return (
                                                     <div ><img className={`myimage-${i}`} src={img} alt="" /></div>
-
-
                                                 )
-
                                             })
                                         )
-
-
                                     })}
-
-
-
                                 </div>
                             </div>
                         </div>

@@ -1,5 +1,5 @@
-import React from 'react'
-import { useState } from 'react'
+import React from 'react';
+import { useState } from 'react';
 import { useEffect } from 'react';
 import myData from "../data/myData"
 
@@ -7,18 +7,14 @@ const Locationincontact = () => {
 
     const [datamap, setDatamap] = useState([]);
     const [dataImg, setDataImg] = useState([]);
-
     const [active, setActive] = useState(0);
 
-
-    // filtermapla filteritemsin yerini deysende asinxron meselesi ortaya cixir
 
     useEffect(() => {
         filteritems('All'); filtermap(0);
     }, [])
 
 
-    console.log("menimActiveim: ", active);
 
     const filteritems = (searchitem) => {
         if (searchitem === 'All') {
@@ -28,9 +24,7 @@ const Locationincontact = () => {
             const newitems = myData.filter((item) => item.id === searchitem)
             setDataImg(newitems)
         }
-
     }
-
 
     const filtermap = (finditem) => {
         if (finditem === 'up') {
@@ -40,39 +34,38 @@ const Locationincontact = () => {
             const updateitems = myData.filter((item) => item.id === finditem)
             setDatamap(updateitems)
         }
-
     }
 
 
-    useEffect(() => {
-        console.log(datamap);
-    }, [datamap])
+
 
     return (
         <>
 
-
             <div className="Map col-12 col-sm-12 col-md-12">
 
+                <div className="myrelative myiframe">
 
-                {datamap.map((item, i) => {
-                    return (
+                    <div className="logoimage">
+                        <img className='myimg' src="http://localhost:3000/static/media/logo.3d1574839a4f7d4adc4b.png" alt="" />
+                    </div>
 
-                        <iframe
-                            className='myiframe '
-                            src={item.map}
-                            // width={1500}
-                            // height={450}
-                            style={{ border: 0 }}
-                            allowFullScreen=""
-                            loading="lazy"
-                            referrerPolicy="no-referrer-when-downgrade"
-                            title="Ormado Kaffeehaus Location on Google Maps"
-                        />
+                    {datamap.map((item, i) => {
+                        return (
 
-                    )
-                })}
+                            <iframe
+                                className='myiframe'
+                                src={item.map}
+                                style={{ border: 0 }}
+                                allowFullScreen=""
+                                loading="lazy"
+                                referrerPolicy="no-referrer-when-downgrade"
+                                title="Ormado Kaffeehaus Location on Google Maps"
+                            />
 
+                        )
+                    })}
+                </div>
             </div>
 
             <div className="locationcontact">
@@ -181,34 +174,29 @@ const Locationincontact = () => {
                             {/* <img src="/static/media/contact1.1243855218a280db36b3.png" alt="" /> */}
                             <div className="rightmap  col-12 col-sm-8 col-md-8  ">
                                 <div className="commonphoto  ">
-                                   
-                                        {console.log(dataImg, "burabax")}
-                                        {dataImg.map((item) => {
+
+                                    {/* {console.log(dataImg, "burabax")} */}
+                                    {dataImg.map((item) => {
 
 
-                                               console.log(item.place);
-                                               console.log(item.image[0]);
-                                             return (
+                                        // console.log(item.place);
+                                        // console.log(item.image[0]);
+                                        return (
 
-                                                item.image.map((img, i) => {
-                                                    console.log(img);
-                                                    return (
-                                                        <div className='siz'><img className={`myimage-${i}`} src={img} alt="" /></div>
-
-
-                                                    )
-
-                                                })
-                                            )
-                                            // return(
+                                            item.image.map((img, i) => {
+                                                // console.log(img);
+                                                return (
+                                                    <div ><img className={`myimage-${i}`} src={img} alt="" /></div>
 
 
+                                                )
 
-                                            // <img width={70} height={70} src={item.image[0]} alt="" />
-                                            // )
+                                            })
+                                        )
 
-                                        })}
-                                    
+
+                                    })}
+
 
 
                                 </div>

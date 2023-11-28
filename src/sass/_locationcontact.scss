@@ -34,15 +34,54 @@
     width: 100%;
     height: auto !important;
     @include displayCenter;
-    
 
-    .myiframe{
-       width: 1600px;
-       height: 490px;
-       
-       @media(min-width:1600px){
-        width: 2000px !important;
-       }
+    .myrelative {
+        position: relative;
+
+    }
+
+
+    .myiframe {
+        width: 1600px;
+        height: 490px;
+        @media(min-width:1600px) {
+            width: 2000px !important;
+        }
+
+    }
+
+    .logoimage {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        z-index: -2;
+
+        .myimg {
+            width: 100px !important;
+            height: 100px !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation-name: sass;
+            animation-duration: 4s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+               margin-top: 150px;
+
+            @keyframes sass {
+
+                0% {
+                    transform: rotate(0deg);
+                }
+
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+        }
+
 
 
     }
@@ -135,7 +174,7 @@
                         line-height: 10px;
                         color: var(--carousellogos);
 
-                        @media(min-width:1600px){
+                        @media(min-width:1600px) {
                             font-size: 12px;
                             line-height: 10px;
                         }
@@ -341,9 +380,9 @@
                         @media(max-width:1025px) {
                             font-size: 10px;
                             line-height: 10px;
-                        } 
+                        }
 
-                        @media(min-width:1600px){
+                        @media(min-width:1600px) {
                             font-size: 12px;
                             line-height: 10px;
                         }
@@ -489,12 +528,12 @@
                 }
 
                 .myactive {
-                     h6{
+                    h6 {
                         color: var(--roundplayarrow) !important;
-                     }
-                     
-                    
-            
+                    }
+
+
+
                 }
             }
 
@@ -658,7 +697,7 @@
                     border: white solid 4px;
                     z-index: 54;
 
-                    @media(min-width:1600px){
+                    @media(min-width:1600px) {
                         width: 180px !important;
                         height: 240px !important;
                     }
@@ -677,7 +716,7 @@
                     @media(max-width:340px) {
                         width: 100px !important;
                         height: 130px !important;
-                     
+
                     }
 
                 }
@@ -691,7 +730,7 @@
                     transform: translate(-50%, -50%);
                     border-radius: 10%;
 
-                    @media(min-width:1600px){
+                    @media(min-width:1600px) {
                         width: 180px !important;
                         height: 240px !important;
                     }
@@ -726,7 +765,7 @@
                     border-radius: 10%;
                     border: white solid 4px;
 
-                    @media(min-width:1600px){
+                    @media(min-width:1600px) {
                         width: 180px !important;
                         height: 240px !important;
                     }
@@ -760,7 +799,7 @@
 
                     @media(max-width:650px) {
                         top: 50%;
-                        left:62%;
+                        left: 62%;
                         width: 130px !important;
                         height: 150px !important;
                     }
@@ -795,7 +834,7 @@
                     transform: translate(-50%, -50%);
                     border-radius: 10%;
 
-                    @media(min-width:1600px){
+                    @media(min-width:1600px) {
                         width: 180px !important;
                         height: 240px !important;
                     }

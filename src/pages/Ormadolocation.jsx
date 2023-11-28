@@ -118,7 +118,7 @@ const Ormadolocation = () => {
                             {data.map((item, i) => {
                                 return (
                                     <div className="rightmap  col-12 col-sm-6 col-md-6 ">
-                                        <div className="myiframe main-relative">
+                                        <div className="main-relative myiframe">
                                             <div className="loader-container">
                                                 <img className="logo-loader" src="http://localhost:3000/static/media/logo.3d1574839a4f7d4adc4b.png" alt="" />
                                             </div>

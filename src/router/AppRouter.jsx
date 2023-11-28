@@ -21,6 +21,7 @@ import Gallery from '../pages/Gallery'
 import ProductDetails from '../pages/ProductDetails'
 import FranchiseForm from '../pages/FranchiseForm'
 import MyAccount from '../pages/admin/MyAccount'
+import BlogDetails from '../pages/BlogDetails'
 
 const AppRouter = () => {
   return (
@@ -48,6 +49,7 @@ const AppRouter = () => {
     <Route  path='/franchiseform' element={<FranchiseForm />}></Route>
     <Route  path='/myaccount' element={<MyAccount />}></Route>
     <Route  path='/signin' element={<MyAccount />}></Route>
+    <Route  path='/blog-details' element={<BlogDetails />}></Route>
 
     </Route>
     

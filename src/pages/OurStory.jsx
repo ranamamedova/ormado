@@ -14,8 +14,6 @@ import FAQ from "../components/Faqs"
 import axios from 'axios'
 const OurStory = () => {
    const [data,setData] = useState([])
-
-
   const [currentItems, setCurrentItems] = useState([]);
   const [itemOffset, setItemOffset] = useState(0);
   const itemsPerPage = 6;

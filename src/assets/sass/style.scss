@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100&family=Noto+Sans&family=Poppins&family=Vujahday+Script&display=swap');
 :root {
   --box-shadow-coffeModal: rgba(0, 0, 0, 0.25);
   --coffeModal-txt: #502e2d;
@@ -157,6 +158,8 @@ body {
 
 @import "./contact" ;
 
+@import "./Career.scss";
+
 
 // Reserve
 @import "./reserve";
@@ -164,9 +167,13 @@ body {
 @import "Career.scss" ;
 
 
+@import "./BlogDetails.scss" ;
+
 @import "./franchiseform" ;
 
 @import "./myaccount" ;
+
+@import './rangeslider';
 
 .swiperMobil1{
   margin-top: 200px;

@@ -1,12 +1,9 @@
-import blog2 from "../../assets/img/Blog2.png";
-import blog3 from "../../assets/img/Blog3.png";
 import BlogCard from "./BlogCard";
 import React, { useRef } from "react";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
-import rightBlogIcon from "../../assets/img/ic_round-play-arrow.svg";
-import leftBlogIcon from "../../assets/img/ic_round-play-arrow (1).svg";
+
 
 const data = [
   {

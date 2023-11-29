@@ -1,71 +1,79 @@
 import BreadCrumb from "../pages/BreadCrumb";
-import ProductImg from "../assets/img/Product Image.png";
+// import ProductImg from "../assets/img/Product Image.png";
 import ProductImg2 from "../assets/img/Image (2).png";
 import ProductImg3 from "../assets/img/Image (3).png";
 import ProductImg4 from "../assets/img/Image (4).png";
 import React, { useRef, useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
 import Faqs from '../components/Faqs';
-
-import "swiper/css";
-import "swiper/css/free-mode";
-import "swiper/css/navigation";
-import "swiper/css/thumbs";
-import { FreeMode, Navigation, Thumbs } from "swiper/modules";
-
 import RelatedProducts from "../components/RelatedProducts";
+import productDetails from "../data/productDetails";
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/free-mode';
+import 'swiper/css/navigation';
+import 'swiper/css/thumbs';
+import SwiperCore, { Navigation, Pagination, Autoplay } from 'swiper/core';
+import 'swiper/swiper-bundle.css';
 import { Link } from "react-router-dom";
 const ProductDetails = () => {
-  const [thumbsSwiper, setThumbsSwiper] = useState(null);
+  // const [activeThumb, setActiveThumb] = useState(null);
+  // const [activeThumbIndex, setActiveThumbIndex] = useState(null);
+  const [thumbIndex, setThumbIndex] = useState(0);
+  const onChange = (index) => {
+    setThumbIndex(index);
+  };
+  
+
   return (
     <>
-      <BreadCrumb title="PRODUCT DETAILS" />
+      <BreadCrumb title="PRODUCT DETAILS"/>
       <section className="ProductDetails">
         <div className="container-fluid">
           <div className="row justify-content-center">
-            <div className="col-sm-12 col-md-6 d-flex justify-content-center">
-              <Swiper
-                style={{
-                  "--swiper-navigation-color": "#fff",
-                  "--swiper-pagination-color": "#fff",
-                }}
-                loop={true}
-                spaceBetween={10}
-                navigation={true}
-                thumbs={{ swiper: thumbsSwiper }}
-                modules={[FreeMode, Navigation, Thumbs]}
-                className="productswiper"
-              >
-                <SwiperSlide>
-                  <img src={ProductImg} style={{ width: "60%" }} />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src={ProductImg} style={{ width: "60%" }} />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src={ProductImg} style={{ width: "60%" }} />
-                </SwiperSlide>
-              </Swiper>
-              <Swiper
-                // onSwiper={setThumbsSwiper}
-                loop={true}
-                spaceBetween={10}
-                slidesPerView={4}
-                freeMode={true}
-                watchSlidesProgress={true}
-                modules={[FreeMode, Navigation, Thumbs]}
-                className="productswipermain"
-              >
-                <SwiperSlide>
-                  <img src={ProductImg} style={{ width: "60px" }} />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src={ProductImg} style={{ width: "60px" }} />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src={ProductImg} style={{ width: "60px" }} />
-                </SwiperSlide>
-              </Swiper>
+            <div className="col-sm-12 col-md-6 d-flex justify-content-center ">
+              <div className="carouselSection" >
+                <div className="swiper-sliders">
+                    <Swiper
+                      loop={true}
+                      spaceBetween={10}
+                      // navigation={true}
+                      // selectedItem={thumbIndex}
+                      onChange={onChange}
+                      className="productdetails-images-slider"
+                    >
+                      {productDetails.map((thumb, index) => (
+                        <SwiperSlide key={index}>
+                          <div className="productdetails-images-slider-wrapper">
+                            <img src={thumb.image} alt="Slider Images" />
+                          </div>
+                        </SwiperSlide>
+                      ))}
+                    </Swiper>
+                    <Swiper
+                      loop={true}
+                      spaceBetween={10}
+                      slidesPerView={4}
+                      // navigation={true}
+                      thumbs={thumbIndex}
+                      onChange={onChange}
+                      freeMode={true}
+                      watchSlidesProgress={true}
+                      className="productdetails-images-slider-thumbs"
+                    >
+                      {productDetails.map((thumb, index) => (
+                        <SwiperSlide key={index}>
+                          <div
+                            className="productdetails-images-slider-thumbs-wrapper"
+                            onClick={() => onChange(index)}
+                          >
+                            <img src={thumb.image} alt="Slider Images" />
+                          </div>
+                        </SwiperSlide>
+                      ))}
+                    </Swiper>
+                  </div>
+              </div>
             </div>
             <div className="col-sm-12 col-md-6 d-flex justify-content-center">
               <div className="details-product">
@@ -109,9 +117,7 @@ const ProductDetails = () => {
                     is a risk that different products can come into contact with
                     each other and contamination of allergens can occur.
                   </p>
-                 <Link to="/nutrition">
-                 <span>Read more in our allergen guide.</span>
-                 </Link>
+                  <Link to='/nutrition'><span>Read more in our allergen guide.</span></Link>
                 </div>
                 <div className="category ">
                   <span className="grey-span">Category:</span>
@@ -121,11 +127,11 @@ const ProductDetails = () => {
                 <div className="quantity-box">
                   <div className="quantity-two">
                     <button className="quantity btn">
-                      <i class="fa-solid fa-plus"></i>
+                      <i className="fa-solid fa-plus"></i>
                     </button>
                     <span>5</span>
                     <button className="quantity btn">
-                      <i class="fa-solid fa-minus"></i>
+                      <i className="fa-solid fa-minus"></i>
                     </button>
                   </div>
                   <button className="btn addtocart-btn">
@@ -223,7 +229,7 @@ const ProductDetails = () => {
                 </div>
                 <div className="card-images">
                   <img
-                    src={ProductImg}
+                    src="https://ormado-demo.webluna.space/cdn/img/Product%20Image.png"
                     style={{ width: "100%" }}
                     alt="ProductImg"
                   />
@@ -315,7 +321,7 @@ const ProductDetails = () => {
                 </div> */}
                 <div className="card-images">
                   <img
-                    src={ProductImg2}
+                    src="https://ormado-demo.webluna.space/cdn/img/Image%20%282%29.png"
                     style={{ width: "100%" }}
                     alt="ProductImg"
                   />
@@ -407,7 +413,7 @@ const ProductDetails = () => {
                 </div> */}
                 <div className="card-images">
                   <img
-                    src={ProductImg3}
+                    src="https://ormado-demo.webluna.space/cdn/img/Image%20%283%29.png"
                     style={{ width: "100%" }}
                     alt="ProductImg"
                   />
@@ -499,7 +505,7 @@ const ProductDetails = () => {
                 </div> */}
                 <div className="card-images">
                   <img
-                    src={ProductImg4}
+                    src="https://ormado-demo.webluna.space/cdn/img/Image%20%284%29.png"
                     style={{ width: "100%" }}
                     alt="ProductImg"
                   />

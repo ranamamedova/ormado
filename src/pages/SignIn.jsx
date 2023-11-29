@@ -2,8 +2,8 @@ import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 import { Link, NavLink, useNavigate,} from "react-router-dom";
-import login from "../assets/img/login.png";
-import logo from "../assets/img/logo.png";
+// import login from "../assets/img/login.png";
+// import logo from "../assets/img/logo.png";
 
 const SignIn = () => {
   const userEmail = localStorage.getItem("userEmail")
@@ -62,11 +62,11 @@ const SignIn = () => {
             <div className="row">
               <div className="col-12 col-sm-6 col-md-5 col-lg-5   ">
                 <div className="signImg">
-                  <img src={login} alt="" className="img-fluid" />
+                  <img src="https://ormado-demo.webluna.space/cdn/img/login.png" alt="" className="img-fluid" />
                   <div className="logoTitle ">
                     <div className="logoImg">
                       <Link to="/">
-                        <img src={logo} alt="" className="mt-3 mb-5" />
+                        <img src="https://ormado-demo.webluna.space/cdn/img/logo.png" alt="" className="mt-3 mb-5" />
                       </Link>
                     </div>
                     <h2>WELCOME TO ORMADO KAFFEEHAUS</h2>

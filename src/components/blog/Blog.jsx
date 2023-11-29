@@ -17,21 +17,21 @@ const data = [
       "Aenean eleifend ante maecenas pulvinar montes lorem et pede dis dolor pretium donec dictum. Vici consequat justo enim. Venenatis eget adipiscing luctus lorem.",
   },
   {
-    photo: blog2,
+    photo: "https://ormado-demo.webluna.space/cdn/img/Blog2.png",
     title: "Integer Maecenas Eget Viverra",
     date: "June 28, 2023",
     about:
       "Aenean eleifend ante maecenas pulvinar montes lorem et pede dis dolor pretium donec dictum. Vici consequat justo enim. Venenatis eget adipiscing luctus lorem.",
   },
   {
-    photo: blog3,
+    photo: "https://ormado-demo.webluna.space/cdn/img/Blog3.png",
     title: "Integer Maecenas Eget Viverra",
     date: "June 28, 2023",
     about:
       "Aenean eleifend ante maecenas pulvinar montes lorem et pede dis dolor pretium donec dictum. Vici consequat justo enim. Venenatis eget adipiscing luctus lorem.",
   },
   {
-    photo: blog3,
+    photo: "https://ormado-demo.webluna.space/cdn/img/Blog3.png",
     title: "Integer Maecenas Eget Viverra",
     date: "June 28, 2023",
     about:

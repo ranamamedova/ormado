@@ -10,9 +10,8 @@ const Wishlistdetail = ({ items, onAddToCart, onDelete }) => {
       <thead >
         <tr >
           
-          <th className='product' >Product</th>
+          <th>Product</th>
           <th>Price</th>
-          
           <th>Stock Status</th>
           <th></th>
           

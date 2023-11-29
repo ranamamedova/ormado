@@ -26,6 +26,7 @@
           padding: 8px;
           text-align: left;
           font-family: Montserrat;
+          
           @media screen and (max-width: 767px) {
             border: 1px solid #E6E6E6;
             margin: 0;
@@ -117,6 +118,9 @@
             font-weight: 500;
             
           }
+          th:nth-child(1){
+            padding-left: 35px;
+           }
           
           
          

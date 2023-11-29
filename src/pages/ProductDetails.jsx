@@ -321,7 +321,7 @@ const ProductDetails = () => {
                 </div> */}
                 <div className="card-images">
                   <img
-                    src={ProductImg2}
+                    src="https://ormado-demo.webluna.space/cdn/img/Image%20%282%29.png"
                     style={{ width: "100%" }}
                     alt="ProductImg"
                   />
@@ -413,7 +413,7 @@ const ProductDetails = () => {
                 </div> */}
                 <div className="card-images">
                   <img
-                    src={ProductImg3}
+                    src="https://ormado-demo.webluna.space/cdn/img/Image%20%283%29.png"
                     style={{ width: "100%" }}
                     alt="ProductImg"
                   />
@@ -505,7 +505,7 @@ const ProductDetails = () => {
                 </div> */}
                 <div className="card-images">
                   <img
-                    src={ProductImg4}
+                    src="https://ormado-demo.webluna.space/cdn/img/Image%20%284%29.png"
                     style={{ width: "100%" }}
                     alt="ProductImg"
                   />

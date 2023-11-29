@@ -1,6 +1,17 @@
+import axios from "axios";
 import React from "react";
+import { useState } from "react";
+import { useEffect } from "react";
 
 const Faqs = () => {
+   const [faqData,setFaqData] = useState([])
+  useEffect(()=>{
+    axios.get("https://ormado.webluna.space/api/client/faq")
+    .then((res)=>{
+      console.log(res.data.data)
+      setFaqData(res.data.data)
+    }) 
+  },[])
   return (
     <div className="Faqs">
       <div className="container1">
@@ -19,41 +30,43 @@ const Faqs = () => {
           </div>
 
           <div className="accordion " id="accordionExample">
-            <div className="accordion-item" id="first">
+          {
+            faqData.map((fd,i)=>{
+              return   <div className="accordion-item" id={`item-${fd.id}`} key={i}>
               <h2 className="accordion-header">
                 <button
                   id="one"
                   className="accordion-button"
                   type="button"
                   data-bs-toggle="collapse"
-                  data-bs-target="#collapseOne"
+                  data-bs-target={`#collapse-${fd.id}`}
                   aria-expanded="true"
-                  aria-controls="collapseOne"
+                  aria-controls={`collapse-${fd.id}`}
                 >
                   <h6>
                     {" "}
-                    What is Webflow and why is it the best website builder?{" "}
+                    {fd.title}{" "}
                   </h6>
                 </button>
               </h2>
               <div
-                id="collapseOne"
+                id={`collapse-${fd.id}`}
                 className="accordion-collapse collapse show"
                 data-bs-parent="#accordionExample"
               >
                 <div className="accordion-body ">
                   <p className="lorem1 ">
                     {" "}
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Quaerat, veritatis exercitationem commodi sed, voluptatum
-                    ullam quisquam laborum beatae dolor iure rem dicta natus
-                    animi vero quibusdam, consectetur soluta rerum voluptas
-                    placeat adipisci est officiis incidunt. Architecto, eveniet?
+                {fd.text}
                   </p>
                 </div>
               </div>
             </div>
-            <div className="accordion-item" id="second">
+            })
+          }
+
+
+            {/* <div className="accordion-item" id="second">
               <h2 className="accordion-header">
                 <button
                   id="two"
@@ -155,7 +168,7 @@ const Faqs = () => {
                   </p>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

@@ -10,7 +10,7 @@ const FranchiseForm = () => {
             <div className="col-12 col-sm-6 ">
               <div className="franchiseFormImg">
                 <div className="img">
-                  <img src={franchise} alt="" className="img-fluid" />
+                  <img src="https://ormado-demo.webluna.space/cdn/img/franchiseform.png" alt="" className="img-fluid" />
                   <div className="overlayDesc">
                     <div className="d-flex justify-content-center align-items-center">
                       <h4 className="text-center">

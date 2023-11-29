@@ -98,7 +98,7 @@ const Payments = () => {
 
                     <div className="col-12 col-sm-12 col-md-6 d-flex justify-content-center align-items-center">
 
-                        <img src={iphone15} alt="" className='iphone img-fluid' />
+                        <img src="https://ormado-demo.webluna.space/cdn/img/iPhone%2015%20Pro.png" alt="" className='iphone img-fluid' />
 
                     </div>
 

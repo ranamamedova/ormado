@@ -1,8 +1,4 @@
 import React from "react";
-import icon from "../../assets/img/Group.jpg";
-// import rectangle1 from "../../assets/img/Rectangle1.png"
-// import rectangle2 from "../../assets/img/Rectangle2.png";
-// import whyusimg from "../../assets/img/whyusimg.png"
 const WhyUs = () => {
   return (
     <div className="whyus">
@@ -30,7 +26,7 @@ const WhyUs = () => {
               <div className="round-btn-part1"></div>
               <div className="round-btn-part2"></div>
               <div className="round-btn-part3">
-                <img src={icon} alt="" />
+                <img src="https://ormado-demo.webluna.space/cdn/img/Group.jpg" alt="" />
               </div>
             </div>
           </div>

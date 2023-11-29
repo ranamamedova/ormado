@@ -43,7 +43,7 @@ const Franchise = () => {
 
               <div className="rightbox col-6">
                 <div className="innerbox2">
-                  <img className="lastimage img-fluid" src={inner} alt="" />
+                  <img className="lastimage img-fluid" src="https://ormado-demo.webluna.space/cdn/img/inner.png" alt="" />
                 </div>
               </div>
             </div>

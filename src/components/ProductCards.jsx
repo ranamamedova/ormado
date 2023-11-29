@@ -89,7 +89,7 @@ import energydrrink from "../assets/img/energydrink.png";
 // import Vector from "../assets/img/Vector.png";
 // import Vector1 from "../assets/img/Vector1.png";
 import Ellipse from "../assets/img/Ellipse.png";
-import Heart from "../assets/img/Heart.png";
+// import Heart from "../assets/img/Heart.png";
 // import Shopbag from "../assets/img/Shopbag.png";
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -165,8 +165,8 @@ const ProductCards = () => {
               <Col xs={6} md={3} className="productcard-main d-flex justify-content-center mb-5">
             <Card className="card p-3 mt-5">
             <Card.Img className="card-rentagle" src="https://ormado-demo.webluna.space/cdn/img/Rectangle.png" />
-            <Card.Img className="card-ellipse" src={Ellipse} />
-            <Card.Img className="card-energy" src={energydrrink} />
+            <Card.Img className="card-ellipse" src="https://ormado-demo.webluna.space/cdn/img/Ellipse.png" />
+            <Card.Img className="card-energy" src="https://ormado-demo.webluna.space/cdn/img/energydrink.png" />
             <Card.Img className="card-vector" src="https://ormado-demo.webluna.space/cdn/img/Vector.png" />
             <Card.Img className="card-vector1" src="https://ormado-demo.webluna.space/cdn/img/Vector1.png" />
             <Card.Img className="card-vector2" src="https://ormado-demo.webluna.space/cdn/img/Vector1.png" />
@@ -175,7 +175,7 @@ const ProductCards = () => {
               <Card.Text className="product-cardPrice">$20.00</Card.Text>
               <div className="product-btn d-flex justify-content-center g-2">
                 <button className="btn-card me-1">
-                  <img src={Heart} className="btn-img" />
+                  <img src="https://ormado-demo.webluna.space/cdn/img/Heart.png" className="btn-img" />
                 </button>
                 <button className="btn-card me-1">
                   <img src="https://ormado-demo.webluna.space/cdn/img/Shopbag.png" className="btn-img" />
@@ -207,7 +207,7 @@ const ProductCards = () => {
               <Card.Text>$20.00</Card.Text>
               <div className="d-flex justify-content-center">
                 <button className="btn-card me-1">
-                  <img src={Heart} className="btn-img" />
+                  <img src="https://ormado-demo.webluna.space/cdn/img/Heart.png" className="btn-img" />
                 </button>
                 <button className="btn-card me-1">
                   <img src="https://ormado-demo.webluna.space/cdn/img/Shopbag.png" className="btn-img" />

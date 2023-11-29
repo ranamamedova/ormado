@@ -89,7 +89,7 @@ import energydrrink from "../assets/img/energydrink.png";
 // import Vector from "../assets/img/Vector.png";
 import Vector1 from "../assets/img/Vector1.png";
 import Ellipse from "../assets/img/Ellipse.png";
-import Heart from "../assets/img/Heart.png";
+// import Heart from "../assets/img/Heart.png";
 // import Shopbag from "../assets/img/Shopbag.png";
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -125,14 +125,14 @@ const ProductCards = () => {
             <Card.Img className="card-ellipse" src={Ellipse} />
             <Card.Img className="card-energy" src={energydrrink} />
             <Card.Img className="card-vector" src="https://ormado-demo.webluna.space/cdn/img/Vector.png" />
-            <Card.Img className="card-vector1" src={Vector1} />
-            <Card.Img className="card-vector2" src={Vector1} />
+            <Card.Img className="card-vector1" src="https://ormado-demo.webluna.space/cdn/img/Vector%201.png" />
+            <Card.Img className="card-vector2" src="https://ormado-demo.webluna.space/cdn/img/Vector%201.png" />
             <Card.Body>
               <Card.Title>{fd.title}</Card.Title>
               <Card.Text>$20.00</Card.Text>
               <div className="d-flex justify-content-center">
                 <button className="btn-card me-1">
-                  <img src={Heart} className="btn-img" />
+                  <img src="https://ormado-demo.webluna.space/cdn/img/Heart.png" className="btn-img" />
                 </button>
                 <button className="btn-card me-1">
                   <img src="https://ormado-demo.webluna.space/cdn/img/Shopbag.png" className="btn-img" />

@@ -8,11 +8,8 @@
 // import "https://ormado-demo.webluna.space/cdn/img/category1.png" from "../assets/img/category3.png"
 
 
-import blog4 from "../assets/img/category4.png"
-import blog5 from "../assets/img/category5.png"
-import blog6 from "../assets/img/category6.png"
-import blog7 from "../assets/img/category7.png"
-import blog8 from "../assets/img/category8.png"
+
+
 import blog9 from "../assets/img/category9.png"
 
 const category = [
@@ -49,7 +46,7 @@ const category = [
     },
     {
         id:3,
-        img:blog4,
+        img:"https://ormado-demo.webluna.space/cdn/img/category4.png",
         title:"Integer Maecenas Eget Viverra 4",
         date:"June 28, 2023",
         read:"1K read",
@@ -59,7 +56,7 @@ const category = [
     },
     {
         id:4,
-        img:blog5,
+        img:"https://ormado-demo.webluna.space/cdn/img/category5.png",
         title:"Integer Maecenas Eget Viverra 5",
         date:"June 28, 2023",
         read:"1K read",
@@ -69,7 +66,7 @@ const category = [
     },
     {
         id:5,
-        img:blog6,
+        img:"https://ormado-demo.webluna.space/cdn/img/category6.png",
         title:"Integer Maecenas Eget Viverra 6",
         date:"June 28, 2023",
         read:"1K read",
@@ -79,7 +76,7 @@ const category = [
     },
     {
         id:6,
-        img:blog7,
+        img:"https://ormado-demo.webluna.space/cdn/img/category7.png",
         title:"Integer Maecenas Eget Viverra 7",
         date:"June 28, 2023",
         read:"1K read",
@@ -89,7 +86,7 @@ const category = [
     },
     {
         id:7,
-        img:blog8,
+        img:"https://ormado-demo.webluna.space/cdn/img/category8.png",
         title:"Integer Maecenas Eget Viverra 8",
         date:"June 28, 2023",
         read:"1K read",
@@ -99,7 +96,7 @@ const category = [
     },
     {
         id:8,
-        img:blog9,
+        img:"https://ormado-demo.webluna.space/cdn/img/category9.png",
         title:"Integer Maecenas Eget Viverra 9",
         date:"June 28, 2023",
         read:"1K read",
@@ -119,7 +116,7 @@ const category = [
     },
     {
         id:10,
-        img:blog5,
+        img:"https://ormado-demo.webluna.space/cdn/img/category5.png",
         title:"Integer Maecenas Eget Viverra 11",
         date:"June 28, 2023",
         read:"1K read",
@@ -139,7 +136,7 @@ const category = [
     },
     {
         id:12,
-        img:blog9,
+        img:"https://ormado-demo.webluna.space/cdn/img/category9.png",
         title:"Integer Maecenas Eget Viverra 13",
         date:"June 28, 2023",
         read:"1K read",
@@ -149,7 +146,7 @@ const category = [
     },
     {
         id:13,
-        img:blog7,
+        img:"https://ormado-demo.webluna.space/cdn/img/category7.png",
         title:"Integer Maecenas Eget Viverra 14",
         date:"June 28, 2023",
         read:"1K read",
@@ -169,7 +166,7 @@ const category = [
     },
     {
         id:15,
-        img:blog5,
+        img:"https://ormado-demo.webluna.space/cdn/img/category5.png",
         title:"Integer Maecenas Eget Viverra 16",
         date:"June 28, 2023",
         read:"1K read",
@@ -179,7 +176,7 @@ const category = [
     },
     {
         id:16,
-        img:blog7,
+        img:"https://ormado-demo.webluna.space/cdn/img/category7.png",
         title:"Integer Maecenas Eget Viverra 17",
         date:"June 28, 2023",
         read:"1K read",
@@ -199,7 +196,7 @@ const category = [
     },
     {
         id:18,
-        img:blog9,
+        img:"https://ormado-demo.webluna.space/cdn/img/category9.png",
         title:"Integer Maecenas Eget Viverra 19",
         date:"June 28, 2023",
         read:"1K read",
@@ -209,7 +206,7 @@ const category = [
     },
     {
         id:19,
-        img:blog8,
+        img:"https://ormado-demo.webluna.space/cdn/img/category8.png",
         title:"Integer Maecenas Eget Viverra 20",
         date:"June 28, 2023",
         read:"1K read",
@@ -219,7 +216,7 @@ const category = [
     },
     {
         id:20,
-        img:blog4,
+        img:"https://ormado-demo.webluna.space/cdn/img/category4.png",
         title:"Integer Maecenas Eget Viverra 21",
         date:"June 28, 2023",
         read:"1K read",
@@ -259,7 +256,7 @@ const category = [
     },
     {
         id:3,
-        img:blog4,
+        img:"https://ormado-demo.webluna.space/cdn/img/category4.png",
         title:"Integer Maecenas Eget Viverra 4",
         date:"June 28, 2023",
         read:"1K read",
@@ -269,7 +266,7 @@ const category = [
     },
     {
         id:4,
-        img:blog5,
+        img:"https://ormado-demo.webluna.space/cdn/img/category5.png",
         title:"Integer Maecenas Eget Viverra 5",
         date:"June 28, 2023",
         read:"1K read",
@@ -279,7 +276,7 @@ const category = [
     },
     {
         id:5,
-        img:blog6,
+        img:"https://ormado-demo.webluna.space/cdn/img/category6.png",
         title:"Integer Maecenas Eget Viverra 6",
         date:"June 28, 2023",
         read:"1K read",
@@ -289,7 +286,7 @@ const category = [
     },
     {
         id:6,
-        img:blog7,
+        img:"https://ormado-demo.webluna.space/cdn/img/category7.png",
         title:"Integer Maecenas Eget Viverra 7",
         date:"June 28, 2023",
         read:"1K read",
@@ -299,7 +296,7 @@ const category = [
     },
     {
         id:7,
-        img:blog8,
+        img:"https://ormado-demo.webluna.space/cdn/img/category8.png",
         title:"Integer Maecenas Eget Viverra 8",
         date:"June 28, 2023",
         read:"1K read",
@@ -309,7 +306,7 @@ const category = [
     },
     {
         id:8,
-        img:blog9,
+        img:"https://ormado-demo.webluna.space/cdn/img/category9.png",
         title:"Integer Maecenas Eget Viverra 9",
         date:"June 28, 2023",
         read:"1K read",
@@ -329,7 +326,7 @@ const category = [
     },
     {
         id:10,
-        img:blog5,
+        img:"https://ormado-demo.webluna.space/cdn/img/category5.png",
         title:"Integer Maecenas Eget Viverra 11",
         date:"June 28, 2023",
         read:"1K read",
@@ -349,7 +346,7 @@ const category = [
     },
     {
         id:12,
-        img:blog9,
+        img:"https://ormado-demo.webluna.space/cdn/img/category9.png",
         title:"Integer Maecenas Eget Viverra 13",
         date:"June 28, 2023",
         read:"1K read",
@@ -358,7 +355,7 @@ const category = [
     },
     {
         id:13,
-        img:blog7,
+        img:"https://ormado-demo.webluna.space/cdn/img/category7.png",
         title:"Integer Maecenas Eget Viverra 14",
         date:"June 28, 2023",
         read:"1K read",
@@ -376,7 +373,7 @@ const category = [
     },
     {
         id:15,
-        img:blog5,
+        img:"https://ormado-demo.webluna.space/cdn/img/category5.png",
         title:"Integer Maecenas Eget Viverra 16",
         date:"June 28, 2023",
         read:"1K read",
@@ -385,7 +382,7 @@ const category = [
     },
     {
         id:16,
-        img:blog7,
+        img:"https://ormado-demo.webluna.space/cdn/img/category7.png",
         title:"Integer Maecenas Eget Viverra 17",
         date:"June 28, 2023",
         read:"1K read",
@@ -403,7 +400,7 @@ const category = [
     },
     {
         id:18,
-        img:blog9,
+        img:"https://ormado-demo.webluna.space/cdn/img/category9.png",
         title:"Integer Maecenas Eget Viverra 19",
         date:"June 28, 2023",
         read:"1K read",
@@ -412,7 +409,7 @@ const category = [
     },
     {
         id:19,
-        img:blog8,
+        img:"https://ormado-demo.webluna.space/cdn/img/category8.png",
         title:"Integer Maecenas Eget Viverra 20",
         date:"June 28, 2023",
         read:"1K read",
@@ -421,7 +418,7 @@ const category = [
     },
     {
         id:20,
-        img:blog4,
+        img:"https://ormado-demo.webluna.space/cdn/img/category4.png",
         title:"Integer Maecenas Eget Viverra 21",
         date:"June 28, 2023",
         read:"1K read",
@@ -457,7 +454,7 @@ const category = [
     },
     {
         id:3,
-        img:blog4,
+        img:"https://ormado-demo.webluna.space/cdn/img/category4.png",
         title:"Integer Maecenas Eget Viverra 4",
         date:"June 28, 2023",
         read:"1K read",
@@ -466,7 +463,7 @@ const category = [
     },
     {
         id:4,
-        img:blog5,
+        img:"https://ormado-demo.webluna.space/cdn/img/category5.png",
         title:"Integer Maecenas Eget Viverra 5",
         date:"June 28, 2023",
         read:"1K read",
@@ -475,7 +472,7 @@ const category = [
     },
     {
         id:5,
-        img:blog6,
+        img:"https://ormado-demo.webluna.space/cdn/img/category6.png",
         title:"Integer Maecenas Eget Viverra 6",
         date:"June 28, 2023",
         read:"1K read",
@@ -484,7 +481,7 @@ const category = [
     },
     {
         id:6,
-        img:blog7,
+        img:"https://ormado-demo.webluna.space/cdn/img/category7.png",
         title:"Integer Maecenas Eget Viverra 7",
         date:"June 28, 2023",
         read:"1K read",
@@ -493,7 +490,7 @@ const category = [
     },
     {
         id:7,
-        img:blog8,
+        img:"https://ormado-demo.webluna.space/cdn/img/category8.png",
         title:"Integer Maecenas Eget Viverra 8",
         date:"June 28, 2023",
         read:"1K read",
@@ -502,7 +499,7 @@ const category = [
     },
     {
         id:8,
-        img:blog9,
+        img:"https://ormado-demo.webluna.space/cdn/img/category9.png",
         title:"Integer Maecenas Eget Viverra 9",
         date:"June 28, 2023",
         read:"1K read",
@@ -520,7 +517,7 @@ const category = [
     },
     {
         id:10,
-        img:blog5,
+        img:"https://ormado-demo.webluna.space/cdn/img/category5.png",
         title:"Integer Maecenas Eget Viverra 11",
         date:"June 28, 2023",
         read:"1K read",
@@ -538,7 +535,7 @@ const category = [
     },
     {
         id:12,
-        img:blog9,
+        img:"https://ormado-demo.webluna.space/cdn/img/category9.png",
         title:"Integer Maecenas Eget Viverra 13",
         date:"June 28, 2023",
         read:"1K read",
@@ -547,7 +544,7 @@ const category = [
     },
     {
         id:13,
-        img:blog7,
+        img:"https://ormado-demo.webluna.space/cdn/img/category7.png",
         title:"Integer Maecenas Eget Viverra 14",
         date:"June 28, 2023",
         read:"1K read",
@@ -565,7 +562,7 @@ const category = [
     },
     {
         id:15,
-        img:blog5,
+        img:"https://ormado-demo.webluna.space/cdn/img/category5.png",
         title:"Integer Maecenas Eget Viverra 16",
         date:"June 28, 2023",
         read:"1K read",
@@ -574,7 +571,7 @@ const category = [
     },
     {
         id:16,
-        img:blog7,
+        img:"https://ormado-demo.webluna.space/cdn/img/category8.png",
         title:"Integer Maecenas Eget Viverra 17",
         date:"June 28, 2023",
         read:"1K read",
@@ -592,7 +589,7 @@ const category = [
     },
     {
         id:18,
-        img:blog9,
+        img:"https://ormado-demo.webluna.space/cdn/img/category9.png",
         title:"Integer Maecenas Eget Viverra 19",
         date:"June 28, 2023",
         read:"1K read",
@@ -601,7 +598,7 @@ const category = [
     },
     {
         id:19,
-        img:blog8,
+        img:"https://ormado-demo.webluna.space/cdn/img/category8.png",
         title:"Integer Maecenas Eget Viverra 20",
         date:"June 28, 2023",
         read:"1K read",
@@ -610,7 +607,7 @@ const category = [
     },
     {
         id:20,
-        img:blog4,
+        img:"https://ormado-demo.webluna.space/cdn/img/category4.png",
         title:"Integer Maecenas Eget Viverra 21",
         date:"June 28, 2023",
         read:"1K read",

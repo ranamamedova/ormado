@@ -69,7 +69,7 @@ const Reserve = () => {
               <img src='https://ormado-demo.webluna.space/cdn/img/sidenav-bg.png' alt=""/>
              <div className="overlay ">
              <div className="overlay-img mb-4">
-                <img src={require('../assets/img/logo.png')} alt="" />
+                <img src='https://ormado-demo.webluna.space/cdn/img/logo.png' alt="" />
               </div>
              <h2 className="overlay-text text-center mt-3">WELCOME TO ORMADO KAFFEEHAUS</h2>
               
@@ -206,11 +206,11 @@ const Reserve = () => {
                     className="coffee d-flex "
                     onClick={formik.handleSubmit}
                   >
-                     <img src={require('https://ormado-demo.webluna.space/cdn/img/Vector%201.png')} alt="" />
-                  <img src={require('https://ormado-demo.webluna.space/cdn/img/Vector%201.png')} alt="" />
+                     <img src='https://ormado-demo.webluna.space/cdn/img/Vector%201.png' alt="" />
+                  <img src='https://ormado-demo.webluna.space/cdn/img/Vector%201.png' alt="" />
                   <p>Reserve</p>
-                  <img src={require('https://ormado-demo.webluna.space/cdn/img/Vector%203.png')} alt="" />
-                  <img src={require('https://ormado-demo.webluna.space/cdn/img/Vector%204.png')} alt="" />
+                  <img src='https://ormado-demo.webluna.space/cdn/img/Vector%203.png' alt="" />
+                  <img src='https://ormado-demo.webluna.space/cdn/img/Vector%204.png' alt="" />
                     
                   </button>
                 </form>

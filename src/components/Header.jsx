@@ -631,6 +631,30 @@ const Header = () => {
                 CONTACT
               </NavLink>
             </li>
+            <li>
+              {" "}
+              <NavLink
+                to="/category"
+                className={`notactive ${active == 8 ? "active" : ""}`}
+                onClick={() => {
+                  setActive(8);
+                }}
+              >
+                BLOG
+              </NavLink>
+            </li>
+            <li>
+              {" "}
+              <NavLink
+                to="/gallery"
+                className={`notactive ${active == 9 ? "active" : ""}`}
+                onClick={() => {
+                  setActive(9);
+                }}
+              >
+                GALLERY
+              </NavLink>
+            </li>
           </ul>
         </nav>
       </header>

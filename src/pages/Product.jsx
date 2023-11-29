@@ -1,5 +1,4 @@
 import React, { useState} from 'react'
-import accoerdian from '../assets/img/accoerdion.png'
 import SingleProduct from '../components/SingleProduct'
 
 
@@ -127,7 +126,7 @@ const Product = () => {
             </div>
           <div className="col-md-9">
             <div className='img-transparent d-none d-md-block d-lg-block'>
-              <img src={accoerdian} alt="" />
+              <img src="https://ormado-demo.webluna.space/cdn/img/accoerdion.png" alt="" />
               <div className='img-background'></div>
               <div className='img-text-context'>
                 <h4>BEST DEALS</h4>
@@ -153,7 +152,7 @@ const Product = () => {
               <SingleProduct />
             </div>
             <div className='img-transparent'>
-              <img src={accoerdian} alt="" />
+              <img src="https://ormado-demo.webluna.space/cdn/img/accoerdion.png" alt="" />
               <div className='img-background'></div>
               <div className='img-text-context'>
                 <h4>BEST DEALS</h4>

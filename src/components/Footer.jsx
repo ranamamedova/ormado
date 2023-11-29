@@ -1,11 +1,11 @@
 import React from "react";
-import logo from "../../assets/img/logo.png";
-import master from "../../assets/img/master.png";
-import visa from "../../assets/img/Visa.svg";
-import maestro from "../../assets/img/Maestro.png";
-import paypal from "../../assets/img/PayPal.png";
-import dowlandpng from "../../assets/img/download.png";
-import dowlandpng2 from "../../assets/img/download2.png";
+// import logo from "../assets/img/logo.png";
+// import master from "../assets/img/master.png";
+// import visa from "../assets/img/Visa.svg";
+// import maestro from "../assets/img/Maestro.png";
+// import paypal from "../assets/img/PayPal.png";
+import dowlandpng from "../assets/img/download.png";
+import dowlandpng2 from "../assets/img/download2.png";
 const Footer = () => {
   return (
     <div className="footer mt-5">
@@ -14,7 +14,7 @@ const Footer = () => {
           <div className="footer-parts-top">
             <div className="footer-part1  mb-2 ms-5">
               <form>
-                <img src={logo} alt="error" />
+                <img src="https://ormado-demo.webluna.space/cdn/img/logo.png" alt="error" />
                 <div className="footer-part1-main d-flex flex-column flex-sm-row w-100 gap-2 mt-4">
                   <label htmlFor="newsletter1" className="visually-hidden">
                     Email address
@@ -108,24 +108,24 @@ const Footer = () => {
                   <div className="footer-card-part1">
                     <li className="nav-item mb-2">
                       <a href="#" className="nav-link p-0 ">
-                        <img src={visa} alt="" />
+                        <img src="https://ormado-demo.webluna.space/cdn/img/Visa.svg" alt="" />
                       </a>
                     </li>
                     <li className="nav-item mb-2">
                       <a href="#" className="nav-link p-0 ">
-                        <img src={master} alt="" />
+                        <img src="https://ormado-demo.webluna.space/cdn/img/master.png" alt="" />
                       </a>
                     </li>
                   </div>
                   <div className="footer-card-part2 ">
                     <li className="nav-item mb-2">
                       <a href="#" className="nav-link p-0 ">
-                        <img src={maestro} alt="" />
+                        <img src="https://ormado-demo.webluna.space/cdn/img/Maestro.png" alt="" />
                       </a>
                     </li>
                     <li className="nav-item mb-2">
                       <a href="#" className="nav-link p-0 ">
-                        <img src={paypal} alt="" />
+                        <img src="https://ormado-demo.webluna.space/cdn/img/PayPal.png" alt="" />
                       </a>
                     </li>
                   </div>

@@ -84,13 +84,13 @@ import Card from "react-bootstrap/Card";
 import { Col, Row } from "react-bootstrap";
 import productCard from "../data/ProductCard.js";
 import { Swiper, SwiperSlide } from "swiper/react";
-import Rectangle from "../assets/img/Rectangle.png";
+// import Rectangle from "../assets/img/Rectangle.png";
 import energydrrink from "../assets/img/energydrink.png";
-import Vector from "../assets/img/Vector.png";
-import Vector1 from "../assets/img/Vector1.png";
+// import Vector from "../assets/img/Vector.png";
+// import Vector1 from "../assets/img/Vector1.png";
 import Ellipse from "../assets/img/Ellipse.png";
 import Heart from "../assets/img/Heart.png";
-import Shopbag from "../assets/img/Shopbag.png";
+// import Shopbag from "../assets/img/Shopbag.png";
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
@@ -164,12 +164,12 @@ const ProductCards = () => {
             <SwiperSlide className="mb-5">
               <Col xs={6} md={3} className="productcard-main d-flex justify-content-center mb-5">
             <Card className="card p-3 mt-5">
-            <Card.Img className="card-rentagle" src={Rectangle} />
+            <Card.Img className="card-rentagle" src="https://ormado-demo.webluna.space/cdn/img/Rectangle.png" />
             <Card.Img className="card-ellipse" src={Ellipse} />
             <Card.Img className="card-energy" src={energydrrink} />
-            <Card.Img className="card-vector" src={Vector} />
-            <Card.Img className="card-vector1" src={Vector1} />
-            <Card.Img className="card-vector2" src={Vector1} />
+            <Card.Img className="card-vector" src="https://ormado-demo.webluna.space/cdn/img/Vector.png" />
+            <Card.Img className="card-vector1" src="https://ormado-demo.webluna.space/cdn/img/Vector1.png" />
+            <Card.Img className="card-vector2" src="https://ormado-demo.webluna.space/cdn/img/Vector1.png" />
             <Card.Body>
               <Card.Title className="product-cardTitle">{fd.title}</Card.Title>
               <Card.Text className="product-cardPrice">$20.00</Card.Text>
@@ -178,7 +178,7 @@ const ProductCards = () => {
                   <img src={Heart} className="btn-img" />
                 </button>
                 <button className="btn-card me-1">
-                  <img src={Shopbag} className="btn-img" />
+                  <img src="https://ormado-demo.webluna.space/cdn/img/Shopbag.png" className="btn-img" />
                 </button>
                 <button className="btn-readmore">Read More</button>
               </div>
@@ -196,12 +196,12 @@ const ProductCards = () => {
           data.map((fd,i)=>(
             <Col xs={6} md={3} className="product-card-main d-flex justify-content-center mb-5">
             <Card className="card p-3 mt-5" style={{ width: "14rem" }}>
-            <Card.Img className="card-rentagle" src={Rectangle} />
+            <Card.Img className="card-rentagle" src="https://ormado-demo.webluna.space/cdn/img/Rectangle.png" />
             <Card.Img className="card-ellipse" src={Ellipse} />
             <Card.Img className="card-energy" src={energydrrink} />
-            <Card.Img className="card-vector" src={Vector} />
-            <Card.Img className="card-vector1" src={Vector1} />
-            <Card.Img className="card-vector2" src={Vector1} />
+            <Card.Img className="card-vector" src="https://ormado-demo.webluna.space/cdn/img/Vector.png" />
+            <Card.Img className="card-vector1" src="https://ormado-demo.webluna.space/cdn/img/Vector1.png" />
+            <Card.Img className="card-vector2" src="https://ormado-demo.webluna.space/cdn/img/Vector1.png" />
             <Card.Body>
               <Card.Title>{fd.title}</Card.Title>
               <Card.Text>$20.00</Card.Text>
@@ -210,7 +210,7 @@ const ProductCards = () => {
                   <img src={Heart} className="btn-img" />
                 </button>
                 <button className="btn-card me-1">
-                  <img src={Shopbag} className="btn-img" />
+                  <img src="https://ormado-demo.webluna.space/cdn/img/Shopbag.png" className="btn-img" />
                 </button>
                 <button className="btn-readmore">Read More</button>
               </div>

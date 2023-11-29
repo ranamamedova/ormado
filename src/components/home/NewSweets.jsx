@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { EffectFade,Pagination } from 'swiper/modules';
-import newSweet from "../../assets/img/Rectangle603.png"
+// import newSweet from "../../assets/img/Rectangle603.png"
 import 'swiper/css/effect-fade';
 
 
@@ -23,7 +23,7 @@ const NewSweets = () => {
         <SwiperSlide className='swiper-slide'>
             <div className="swiper-main">
               <div className="img">
-              <img src={newSweet} alt="" /> 
+              <img src="https://ormado-demo.webluna.space/cdn/img/Rectangle603.png" alt="" /> 
               </div>
               <div className="swiper-background"></div>
               <div className="swiper-text container">
@@ -34,7 +34,7 @@ const NewSweets = () => {
         <SwiperSlide>
         <div className="swiper-main">
              <div className="img">
-                <img src={newSweet} alt="" /> 
+                <img src="https://ormado-demo.webluna.space/cdn/img/Rectangle603.png" alt="" /> 
               </div>
               <div className="swiper-background"></div>
               <div className="swiper-text container">
@@ -46,7 +46,7 @@ const NewSweets = () => {
         <SwiperSlide>
         <div className="swiper-main">
               <div className="img">
-                <img src={newSweet} alt="" /> 
+                <img src="https://ormado-demo.webluna.space/cdn/img/Rectangle603.png" alt="" /> 
               </div>
               <div className="swiper-background"></div>
               <div className="swiper-text container">
@@ -58,7 +58,7 @@ const NewSweets = () => {
         <SwiperSlide>
         <div className="swiper-main">
               <div className="img">
-                <img src={newSweet} alt="" /> 
+                <img src="https://ormado-demo.webluna.space/cdn/img/Rectangle603.png" alt="" /> 
               </div>
               <div className="swiper-background"></div>
               <div className="swiper-text container">
@@ -70,7 +70,7 @@ const NewSweets = () => {
         <SwiperSlide>
         <div className="swiper-main">
               <div className="img">
-                <img src={newSweet} alt="" /> 
+                <img src="https://ormado-demo.webluna.space/cdn/img/Rectangle603.png" alt="" /> 
               </div>
               <div className="swiper-background"></div>
               <div className="swiper-text container">

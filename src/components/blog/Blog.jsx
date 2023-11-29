@@ -1,4 +1,3 @@
-import blog1 from "../../assets/img/blog1.png";
 import blog2 from "../../assets/img/Blog2.png";
 import blog3 from "../../assets/img/Blog3.png";
 import BlogCard from "./BlogCard";
@@ -11,7 +10,7 @@ import leftBlogIcon from "../../assets/img/ic_round-play-arrow (1).svg";
 
 const data = [
   {
-    photo: blog1,
+    photo: "https://ormado-demo.webluna.space/cdn/img/blog1.png",
     title: "Integer Maecenas Eget Viverra",
     date: "June 28, 2023",
     about:

@@ -44,9 +44,9 @@ const OurStory = () => {
       }
     </div>
     <div className="ourstory-main ">
-      <img src={blastLeft} alt="error" className='blastLeft'/>
+      <img src="https://ormado-demo.webluna.space/cdn/img/blast.png" alt="error" className='blastLeft'/>
       <h1>OUR STORY</h1>
-      <img src={icon} alt="error" className='my-3'/>
+      <img src="https://ormado-demo.webluna.space/cdn/img/pngwing3.png" alt="error" className='my-3'/>
       <div className="ourstory-main-text">
         <p>Ormado Kaffeehaus is an international German brand. Our story started in Berlin in 2017. We are proud to have already developed and refined our business models not only in the German capital, and also in Baku, Odessa, and Dubai. We have tested various strategies, products, and services to determine what works best across different locations. For us, is important to analyze and understand the cultural needs and mindset. We believe coffee is not only coffee and all is already well if you have a coffee in a cozy atmosphere. In all of our coffee shops, we play jazz, prepare delicious coffee of our own production, and treat our customers with waffles. And not only waffles. Our menu includes a selection of premium coffees, hot and cold drinks, and desserts - including vegan options. Come & visit us!</p>
       </div>
@@ -91,7 +91,8 @@ const OurStory = () => {
             <div className="background-black"></div>
             <img  src={imageOurstory} alt="" />
             <div className="card-main">
-              <img src={vector} alt="error" />
+              <img src="https://ormado-demo.webluna.space/cdn/img/VectorOurstory.svg" alt="error" />
+               
             </div>
           </div>
       </div>

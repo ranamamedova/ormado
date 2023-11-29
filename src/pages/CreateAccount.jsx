@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import login from "../assets/img/login.png";
-import logo from "../assets/img/logo.png";
+// import login from "../assets/img/login.png";
+// import logo from "../assets/img/logo.png";
 import { Link, NavLink, } from "react-router-dom"
 const CreateAccount = () => {
   const [pass, setPass] = useState('')
@@ -58,11 +58,11 @@ const CreateAccount = () => {
           <div className="row ">
             <div className="col-12 col-sm-5 col-md-6 col-lg-5 ">
               <div className="signImg">
-                <img src={login} alt="" className="img-fluid" />
+                <img src="https://ormado-demo.webluna.space/cdn/img/login.png" alt="" className="img-fluid" />
                 <div className="logoTitle ">
                   <div className="logoImg">
                     <Link to="/">
-                      <img src={logo} alt="" className="mt-3 mb-5" />
+                      <img src="https://ormado-demo.webluna.space/cdn/img/logo.png" alt="" className="mt-3 mb-5" />
                     </Link>
                   </div>
                   <h2>WELCOME TO ORMADO KAFFEEHAUS</h2>

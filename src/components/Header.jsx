@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import logo from "../assets/img/logo.png";
-const Navbar = () => {
+// import logo from "../assets/img/logo.png";
+const Header = () => {
   // NAV ACTIVE COLOR
   const [active, setActive] = useState();
 
@@ -32,7 +32,7 @@ const Navbar = () => {
             <div className="col-7 ">
               <div className="d-flex align-items-center justify-content-between">
                 <div className="logo">
-                  <img src={logo} alt="" />
+                  <img src="https://ormado-demo.webluna.space/cdn/img/logo.png" alt="" />
                 </div>
 
                 <div class="search-container">
@@ -638,4 +638,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Header;

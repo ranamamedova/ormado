@@ -26,7 +26,7 @@ const WhyUs = () => {
           </div>
           <div className="whyus-img card text-bg-dark">
             <div className="card-img-overlay">
-                <img src={whyusimg} className="card-img " alt="..." />
+                <img src="https://ormado-demo.webluna.space/cdn/img/whyusimg.png" className="card-img " alt="..." />
               <div className="round-btn-part1"></div>
               <div className="round-btn-part2"></div>
               <div className="round-btn-part3">

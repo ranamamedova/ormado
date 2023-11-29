@@ -108,7 +108,7 @@ const Footer = () => {
                   <div className="footer-card-part1">
                     <li className="nav-item mb-2">
                       <a href="#" className="nav-link p-0 ">
-                        <img src={visa} alt="" />
+                        <img src="https://ormado-demo.webluna.space/cdn/img/Visa.svg" alt="" />
                       </a>
                     </li>
                     <li className="nav-item mb-2">

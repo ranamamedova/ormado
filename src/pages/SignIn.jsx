@@ -84,7 +84,7 @@ const SignIn = () => {
                     <br />
                     <input
                       type="email"
-                      placeholder="Type your e-mail or phone number"
+                      placeholder="admin@gmail.com"
                       value={email}
                       onChange={(e) => {
                         setEmail(e.target.value);
@@ -97,7 +97,7 @@ const SignIn = () => {
                     <br />
                     <input
                       type="password"
-                      placeholder="Type your password"
+                      placeholder="123"
                       value={password}
                       onChange={(e) => {
                         setPassword(e.target.value);

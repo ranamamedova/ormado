@@ -2,43 +2,132 @@
     background-color: #4A3024;
     border-bottom:1px solid #F2F2F2;
     color: white;
+    font-family: Montserrat;
     border-top: none;
     border-left: none;
     border-right: none;
-    line-height: 1cm;
+    line-height: 1cm;    
     font-size: 12px;
     margin: 10px;
     outline: none;
+    width: 100%;
+    @media (max-width:767px){
+        width: 60%;
+    }
 
 }
 
 
 .diascuss{
-font-family: Montserrat;
+
 background-color: #4A3024;
 display: flex;
 justify-content: space-evenly;
-h1{
-    font-size: 95px;
-    line-height: 3cm;
+.row{
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+position: relative;
+@media (max-width:767px){
+    justify-content: center;
+}
+@media (max-width:576px){
+    justify-content: center;
+}
+.col-12{
+
+ h1{
+    font-size: 130px;
+    line-height: 4cm;
    opacity: 30%;
    color: transparent;
-   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-width: 0.5px;
    -webkit-text-stroke-color: #fff;
    font-weight: 900;
-   
+   width: 50%;
+   position: absolute;
+   bottom: 20%;
+   left: 15%;
+
+   @media (max-width:768px){
+    font-size: 90px;
+    width: 65%;
+    line-height: 2cm;
+    bottom: 50%;
+    
+    
+}
+@media (max-width:576px){
+    font-size: 90px;
+    width: 65%;
+    line-height: 2cm;
+    bottom: 20%;
+    
+    
+}
+@media (max-width:431px){
+    font-size: 52px;
+  
+}
 }
 h2{
     font-weight: 700;
-    font-size: 30px;
+    font-size: 30px;  
+    font-family: Montserrat;
+    width: 100%;
+    span {
+        display: block;
+      }
+     
+    // @media (min-width:767px){
+    //     width: 90%;
+    //     padding-top: 3cm;
+    // }
+    // @media (max-width:576px){
+    //     width: 79%;
+       
+    // }
 }
+p{
+    width: 85%;
+    font-family: Montserrat;
+    span {
+        display: block;
+      }
+    @media (max-width:812px){
+        width: 100%;
+    }
+   
+    @media (max-width:431px){
+        width: 80%;
+        
+    }
+}
+}
+.col-12{
+@media (max-width:767px){
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+@media (max-width:510px){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+ }
+
+ .left-one{
 
 input{
     @include sameinput();
+  
 }
 select{
     @include sameinput();
-    
+  padding-bottom: 10px;
+  margin-top: 25px;
 }
 ::placeholder {
     color: #fff;
@@ -49,6 +138,13 @@ select{
 display: flex;
 flex-direction: column;
 
+@media (max-width:767px){
+   
+    align-items: center;
+    justify-content: center;
+    
+ }
+
 button{
     background-color: #FECF08;
     color: #fff;
@@ -58,6 +154,17 @@ button{
     height: 27px;
     font-size: 10px;
     font-weight: 700;
+    margin-left: 10px;
+    @media (max-width:767px){
+    margin-left: 0;
+    width: 100px;
+    font-size: 15px;
+    height: 30px;
+     }
 }
 }
+}
+}
+}
+
 }

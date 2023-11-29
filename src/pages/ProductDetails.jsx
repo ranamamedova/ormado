@@ -6,10 +6,23 @@ import ProductImg4 from "../assets/img/Image (4).png";
 import React, { useRef, useState } from "react";
 import Faqs from '../components/Faqs';
 import RelatedProducts from "../components/RelatedProducts";
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import { Carousel } from 'react-responsive-carousel';
+import productDetails from "../data/productDetails";
 
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/free-mode';
+import 'swiper/css/navigation';
+import 'swiper/css/thumbs';
+import SwiperCore, { Navigation, Pagination, Autoplay } from 'swiper/core';
+import 'swiper/swiper-bundle.css';
 const ProductDetails = () => {
+  // const [activeThumb, setActiveThumb] = useState(null);
+  // const [activeThumbIndex, setActiveThumbIndex] = useState(null);
+  const [thumbIndex, setThumbIndex] = useState(0);
+  const onChange = (index) => {
+    setThumbIndex(index);
+  };
+  
 
   return (
     <>
@@ -17,19 +30,48 @@ const ProductDetails = () => {
       <section className="ProductDetails">
         <div className="container-fluid">
           <div className="row justify-content-center">
-            <div className="col-sm-12 col-md-6 d-flex justify-content-center " >
-              <div className="carousel-section">
-                <Carousel>
-                    <div>
-                        <img src={ProductImg} style={{width:'50%'}}/>
-                    </div>
-                    <div>
-                        <img src={ProductImg} style={{width:'50%'}}/>
-                    </div>
-                    <div>
-                        <img src={ProductImg} style={{width:'50%'}}/>
-                    </div>
-                </Carousel>
+            <div className="col-sm-12 col-md-6 d-flex justify-content-center ">
+              <div className="carouselSection" >
+                <div className="swiper-sliders">
+                    <Swiper
+                      loop={true}
+                      spaceBetween={10}
+                      // navigation={true}
+                      // selectedItem={thumbIndex}
+                      onChange={onChange}
+                      className="productdetails-images-slider"
+                    >
+                      {productDetails.map((thumb, index) => (
+                        <SwiperSlide key={index}>
+                          <div className="productdetails-images-slider-wrapper">
+                            <img src={thumb.image} alt="Slider Images" />
+                          </div>
+                        </SwiperSlide>
+                      ))}
+                    </Swiper>
+                    <Swiper
+                      loop={true}
+                      spaceBetween={10}
+                      slidesPerView={4}
+                      // navigation={true}
+                      thumbs={thumbIndex}
+                      onChange={onChange}
+                      freeMode={true}
+                      watchSlidesProgress={true}
+                      className="productdetails-images-slider-thumbs"
+                    >
+                      {productDetails.map((thumb, index) => (
+                        <SwiperSlide key={index}>
+                          <div
+                            className="productdetails-images-slider-thumbs-wrapper"
+                            onClick={() => onChange(index)}
+                          >
+                            <img src={thumb.image} alt="Slider Images" />
+                          </div>
+                        </SwiperSlide>
+                      ))}
+                    </Swiper>
+                  </div>
               </div>
             </div>
             <div className="col-sm-12 col-md-6 d-flex justify-content-center">
@@ -84,11 +126,11 @@ const ProductDetails = () => {
                 <div className="quantity-box">
                   <div className="quantity-two">
                     <button className="quantity btn">
-                      <i class="fa-solid fa-plus"></i>
+                      <i className="fa-solid fa-plus"></i>
                     </button>
                     <span>5</span>
                     <button className="quantity btn">
-                      <i class="fa-solid fa-minus"></i>
+                      <i className="fa-solid fa-minus"></i>
                     </button>
                   </div>
                   <button className="btn addtocart-btn">

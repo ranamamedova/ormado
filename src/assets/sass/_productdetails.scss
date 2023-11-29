@@ -8,8 +8,95 @@
   hr{
     color: rgba(151, 148, 148, 0.481);
   }
+
+  .carouselSection{
+
+    @media(max-width:859px) {
+      margin: 0 0 10% 0;
+    }
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    height: fit-content;
+    .swiper-sliders{  
+      @media(min-width:971px) {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        
+      }
+      padding: 3%;
+      .productdetails-images-slider{
+        width: 100%;
+        // background-color: #c77f7f; 
+        border: 1px solid #000;
+        .swiper-slide{
+          width: 50%;
+          overflow: hidden;
+          justify-content: center;
+          display: flex;
+          .productdetails-images-slider-wrapper{
+            display: flex;
+            justify-content: center;
+            img{
+              width: 100%;
+              top: 0;
+              left: 0;
+            }
+          }
+          .productdetails-images-slider-thumbs-wrapper:active{
+            border: 1px solid red;
+            background-color: #777;
+            width: 50px;
+            height: 50px;
+          }
+          
+        }
+
+      }
+      .productdetails-images-slider-thumbs{
+        @media(min-width:971px) {
+          width: 100%;
+          padding: 0;
+          height:max-content;
+        }
+        width: 60%;
+       justify-content: end;
+       display: flex;
+        // background-color: rgb(154, 167, 124); 
+        // margin-top:30px ;
+        .swiper-wrapper{
+          @media(min-width:971px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 40%;
+            
+          }
+        }
+        .productdetails-images-slider-thumbs:active{
+          border-color: #4A3024;
+        }
+        .productdetails-images-slider-thumbs-wrapper{
+          justify-content: space-between;
+          margin-top: 10px;
+          display: flex;
+
+          img{
+            top: 0;
+            left: 0;
+            width: 100%;
+            
+          }
+          }
+        }
+      }
+    }
+
+  
+
   .details-product{
-    max-width: 900px;
+    max-width: 600px;
     width: 100%;
     .title-head{
       max-width: 600px;
@@ -70,7 +157,7 @@
         font-style: normal;
         font-weight: 600;
         margin-right: 20px;
-        line-height: 150%; /* 60.748px */
+        line-height: 150%; 
         margin-bottom: 0;
         margin-left: 5px;
       }
@@ -80,7 +167,7 @@
         font-size: 12px;
         font-style: normal;
         font-weight: 500;
-        line-height: 150%; /* 60.748px */
+        line-height: 150%; 
         margin-bottom: 0;
         span{
           color: #979797;
@@ -88,12 +175,12 @@
           font-size: 12px;
           font-style: normal;
           font-weight: 700;
-          line-height: 150%; /* 60.748px */
+          line-height: 150%; 
         }
       }
     }
     .discount{
-      max-width: 900px;
+      max-width: 500px;
       width: 100%;
       display: flex;
       align-items: center;
@@ -350,6 +437,9 @@
         max-width: 300px;
         width: 100%;
         height: 450px;
+        max-width: 300px;
+        width: 100%;
+        height: 450px;
         border: 2px solid #E6E6E6;
         background: #FFF;
         border-radius: 20.025px;
@@ -381,7 +471,37 @@
             transition: .3s ease-in-out;
           }
         }
+        border-radius: 20.025px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        .discount-red-button{
+          max-width: 800px;
+          width: 100%;
+          align-items: center;
+          margin-top: 10px;
+          
+          .discount-price{
+            position:absolute;
+            border-radius: 86.783px;
+            background: #FF3A44;
+            color: #FFF;
+            padding: 2px 8px 2px 8px;
+            margin-right: 200px;
+            white-space: nowrap;
+          }
+        }
+        .card-images{
+          img{
+            -webkit-transform: scale(1);
+            transform: scale(1);
+            -webkit-transition: .3s ease-in-out;
+            transition: .3s ease-in-out;
+          }
+        }
         .features{
+          max-width: 400px;
           max-width: 400px;
           width: 100%;
           display: flex;
@@ -474,6 +594,7 @@
         
       }
       .single-card:hover{
+        box-shadow: 0px 0px 12px 0px rgba(32, 181, 38, 0.52);
         .card-images{
           img{
             -webkit-transform: scale(1.3);

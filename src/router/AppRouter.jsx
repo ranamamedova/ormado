@@ -44,7 +44,6 @@ const AppRouter = () => {
     <Route  path='/gallery' element={<Gallery />}></Route>
     <Route  path='/pagination' element={<Pagination/>}></Route>
     <Route  path='/gallery' element={<Gallery />}></Route>
-    <Route  path='/productDetails' element={<ProductDetails />}></Route>
     <Route  path='/franchiseform' element={<FranchiseForm />}></Route>
     <Route  path='/myaccount' element={<MyAccount />}></Route>
     <Route  path='/signin' element={<MyAccount />}></Route>

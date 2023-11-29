@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useState } from "react";
 import ReactPaginate from "react-paginate";
 import category from "../data/CategoryData";
-
+import Ormadolocation from "../pages/Ormadolocation"
 const Category = () => {
   const [drop, setDrop] = useState(false);
   const [active,setActive] = useState('')

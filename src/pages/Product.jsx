@@ -24,8 +24,8 @@ const Product = () => {
   
   return (
     <>
-      <section className='container'>
-        <div className="products-page row pb-5 mb-5">
+      <section className='container-fluid'>
+        <div className="products-page row pb-5 mb-5 px-5">
           <div className="col-md-3">
               <div className="categories-headline d-flex align-items-center justify-content-between" onClick={toggleCategories}>
                 <h5>All Categories</h5>

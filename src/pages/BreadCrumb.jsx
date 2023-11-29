@@ -1,9 +1,8 @@
 import React from 'react'
-import breadcrumbdetails from "../assets/img/breadcrumbdetails.png"
-import breadcrumb from "../assets/img/breadcrumb.png"
+// import breadcrumbdetails from "../assets/img/breadcrumbdetails.png"
 const BreadCrumb = ({title,isOtherPage}) => {
   
-    const changeImage = isOtherPage ? breadcrumbdetails : breadcrumb  
+    const changeImage = isOtherPage ? "https://ormado-demo.webluna.space/cdn/img/breadcrumbdetails.png" : "https://ormado-demo.webluna.space/cdn/img/breadcrumb.png"  
  
 
   return (

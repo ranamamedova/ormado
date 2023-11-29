@@ -88,7 +88,7 @@ const Payments = () => {
                                     best flavours coffee you will ever have.</h6>
                             </div>
                             <div className="store d-flex  ">
-                                <img className='imgleft' src={store1} alt="" />
+                                <img className='imgleft' src="https://ormado-demo.webluna.space/cdn/img/download.png" alt="" />
                                 <img className='imgright ms-4' src={store2} alt="" />
                             </div>
 

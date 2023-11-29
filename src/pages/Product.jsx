@@ -3,7 +3,8 @@ import { NavLink } from 'react-router-dom'
 import BreadCrumb from './BreadCrumb'
 import accoerdian from '../assets/img/accoerdion.png'
 import SingleProduct from '../components/SingleProduct'
-import ep_menu from '../assets/img/ep_menu.png'
+
+
 import drink from "../assets/img/drink.png";
 import drink1 from "../assets/img/drink1.png";
 import drink2 from "../assets/img/drink2.png";
@@ -178,7 +179,7 @@ const Product = () => {
               <p>Showing 1-8 of 20 result</p>
               <p>Showing: 8</p>
               <div className='ep_menu'>
-                <img src={ep_menu} alt="ep-menu" />
+                <img src="https://ormado-demo.webluna.space/cdn/img/ep_menu.png" alt="ep-menu" />
               </div>
             </div>
             <div className="products">

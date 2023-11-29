@@ -1,5 +1,5 @@
 import BreadCrumb from "../pages/BreadCrumb";
-import ProductImg from "../assets/img/Product Image.png";
+// import ProductImg from "../assets/img/Product Image.png";
 import ProductImg2 from "../assets/img/Image (2).png";
 import ProductImg3 from "../assets/img/Image (3).png";
 import ProductImg4 from "../assets/img/Image (4).png";
@@ -37,13 +37,13 @@ const ProductDetails = () => {
                 className="productswiper"
               >
                 <SwiperSlide>
-                  <img src={ProductImg} style={{ width: "60%" }} />
+                  <img src="https://ormado-demo.webluna.space/cdn/img/Product%20Image.png" style={{ width: "60%" }} />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src={ProductImg} style={{ width: "60%" }} />
+                  <img src="https://ormado-demo.webluna.space/cdn/img/Product%20Image.png" style={{ width: "60%" }} />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src={ProductImg} style={{ width: "60%" }} />
+                  <img src="https://ormado-demo.webluna.space/cdn/img/Product%20Image.png" style={{ width: "60%" }} />
                 </SwiperSlide>
               </Swiper>
               <Swiper
@@ -57,13 +57,13 @@ const ProductDetails = () => {
                 className="productswipermain"
               >
                 <SwiperSlide>
-                  <img src={ProductImg} style={{ width: "60px" }} />
+                  <img src="https://ormado-demo.webluna.space/cdn/img/Product%20Image.png" style={{ width: "60px" }} />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src={ProductImg} style={{ width: "60px" }} />
+                  <img src="https://ormado-demo.webluna.space/cdn/img/Product%20Image.png" style={{ width: "60px" }} />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src={ProductImg} style={{ width: "60px" }} />
+                  <img src="https://ormado-demo.webluna.space/cdn/img/Product%20Image.png" style={{ width: "60px" }} />
                 </SwiperSlide>
               </Swiper>
             </div>
@@ -223,7 +223,7 @@ const ProductDetails = () => {
                 </div>
                 <div className="card-images">
                   <img
-                    src={ProductImg}
+                    src="https://ormado-demo.webluna.space/cdn/img/Product%20Image.png"
                     style={{ width: "100%" }}
                     alt="ProductImg"
                   />

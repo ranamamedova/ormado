@@ -1,13 +1,11 @@
 import React from "react";
 import coffeImg from "../assets/img/img.png";
-import beans from "../assets/img/beans2.png";
 import beans3 from "../assets/img/beans3.png";
 import beans4 from "../assets/img/beans4.png";
 import beans5 from "../assets/img/beans5.png";
 import drink from "../assets/img/drink.png";
 import drink1 from "../assets/img/drink1.png";
 import drink2 from "../assets/img/drink2.png";
-import arrow from "../assets/img/arrow.png"; 
 const EnjoyNewCoffe = () => {
   return (
     <>
@@ -80,10 +78,10 @@ const EnjoyNewCoffe = () => {
           <div className="col-12 col-sm-12 col-md-6 col-lg-6 coffeImgContainer1">
             <div className="enjoyCoffeDesc">
               <div className="beansBig">
-                <img src={beans3} alt="" />
+                <img src="https://ormado-demo.webluna.space/cdn/img/beans3.png" alt="" />
               </div>
               <div className="beans">
-                <img src={beans} alt="" />
+                <img src="https://ormado-demo.webluna.space/cdn/img/beans2.png" alt="" />
               </div>
               <h6 className="enjoyCoffeDesch6">OUR COFFEE</h6>
               <div>
@@ -108,7 +106,7 @@ const EnjoyNewCoffe = () => {
                   </div>
                   <div className="enjoyFilterTxt active">
                     <p className="active">Late</p>
-                    <img src={arrow} alt="" className="img-fluid" />
+                    <img src="https://ormado-demo.webluna.space/cdn/img/arrow.png" alt="" className="img-fluid" />
                   </div>
                   <div className="enjoyFilterTxt">
                     <p>Arabica</p>
@@ -117,10 +115,10 @@ const EnjoyNewCoffe = () => {
               </div>
             </div>
             <div className="beans3">
-              <img src={beans4} alt="" className="img-fluid" />
+              <img src="https://ormado-demo.webluna.space/cdn/img/beans4.png" alt="" className="img-fluid" />
             </div>
             <div className="beans4">
-              <img src={beans5} alt="" className="img-fluid" />
+              <img src="https://ormado-demo.webluna.space/cdn/img/beans5.png" alt="" className="img-fluid" />
             </div>
           </div>
         </div>

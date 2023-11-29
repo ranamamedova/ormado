@@ -1,8 +1,8 @@
 import React from "react";
 import inner from "../assets/img/inner.png";
 import footicon from "../assets/img/franchiseicon.png";
-import lefticon from "../assets/img/leftside.png";
-import rightlife from "../assets/img/rightlifw.png";
+// import lefticon from "../assets/img/.png";
+// import rightlife from "../assets/img/rightlifw.png";
 import TestDetails from "../components/TestDetails";
 import Watch from "../components/Watch";
 import Faqs from "../components/Faqs";
@@ -18,7 +18,7 @@ const Franchise = () => {
             <div className="row ">
               <div className="leftbox col-6">
                 <div className="innerbox">
-                  <img src={rightlife} alt="" className="img-fluid image-one" />
+                  <img src="https://ormado-demo.webluna.space/cdn/img/rightlifw.png" alt="" className="img-fluid image-one" />
                   <div className="innerbox1">
                     <h1>
                       Why <br /> <span className="Ormado">Ormado</span> <br />
@@ -37,7 +37,7 @@ const Franchise = () => {
                       {/* </div> */}
                     </Link>
                   </div>
-                  <img src={lefticon} alt="" className="img-fluid lefticon" />
+                  <img src="https://ormado-demo.webluna.space/cdn/img/leftside.png" alt="" className="img-fluid lefticon" />
                 </div>
               </div>
 

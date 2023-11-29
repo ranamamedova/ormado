@@ -1,11 +1,11 @@
 import React from "react";
-import logo from "../../assets/img/logo.png";
-import master from "../../assets/img/master.png";
-import visa from "../../assets/img/Visa.svg";
-import maestro from "../../assets/img/Maestro.png";
-import paypal from "../../assets/img/PayPal.png";
-import dowlandpng from "../../assets/img/download.png";
-import dowlandpng2 from "../../assets/img/download2.png";
+import logo from "../assets/img/logo.png";
+import master from "../assets/img/master.png";
+import visa from "../assets/img/Visa.svg";
+import maestro from "../assets/img/Maestro.png";
+import paypal from "../assets/img/PayPal.png";
+import dowlandpng from "../assets/img/download.png";
+import dowlandpng2 from "../assets/img/download2.png";
 const Footer = () => {
   return (
     <div className="footer mt-5">

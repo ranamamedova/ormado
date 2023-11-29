@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../assets/img/logo.png";
-const Navbar = () => {
+const Header = () => {
   // NAV ACTIVE COLOR
   const [active, setActive] = useState();
 
@@ -638,4 +638,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Header;

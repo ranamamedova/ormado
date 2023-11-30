@@ -9,7 +9,7 @@
         border-radius: 10px;
         border-collapse: separate;
         margin-top: 20px;
-        font-size: 10px;
+        font-size: 12px;
         border: 1px solid #E6E6E6;
         border-bottom: none;
         @media screen and (max-width: 767px) {
@@ -64,6 +64,10 @@
           display: none;
 
          }
+         @media screen and (max-width: 1038px) {
+         width: 15%;
+         
+         }
           @media screen and (max-width: 767px) {
            border-bottom-right-radius: 10px;
            border-bottom-left-radius: 10px;
@@ -99,10 +103,14 @@
         
         td:nth-child(4){
           width: 20%;
+          @media screen and (max-width: 1038px) {
+            width: 30%;
+           }
           @media screen and (max-width: 767px) {
            border: none;
            width: 100%;
           }
+          
         }
 
         
@@ -115,7 +123,7 @@
             background-color: none;
             font-family: Montserrat;
             font-size: 12px;
-            font-weight: 500;
+            font-weight: 600;
             
           }
           th:nth-child(1){

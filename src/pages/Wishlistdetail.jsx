@@ -46,7 +46,7 @@ const Wishlistdetail = ({ items, onAddToCart, onDelete }) => {
                 Add to Cart
               </button>
               <button className="delete-btn text-center" onClick={() => onDelete(item.id)}>
-              <i class="fa-solid fa-xmark"></i>
+                 <i className="fas fa-times"></i>
               </button>
             </td>
           </tr>

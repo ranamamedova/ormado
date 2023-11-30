@@ -3,8 +3,6 @@ import React, { useEffect, useState } from "react";
 
 const Faqs = () => {
 
-
-
   // const headers = {
   //   "ormado-auth": "126351726376qtwguywutf"
   // }
@@ -17,7 +15,7 @@ const Faqs = () => {
 
   useEffect(() => {
 
-    axios.get("https://ormado.webluna.space/api/client/faq", )
+    axios.get("https://ormado.webluna.space/api/client/faq",)
       .then((res) => {
         console.log(res.data.data);
         setFaqApi(res.data.data);

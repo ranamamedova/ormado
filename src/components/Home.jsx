@@ -11,7 +11,9 @@ import WhyUs from "./home/WhyUs";
 import BestOffer from "./home/BestOffer"
 import NewSweets from "./home/NewSweets"
 import Faqs from "./Faqs";
-// import Faqs22 from "./Faqs22";
+
+
+
 
 
 
@@ -30,9 +32,9 @@ const Home = () => {
       <Cakes />
       <Franchise />
       <Faqs/>
-      {/* <Faqs22/> */}
       <Blog />
-    
+
+ 
 
 
 

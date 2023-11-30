@@ -5,6 +5,9 @@ import { useEffect } from "react";
 import axios from "axios";
 import gallerydata from "../data/galleryData"
 import careerData from "../data/careerData"
+import Myform from "./Myform";
+
+
 
 const Career = () => {
   const [data, setData] = useState([])
@@ -28,6 +31,8 @@ const Career = () => {
   return (
 
     <>
+
+
       <BreadCrumb title="CAREER" isOtherPage={true} />
       <div className="career-button">
         <div className="career-buttonMain ">
@@ -95,9 +100,9 @@ const Career = () => {
         <div className="barista-main">
           <h2 className="mb-3">Barista</h2>
           <h5>Responsibilities</h5>
-            <li className="barista-details-list"><div className="round mt-1 me-2"></div> Ormado Kaffeehaus is an international German brand. Our story started in Berlin in 2017. We are proud to have already </li>
-            <li className="barista-details-list"><div className="round mt-1 me-2"></div>Ormado Kaffeehaus is an international German brand. Our story started in  </li>
-            <li className="barista-details-list"><div className="round mt-1 me-2"></div>Ormado Kaffeehaus is an international </li>
+          <li className="barista-details-list"><div className="round mt-1 me-2"></div> Ormado Kaffeehaus is an international German brand. Our story started in Berlin in 2017. We are proud to have already </li>
+          <li className="barista-details-list"><div className="round mt-1 me-2"></div>Ormado Kaffeehaus is an international German brand. Our story started in  </li>
+          <li className="barista-details-list"><div className="round mt-1 me-2"></div>Ormado Kaffeehaus is an international </li>
 
 
           <h5>Working conditions</h5>
@@ -114,6 +119,8 @@ const Career = () => {
         </div>
       </div>
 
+
+      <Myform />
     </>
   );
 };

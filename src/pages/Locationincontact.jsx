@@ -11,7 +11,7 @@ const Locationincontact = () => {
 
 
     useEffect(() => {
-        filteritems('All'); filtermap(0);
+        filteritems('All'); filtermap(2);
     }, [])
 
 
@@ -26,6 +26,8 @@ const Locationincontact = () => {
         }
     }
 
+
+
     const filtermap = (finditem) => {
         if (finditem === 'up') {
             setDatamap(myData)
@@ -35,7 +37,6 @@ const Locationincontact = () => {
             setDatamap(updateitems)
         }
     }
-
 
 
 

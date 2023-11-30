@@ -1,13 +1,8 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 
-const Faqs = () => {
+const Faqs22 = () => {
 
-
-
-  // const headers = {
-  //   "ormado-auth": "126351726376qtwguywutf"
-  // }
 
 
   const [faqApi, setFaqApi] = useState([]);
@@ -15,9 +10,11 @@ const Faqs = () => {
   const [error, setError] = useState();
 
 
+
+
   useEffect(() => {
 
-    axios.get("https://ormado.webluna.space/api/client/faq", )
+    axios.get("https://ormado.webluna.space/api/client/faq",)
       .then((res) => {
         console.log(res.data.data);
         setFaqApi(res.data.data);
@@ -51,56 +48,10 @@ const Faqs = () => {
           </div>
 
           <div className="accordion " id="accordionExample">
-            {loading ? <h1>Loading....</h1>
-              :
-
-              error ? <h1>xeta</h1>
-
-                : faqApi.length == 0 ? <h1>melumat bos</h1>
-
-                  : faqApi.map((item, i) => {
-                    return (
-                      <div className="accordion-item" id={`first${i}`}>
-                        <h2 className="accordion-header">
-                          <button
-                            id={i}
-                            className="accordion-button collapsed"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target={`#collapse${i}`}
-                            aria-expanded="false"
-                            aria-controls={`collapse${i}`}
-                          >
-                            <h6>
-                              {" "}
-                              {item.title}{" "}
-                            </h6>
-                          </button>
-                        </h2>
-                        <div
-                          id={`collapse${i}`}
-                          className={`accordion-collapse collapse ${i==0?"show":""} `}
-                          data-bs-parent="#accordionExample"
-                        >
-                          <div className="accordion-body  ">
-                            <p className="lorem1 ">
-                              {" "}
-                              {item.text}
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    )
-                  })
+            
 
 
-
-
-
-            }
-
-
-            {/* <div className="accordion-item" id="second">
+             <div className="accordion-item" id="second">
               <h2 className="accordion-header">
                 <button
                   id="two"
@@ -202,7 +153,7 @@ const Faqs = () => {
                   </p>
                 </div>
               </div>
-            </div> */}
+            </div> 
           </div>
         </div>
       </div>
@@ -210,4 +161,4 @@ const Faqs = () => {
   );
 };
 
-export default Faqs;
+export default Faqs22;

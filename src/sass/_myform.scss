@@ -1,0 +1,76 @@
+.Myform {
+    width: 100%;
+    height: auto;
+    @include displayCenter;
+
+    .writeforms {
+        width: 100%;
+        max-width: 600px;
+        border-radius: 20px !important;
+        background-color: rgb(253,251,245);
+        @include displayCenter;
+        flex-direction: column;
+
+
+        .title {
+            width: auto;
+            height: auto;
+            @include displayCenter;
+            flex-direction: column;
+
+            h3 {
+                color: var(--whyfranchise);
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 700;
+
+            }
+
+            h4 {
+                color: var(--roundplayarrow);
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 700;
+            }
+
+        }
+
+        .mainpart {
+            width: 100%;
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+
+            .first {
+                width: 100%;
+                height: auto;
+                position: relative;
+
+
+                .borderrad {
+                    position: absolute;
+                    width: 100%;
+                    height: 2px;
+                    background-color: black;
+                    margin-top: -2px;
+                }
+
+        
+
+            .borderrad1 {
+                position: absolute;
+                width: 50%;
+                height: 2px;
+                background-color: black;
+                margin-top: -2px;
+            }
+
+
+          
+
+            }
+        }
+
+    }
+
+}

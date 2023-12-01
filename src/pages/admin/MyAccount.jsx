@@ -27,9 +27,9 @@ const MyAccount = () => {
     <>
       <BreadCrumb title="MY ACCOUNT" isOtherPage={true} />
       <section className="myaccount">
-        <div className="container">
-          <div className="row g-5 justify-content-center">
-            <div className="col-3 bg-warnding">
+        <div className="container ">
+          <div className="row  justify-content-center">
+            <div className="col-7 col-sm-12 col-md-3  ">
               <div className="accountBox">
                 <div className="title">
                   <h3>
@@ -118,7 +118,7 @@ const MyAccount = () => {
                 </div>
               </div>
             </div>
-            <div className="col-8  pt-3">
+            <div className="col-10 col-sm-12 col-md-8  pt-3">
               <div className="formDetails">
                 <form>
                   <p>EDIT ACCOUNT INFORMATION</p>
@@ -161,13 +161,13 @@ const MyAccount = () => {
                         <button className="genderChoose">RATHER NOT SAY</button>
                       </div>
                     </div>
-                    <div className="col-6 ">
+                    <div className="col-12  col-sm-6 col-md-6">
                       <div className="inputBox">
                         <label>NEW PASSWORD</label>
                         <input type="password" />
                       </div>
                     </div>
-                    <div className="col-6 ">
+                    <div className="col-12 col-sm-6 col-md-6 ">
                       <div className="inputBox">
                         <label>CONFIRIM PASSWORD</label>
                         <input type="password" />

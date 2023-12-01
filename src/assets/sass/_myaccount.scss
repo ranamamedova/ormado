@@ -13,6 +13,12 @@
             span {
               color: #e3b142;
             }
+            @media (max-width:768px){
+              padding-bottom: 15px;
+            }
+          }
+          @media (max-width:768px){
+            text-align: center;
           }
         }
         .accountInfo {
@@ -20,7 +26,7 @@
           height: 200px;
           background-color: #fcfcfd;
           box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
-          border-radius: 20px;
+          border-radius: 10px;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -44,6 +50,7 @@
               // line-height: 54.566px;
             }
           }
+
         }
       }
       .formDetails {

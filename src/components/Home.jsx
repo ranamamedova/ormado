@@ -34,8 +34,6 @@ const Home = () => {
       <Faqs/>
       <Blog />
 
- 
-
 
 
     </>

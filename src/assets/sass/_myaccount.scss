@@ -38,9 +38,9 @@
             svg {
               width: 20px;
               height: 20px;
-              fill: #e3b142;
+              // fill: #e3b142;
             }
-            p {
+            .infoP {
               display: inline-block;
               color: #e3b142;
               font-family: Inter;
@@ -48,6 +48,15 @@
               font-style: normal;
               font-weight: 700;
               // line-height: 54.566px;
+            }
+            p{
+              display: inline-block;
+              color: #979797 ;
+              opacity: 0.9;
+              font-family: Inter;
+              font-size: normal;
+              font-style: normal;
+              font-weight: 700;
             }
           }
 

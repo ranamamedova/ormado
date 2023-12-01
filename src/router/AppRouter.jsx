@@ -22,6 +22,7 @@ import ProductDetails from '../pages/ProductDetails'
 import FranchiseForm from '../pages/FranchiseForm'
 import MyAccount from '../pages/admin/MyAccount'
 import Wishlistdetail from '../pages/Wishlistdetail'
+import Checkout from '../pages/Checkout'
 
 const AppRouter = () => {
   return (
@@ -50,6 +51,7 @@ const AppRouter = () => {
     <Route  path='/myaccount' element={<MyAccount />}></Route>
     <Route  path='/signin' element={<MyAccount />}></Route>
     <Route path='/wishlistdetail' element={<Wishlistdetail />}></Route>
+    <Route path='/checkout' element={<Checkout />}></Route>
 
     </Route>
     

@@ -45,17 +45,89 @@
                 width: 100%;
                 height: auto;
 
-                input{
+                .ones{
+                    position: relative;
+
+
+                    .dropdown{
+                        position: absolute;
+                        right: 0;
+                        top: 20px;
+                    }
+                }
+
+                input {
                     border: none;
-                    border-bottom: 1px solid  black ;
-                    padding: 1vh 0;
-                    &:focus{
+                    border-bottom: 1px solid black;
+                    padding: 5px 0;
+                    background-color: rgb(253, 251, 245);
+                    width: 400px !important;
+                    line-height: 5px ;
+                    &:focus {
                         outline: none;
                         border-color: aqua;
                     }
                 }
 
 
+                .cat {
+                    width: 400px !important;
+                    display: flex;
+                    justify-content: space-around;
+                    gap: 20px;
+                    #one{
+                        width: 190px !important;
+                    }
+
+                    #two{
+                        width: 190px !important;
+                    }
+                }
+
+                .cat2{
+                    width: 400px !important;
+                    display: flex;
+                    justify-content: space-around;
+                    gap: 20px;
+
+                    #one{
+                        width: 190px !important;
+                    }
+
+                    #two{
+                        width: 190px !important;
+                    }
+                }
+
+                .cat3{
+                    width: 400px !important;
+                    display: flex;
+                    justify-content: space-around;
+                    gap: 20px;
+                    position: relative;
+
+                    #one{
+                        width: 190px !important;
+                    }
+
+                    #two{
+                        width: 190px !important;
+                        display: flex;
+                    }
+
+
+                    .dropdown{
+                        position: absolute;
+                    top: 40px;
+                    right: 0;
+
+                    .drop{
+                    border: none;   
+                  
+                    }
+
+                    }
+                }
 
 
 

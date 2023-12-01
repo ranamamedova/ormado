@@ -15,7 +15,7 @@ const NewSweets = () => {
   useEffect(()=>{
     axios.get("https://ormado.webluna.space/api/client/slider")
     .then((res)=>{
-      console.log(res.data.data)
+      console.log(res.data.data, "SLIDER")
       setSliderData(res.data.data)
     }) 
   },[])

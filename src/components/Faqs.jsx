@@ -1,17 +1,28 @@
 import axios from "axios";
-import React from "react";
-import { useState } from "react";
-import { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 const Faqs = () => {
-   const [faqData,setFaqData] = useState([])
-  useEffect(()=>{
-    axios.get("https://ormado.webluna.space/api/client/faq")
-    .then((res)=>{
-      console.log(res.data.data)
-      setFaqData(res.data.data)
-    }) 
-  },[])
+  const [faqApi, setFaqApi] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState();
+  useEffect(() => {
+
+    axios.get("https://ormado.webluna.space/api/client/faq",)
+      .then((res) => {
+        console.log(res.data.data);
+        setFaqApi(res.data.data);
+        setLoading(false);
+      })
+
+      .catch(() => {
+        setLoading(false);
+        setError(true);
+
+      })
+
+
+  }, [])
+
   return (
     <div className="Faqs">
       <div className="container1">
@@ -30,40 +41,53 @@ const Faqs = () => {
           </div>
 
           <div className="accordion " id="accordionExample">
-          {
-            faqData.map((fd,i)=>{
-              return   <div className="accordion-item" id={`item-${fd.id}`} key={i}>
-              <h2 className="accordion-header">
-                <button
-                  id="one"
-                  className="accordion-button"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target={`#collapse-${fd.id}`}
-                  aria-expanded="true"
-                  aria-controls={`collapse-${fd.id}`}
-                >
-                  <h6>
-                    {" "}
-                    {fd.title}{" "}
-                  </h6>
-                </button>
-              </h2>
-              <div
-                id={`collapse-${fd.id}`}
-                className="accordion-collapse collapse show"
-                data-bs-parent="#accordionExample"
-              >
-                <div className="accordion-body ">
-                  <p className="lorem1 ">
-                    {" "}
-                {fd.text}
-                  </p>
-                </div>
-              </div>
-            </div>
-            })
-          }
+            {loading ? <h1>Loading....</h1>
+              :
+
+              error ? <h1>xeta</h1>
+
+                : faqApi.length == 0 ? <h1>melumat bos</h1>
+
+                  : faqApi.map((item, i) => {
+                    return (
+                      <div className="accordion-item" id={`first${i}`}>
+                        <h2 className="accordion-header">
+                          <button
+                            id={i}
+                            className="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target={`#collapse${i}`}
+                            aria-expanded="false"
+                            aria-controls={`collapse${i}`}
+                          >
+                            <h6>
+                              {" "}
+                              {item.title}{" "}
+                            </h6>
+                          </button>
+                        </h2>
+                        <div
+                          id={`collapse${i}`}
+                          className={`accordion-collapse collapse ${i==0?"show":""} `}
+                          data-bs-parent="#accordionExample"
+                        >
+                          <div className="accordion-body  ">
+                            <p className="lorem1 ">
+                              {" "}
+                              {item.text}
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    )
+                  })
+
+
+
+
+
+            }
 
 
             {/* <div className="accordion-item" id="second">

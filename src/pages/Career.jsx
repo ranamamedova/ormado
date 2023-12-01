@@ -6,6 +6,7 @@ import axios from "axios";
 import gallerydata from "../data/galleryData"
 import careerData from "../data/careerData"
 import BaristaData from "../data/baristaData";
+import WorkingOrmado from "./WorkingOrmado";
 
 const Career = () => {
   const [data, setData] = useState([])
@@ -16,15 +17,15 @@ const Career = () => {
 
   useEffect(() => {
     setCurrentItems(gallerydata.slice(itemOffset, endOffset));
-    axios.get("https://ormado.webluna.space/api/client/about")
-      .then((res) => {
-        console.log(res.data.data)
-        setData(res.data.data)
-      })
+    // axios.get("https://ormado.webluna.space/api/client/about")
+    //   .then((res) => {
+    //     console.log(res.data.data)
+    //     setData(res.data.data)
+    //   })
 
-      .catch((err) => {
-        console.log(err)
-      })
+    //   .catch((err) => {
+    //     console.log(err)
+    //   })
   }, [itemOffset]);
   return (
 
@@ -105,6 +106,8 @@ const Career = () => {
           
         </div>
       </div>
+
+  <WorkingOrmado/>
 
     </>
   );

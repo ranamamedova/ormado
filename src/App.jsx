@@ -20,6 +20,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import SignIn from "./pages/SignIn"
 import BlogDetails from "./pages/BlogDetails"
+import WishlistPage from './pages/WishlistDetail'
 
 const App = () => {
   return (
@@ -46,6 +47,7 @@ const App = () => {
     <Route  path='/franchiseform' element={<FranchiseForm />}></Route>
     <Route  path='/myaccount' element={<MyAccount />}></Route>
     <Route  path='/blogdetails' element={<BlogDetails />}></Route>
+    <Route  path='/wishlistdetail' element={<WishlistPage />}></Route>
     <Route  path='/signin' element={<SignIn />}></Route>
     <Route  path='/signup' element={<CreateAccount />}></Route>
    </Routes>

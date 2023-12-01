@@ -1,52 +1,125 @@
-import { useState, useEffect } from "react";
-import React from "react";
-import filterdata from "../data/filterdata";
+import React from 'react';
+import { useState } from 'react';
+import { useEffect } from 'react';
+import myData from "../data/myData"
 
-const Ormadolocation = () => {
-    const [data, setData] = useState([]);
-    const [active, setActive] = useState();
-    const [loading, setLoading] = useState(false);
+const Locationincontact = () => {
 
+    const [datamap, setDatamap] = useState([]);
+    const [dataImg, setDataImg] = useState([]);
+    const [active, setActive] = useState(0);
 
 
     useEffect(() => {
-        filteritems(filterdata[0].mapSrc)
+        filteritems('All'); filtermap(2);
     }, [])
 
 
 
-    const filteritems = (newitem) => {
-        const updateitems = filterdata.filter((a, i) => {
-            return a.mapSrc == newitem;
-        });
-        setData(updateitems);
-    };
+    const filteritems = (searchitem) => {
+        if (searchitem === 'All') {
+            setDataImg(myData);
+        }
+        else {
+            const newitems = myData.filter((item) => item.id === searchitem)
+            setDataImg(newitems)
+        }
+    }
+
+
+
+    const filtermap = (finditem) => {
+        if (finditem === 'up') {
+            setDatamap(myData)
+        }
+        else {
+            const updateitems = myData.filter((item) => item.id === finditem)
+            setDatamap(updateitems)
+        }
+    }
+
 
 
     return (
-
-        // LOCATION ICON
-
-
         <>
 
-            <div className="ormadolocation ">
-                <div className="mysize-width boxcontainer">
+            <div className="Map col-12 col-sm-12 col-md-12">
+
+                <div className="mynative mymap">
+
+                    <div className="logoimage">
+                        <img className='myimg' src="http://localhost:3000/static/media/logo.3d1574839a4f7d4adc4b.png" alt="" />
+                    </div>
+
+                    {datamap.map((item, i) => {
+                        return (
+
+                            <iframe
+                                className='mymap'
+                                src={item.map}
+                                style={{ border: 0 }}
+                                allowFullScreen=""
+                                loading="lazy"
+                                referrerPolicy="no-referrer-when-downgrade"
+                                title="Ormado Kaffeehaus Location on Google Maps"
+                            />
+
+                        )
+                    })}
+                </div>
+            </div>
+
+            <div className="locationcontact">
+
+                <div className=" boxcontainer mysize-width">
+
                     <div className="container">
                         <div className="row">
-                            <div className="leftmap col-12 col-sm-6 col-md-6  ">
-                                <div className="one"></div>
-                                <div className="two"></div>
-                                <div className="three"></div>
-                                <div className="four"></div>
+                            <div className="leftmap  col-12 col-sm-4 col-md-4  ">
 
-                                <div className="text-box">
-                                    <div
-                                        onClick={() => {
-                                            filteritems(filterdata[0].mapSrc);
-                                            setActive(0);
-                                        }}
-                                        className={`firststage ${active == 0 ? "active" : ""}`}
+
+
+                                <div className="text-box ">
+                                    {myData.map((item, i) => {
+
+                                        return (
+                                            <div onClick={() => {
+                                                filteritems(i);
+                                                filtermap(i);
+                                                setActive(i);
+                                            }}
+                                                className={`${i == 0 ?
+                                                    "firststage "
+                                                    : i == 1 ?
+                                                        "secondstage "
+                                                        : i == 2 ?
+                                                            "thirdstage "
+                                                            : i == 3 ?
+                                                                "fourthstage " : " "
+                                                    } ${active === i ? ' myactive' : ""}`}
+
+                                            >
+                                                <h6>{item.name}</h6>
+                                                <h6>{item.email}</h6>
+                                                <h6>{item.phone}</h6>
+                                                <h6>{item.hours}</h6>
+                                                <h6> <i className="fa-solid fa-location-dot"></i> <span className="ms-1">{item.address}</span></h6>
+                                                <div className="circleCard"></div>
+                                            </div>
+                                        )
+                                    })}
+                                </div>
+
+
+
+                                {/* <div className="text-box">
+                                    <div onClick={() => {
+                                        filteritems(0);
+                                        filtermap(0);
+                                        setActive(0);
+                                    }}
+                                        className={`firststage ${active === 0 ? 'myactive' : ""}`}
+
                                     >
                                         <h6>Ormado Kaffeehaus Baku | Yusif Memmedaliyev</h6>
                                         <h6>baku@ormado.de</h6>
@@ -56,12 +129,9 @@ const Ormadolocation = () => {
                                         <div className="circleCard"></div>
                                     </div>
 
-                                    <div
-                                        onClick={() => {
-                                            filteritems(filterdata[1].mapSrc)
-                                            setActive(1);
-                                        }}
-                                        className={`secondstage ${active == 1 ? "active" : ""} `}
+                                    <div onClick={() => { filteritems(1); filtermap(1); setActive(1) }}
+
+                                        className={`secondstage ${active === 1 ? 'myactive' : ""}`}
                                     >
                                         <h6>Ormado Kaffeehaus Baku I Zefir Mall</h6>
                                         <h6>zefirmall@ormado.de</h6>
@@ -71,12 +141,9 @@ const Ormadolocation = () => {
                                         <div className="circleCard"></div>
                                     </div>
 
-                                    <div
-                                        onClick={() => {
-                                            filteritems(filterdata[2].mapSrc);
-                                            setActive(2);
-                                        }}
-                                        className={`thirdstage ${active == 2 ? "active" : ""} `}
+                                    <div onClick={() => { filteritems(2); filtermap(2); setActive(2) }}
+
+                                        className={`thirdstage ${active === 2 ? 'myactive' : ""}`}
                                     >
                                         <h6>Ormado Kaffeehaus Odessa</h6>
                                         <h6>odessa@ormado.com</h6>
@@ -86,12 +153,9 @@ const Ormadolocation = () => {
                                         <div className="circleCard"></div>
                                     </div>
 
-                                    <div
-                                        onClick={() => {
-                                            filteritems(filterdata[3].mapSrc);
-                                            setActive(3);
-                                        }}
-                                        className={`fourthstage ${active == 3 ? "active" : ""}`}
+                                    <div onClick={() => { filteritems(3); filtermap(3); setActive(3) }}
+
+                                        className={`fourthstage ${active === 3 ? 'myactive' : ""}`}
                                     >
                                         <h6>Ormado Kaffeehaus Berlin | Einbecker</h6>
                                         <h6>einbecker@ormado.de</h6>
@@ -100,40 +164,34 @@ const Ormadolocation = () => {
                                         <h6><i className="fa-solid fa-location-dot"></i> <span className="ms-1">Einbecker Str. 18, 10317 Berlin, Germany</span></h6>
                                         <div className="circleCard"></div>
                                     </div>
-                                </div>
+                                </div> */}
+
+
                             </div>
 
-                            {data.map((item, i) => {
-                                return (
-                                    <div className="rightmap  col-12 col-sm-6 col-md-6 ">
-                                        <div className="myiframe main-relative">
-                                            <div className="loader-container">
-                                                <img className="logo-loader" src="http://localhost:3000/static/media/logo.3d1574839a4f7d4adc4b.png" alt="" />
-                                            </div>
-                                            <iframe
-                                                className="myiframe"
-                                                title="My Map"
-                                                src={item.mapSrc}
-                                                allow="geolocation 'self' https://my.atlist.com/"
-                                                frameborder="0"
-                                                scrolling="no"
-                                                allowFullScreen
-                                            ></iframe>
+                            <div className="rightmap  col-12 col-sm-8 col-md-8  ">
+                                <div className="commonphoto  ">
+                                    {dataImg.map((item) => {
+                                        return (
 
-                                        </div>
+                                            item.image.map((img, i) => {
 
-
-
-                                    </div>
-                                );
-                            })}
+                                                return (
+                                                    <div ><img className={`myimage-${i}`} src={img} alt="" /></div>
+                                                )
+                                            })
+                                        )
+                                    })}
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-        </>
-    );
-};
 
-export default Ormadolocation;
+        </>
+    )
+}
+
+export default Locationincontact

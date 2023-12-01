@@ -127,25 +127,6 @@ const Header = () => {
                   </div>
                   <div className="lang">
                     <div className="langBox">
-                      {/* <span>
-                        {langTxtSlice}
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="10"
-                          height="10"
-                          viewBox="0 0 24 14"
-                          fill="none"
-                          className="ms-1"
-                        >
-                          <path
-                            d="M22 2L12 12L2 2"
-                            stroke="#D1D1D1"
-                            stroke-width="4"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-                      </span> */}
                       <select>
                          {
                           langArrSlice.map((fd)=>{

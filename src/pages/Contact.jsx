@@ -5,6 +5,7 @@ import { useLocation, useNavigate } from "react-router";
 import BreadCrumb from "./BreadCrumb";
 import myData from "../data/myData"
 import Faqs from "../components/Faqs"
+import ScrollToTop from "../components/ScrollToTop";
 const Contact = () => {
   const [datamap, setDatamap] = useState([]);
   const [dataImg, setDataImg] = useState([]);
@@ -40,6 +41,7 @@ const Contact = () => {
   return (
     <>
     <BreadCrumb title="Contact" isOtherPage={true} />
+    <ScrollToTop/>
 <div className="diascuss text-light ">
   <div className="row ">
     <div className="col-12 col-sm-6 col-md-4 my-5 order-xl-1 order-sm-1 order-lg-1 order-2 ">

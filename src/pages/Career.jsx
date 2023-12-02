@@ -7,6 +7,7 @@ import gallerydata from "../data/galleryData"
 import careerData from "../data/careerData"
 import BaristaData from "../data/baristaData";
 import WorkingOrmado from "./WorkingOrmado";
+import ScrollToTop from "../components/ScrollToTop";
 
 const Career = () => {
   const [data, setData] = useState([])
@@ -31,6 +32,7 @@ const Career = () => {
 
     <>
       <BreadCrumb title="CAREER" isOtherPage={true} />
+      <ScrollToTop/>
       <div className="career-button">
         <div className="career-buttonMain ">
           <button className="active mb-3 mt-5 me-2"><p>instruction</p></button>
@@ -107,7 +109,7 @@ const Career = () => {
         </div>
       </div>
 
-  <WorkingOrmado/>
+  {/* <WorkingOrmado/> */}
 
     </>
   );

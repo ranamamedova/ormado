@@ -3,10 +3,12 @@ import blogimg from "../assets/img/blogdetailsimg2.png";
 import vectorBlogdetails from "../assets/img/Vector (6).png"
 import line from "../assets/img/line.png"
 import clock from "../assets/img/tabler_clock-hour-8.png"
+import ScrollToTop from "../components/ScrollToTop";
 
 const BlogDetails = () => {
   return (
     <>
+    <ScrollToTop/>
       <div>
         <div className="blog-details">
           <div className="blog-details-main mt-3">

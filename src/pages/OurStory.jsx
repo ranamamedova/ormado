@@ -4,6 +4,7 @@ import Watch from "../components/Watch"
 import gallerydata from '../data/galleryData'
 import FAQ from "../components/Faqs"
 import axios from 'axios'
+import ScrollToTop from '../components/ScrollToTop'
 
 
 const OurStory = () => {
@@ -28,6 +29,7 @@ const OurStory = () => {
   return (
 
     <>
+        <ScrollToTop/>
   <div className="container-fluid ">
     <div className="ourstory-section1">
     <div className="ourstory-img">

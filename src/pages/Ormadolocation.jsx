@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import React from "react";
 import filterdata from "../data/filterdata";
+import ScrollToTop from "../components/ScrollToTop";
 
 const Ormadolocation = () => {
     const [data, setData] = useState([]);
@@ -41,7 +42,7 @@ const Ormadolocation = () => {
 
 
         <>
-
+    <ScrollToTop/>
             <div className="ormadolocation ">
                 <div className="mysize-width boxcontainer">
                     <div className="container">

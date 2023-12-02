@@ -8,10 +8,12 @@ import Watch from "../components/Watch";
 import Faqs from "../components/Faqs";
 import { Link } from "react-router-dom";
 import Ormadolocation from "../pages/Ormadolocation";
+import ScrollToTop from "../components/ScrollToTop";
 
 const Franchise = () => {
   return (
     <>
+        <ScrollToTop/>
       <div className="MyFranchise ">
         <div className="width-mysize mybox">
           <div className="container">

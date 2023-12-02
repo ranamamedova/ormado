@@ -1,9 +1,11 @@
 import React from "react";
 import franchise from "../assets/img/franchiseform.png";
 import Faqs from "../components/Faqs";
+import ScrollToTop from "../components/ScrollToTop";
 const FranchiseForm = () => {
   return (
     <>
+        <ScrollToTop/>
       <section className="franchiseform pb-5">
         <div className="container">
           <div className="row  justify-content-center g-5">

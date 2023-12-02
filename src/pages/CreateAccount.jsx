@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 // import login from "../assets/img/login.png";
 // import logo from "../assets/img/logo.png";
 import { Link, NavLink, } from "react-router-dom"
+import ScrollToTop from '../components/ScrollToTop'
 const CreateAccount = () => {
   const [pass, setPass] = useState('')
   const [email, setEmail] = useState('')
@@ -53,6 +54,7 @@ const CreateAccount = () => {
 
   return (
     <>
+        <ScrollToTop/>
       <section className="singin">
         <div className="container-fluid">
           <div className="row ">

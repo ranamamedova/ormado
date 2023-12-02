@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 // import logo from "../assets/img/logo.png";
 const Header = () => {
   // NAV ACTIVE COLOR
@@ -106,7 +106,8 @@ const Header = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="heart">
+                 <Link to="/wishlistdetail">
+                 <div className="heart">
                     <div className="svgBox">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -125,6 +126,7 @@ const Header = () => {
                       </div>
                     </div>
                   </div>
+                 </Link>
                   <div className="lang">
                     <div className="langBox">
                       <select>

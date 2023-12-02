@@ -52,7 +52,7 @@ const Faqs = () => {
             {loading ? <h1>Loading....</h1>
               :
 
-              error ? <h1>xeta</h1>
+              error ? <h1>Error 404 found</h1>
 
                 : faqApi.length == 0 ? <h1>melumat bos</h1>
 

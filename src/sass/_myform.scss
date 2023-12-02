@@ -11,6 +11,10 @@
         @include displayCenter;
         flex-direction: column;
 
+        @media(max-width:400px){
+            max-width: 500px;
+        }
+
 
         .title {
             width: auto;
@@ -45,28 +49,48 @@
                 width: 100%;
                 height: auto;
 
-                .ones{
+                .ones {
                     position: relative;
 
 
-                    .dropdown{
+
+
+                    .dropdown {
                         position: absolute;
                         right: 0;
                         top: 20px;
                     }
                 }
 
+                label{
+
+            h1{  
+                color: var(--whyfranchise);
+                font-family: Montserrat;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 700;
+                
+            }
+
+                }
+
                 input {
                     border: none;
                     border-bottom: 1px solid black;
-                    padding: 5px 0;
+                    padding: 3px 0;
                     background-color: rgb(253, 251, 245);
                     width: 400px !important;
-                    line-height: 5px ;
+                    line-height: 5px;
+
                     &:focus {
                         outline: none;
-                        border-color: aqua;
+                        color: var(--whyfranchise);
                     }
+
+                 @media(max-width:400px){
+                    width: 350px !important;
+                 }
                 }
 
 
@@ -75,58 +99,100 @@
                     display: flex;
                     justify-content: space-around;
                     gap: 20px;
-                    #one{
+
+                    #one {
                         width: 190px !important;
+
+                        @media(max-width:400px){
+                            width: 165px !important;
+                         }
                     }
 
-                    #two{
+                    #two {
                         width: 190px !important;
+
+                        @media(max-width:400px){
+                            width: 165px !important;
+                         }
                     }
+
+
+                    @media(max-width:400px){
+                        width: 350px !important;
+                     }
+
                 }
 
-                .cat2{
+                .cat2 {
                     width: 400px !important;
                     display: flex;
                     justify-content: space-around;
                     gap: 20px;
 
-                    #one{
+                    #one {
                         width: 190px !important;
+
+                        @media(max-width:400px){
+                            width: 165px !important;
+                         }
                     }
 
-                    #two{
+                    #two {
                         width: 190px !important;
+
+                        @media(max-width:400px){
+                            width: 165px !important;
+                         }
                     }
+
+
+                    @media(max-width:400px){
+                        width: 350px !important;
+                     }
+
+
+                     
                 }
 
-                .cat3{
+                .cat3 {
                     width: 400px !important;
                     display: flex;
                     justify-content: space-around;
                     gap: 20px;
                     position: relative;
 
-                    #one{
+                    #one {
                         width: 190px !important;
+
+                        @media(max-width:400px){
+                            width: 165px !important;
+                         }
                     }
 
-                    #two{
+                    #two {
                         width: 190px !important;
-                        display: flex;
+
+                        @media(max-width:400px){
+                            width: 165px !important;
+                         }
                     }
 
 
-                    .dropdown{
+                    @media(max-width:400px){
+                        width: 350px !important;
+                     }
+
+
+                    .dropdown {
                         position: absolute;
-                    top: 40px;
-                    right: 0;
-
-                    .drop{
-                    border: none;   
-                  
-                    }
+                        right: 0;
+                        top: 30px;
+                         
 
                     }
+
+
+               
                 }
 
 

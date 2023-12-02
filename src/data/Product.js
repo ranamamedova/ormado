@@ -1,10 +1,3 @@
-
-// import cake1 from "../assets/img/cake1.png";
-// import cake2 from "../assets/img/cake2.png";
-// import cake3 from "../assets/img/cake3.png";
-
-
-
 const Product = [
 
     {

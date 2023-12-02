@@ -1,16 +1,3 @@
-// import blog1 from "../assets/img/category1.png"
-
-
-
-// import "https://ormado-demo.webluna.space/cdn/img/category1.png" from "../assets/img/category2.png"
-
-
-// import "https://ormado-demo.webluna.space/cdn/img/category1.png" from "../assets/img/category3.png"
-
-
-
-
-import blog9 from "../assets/img/category9.png"
 
 const category = [
     {

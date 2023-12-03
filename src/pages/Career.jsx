@@ -5,7 +5,8 @@ import { useEffect } from "react";
 import axios from "axios";
 import gallerydata from "../data/galleryData"
 import careerData from "../data/careerData"
-import Myform from "./Myform";
+
+import WorkingOrmado from "./WorkingOrmado";
 
 
 
@@ -120,7 +121,7 @@ const Career = () => {
       </div>
 
 
-      <Myform />
+     <WorkingOrmado/>
     </>
   );
 };

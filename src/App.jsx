@@ -19,6 +19,7 @@ import MyAccount from './pages/admin/MyAccount'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import SignIn from "./pages/SignIn"
+import MyOrder from './pages/MyOrder'
 
 const App = () => {
   return (
@@ -46,6 +47,7 @@ const App = () => {
     <Route  path='/myaccount' element={<MyAccount />}></Route>
     <Route  path='/signin' element={<SignIn />}></Route>
     <Route  path='/signup' element={<CreateAccount />}></Route>
+    <Route  path='/myorder' element={<MyOrder />}></Route>
    </Routes>
    <Footer/>
    </BrowserRouter>

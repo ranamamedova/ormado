@@ -48,7 +48,7 @@ const AppRouter = () => {
     <Route  path='/franchiseform' element={<FranchiseForm />}></Route>
     <Route  path='/myaccount' element={<MyAccount />}></Route>
     <Route  path='/signin' element={<MyAccount />}></Route>
-    <Route  path='/blog-details' element={<BlogDetails />}></Route>
+    <Route  path='/blogdetails' element={<BlogDetails />}></Route>
 
     </Route>
     

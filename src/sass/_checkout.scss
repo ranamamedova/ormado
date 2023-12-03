@@ -1,5 +1,5 @@
 .checkout{
-    .col-md-8 {
+    .col-md-9 {
       .bil{
         font-size: 13px;
         font-weight: 600;
@@ -10,6 +10,11 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 10px; 
+        @media (max-width:384px) {
+          grid-template-columns: repeat(1, 1fr);
+          justify-content: center;
+      
+  }
         
       }
       .d-fl:nth-child(5){
@@ -49,7 +54,7 @@
     }
       
 
-    .col-md-4{
+    .col-md-3{
       .card {
         border-radius: 25px;
         font-family: Montserrat;
@@ -81,13 +86,31 @@
           display: flex;
           justify-content: space-between;
           align-items: center;
-          margin-bottom: 10px;
+          
+          font-size: 10px;
+          p{
+            margin: 0;
+          }
       
           img {
-            max-width: 100px; 
+            max-width: 60px; 
             height: auto;
             
           }
+          @media (max-width:963px) {
+            display: block;
+            text-align: center;
+        
+    }
+          @media (max-width:768px) {
+            display: flex;
+        
+    }
+          @media (max-width:384px) {
+            display: block;
+            text-align: center;
+        
+    }
       
           div {
             text-align: left;
@@ -105,14 +128,27 @@
         .payment{
           .payment-option{
             display: flex;
+            font-size: 10px;
+            gap: 5px;
+            margin-bottom:5px ;
             p{
               margin: 0;
             }
             input[type='radio'] {
-              accent-color: #E3B142;
-              color: #FFFFFF;
-              width: 15px;
-              border: none;
+              // -webkit-appearance: none; 
+              -moz-appearance: none; 
+              appearance: none; 
+              
+              width: 14px;
+              height: 14px; 
+              border: 1px solid #979797; 
+              border-radius: 50%;
+              // outline: none;
+              box-sizing: border-box; 
+            }
+          input[type='radio']:checked {
+            background-color: #E3B142; 
+            
           }
           }
         }

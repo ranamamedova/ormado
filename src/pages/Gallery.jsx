@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import gallerydata from '../data/galleryData'
 import Breadcrumb from "../pages/BreadCrumb"
 import Faqs from '../components/Faqs'
+import ScrollToTop from '../components/ScrollToTop'
 
 
 
@@ -16,6 +17,7 @@ const Gallery = () => {
     return (
         <>
             <Breadcrumb title="Gallery" />
+            <ScrollToTop/>
             <div className="roasting-house mb-5">
                 <div className="rosdting-house-header">
                     <h1 className='pt-5'>Ormado Roasting House</h1>

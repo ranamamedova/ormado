@@ -1,9 +1,15 @@
-import React, { useEffect } from "react";
+import React, { useContext, useEffect } from "react";
 import { useState } from "react";
 import ReactPaginate from "react-paginate";
+import { Link } from "react-router-dom";
+import Faqs from "../components/Faqs";
+import ScrollToTop from "../components/ScrollToTop";
+import { BlogContext } from "../context/BlogContext";
 import category from "../data/CategoryData";
 import Ormadolocation from "../pages/Ormadolocation"
 const Category = () => {
+  const [blog] = useContext(BlogContext);
+
   const [drop, setDrop] = useState(false);
   const [active,setActive] = useState('')
 
@@ -35,6 +41,7 @@ const Category = () => {
 
   return (
     <>
+        <ScrollToTop/>
       <section className="category" style={{ margin: "0" }}>
         <hr className="mt-5" />
         <div className="categoryContainer">
@@ -107,16 +114,18 @@ const Category = () => {
                   } mobileBlog`}
                 >
                   <div className="blogBox">
+                    <div className="blogImg">
+                    <Link to={`/category/${fd.id}`}>
                     <img src={fd.img} alt="" className="img-fluid" />
+                    </Link>
+                    </div>
                     <h4 className="my-3">{fd.title}</h4>
                     <div className=" date">
-                      <p>June 28,2023</p>
+                      <p>{fd.date}</p>
                       <span>1K read</span>
                     </div>
                     <p className="description">
-                      Aenean eleifend ante maecenas pulvinar montes lorem et
-                      pede dis dolor pretium donec dictum. Vici consequat justo
-                      enim. Venenatis eget adipiscing.
+                    <div dangerouslySetInnerHTML={{ __html: fd.text }} />
                     </p>
                     <a href="#react" className="readMore">
                       Read More
@@ -148,6 +157,8 @@ const Category = () => {
           />
         </div>
       </div>
+
+      <Faqs/>
     </>
   );
 };

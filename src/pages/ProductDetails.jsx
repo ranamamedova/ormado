@@ -1,158 +1,178 @@
 import BreadCrumb from "../pages/BreadCrumb";
-// import ProductImg from "../assets/img/Product Image.png";
-import ProductImg2 from "../assets/img/Image (2).png";
-import ProductImg3 from "../assets/img/Image (3).png";
-import ProductImg4 from "../assets/img/Image (4).png";
 import React, { useRef, useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
 import Faqs from '../components/Faqs';
-
-import "swiper/css";
-import "swiper/css/free-mode";
-import "swiper/css/navigation";
-import "swiper/css/thumbs";
-import { FreeMode, Navigation, Thumbs } from "swiper/modules";
-
 import RelatedProducts from "../components/RelatedProducts";
+import productDetails from "../data/productDetails";
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 import { Link } from "react-router-dom";
+import ScrollToTop from "../components/ScrollToTop";
+
+const Thumbnail = ({ src, alt, onClick }) => {
+  return (
+  
+       <img
+         src={src}
+         alt={alt}
+         style={{ width: '60px', height: '60px', cursor: 'pointer', }}
+         onClick={onClick}
+       />        
+
+  );
+};
+
+const settings1 = {
+  dots: false,
+  infinite: true,
+  arrows: false,
+  speed: 500,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+
+};
+// const settings2 = {
+//   dots: false,
+//   infinite: true,
+//   arrows: true,
+//   speed: 500,
+//   slidesToShow: 4,
+//   slidesToScroll: 1,
+//   vertical: true, // Set to true for vertical alignment
+//   verticalSwiping: true, 
+// };
 const ProductDetails = () => {
-  const [thumbsSwiper, setThumbsSwiper] = useState(null);
+  const [currentImage, setCurrentImage] = useState(0);
+  const sliderRef = useRef(null);
+
+  const handleThumbnailClick = (index) => {
+    setCurrentImage(index);
+    sliderRef.current.slickGoTo(index); 
+  };
+  
+
   return (
     <>
-      <BreadCrumb title="PRODUCT DETAILS" />
+      <BreadCrumb title="PRODUCT DETAILS"/>
+      <ScrollToTop/>
       <section className="ProductDetails">
         <div className="container-fluid">
-          <div className="row justify-content-center">
-            <div className="col-sm-12 col-md-6 d-flex justify-content-center">
-              <Swiper
-                style={{
-                  "--swiper-navigation-color": "#fff",
-                  "--swiper-pagination-color": "#fff",
-                }}
-                loop={true}
-                spaceBetween={10}
-                navigation={true}
-                thumbs={{ swiper: thumbsSwiper }}
-                modules={[FreeMode, Navigation, Thumbs]}
-                className="productswiper"
-              >
-                <SwiperSlide>
-                  <img src="https://ormado-demo.webluna.space/cdn/img/Product%20Image.png" style={{ width: "60%" }} />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src="https://ormado-demo.webluna.space/cdn/img/Product%20Image.png" style={{ width: "60%" }} />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src="https://ormado-demo.webluna.space/cdn/img/Product%20Image.png" style={{ width: "60%" }} />
-                </SwiperSlide>
-              </Swiper>
-              <Swiper
-                // onSwiper={setThumbsSwiper}
-                loop={true}
-                spaceBetween={10}
-                slidesPerView={4}
-                freeMode={true}
-                watchSlidesProgress={true}
-                modules={[FreeMode, Navigation, Thumbs]}
-                className="productswipermain"
-              >
-                <SwiperSlide>
-                  <img src="https://ormado-demo.webluna.space/cdn/img/Product%20Image.png" style={{ width: "60px" }} />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src="https://ormado-demo.webluna.space/cdn/img/Product%20Image.png" style={{ width: "60px" }} />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src="https://ormado-demo.webluna.space/cdn/img/Product%20Image.png" style={{ width: "60px" }} />
-                </SwiperSlide>
-              </Swiper>
+          <div className="row  justify-content-center ">
+            <div className="col-sm-12 col-md-6 carousel-part justify-content-md-center">
+                <div className="carouselSection " >
+                {/* <div className="main-thumbnail "> */}
+      <div className="main-slider border rounded-3 border-2 mb-4">
+        <Slider ref={sliderRef} {...settings1}>
+          {productDetails.map((imageData, index) => (
+            <div className="img-sliders justify-content-center d-flex" key={index}>
+              <img src={imageData.images} alt={`Slide ${index + 1}`} />
             </div>
-            <div className="col-sm-12 col-md-6 d-flex justify-content-center">
-              <div className="details-product">
-                <div className="title-head">
-                  <h4>Ormado Energy Drink</h4>
-                  <p className="green-border">In Stock</p>
+          ))}
+        </Slider>
+      </div>
+      <div className="thumbnail-slider" >
+        {/* <Slider {...settings2}> */}
+          {productDetails.map((imageData, index) => (
+            <Thumbnail
+              key={index}
+              src={imageData.images}
+              alt={`Thumbnail ${index + 1}`}
+              onClick={() => handleThumbnailClick(index)}
+            />
+          ))}
+        {/* </Slider> */}
+      {/* </div> */}
+    </div>
                 </div>
-                <div className="star-review">
-                  <div className="star">
-                    <i className="fa-solid fa-star"></i>
-                    <i className="fa-solid fa-star"></i>
-                    <i className="fa-solid fa-star"></i>
-                    <i className="fa-solid fa-star"></i>
-                    <i className="fa-solid fa-star"></i>
-                  </div>
-                  <p className="review-font">4 Review</p>
-                  <p className="thin-font">
-                    <span>SKU:</span>2,51,591
-                  </p>
-                </div>
-                <div className="discount">
-                  <div className="line-price">48.00$</div>
-                  <div className="real-price">17.28$</div>
-                  <div className="discount-price">64% Off</div>
-                </div>
-                <hr />
-                <div className="description-1">
-                  <p>
-                    Class aptent taciti sociosqu ad litora torquent per conubia
-                    nostra, per inceptos himenaeos. Nulla nibh diam, blandit vel
-                    consequat nec, ultrices et ipsum. Nulla varius magna a
-                    consequat pulvinar.
-                  </p>
-                </div>
-                <div className="description-2">
-                  <h6>
-                    All of our products can contain small traces of allergens.
-                  </h6>
-                  <p>
-                    All our products are handled with care, despite that there
-                    is a risk that different products can come into contact with
-                    each other and contamination of allergens can occur.
-                  </p>
-                 <Link to="/nutrition">
-                 <span>Read more in our allergen guide.</span>
-                 </Link>
-                </div>
-                <div className="category ">
-                  <span className="grey-span">Category:</span>
-                  <span className="yellow-span">Coffee</span>
-                </div>
-                <hr />
-                <div className="quantity-box">
-                  <div className="quantity-two">
-                    <button className="quantity btn">
-                      <i class="fa-solid fa-plus"></i>
-                    </button>
-                    <span>5</span>
-                    <button className="quantity btn">
-                      <i class="fa-solid fa-minus"></i>
-                    </button>
-                  </div>
-                  <button className="btn addtocart-btn">
-                    <span>Add To Cart</span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="40"
-                      height="40"
-                      viewBox="0 0 48 48"
-                      fill="none"
-                    >
-                      <path
-                        d="M13.9438 19.4603H6.71188L1.89062 45.9772H45.2819L40.4607 19.4603H33.2288M13.9438 19.4603V12.2285C13.9438 6.90304 18.2609 2.58594 23.5863 2.58594V2.58594C28.9117 2.58594 33.2288 6.90304 33.2288 12.2285V19.4603M13.9438 19.4603H33.2288M13.9438 19.4603V26.6922M33.2288 19.4603V26.6922"
-                        stroke="white"
-                        stroke-width="3.76058"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </button>
-                  <div className="heart-icon">
-                    <i class="fa-regular fa-heart fs-5"></i>
-                  </div>
-                </div>
-                <hr />
               </div>
-            </div>
+              <div className="col-sm-12 col-md-6 description-part ">
+                <div className="details-product">
+                  <div className="title-head">
+                    <h4>Ormado Energy Drink</h4>
+                    <p className="green-border">In Stock</p>
+                  </div>
+                  <div className="star-review">
+                    <div className="star">
+                      <i className="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
+                    </div>
+                    <p className="review-font">4 Review</p>
+                    <p className="thin-font">
+                      <span>SKU:</span>2,51,591
+                    </p>
+                  </div>
+                  <div className="discount">
+                    <div className="line-price">48.00$</div>
+                    <div className="real-price">17.28$</div>
+                    <div className="discount-price">64% Off</div>
+                  </div>
+                  <hr />
+                  <div className="description-1">
+                    <p>
+                      Class aptent taciti sociosqu ad litora torquent per conubia
+                      nostra, per inceptos himenaeos. Nulla nibh diam, blandit vel
+                      consequat nec, ultrices et ipsum. Nulla varius magna a
+                      consequat pulvinar.
+                    </p>
+                  </div>
+                  <div className="description-2">
+                    <h6>
+                      All of our products can contain small traces of allergens.
+                    </h6>
+                    <p>
+                      All our products are handled with care, despite that there
+                      is a risk that different products can come into contact with
+                      each other and contamination of allergens can occur.
+                    </p>
+                      <Link to="/nutrition">
+                    <span>
+                      Read more in our allergen guide.
+                    </span>
+                      </Link>
+                  </div>
+                  <div className="category ">
+                    <span className="grey-span">Category:</span>
+                    <span className="yellow-span">Coffee</span>
+                  </div>
+                  <hr />
+                  <div className="quantity-box">
+                    <div className="quantity-two">
+                      <button className="quantity btn">
+                        <i className="fa-solid fa-plus"></i>
+                      </button>
+                      <span>5</span>
+                      <button className="quantity btn">
+                        <i className="fa-solid fa-minus"></i>
+                      </button>
+                    </div>
+                    <button className="btn addtocart-btn">
+                      <span>Add To Cart</span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="40"
+                        height="40"
+                        viewBox="0 0 48 48"
+                        fill="none"
+                      >
+                        <path
+                          d="M13.9438 19.4603H6.71188L1.89062 45.9772H45.2819L40.4607 19.4603H33.2288M13.9438 19.4603V12.2285C13.9438 6.90304 18.2609 2.58594 23.5863 2.58594V2.58594C28.9117 2.58594 33.2288 6.90304 33.2288 12.2285V19.4603M13.9438 19.4603H33.2288M13.9438 19.4603V26.6922M33.2288 19.4603V26.6922"
+                          stroke="white"
+                          stroke-width="3.76058"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                    <div className="heart-icon">
+                      <i class="fa-regular fa-heart fs-5"></i>
+                    </div>
+                  </div>
+                  <hr />
+                </div>
+              </div>
           </div>
           <hr className="mt-5" />
           <div className="main-description row ">
@@ -315,7 +335,7 @@ const ProductDetails = () => {
                 </div> */}
                 <div className="card-images">
                   <img
-                    src={ProductImg2}
+                    src="https://ormado-demo.webluna.space/cdn/img/Image%20%282%29.png"
                     style={{ width: "100%" }}
                     alt="ProductImg"
                   />
@@ -407,7 +427,7 @@ const ProductDetails = () => {
                 </div> */}
                 <div className="card-images">
                   <img
-                    src={ProductImg3}
+                    src="https://ormado-demo.webluna.space/cdn/img/Image%20%283%29.png"
                     style={{ width: "100%" }}
                     alt="ProductImg"
                   />
@@ -499,7 +519,7 @@ const ProductDetails = () => {
                 </div> */}
                 <div className="card-images">
                   <img
-                    src={ProductImg4}
+                    src="https://ormado-demo.webluna.space/cdn/img/Image%20%284%29.png"
                     style={{ width: "100%" }}
                     alt="ProductImg"
                   />

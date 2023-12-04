@@ -138,12 +138,12 @@ const Footer = () => {
                 <ul className="nav flex-column">
                   <li className="nav-item mb-2 mt-3">
                     <a href="#" className="nav-link p-0 ">
-                      <img src={dowlandpng} alt="error" />
+                      <img src="https://ormado-demo.webluna.space/cdn/img/download.png" alt="error" />
                     </a>
                   </li>
                   <li className="nav-item mb-2">
                     <a href="#" className="nav-link p-0 ">
-                      <img src={dowlandpng2} alt="error" />
+                      <img src="https://ormado-demo.webluna.space/cdn/img/download2.png" alt="error" />
                     </a>
                   </li>
                 </ul>

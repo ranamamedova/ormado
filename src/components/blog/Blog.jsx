@@ -1,12 +1,9 @@
-import blog2 from "../../assets/img/Blog2.png";
-import blog3 from "../../assets/img/Blog3.png";
 import BlogCard from "./BlogCard";
 import React, { useRef } from "react";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
-import rightBlogIcon from "../../assets/img/ic_round-play-arrow.svg";
-import leftBlogIcon from "../../assets/img/ic_round-play-arrow (1).svg";
+
 
 const data = [
   {
@@ -17,21 +14,21 @@ const data = [
       "Aenean eleifend ante maecenas pulvinar montes lorem et pede dis dolor pretium donec dictum. Vici consequat justo enim. Venenatis eget adipiscing luctus lorem.",
   },
   {
-    photo: blog2,
+    photo: "https://ormado-demo.webluna.space/cdn/img/Blog2.png",
     title: "Integer Maecenas Eget Viverra",
     date: "June 28, 2023",
     about:
       "Aenean eleifend ante maecenas pulvinar montes lorem et pede dis dolor pretium donec dictum. Vici consequat justo enim. Venenatis eget adipiscing luctus lorem.",
   },
   {
-    photo: blog3,
+    photo: "https://ormado-demo.webluna.space/cdn/img/Blog3.png",
     title: "Integer Maecenas Eget Viverra",
     date: "June 28, 2023",
     about:
       "Aenean eleifend ante maecenas pulvinar montes lorem et pede dis dolor pretium donec dictum. Vici consequat justo enim. Venenatis eget adipiscing luctus lorem.",
   },
   {
-    photo: blog3,
+    photo: "https://ormado-demo.webluna.space/cdn/img/Blog3.png",
     title: "Integer Maecenas Eget Viverra",
     date: "June 28, 2023",
     about:

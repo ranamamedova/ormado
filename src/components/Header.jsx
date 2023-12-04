@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 // import logo from "../assets/img/logo.png";
 const Header = () => {
   // NAV ACTIVE COLOR
@@ -106,7 +106,8 @@ const Header = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="heart">
+                 <Link to="/wishlistdetail">
+                 <div className="heart">
                     <div className="svgBox">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -125,27 +126,9 @@ const Header = () => {
                       </div>
                     </div>
                   </div>
+                 </Link>
                   <div className="lang">
                     <div className="langBox">
-                      {/* <span>
-                        {langTxtSlice}
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="10"
-                          height="10"
-                          viewBox="0 0 24 14"
-                          fill="none"
-                          className="ms-1"
-                        >
-                          <path
-                            d="M22 2L12 12L2 2"
-                            stroke="#D1D1D1"
-                            stroke-width="4"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-                      </span> */}
                       <select>
                          {
                           langArrSlice.map((fd)=>{
@@ -629,6 +612,30 @@ const Header = () => {
                 }}
               >
                 CONTACT
+              </NavLink>
+            </li>
+            <li>
+              {" "}
+              <NavLink
+                to="/category"
+                className={`notactive ${active == 8 ? "active" : ""}`}
+                onClick={() => {
+                  setActive(8);
+                }}
+              >
+                BLOG
+              </NavLink>
+            </li>
+            <li>
+              {" "}
+              <NavLink
+                to="/gallery"
+                className={`notactive ${active == 9 ? "active" : ""}`}
+                onClick={() => {
+                  setActive(9);
+                }}
+              >
+                GALLERY
               </NavLink>
             </li>
           </ul>

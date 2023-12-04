@@ -80,7 +80,7 @@ const Payments = () => {
                                     best flavours coffee you will ever have.</h6>
                             </div>
                             <div className="store d-flex  ">
-                                <img className='imgleft' src={store1} alt="" />
+                                <img className='imgleft' src="https://ormado-demo.webluna.space/cdn/img/download.png" alt="" />
                                 <img className='imgright ms-4' src={store2} alt="" />
                             </div>
 
@@ -90,7 +90,7 @@ const Payments = () => {
 
                     <div className="col-12 col-sm-12 col-md-6 d-flex justify-content-center align-items-center">
 
-                        <img src={iphone15} alt="" className='iphone img-fluid' />
+                        <img src="https://ormado-demo.webluna.space/cdn/img/iPhone%2015%20Pro.png" alt="" className='iphone img-fluid' />
 
                     </div>
 

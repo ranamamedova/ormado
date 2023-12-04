@@ -1,11 +1,4 @@
 import React from "react";
-import coffeImg from "../assets/img/img.png";
-import beans3 from "../assets/img/beans3.png";
-import beans4 from "../assets/img/beans4.png";
-import beans5 from "../assets/img/beans5.png";
-import drink from "../assets/img/drink.png";
-import drink1 from "../assets/img/drink1.png";
-import drink2 from "../assets/img/drink2.png";
 const EnjoyNewCoffe = () => {
   return (
     <>
@@ -13,7 +6,7 @@ const EnjoyNewCoffe = () => {
         <div className="row">
           <div className="col-12 col-sm-12 col-md-5 col-lg-5 coffeImgContainer ">
             <div className="coffeImg">
-              <img src={coffeImg} alt="" className="img-fluid" />
+              <img src="https://ormado-demo.webluna.space/cdn/img/coffeimg.png" alt="" className="img-fluid" />
               <div className="coffeModal pb-3">
                 <div className="coffeModalText mt-2 ms-1 mb-3">
                   <h6>Get Some Offer</h6>
@@ -21,7 +14,7 @@ const EnjoyNewCoffe = () => {
                 <div className="modelDrinkBox">
                   <div className="d-flex">
                     <div className="img">
-                      <img src={drink} alt="" />
+                      <img src="https://ormado-demo.webluna.space/cdn/img/drink.png" alt="" />
                     </div>
                     <div className="modalDrinkText">
                       <p>
@@ -33,7 +26,7 @@ const EnjoyNewCoffe = () => {
                 <div className="modelDrinkBox">
                   <div className="d-flex">
                     <div className="img">
-                      <img src={drink1} alt="" />
+                      <img src="https://ormado-demo.webluna.space/cdn/img/drink1.png" alt="" />
                     </div>
                     <div className="modalDrinkText">
                       <p>
@@ -45,7 +38,7 @@ const EnjoyNewCoffe = () => {
                 <div className="modelDrinkBox">
                   <div className="d-flex">
                     <div className="img">
-                      <img src={drink2} alt="" />
+                      <img src="https://ormado-demo.webluna.space/cdn/img/drink2.png" alt="" />
                     </div>
                     <div className="modalDrinkText">
                       <p>

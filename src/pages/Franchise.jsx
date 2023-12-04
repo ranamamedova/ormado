@@ -8,10 +8,12 @@ import Watch from "../components/Watch";
 import Faqs from "../components/Faqs";
 import { Link } from "react-router-dom";
 import Ormadolocation from "../pages/Ormadolocation";
+import ScrollToTop from "../components/ScrollToTop";
 
 const Franchise = () => {
   return (
     <>
+        <ScrollToTop/>
       <div className="MyFranchise ">
         <div className="width-mysize mybox">
           <div className="container">
@@ -43,7 +45,7 @@ const Franchise = () => {
 
               <div className="rightbox col-6">
                 <div className="innerbox2">
-                  <img className="lastimage img-fluid" src={inner} alt="" />
+                  <img className="lastimage img-fluid" src="https://ormado-demo.webluna.space/cdn/img/inner.png" alt="" />
                 </div>
               </div>
             </div>

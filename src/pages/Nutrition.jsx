@@ -2,11 +2,13 @@ import React from "react";
 import BreadCrumb from "./BreadCrumb";
 // import nutrition from "../assets/img/nutrition.png";
 import Faqs from "../components/Faqs"
+import ScrollToTop from "../components/ScrollToTop";
 
 const Nutrition = () => {
   return (
     <>
       <BreadCrumb title="NUTRITION AND ALLERGENS" />
+      <ScrollToTop/>
       <div className="nutrition" style={{"marginBottom":"100px"}}>
         <div className="container my-5 ">
           <div className="row justify-content-center">

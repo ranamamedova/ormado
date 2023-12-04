@@ -417,10 +417,12 @@
       }
         li{
           display: flex;
+          color: #979797;
+          font-family: Montserrat;
           .round{
             width: 10px;
             height: 10px;
-            border-radius: 50px;
+            border-radius: 50%;
             background-color: #E3B142;
           }
         

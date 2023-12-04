@@ -27,6 +27,7 @@ import { BlogProvider } from "./context/BlogContext";
 import { FaqProvider } from "./context/FaqContext";
 import WishlistDetail from "./pages/WishlistDetail";
 import Checkout from "./pages/Checkout";
+import ShopCard from "./pages/ShopCard";
 
 const App = () => {
   return (
@@ -65,6 +66,7 @@ const App = () => {
                 <Route path="/signin" element={<SignIn />}></Route>
                 <Route path="/signup" element={<CreateAccount />}></Route>
                 <Route path="/checkout" element={<Checkout />}></Route>
+                <Route path="/shopcard" element={<ShopCard />}></Route>
               </Routes>
               <Footer />
 

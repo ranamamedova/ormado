@@ -605,7 +605,7 @@ const Header = () => {
             <li>
               {" "}
               <NavLink
-                to="/contacts"
+                to="/contact"
                 className={`notactive ${active == 7 ? "active" : ""}`}
                 onClick={() => {
                   setActive(7);

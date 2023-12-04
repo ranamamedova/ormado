@@ -51,74 +51,69 @@ const Checkout = () => {
       <BreadCrumb title="Checkout" isOtherPage={true} />
       <div className="checkout my-5">
         <div className="row mx-5 my-5">
-          <div className="col-12 col-sm-12 col-md-9 mb-5">
-            <div>
-              <p className="bil">Billing Information</p>
-            </div>
-            <div className="d-fl">
-              <div className="int">
-                <p>Name</p>
-                <input type="text" id="name" placeholder="Your first name" />
-              </div>
-              <div className="int">
-                <p>Last Name</p>
-                <input type="text" id="lastName" placeholder="Your last name" />
-              </div>
-              <div className="int">
-                <p>Company Name</p>
-                <input
-                  type="text"
-                  id="companyName"
-                  placeholder="Company name"
-                />
-              </div>
-            </div>
-            <div>
-              <p>Street Address</p>
-              <input type="text" id="streetAddress" placeholder="Email" />
-            </div>
-            <div className="d-fl">
-              <div className="int">
-                <p>Country</p>
-                <input type="text" id="country" placeholder="Select" />
-              </div>
-              <div className="int">
-                <p>State</p>
-                <input type="text" id="state" placeholder="Selects" />
-              </div>
-              <div className="int">
-                <p>Zip Code</p>
-                <input type="text" id="zipCode" placeholder="Zip Code" />
-              </div>
-            </div>
-            <div className="d-fl">
-              <div className="int">
-                <p>Name</p>
-                <input
-                  type="text"
-                  id="contactName"
-                  placeholder="Email Address"
-                />
-              </div>
-              <div className="int">
-                <p>Email</p>
-                <input type="email" id="email" placeholder="Phone number" />
-              </div>
-            </div>
-            <div className="d-flex my-3 ">
-              <input type="checkbox" className="checkbox" id="checkbox" />
-              <p className="ms-2">Save Shipping Address</p>
-            </div>
-            <hr />
-            <div>
-              <p className="bil">Additional Info</p>
-              <p>Order Notes (Optional)</p>
-              <input
-                type="text"
-                placeholder="Notes about your order, e.g. special notes for delivery"
-              />
-            </div>
-          </div>
+        <div className="col-12 col-sm-12 col-md-9 mb-5">
+  <form>
+    <div>
+      <p className="bil">Billing Information</p>
+    </div>
+    <div className="d-fl">
+      <div className="int">
+        <p>Name</p>
+        <input type="text" id="name" placeholder="Your first name" />
+      </div>
+      <div className="int">
+        <p>Last Name</p>
+        <input type="text" id="lastName" placeholder="Your last name" />
+      </div>
+      <div className="int">
+        <p>Company Name</p>
+        <input type="text" id="companyName" placeholder="Company name" />
+      </div>
+    </div>
+    <div>
+      <p>Street Address</p>
+      <input type="text" id="streetAddress" placeholder="Email" />
+    </div>
+    <div className="d-fl">
+      <div className="int">
+        <p>Country</p>
+        <input type="text" id="country" placeholder="Select" />
+      </div>
+      <div className="int">
+        <p>State</p>
+        <input type="text" id="state" placeholder="Selects" />
+      </div>
+      <div className="int">
+        <p>Zip Code</p>
+        <input type="text" id="zipCode" placeholder="Zip Code" />
+      </div>
+    </div>
+    <div className="d-fl">
+      <div className="int">
+        <p>Name</p>
+        <input type="text" id="contactName" placeholder="Email Address" />
+      </div>
+      <div className="int">
+        <p>Email</p>
+        <input type="email" id="email" placeholder="Phone number" />
+      </div>
+    </div>
+    <div className="d-flex my-3 ">
+      <input type="checkbox" className="checkbox" id="checkbox" />
+      <p className="ms-2">Save Shipping Address</p>
+    </div>
+    <hr />
+    <div>
+      <p className="bil">Additional Info</p>
+      <p>Order Notes (Optional)</p>
+      <textarea
+        placeholder="Notes about your order, e.g. special notes for delivery"
+        rows="4"
+      />
+    </div>
+  </form>
+</div>
+
           <div className="col-12 col-sm-12 col-md-3">
             <div className={classNames("card ")}>
               <p className="bil">Order Summary</p>

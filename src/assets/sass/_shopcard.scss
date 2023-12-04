@@ -1,0 +1,95 @@
+.shopcard{
+    .col-md-9{
+        table{
+        width: 100%;
+        color: #979797;
+        border-radius: 10px;
+        border-collapse: separate;
+        margin-top: 20px;
+        font-size: 12px;
+        border: 1px solid #E6E6E6;
+        border-bottom: none;
+        th,td {
+            border-right: none;
+            border-bottom: 1px solid #E6E6E6;
+            padding: 8px;
+            text-align: left;
+            font-family: Montserrat;      
+          }
+          td{
+            .delete-btn {
+                background-color: #fff ;
+                color: #808080;
+                border: 1px solid #808080;
+                border-radius: 50%; 
+                cursor: pointer;
+                
+                
+                i{
+                  
+                  font-size: 13px;
+                  width: 4px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  
+                }
+               
+               
+            }
+          }
+        }
+    }
+    .col-md-3{
+        .card {
+          border-radius: 25px;
+          font-family: Montserrat;
+          padding: 15px 15px;
+          border: 1px solid #E6E6E6;
+          border-radius: 10px;
+         
+          .bil{
+            font-size: 13px;
+            font-weight: 600;
+            margin: 0;
+          }
+           
+         .price-sec{
+            justify-content: space-between;
+           p{
+            margin: 0;
+            color: #979797;
+            font-size: 10px;
+           }
+          
+            .yellow{
+                color: #E3B142;
+                font-weight: 500;
+              }
+              .yellow:nth-child(3){
+                color: #E3B142;
+                font-weight: 500;
+                font-size: 55px !important;
+              }
+              .coffs{
+               font-size: 10px;
+               color: #4A3024;
+               font-weight: 600;
+              }
+         }
+          }
+         
+          button{
+            border-radius: 25px;
+            border: none;
+            background-color: #4A3024;
+            color: #FFFFFF;
+            padding: 5px;
+            font-weight: 500;
+          }
+         
+         
+        }
+        
+        
+      } 

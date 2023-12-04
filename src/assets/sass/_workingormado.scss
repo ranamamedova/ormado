@@ -1,0 +1,345 @@
+.Myform {
+    width: 100%;
+    height: auto;
+    @include displayCenter;
+
+    .writeforms {
+        width: 100%;
+        max-width: 600px;
+        border-radius: 20px !important;
+        background-color: rgb(253, 251, 245);
+        @include displayCenter;
+        flex-direction: column;
+
+        @media(max-width:400px) {
+            max-width: 500px;
+        }
+
+
+        .title {
+            width: auto;
+            height: auto;
+            @include displayCenter;
+            flex-direction: column;
+
+            h3 {
+                color: var(--whyfranchise);
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 700;
+
+            }
+
+            h4 {
+                color: var(--roundplayarrow);
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 700;
+            }
+
+        }
+
+        .mainpart {
+            width: 100%;
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+
+            .first {
+                width: 100%;
+                height: auto;
+
+
+                .ones {
+                    position: relative;
+                    width: 100%;
+
+
+                    #choose {
+                        position: absolute;
+                        background-color: rgb(253, 251, 245);
+                        border: none;
+                        width: 100% !important;
+
+                        &:focus {
+                            outline: none !important;
+                            box-shadow: none !important;
+                            border: none !important;
+                        }
+                    }
+
+                }
+
+
+
+
+
+
+
+
+
+                label {
+
+                    h1 {
+                        color: var(--whyfranchise);
+                        font-family: Montserrat;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 700;
+                        cursor: pointer;
+                    }
+
+                }
+
+                input {
+                    border: none;
+                    border-bottom: 1px solid rgb(97, 97, 97);
+                    
+                    background-color: rgb(253, 251, 245);
+                    width: 400px !important;
+                    line-height: 3px;
+
+                    &:focus {
+                        outline: none;
+                        color: var(--whyfranchise);
+                    }
+
+                    @media(max-width:400px) {
+                        width: 350px !important;
+                    }
+                }
+
+
+                .cat {
+                    width: 400px !important;
+                    display: flex;
+                    justify-content: space-around;
+                    gap: 20px;
+
+                    #one {
+                        width: 190px !important;
+
+                        @media(max-width:400px) {
+                            width: 165px !important;
+                        }
+                    }
+
+                    #two {
+                        width: 190px !important;
+
+                        @media(max-width:400px) {
+                            width: 165px !important;
+                        }
+                    }
+
+
+                    @media(max-width:400px) {
+                        width: 350px !important;
+                    }
+
+                }
+
+                .cat2 {
+                    width: 400px !important;
+                    display: flex;
+                    justify-content: space-around;
+                    gap: 20px;
+
+                    #one {
+                        width: 190px !important;
+
+                        @media(max-width:400px) {
+                            width: 165px !important;
+                        }
+                    }
+
+                    #two {
+                        width: 190px !important;
+
+                        @media(max-width:400px) {
+                            width: 165px !important;
+                        }
+                    }
+
+
+                    @media(max-width:400px) {
+                        width: 350px !important;
+                    }
+
+
+
+                }
+
+
+                .cat4 {
+                    width: 400px !important;
+                    display: flex;
+                    justify-content: space-around;
+                    gap: 20px;
+                   
+
+
+                    .label1{
+                        position: relative;
+
+                        img {
+                            position: absolute;
+                            right: 0;
+                            top: 15px;
+                            cursor: pointer;
+                        }
+
+                    }
+
+
+                    #one {
+                        width: 190px !important;
+                    
+
+                        @media(max-width:400px) {
+                            width: 165px !important;
+                        }
+
+
+                       
+
+                    }
+
+                    #two {
+                        width: 190px !important;
+
+                        @media(max-width:400px) {
+                            width: 165px !important;
+                        }
+                    }
+
+
+                    @media(max-width:400px) {
+                        width: 350px !important;
+                    }
+
+
+                   
+
+
+
+                }
+
+                .cat3 {
+                    width: 400px !important;
+                    display: flex;
+                    justify-content: space-around;
+                    gap: 20px;
+                    position: relative;
+
+                    .gender{
+
+                        position: relative;
+                        width: 100%;
+    
+    
+                        #formchoosing {
+                            position: absolute;
+                            background-color: rgb(253, 251, 245);
+                            border: none;
+                            width: 100% !important;
+    
+                            &:focus {
+                                outline: none !important;
+                                box-shadow: none !important;
+                               
+                            }
+                        }                 
+
+                    }
+
+                    #one {
+                        width: 190px !important;
+
+                        @media(max-width:400px) {
+                            width: 165px !important;
+                        }
+                    }
+
+                    #two {
+                        width: 190px !important;
+
+                        @media(max-width:400px) {
+                            width: 165px !important;
+                        }
+                    }
+
+
+                    @media(max-width:400px) {
+                        width: 350px !important;
+                    }
+
+
+                    .dropdown {
+                        position: absolute;
+                        right: 0;
+                        top: 30px;
+
+
+                    }
+                }
+            }
+
+            .btnicon {
+                width: 100%;
+                display: flex;
+                background-color: var(--roundplayarrow);
+                justify-content: space-around;
+                align-items: center;
+                border-radius: 20px;
+                border: none;
+                .box1 {
+                    width: 10%;
+
+                    img {
+                        width: 25px;
+                    }
+                }
+
+                .box2 {
+                    width: 10%;
+
+                    img {
+                        width: 30px;
+                    }
+                }
+
+                .box3 {
+                    width: 10%;
+
+                    img {
+                        width: 35px;
+                    }
+                }
+
+                .box4 {
+                    width: 10%;
+
+                    img {
+                        width: 30px;
+                    }
+                }
+
+                .writing {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    h3 {
+                        color: #FFF;
+                        font-family: Montserrat;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 700;
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

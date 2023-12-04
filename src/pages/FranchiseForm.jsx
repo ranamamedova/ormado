@@ -1,16 +1,18 @@
 import React from "react";
 import franchise from "../assets/img/franchiseform.png";
 import Faqs from "../components/Faqs";
+import ScrollToTop from "../components/ScrollToTop";
 const FranchiseForm = () => {
   return (
     <>
+        <ScrollToTop/>
       <section className="franchiseform pb-5">
         <div className="container">
           <div className="row  justify-content-center g-5">
             <div className="col-12 col-sm-6 ">
               <div className="franchiseFormImg">
                 <div className="img">
-                  <img src={franchise} alt="" className="img-fluid" />
+                  <img src="https://ormado-demo.webluna.space/cdn/img/franchiseform.png" alt="" className="img-fluid" />
                   <div className="overlayDesc">
                     <div className="d-flex justify-content-center align-items-center">
                       <h4 className="text-center">

@@ -1,17 +1,19 @@
 import React from "react";
 import BreadCrumb from "./BreadCrumb";
-import nutrition from "../assets/img/nutrition.png";
+// import nutrition from "../assets/img/nutrition.png";
 import Faqs from "../components/Faqs"
+import ScrollToTop from "../components/ScrollToTop";
 
 const Nutrition = () => {
   return (
     <>
       <BreadCrumb title="NUTRITION AND ALLERGENS" />
+      <ScrollToTop/>
       <div className="nutrition" style={{"marginBottom":"100px"}}>
         <div className="container my-5 ">
           <div className="row justify-content-center">
             <div className="col-12  col-sm-12 col-md-5 col-lg-5   ">
-              <img src={nutrition} alt="" className="img-fluid" />
+              <img src="https://ormado-demo.webluna.space/cdn/img/nutrition.png" alt="" className="img-fluid" />
             </div>
             <div className="col-12  col-sm-12 col-md-5 col-lg-5 ms-4" style={{"marginTop":"50px"}}>
               <div className="nutritionDesc">

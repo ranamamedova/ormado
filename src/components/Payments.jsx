@@ -3,13 +3,13 @@ import store1 from "../assets/img/download.png"
 import store2 from "../assets/img/download2.png"
 import iphone15 from "../assets/img/iPhone 15 Pro.png"
 import Slider from 'react-slick';
-import slick1 from "../assets/img/slick1.png"
-import slick2 from "../assets/img/slick2.png"
-import slick3 from "../assets/img/slick3.png"
-import slick4 from "../assets/img/slick4.png"
-import slick5 from "../assets/img/slick5.png"
-import slick6 from "../assets/img/slick6.png"
-import slick7 from "../assets/img/slick7.png"
+// import slick1 from "../assets/img/slick1.png"
+// import slick2 from "../assets/img/slick2.png"
+// import slick3 from "../assets/img/slick3.png"
+// import slick4 from "../assets/img/slick4.png"
+// import slick5 from "../assets/img/slick5.png"
+// import slick6 from "../assets/img/slick6.png"
+// import slick7 from "../assets/img/slick7.png"
 
 
 
@@ -88,7 +88,7 @@ const Payments = () => {
                                     best flavours coffee you will ever have.</h6>
                             </div>
                             <div className="store d-flex  ">
-                                <img className='imgleft' src={store1} alt="" />
+                                <img className='imgleft' src="https://ormado-demo.webluna.space/cdn/img/download.png" alt="" />
                                 <img className='imgright ms-4' src={store2} alt="" />
                             </div>
 
@@ -98,7 +98,7 @@ const Payments = () => {
 
                     <div className="col-12 col-sm-12 col-md-6 d-flex justify-content-center align-items-center">
 
-                        <img src={iphone15} alt="" className='iphone img-fluid' />
+                        <img src="https://ormado-demo.webluna.space/cdn/img/iPhone%2015%20Pro.png" alt="" className='iphone img-fluid' />
 
                     </div>
 
@@ -116,43 +116,43 @@ const Payments = () => {
                     <Slider className='slider my-3' {...settings}>
 
                         <div className="slicklogo d-flex align-items-center justify-content-center ">
-                            <img id='one'  src={slick1} alt="" />
+                            <img id='one'  src="https://ormado-demo.webluna.space/cdn/img/slick1.png" alt="" />
                         </div>
 
                         <div className="slicklogo d-flex align-items-center justify-content-center ">
-                            <img src={slick2} alt="" />
+                            <img src="https://ormado-demo.webluna.space/cdn/img/slick2.png" alt="" />
                         </div>
 
                         <div className="slicklogo d-flex align-items-center justify-content-center ">
-                            <img src={slick3} alt="" />
+                            <img src="https://ormado-demo.webluna.space/cdn/img/slick3.png" alt="" />
                         </div>
 
                         <div className="slicklogo d-flex align-items-center justify-content-center ">
-                            <img src={slick4} alt="" />
+                            <img src="https://ormado-demo.webluna.space/cdn/img/slick4.png" alt="" />
                         </div>
 
                         <div className="slicklogo d-flex align-items-center justify-content-center ">
-                            <img src={slick5} alt="" />
+                            <img src="https://ormado-demo.webluna.space/cdn/img/slick5.png" alt="" />
                         </div>
 
                         <div className="slicklogo d-flex align-items-center justify-content-center " >
-                            <img src={slick6} alt="" />
+                            <img src="https://ormado-demo.webluna.space/cdn/img/slick6.png" alt="" />
                         </div>
 
                         <div className="slicklogo d-flex align-items-center justify-content-center ">
-                            <img src={slick7} alt="" />
+                            <img src="https://ormado-demo.webluna.space/cdn/img/slick7.png" alt="" />
                         </div>
 
                         <div className="slicklogo d-flex align-items-center justify-content-center ">
-                            <img id='one' src={slick1} alt="" />
+                            <img id='one' src="https://ormado-demo.webluna.space/cdn/img/slick1.png" alt="" />
                         </div>
 
                         <div className="slicklogo d-flex align-items-center justify-content-center ">
-                            <img src={slick2} alt="" />
+                            <img src="https://ormado-demo.webluna.space/cdn/img/slick2.png" alt="" />
                         </div>
 
                         <div className="slicklogo d-flex align-items-center justify-content-center ">
-                            <img src={slick3} alt="" />
+                            <img src="https://ormado-demo.webluna.space/cdn/img/slick3.png" alt="" />
                         </div>
 
                     </Slider>

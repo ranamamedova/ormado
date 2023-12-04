@@ -5,10 +5,9 @@ import { useEffect } from "react";
 import axios from "axios";
 import gallerydata from "../data/galleryData"
 import careerData from "../data/careerData"
-
+import BaristaData from "../data/baristaData";
 import WorkingOrmado from "./WorkingOrmado";
-
-
+import ScrollToTop from "../components/ScrollToTop";
 
 const Career = () => {
   const [data, setData] = useState([])
@@ -19,22 +18,21 @@ const Career = () => {
 
   useEffect(() => {
     setCurrentItems(gallerydata.slice(itemOffset, endOffset));
-    axios.get("https://ormado.webluna.space/api/client/about")
-      .then((res) => {
-        console.log(res.data.data)
-        setData(res.data.data)
-      })
+    // axios.get("https://ormado.webluna.space/api/client/about")
+    //   .then((res) => {
+    //     console.log(res.data.data)
+    //     setData(res.data.data)
+    //   })
 
-      .catch((err) => {
-        console.log(err)
-      })
+    //   .catch((err) => {
+    //     console.log(err)
+    //   })
   }, [itemOffset]);
   return (
 
     <>
-
-
       <BreadCrumb title="CAREER" isOtherPage={true} />
+      <ScrollToTop/>
       <div className="career-button">
         <div className="career-buttonMain ">
           <button className="active mb-3 mt-5 me-2"><p>instruction</p></button>
@@ -99,29 +97,20 @@ const Career = () => {
       </div>
       <div className="career-barista-details py-5">
         <div className="barista-main">
-          <h2 className="mb-3">Barista</h2>
-          <h5>Responsibilities</h5>
-          <li className="barista-details-list"><div className="round mt-1 me-2"></div> Ormado Kaffeehaus is an international German brand. Our story started in Berlin in 2017. We are proud to have already </li>
-          <li className="barista-details-list"><div className="round mt-1 me-2"></div>Ormado Kaffeehaus is an international German brand. Our story started in  </li>
-          <li className="barista-details-list"><div className="round mt-1 me-2"></div>Ormado Kaffeehaus is an international </li>
-
-
-          <h5>Working conditions</h5>
-          <ul>
-            <li>Ormado Kaffeehaus is an international German brand. Our story started in </li>
-            <li>Ormado Kaffeehaus is an international </li>
-          </ul>
-
-          <h5>Requirements</h5>
-          <ul>
-            <li>Ormado Kaffeehaus is an international German brand. Our story started in </li>
-            <li>Ormado Kaffeehaus is an international </li>
-          </ul>
+        <h2 className="mb-3">Barista</h2>
+          {BaristaData.map((item)=>(
+            <>
+            <h5 className="my-4">{item.title}</h5>
+            <li className="barista-details-list"><div className="round mt-2 me-2"></div> {item.desc.li1}</li>
+            <li className="barista-details-list"><div className="round mt-2 me-2"></div> {item.desc.li2}</li>
+            </>
+          ))}
+          
         </div>
       </div>
 
+  <WorkingOrmado/>
 
-     <WorkingOrmado/>
     </>
   );
 };

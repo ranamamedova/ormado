@@ -5,7 +5,6 @@ import ProductCards from "./ProductCards";
 import Payments from "./Payments";
 import TestDetails from "./TestDetails";
 import Franchise from "./Franchise";
-import Blog from "./Blog/Blog";
 import Cakes from "./Cakes";
 import WhyUs from "./home/WhyUs";
 import BestOffer from "./home/BestOffer"

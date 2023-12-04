@@ -1,6 +1,6 @@
 import React from "react";
 
-import latte from "../assets/img/screenFull.png";
+// import latte from "../assets/img/screenFull.png";
 import g6 from "../assets/img/Group (6).svg";
 import g7 from "../assets/img/Group (7).svg";
 import g8 from "../assets/img/Group (8).svg";
@@ -34,7 +34,7 @@ const Franchise = () => {
           </div>
        
           <div className="right">
-            <img src={latte} alt="" />
+            <img src="https://ormado-demo.webluna.space/cdn/img/screenFull.png" alt="" />
           </div>
         </div>
       </div>

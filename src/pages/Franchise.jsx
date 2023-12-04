@@ -1,24 +1,26 @@
 import React from "react";
 import inner from "../assets/img/inner.png";
 import footicon from "../assets/img/franchiseicon.png";
-import lefticon from "../assets/img/leftside.png";
-import rightlife from "../assets/img/rightlifw.png";
+// import lefticon from "../assets/img/.png";
+// import rightlife from "../assets/img/rightlifw.png";
 import TestDetails from "../components/TestDetails";
 import Watch from "../components/Watch";
 import Faqs from "../components/Faqs";
 import { Link } from "react-router-dom";
 import Ormadolocation from "../pages/Ormadolocation";
+import ScrollToTop from "../components/ScrollToTop";
 
 const Franchise = () => {
   return (
     <>
+        <ScrollToTop/>
       <div className="MyFranchise ">
         <div className="width-mysize mybox">
           <div className="container">
             <div className="row ">
               <div className="leftbox col-6">
                 <div className="innerbox">
-                  <img src={rightlife} alt="" className="img-fluid image-one" />
+                  <img src="https://ormado-demo.webluna.space/cdn/img/rightlifw.png" alt="" className="img-fluid image-one" />
                   <div className="innerbox1">
                     <h1>
                       Why <br /> <span className="Ormado">Ormado</span> <br />
@@ -37,13 +39,13 @@ const Franchise = () => {
                       {/* </div> */}
                     </Link>
                   </div>
-                  <img src={lefticon} alt="" className="img-fluid lefticon" />
+                  <img src="https://ormado-demo.webluna.space/cdn/img/leftside.png" alt="" className="img-fluid lefticon" />
                 </div>
               </div>
 
               <div className="rightbox col-6">
                 <div className="innerbox2">
-                  <img className="lastimage img-fluid" src={inner} alt="" />
+                  <img className="lastimage img-fluid" src="https://ormado-demo.webluna.space/cdn/img/inner.png" alt="" />
                 </div>
               </div>
             </div>

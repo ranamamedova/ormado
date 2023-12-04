@@ -98,7 +98,7 @@ const Checkout = () => {
         </div>
       </div>
       <div className='d-flex my-3 '>   
-          <input type="checkbox" className='checkbox' /> 
+          <input type="checkbox" className='checkbox' id="checkbox" /> 
           <p className='ms-2'>Save Shipping Address</p>   
       </div>
       <hr />
@@ -140,7 +140,7 @@ const Checkout = () => {
                 <div className={classNames('payment-option ')}>
                   <input
                     type="radio"
-                    id="cahs"
+                    id="radio"
                     name="paymentMethod"
                     checked={paymentMethod === 'cahs'}
                     onChange={() => handlePaymentChange('cahs')}
@@ -150,7 +150,7 @@ const Checkout = () => {
                 <div className={classNames('payment-option ')}>
                   <input
                     type="radio"
-                    id="creditCard"
+                    id="radio"
                     name="paymentMethod"
                     checked={paymentMethod === 'creditCard'}
                     onChange={() => handlePaymentChange('creditCard')}
@@ -160,7 +160,7 @@ const Checkout = () => {
                 <div className={classNames('payment-option ')}>
                   <input
                     type="radio"
-                    id="paypal"
+                    id="radio"
                     name="paymentMethod"
                     checked={paymentMethod === 'paypal'}
                     onChange={() => handlePaymentChange('paypal')}
@@ -169,7 +169,7 @@ const Checkout = () => {
                 </div>
               </div>
               <button
-                id="orderButton"
+               
                 onClick={handleOrder}
                 className={classNames('order-button mt-3')}
               >

@@ -1,27 +1,40 @@
 import { useState, useEffect } from "react";
 import React from "react";
 import filterdata from "../data/filterdata";
+import ScrollToTop from "../components/ScrollToTop";
 
 const Ormadolocation = () => {
     const [data, setData] = useState([]);
     const [active, setActive] = useState();
-    const [loading, setLoading] = useState(false);
 
 
 
     useEffect(() => {
-        filteritems(filterdata[0].mapSrc)
+        filteritems("odessa@ormado.com");
     }, [])
 
 
 
-    const filteritems = (newitem) => {
-        const updateitems = filterdata.filter((a, i) => {
-            return a.mapSrc == newitem;
-        });
-        setData(updateitems);
-    };
-    console.log("click et");
+    // const filteritems = (newitem) => {
+    //     const updateitems = filterdata.filter((a, i) => {
+    //         return a.mapSrc == newitem;
+    //     });
+    //     setData(updateitems);
+    // };
+    // console.log(data);
+
+
+    const filteritems = (searchitem) => {
+        if (searchitem === "All") {
+            setData(filterdata)
+        } else {
+            const newitems = filterdata.filter((item) => item.email === searchitem)
+            setData(newitems);
+        }
+    }
+
+
+    console.log(data);
 
     return (
 
@@ -29,7 +42,7 @@ const Ormadolocation = () => {
 
 
         <>
-
+    <ScrollToTop/>
             <div className="ormadolocation ">
                 <div className="mysize-width boxcontainer">
                     <div className="container">
@@ -43,10 +56,10 @@ const Ormadolocation = () => {
                                 <div className="text-box">
                                     <div
                                         onClick={() => {
-                                            filteritems(filterdata[0].mapSrc);
+                                            filteritems("baku@ormado.de");
                                             setActive(0);
                                         }}
-                                        className={`firststage ${active == 0 ? "active" : ""}`}
+                                        className={`firststage ${active === 0 ? "active" : ""}`}
                                     >
                                         <h6>Ormado Kaffeehaus Baku | Yusif Memmedaliyev</h6>
                                         <h6>baku@ormado.de</h6>
@@ -58,10 +71,10 @@ const Ormadolocation = () => {
 
                                     <div
                                         onClick={() => {
-                                            filteritems(filterdata[1].mapSrc)
+                                            filteritems("zefirmall@ormado.de")
                                             setActive(1);
                                         }}
-                                        className={`secondstage ${active == 1 ? "active" : ""} `}
+                                        className={`secondstage ${active === 1 ? "active" : ""} `}
                                     >
                                         <h6>Ormado Kaffeehaus Baku I Zefir Mall</h6>
                                         <h6>zefirmall@ormado.de</h6>
@@ -73,10 +86,10 @@ const Ormadolocation = () => {
 
                                     <div
                                         onClick={() => {
-                                            filteritems(filterdata[2].mapSrc);
+                                            filteritems("odessa@ormado.com");
                                             setActive(2);
                                         }}
-                                        className={`thirdstage ${active == 2 ? "active" : ""} `}
+                                        className={`thirdstage ${active === 2 ? "active" : ""} `}
                                     >
                                         <h6>Ormado Kaffeehaus Odessa</h6>
                                         <h6>odessa@ormado.com</h6>
@@ -88,10 +101,10 @@ const Ormadolocation = () => {
 
                                     <div
                                         onClick={() => {
-                                            filteritems(filterdata[3].mapSrc);
+                                            filteritems("einbecker@ormado.de");
                                             setActive(3);
                                         }}
-                                        className={`fourthstage ${active == 3 ? "active" : ""}`}
+                                        className={`fourthstage ${active === 3 ? "active" : ""}`}
                                     >
                                         <h6>Ormado Kaffeehaus Berlin | Einbecker</h6>
                                         <h6>einbecker@ormado.de</h6>
@@ -106,7 +119,7 @@ const Ormadolocation = () => {
                             {data.map((item, i) => {
                                 return (
                                     <div className="rightmap  col-12 col-sm-6 col-md-6 ">
-                                        <div className="myiframe main-relative">
+                                        <div className="main-relative myiframe">
                                             <div className="loader-container">
                                                 <img className="logo-loader" src="http://localhost:3000/static/media/logo.3d1574839a4f7d4adc4b.png" alt="" />
                                             </div>

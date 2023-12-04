@@ -21,7 +21,7 @@ import Gallery from '../pages/Gallery'
 import ProductDetails from '../pages/ProductDetails'
 import FranchiseForm from '../pages/FranchiseForm'
 import MyAccount from '../pages/admin/MyAccount'
-import Wishlistdetail from '../pages/Wishlistdetail'
+import WishlistDetail from '../pages/WishlistDetail'
 import Checkout from '../pages/Checkout'
 
 const AppRouter = () => {
@@ -32,8 +32,8 @@ const AppRouter = () => {
 
     <Route  path='/' element={<Layout/>}>
     <Route  path='/' element={<Home/>}></Route>
-    <Route  path='/contacts' element={<Contact/>}></Route>
-    <Route  path='/contacts' element={<Contact/>}></Route>
+    <Route  path='/contact' element={<Contact/>}></Route>
+    {/* <Route  path='/contacts' element={<Contact/>}></Route> */}
     <Route  path='/career' element={<Career/>}></Route>
     <Route  path='/product' element={<Product/>}></Route>
     <Route  path='/productdetails' element={<ProductDetails/>}></Route>
@@ -50,8 +50,9 @@ const AppRouter = () => {
     <Route  path='/franchiseform' element={<FranchiseForm />}></Route>
     <Route  path='/myaccount' element={<MyAccount />}></Route>
     <Route  path='/signin' element={<MyAccount />}></Route>
-    <Route path='/wishlistdetail' element={<Wishlistdetail />}></Route>
+    <Route path='/wishlistdetail' element={<WishlistDetail />}></Route>
     <Route path='/checkout' element={<Checkout />}></Route>
+    {/* <Route path='/checks' element={<Checkout />}></Route> */}
 
     </Route>
     

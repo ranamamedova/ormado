@@ -1,7 +1,7 @@
 import React from 'react';
 import BreadCrumb from './BreadCrumb';
 
-const Wishlistdetail = ({ items, onAddToCart, onDelete }) => {
+const WishlistDetail = ({ items, onAddToCart, onDelete }) => {
   return (
     <> 
      <BreadCrumb title="My Wishlist" isOtherPage={true} />
@@ -98,7 +98,7 @@ const WishlistPage = () => {
   return (
     <div>
       
-      <Wishlistdetail
+      <WishlistDetail
         items={wishlistItems}
         onAddToCart={handleAddToCart}
         onDelete={handleDeleteItem}

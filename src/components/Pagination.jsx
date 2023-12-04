@@ -66,6 +66,7 @@ const Pagination = () => {
       setCurrentpage(currentpage + 1)
     }
   }
+  
 
   const [loading , setLoading] = useState(true);
   const [error , setError] = useState();
@@ -98,20 +99,20 @@ const Pagination = () => {
                 ?
                 <h2 className='text-center py-2 my-2 bg-success text-white'>Loading</h2>
                 :
-                (
+    
                   error  ?
-                  <h2 className='text-center py-2 my-2 bg-danger text-white'>Not Found 404</h2>
+                  <h2 className='text-center py-2 my-2 bg-danger text-white'>Server islemir</h2>
 
                   :
-                  (
+                  
                     data.length == 0 ?
                     <h2>Məhsul yoxdur !!</h2>
 
                     :
 
                     renderdata(currentitems)
-                  )
-                )
+                  
+                
 
             }
           </div>

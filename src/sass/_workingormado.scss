@@ -49,18 +49,15 @@
                 width: 100%;
                 height: auto;
 
-                .ones {
+
+                .ones{
                     position: relative;
 
 
-
-
-                    .dropdown {
-                        position: absolute;
-                        right: 0;
-                        top: 20px;
-                    }
+                    
                 }
+
+              
 
                 label{
 
@@ -190,27 +187,22 @@
                          
 
                     }
-
-
-               
                 }
-
-
-
             }
 
-
             .footicon {
+            
+            
                 width: 100%;
                 display: flex;
                 background-color: var(--roundplayarrow);
                 justify-content: space-around;
                 align-items: center;
                 border-radius: 20px;
-
+                       
                 .box1 {
                     width: 10%;
-
+            
                     img {
                         width: 25px;
                     }
@@ -231,7 +223,6 @@
                         width: 35px;
                     }
                 }
-
                 .box4 {
                     width: 10%;
 
@@ -239,12 +230,10 @@
                         width: 30px;
                     }
                 }
-
                 .writing {
                     display: flex;
                     align-items: center;
                     justify-content: center;
-
 
                     h3 {
                         color: #FFF;
@@ -255,14 +244,7 @@
                         margin-top: 10px;
                     }
                 }
-
-
-
             }
-
-
         }
-
     }
-
 }

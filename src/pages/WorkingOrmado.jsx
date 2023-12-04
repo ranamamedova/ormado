@@ -17,19 +17,16 @@ const WorkingOrmado = () => {
 
                 <div className="mainpart">
                     <div className="first">
-                        <label className='ones' htmlFor="branch"> <h1>Branch</h1> <input placeholder='Select branch' id='branch' type="text" />
-                            <div className="dropdown">
-                                <button style={{ border: "none", width: "50", height: "50", backgroundColor: "rgb(253, 251, 245)" }} type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <svg className='buttonarrow' xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 58 58" fill="none">
-                                        <path d="M6.73794 19.1862C7.40073 18.5236 8.29955 18.1514 9.23674 18.1514C10.1739 18.1514 11.0727 18.5236 11.7355 19.1862L29.2307 36.6813L46.7258 19.1862C47.3924 18.5424 48.2852 18.1861 49.2119 18.1942C50.1386 18.2022 51.0251 18.5739 51.6804 19.2292C52.3357 19.8845 52.7074 20.771 52.7154 21.6977C52.7235 22.6244 52.3672 23.5172 51.7234 24.1838L31.7295 44.1777C31.0667 44.8403 30.1679 45.2125 29.2307 45.2125C28.2935 45.2125 27.3947 44.8403 26.7319 44.1777L6.73794 24.1838C6.07535 23.521 5.70312 22.6222 5.70312 21.685C5.70312 20.7478 6.07535 19.849 6.73794 19.1862Z" fill="#979797" />
-                                    </svg>
-                                </button>
-                                <ul className="dropdown-menu">
-                                    <li><a className="dropdown-item" href="#">Action</a></li>
-                                    <li><a className="dropdown-item" href="#">Another action</a></li>
-                                    <li><a className="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </div>
+                        <label className='ones' htmlFor="branch"> <h1>Branch</h1>
+
+                            <select  className="form-select" aria-label="Default select example">
+                                <option selected>Open this select menu</option>
+                                <option value={1}>One</option>
+                                <option value={2}>Two</option>
+                                <option value={3}>Three</option>
+                            </select>
+
+
                         </label>
 
 

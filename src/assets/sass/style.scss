@@ -160,8 +160,8 @@ body {
 
 @import "./Career.scss";
 
-@import "./MyOrder.scss";
-
+// @import "./MyOrder.scss";
+@import "./order.scss";
 
 // Reserve
 @import "./reserve";
@@ -180,7 +180,14 @@ body {
 @import "./wishdetail" ;
 
 
+@import "./checkout" ;
+
+
 @import "./workingormado" ;
+
+// @import "./myorder" ;
+
+@import "./accountset" ;
 
 .swiperMobil1{
   margin-top: 200px;

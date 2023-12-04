@@ -4,7 +4,7 @@ import vectorBlogdetails from "../assets/img/Vector (6).png"
 import line from "../assets/img/line.png"
 import clock from "../assets/img/tabler_clock-hour-8.png"
 import ScrollToTop from "../components/ScrollToTop";
-
+import Faqs from "../components/Faqs"
 const BlogDetails = () => {
   return (
     <>
@@ -114,17 +114,7 @@ const BlogDetails = () => {
 
         </div>
       </div>
-
-      {/* <section className="bgBlog">
-        <div className="text">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
-            deleniti. Labore nihil, voluptatem adipisci minima tempora cum, a
-            neque cumque quibusdam iste provident inventore eum explicabo
-            corrupti pariatur ad ipsam?x
-          </p>
-        </div>
-      </section> */}
+        <Faqs/>
     </>
   );
 };

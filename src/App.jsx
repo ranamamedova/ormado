@@ -21,6 +21,7 @@ import Footer from "./components/Footer";
 import SignIn from "./pages/SignIn";
 import BlogDetails from "./pages/BlogDetails";
 import WishlistPage from "./pages/WishlistDetail";
+import Checkout from "./pages/Checkout"
 
 import { ProductProvider } from "./context/ProductContext";
 import { BlogProvider } from "./context/BlogContext";
@@ -55,6 +56,7 @@ const App = () => {
                 <Route path="/category/:slug" element={<BlogDetails />}></Route>
                 <Route path="/gallery" element={<Gallery />}></Route>
                 <Route path="/pagination" element={<Pagination />}></Route>
+                <Route path="/checkout" element={<Checkout />}></Route>
                 <Route path="/order" element={<MyOrder />}></Route>
                 <Route
                   path="/franchiseform"

@@ -61,8 +61,18 @@ const ShopCard = ({onDelete,classNames}) => {
                       {item.name}
                     </td>
                     <td>{item.price.join(', ')}</td>
-                    <td>2</td>
-                    <td >{parseInt(item.price[0].slice(1)) * 2} 
+                    <td>
+                    <div className="quantity-shop">
+                      <button className="quantity btn">
+                        <i className="fa-solid fa-plus"></i>
+                      </button>
+                      <span>0</span>
+                      <button className="quantity btn">
+                        <i className="fa-solid fa-minus"></i>
+                      </button>
+                    </div>
+                    </td>
+                    <td className='subtotal-sec '>{parseInt(item.price[0].slice(1)) * 2} 
                     <button className="delete-btn text-center" onClick={() => onDelete(item.id)}>
                  <i className="fas fa-times"></i>
               </button></td>

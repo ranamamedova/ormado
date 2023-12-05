@@ -16,7 +16,11 @@
             text-align: left;
             font-family: Montserrat;      
           }
+          td:nth-child(1){
+            width: 40%;
+          }
           td{
+            width: auto;
             .delete-btn {
                 background-color: #fff ;
                 color: #808080;
@@ -34,10 +38,42 @@
                   justify-content: center;
                   
                 }
-               
+              
                
             }
+            .quantity-shop{
+              border-radius: 20px;
+              border: 1px solid #979797;
+              width: 80px;
+              height: 30px;
+              font-size: 10px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              span{
+                color: #4A3024;
+                padding: 6px;
+              }
+              .quantity{
+                outline: none;
+                padding: 6px;
+                margin-bottom: 2px;
+                i{
+                  border-radius: 50%;
+                  background-color: #E6E6E6;
+                  color: #4A3024;
+                  width: 20px;
+                  height: 20px;
+                  font-size: 10px;
+                  text-align: center;
+                  padding: 5px;
+                }
+              }
+              
+            } 
+           
           }
+          
         }
     }
     .col-md-3{

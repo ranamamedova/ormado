@@ -30,11 +30,10 @@ const WorkingOrmado = () => {
                                 <input type="text" />
                             </label>
 
-
                             <label className='mt-3' > <h1>Position</h1> <input type="text" /></label>
 
                             <div className="cat ">
-                                <label className='mt-3' ><h1>Full name</h1><input id='one' placeholder='enter your fullname' type="text" /></label>
+                                <label className='mt-3' ><h1>Full name</h1><input  id='one' placeholder='enter your fullname' type="text" /></label>
                                 <label className='mt-3 ' ><h1>Phone number</h1><input id='two' placeholder='enter your phone' type="text" /> </label>
                             </div>
 
@@ -52,8 +51,8 @@ const WorkingOrmado = () => {
                                         <option value="{1}">One</option>
                                         <option value="{2}">Two</option>
                                         <option value="{3}">Three</option>
-                                   </select>
-                                   <input className='cd' type="text" />
+                                    </select>
+                                    <input className='cd ' type="text" />
 
                                 </label>
                             </div>

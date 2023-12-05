@@ -21,7 +21,7 @@ import Footer from "./components/Footer";
 import SignIn from "./pages/SignIn";
 import BlogDetails from "./pages/BlogDetails";
 import WishlistPage from "./pages/WishlistDetail";
-import Checkout from "./pages/Checkout"
+import Checkout from "./pages/Checkout";
 
 import { ProductProvider } from "./context/ProductContext";
 import { BlogProvider } from "./context/BlogContext";
@@ -35,8 +35,6 @@ const App = () => {
         <ProductProvider>
           <BlogProvider>
             <FaqProvider>
-
-
               <Header />
               <Routes>
                 <Route path="/" element={<Home />}></Route>
@@ -70,8 +68,6 @@ const App = () => {
                 <Route path="/signup" element={<CreateAccount />}></Route>
               </Routes>
               <Footer />
-
-
             </FaqProvider>
           </BlogProvider>
         </ProductProvider>

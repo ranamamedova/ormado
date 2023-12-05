@@ -5,6 +5,7 @@ import { FaqContext } from "../context/FaqContext";
 const Faqs = () => {
   const [faq] = useContext(FaqContext);
 
+
   // const [faqApi, setFaqApi] = useState([]);
   // const [loading, setLoading] = useState(true);
   // const [error, setError] = useState();

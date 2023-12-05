@@ -20,14 +20,14 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import SignIn from "./pages/SignIn";
 import BlogDetails from "./pages/BlogDetails";
-
+import WishlistDetail from "./pages/WishlistDetail";
+import Checkout from "./pages/Checkout";
+import ShopCard from "./pages/ShopCard";
 
 import { ProductProvider } from "./context/ProductContext";
 import { BlogProvider } from "./context/BlogContext";
 import { FaqProvider } from "./context/FaqContext";
-import WishlistDetail from "./pages/WishlistDetail";
-import Checkout from "./pages/Checkout";
-import ShopCard from "./pages/ShopCard";
+import MyOrder from "./pages/MyOrder";
 
 const App = () => {
   return (
@@ -36,8 +36,6 @@ const App = () => {
         <ProductProvider>
           <BlogProvider>
             <FaqProvider>
-
-
               <Header />
               <Routes>
                 <Route path="/" element={<Home />}></Route>
@@ -57,6 +55,8 @@ const App = () => {
                 <Route path="/category/:slug" element={<BlogDetails />}></Route>
                 <Route path="/gallery" element={<Gallery />}></Route>
                 <Route path="/pagination" element={<Pagination />}></Route>
+                <Route path="/checkout" element={<Checkout />}></Route>
+                <Route path="/myorder" element={<MyOrder />}></Route>
                 <Route
                   path="/franchiseform"
                   element={<FranchiseForm />}
@@ -69,8 +69,6 @@ const App = () => {
                 <Route path="/shopcard" element={<ShopCard />}></Route>
               </Routes>
               <Footer />
-
-
             </FaqProvider>
           </BlogProvider>
         </ProductProvider>

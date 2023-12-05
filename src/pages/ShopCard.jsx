@@ -72,7 +72,7 @@ const ShopCard = ({onDelete,classNames}) => {
                       </button>
                     </div>
                     </td>
-                    <td className='subtotal-sec '>{parseInt(item.price[0].slice(1)) * 2} 
+                    <td className='subtotal-sec '>${parseInt(item.price[0].slice(1)) * 2} 
                     <button className="delete-btn text-center" onClick={() => onDelete(item.id)}>
                  <i className="fas fa-times"></i>
               </button></td>

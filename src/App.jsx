@@ -26,7 +26,7 @@ import Checkout from "./pages/Checkout"
 import { ProductProvider } from "./context/ProductContext";
 import { BlogProvider } from "./context/BlogContext";
 import { FaqProvider } from "./context/FaqContext";
-import MyOrder from "./pages/MyOrder";
+
 
 const App = () => {
   return (
@@ -57,7 +57,6 @@ const App = () => {
                 <Route path="/gallery" element={<Gallery />}></Route>
                 <Route path="/pagination" element={<Pagination />}></Route>
                 <Route path="/checkout" element={<Checkout />}></Route>
-                <Route path="/order" element={<MyOrder />}></Route>
                 <Route
                   path="/franchiseform"
                   element={<FranchiseForm />}

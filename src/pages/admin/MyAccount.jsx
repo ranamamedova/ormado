@@ -23,14 +23,14 @@ const MyAccount = () => {
  
   return (
     <>
-      <BreadCrumb title="MY ACCOUNT" isOtherPage={true} />
-      <section className="myaccount">
+      {/* <BreadCrumb title="MY ACCOUNT" isOtherPage={true} /> */}
+      {/* <section className="myaccount">
         <div className="container ">
-          <div className="row  justify-content-center">
+          <div className="row  justify-content-center"> */}
             {/* <div className="col-7 col-sm-12 col-md-3 "> */}
              <AccountSetting/>
             {/* </div> */}
-            <div className="col-10 col-sm-12 col-md-8  pt-3">
+            {/* <div className="col-10 col-sm-12 col-md-8  pt-3">
               <div className="formDetails">
                 <form>
                   <p>EDIT ACCOUNT INFORMATION</p>
@@ -125,10 +125,10 @@ const MyAccount = () => {
                   </div>
                 </form>
               </div>
-            </div>
-          </div>
+            </div> */}
+          {/* </div>
         </div>
-      </section>
+      </section> */}
       {/* <button
        onClick={logoutFunc}
       >Log out</button> */}

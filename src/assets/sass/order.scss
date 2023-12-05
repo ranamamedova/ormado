@@ -1,138 +1,146 @@
-.myorder {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
+.myaccount {
+  .container {
+    .row {
+      .accountSet {
+        .row {
+          // .myorder {
+          //     width: 100%;
+          //     display: flex;
+          //     align-items: center;
+          //     justify-content: center;
 
-    .myorder-main {
-        max-width: 80%;
-        width: 100%;
-        display: flex;
-        align-items: center;
-    
-        @media(max-width: 990px){
-            flex-direction: column;
-        }
-        .myorder-part1 {
-            max-width: 35%;
-            width: 100%;
-            height: 200px;
-            flex-direction: column;
-            @media(max-width: 990px){
-            max-width: 100%;
-           }
-        }
-    
-        .myorder-card {
-            max-width: 65%;
-            width: 100%;
+          //     .myorder-main {
+          //         max-width: 80%;
+          //         width: 100%;
+          //         display: flex;
+          //         align-items: center;
+
+          //         @media(max-width: 990px){
+          //             flex-direction: column;
+          //         }
+          //         .myorder-part1 {
+          //             // max-width: 35%;
+          //             // width: 100%;
+          //             height: 200px;
+          //             flex-direction: column;
+          //         //     @media(max-width: 990px){
+          //         //     max-width: 100%;
+          //         //    }
+          //         }
+
+          .myorder-card {
+            // max-width: 65%;
+            // width: 100%;
             display: flex;
             align-items: center;
-            justify-content: center;
             flex-direction: column;
-            @media(max-width: 990px){
-                max-width: 100%;
+            @media (max-width: 990px) {
+              max-width: 100%;
             }
-            .myorder-card-main{
-                max-width: 100%;
-                width: 100%;
-                border-radius: 20px !important;
-                border: 1px solid rgba(221, 221, 221, 0.87);
-                table {
-                    thead {
-                        th {
-                            width: 25%;
-                            height: 80px;
-                            color: #979797;
-                            font-family: Montserrat;
-                            font-style: normal;
-                            font-weight: 700;
-                            line-height: 140%;
-                            letter-spacing: 1px;
-                            @media(max-width: 1180px){
-                                font-size: 14px;
-                            }
-    
-                        }
+            .myorder-card-main {
+              max-width: 100%;
+              width: 100%;
+              border-radius: 20px !important;
+              border: 1px solid rgba(221, 221, 221, 0.87);
+              table {
+                thead {
+                  th {
+                    width: 25%;
+                    height: 80px;
+                    color: #979797;
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 140%;
+                    letter-spacing: 1px;
+                    font-size: 15px;
+                    @media (max-width: 1180px) {
+                      font-size: 14px;
                     }
-                    .line{
-                        height: 2px;
-                        width: 100%;
-                        background-color: #979797;
-                    }
-    
-                    tbody {
-                        tr{
-                            border-top: 1px solid rgba(221, 221, 221, 0.87);
-                            td {
-                                width: 25%;
-                                height: 80px;
-                                color: #979797;
-                                font-family: Montserrat;
-                                font-style: normal;
-                                font-weight: 600;
-                                line-height: 140%;
-                                letter-spacing: 0.8px;
-                                font-size: 10px;
-                                border-radius: 60px !important;
-                                @media(max-width: 1180px){
-                                    font-size: 8px;
-                                }
-                            }
-                            .myorder-button{
-                                display: flex;
-                                align-items: center;
-                                justify-content: space-evenly;
-                                button {
-                                    display: flex;
-                                    align-items: center;
-                                    background-color: rgba(227, 177, 66, 0.20);
-                                    border: #E3B142;
-                                    border-radius: 20px;
-                                    width: 60px;
-                                    height: 20px;
-        
-                                    .repeat-icon {
-                                        border: 1px solid #E3B142;
-                                        border-radius: 50%;
-                                        padding: 2px;
-                                    }
-        
-                                    p {
-                                        font-size: 8px;
-                                        margin-bottom: 0 !important;
-                                        color: #E3B142;
-                                        font-family: Montserrat;
-                                        font-style: normal;
-                                        font-weight: 700;
-                                    }
-                                }
-                            }
-                        }
-                    }
-    
+                  }
                 }
-            }
-            .myorderNextBtn{
-                button{
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    width: 70px;
-                    height: 30px;
-                    background-color: #4A3024;
-                    border: none;
-                    border-radius: 20px;
-                    p{
-                        color: white;
-                        margin-bottom: 0;
-                        font-family: Montserrat;
-                        font-weight: 700;
-                        letter-spacing: 0.8px;
-                    }
+                .line {
+                  height: 2px;
+                  width: 100%;
+                  background-color: #979797;
                 }
+
+                tbody {
+                  tr {
+                    border-top: 1px solid rgba(221, 221, 221, 0.87);
+                    td {
+                      width: 25%;
+                      height: 80px;
+                      color: #979797;
+                      font-family: Montserrat;
+                      font-style: normal;
+                      font-weight: 600;
+                      line-height: 140%;
+                      letter-spacing: 0.8px;
+                      font-size: 13px;
+                      border-radius: 60px !important;
+                      @media (max-width: 1180px) {
+                        font-size: 8px;
+                      }
+                    }
+                    .myorder-button {
+                      display: flex;
+                      align-items: center;
+                      justify-content: space-evenly;
+                      button {
+                        display: flex;
+                        align-items: center;
+                        background-color: rgba(227, 177, 66, 0.2);
+                        border: #e3b142;
+                        border-radius: 20px;
+                        width: 75px;
+                        height: 20px;
+
+                        .repeat-icon {
+                          border: 1px solid #e3b142;
+                          border-radius: 50%;
+                          padding: 2px;
+                        }
+
+                        p {
+                          font-size: 12px;
+                          margin-bottom: 0 !important;
+                          color: #e3b142;
+                          font-family: Montserrat;
+                          font-style: normal;
+                          font-weight: 700;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
             }
+            .myorderNextBtn {
+              button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 70px;
+                height: 30px;
+                background-color: #4a3024;
+                border: none;
+                border-radius: 20px;
+                p {
+                  color: white;
+                  margin-bottom: 0;
+                  font-family: Montserrat;
+                  font-weight: 700;
+                  letter-spacing: 0.8px;
+                }
+              }
+            }
+          }
         }
+      }
     }
+  }
 }
+
+//     }
+// }

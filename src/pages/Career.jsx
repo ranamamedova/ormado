@@ -18,15 +18,6 @@ const Career = () => {
 
   useEffect(() => {
     setCurrentItems(gallerydata.slice(itemOffset, endOffset));
-    // axios.get("https://ormado.webluna.space/api/client/about")
-    //   .then((res) => {
-    //     console.log(res.data.data)
-    //     setData(res.data.data)
-    //   })
-
-    //   .catch((err) => {
-    //     console.log(err)
-    //   })
   }, [itemOffset]);
   return (
 

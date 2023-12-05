@@ -125,7 +125,7 @@ const Category = () => {
                       <span>1K read</span>
                     </div>
                     <p className="description">
-                    <div dangerouslySetInnerHTML={{ __html: fd.text }} />
+                    {fd.desc}
                     </p>
                     <a href="#react" className="readMore">
                       Read More

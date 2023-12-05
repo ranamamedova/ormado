@@ -53,7 +53,7 @@ const WorkingOrmado = () => {
                                         <option value="{2}">Two</option>
                                         <option value="{3}">Three</option>
                                    </select>
-                                
+                                   <input className='cd' type="text" />
 
                                 </label>
                             </div>

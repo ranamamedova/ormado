@@ -27,6 +27,7 @@ import { ProductProvider } from "./context/ProductContext";
 import { BlogProvider } from "./context/BlogContext";
 import { FaqProvider } from "./context/FaqContext";
 import MyOrder from "./pages/MyOrder";
+import ShopCard from "./pages/ShopCard";
 
 const App = () => {
   return (
@@ -56,6 +57,7 @@ const App = () => {
                 <Route path="/pagination" element={<Pagination />}></Route>
                 <Route path="/checkout" element={<Checkout />}></Route>
                 <Route path="/myorder" element={<MyOrder />}></Route>
+                <Route path="/shopcard" element={<ShopCard />}></Route>
                 <Route
                   path="/franchiseform"
                   element={<FranchiseForm />}

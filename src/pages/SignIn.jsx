@@ -62,11 +62,11 @@ const SignIn = () => {
             <div className="row">
               <div className="col-12 col-sm-6 col-md-5 col-lg-5   ">
                 <div className="signImg">
-                  <img src="https://ormado-demo.webluna.space/cdn/img/login.png" alt="" className="img-fluid" />
+                  <img src="https://ormado.webluna.org/cdn/img/login.png" alt="" className="img-fluid" />
                   <div className="logoTitle ">
                     <div className="logoImg">
                       <Link to="/">
-                        <img src="https://ormado-demo.webluna.space/cdn/img/logo.png" alt="" className="mt-3 mb-5" />
+                        <img src="https://ormado.webluna.org/cdn/img/logo.png" alt="" className="mt-3 mb-5" />
                       </Link>
                     </div>
                     <h2>WELCOME TO ORMADO KAFFEEHAUS</h2>

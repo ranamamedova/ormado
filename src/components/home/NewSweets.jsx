@@ -36,7 +36,7 @@ const NewSweets = () => {
     <SwiperSlide className='swiper-slide'>
     <div className="swiper-main">
       <div className="img">
-      <img src="https://ormado-demo.webluna.space/cdn/img/Rectangle603.png" alt="" /> 
+      <img src="https://ormado.webluna.org/cdn/img/Rectangle603.png" alt="" /> 
       </div>
       <div className="swiper-background"></div>
       <div className="swiper-text container">
@@ -51,7 +51,7 @@ const NewSweets = () => {
         {/* <SwiperSlide>
         <div className="swiper-main">
              <div className="img">
-                <img src="https://ormado-demo.webluna.space/cdn/img/Rectangle603.png" alt="" /> 
+                <img src="https://ormado.webluna.org/cdn/img/Rectangle603.png" alt="" /> 
               </div>
               <div className="swiper-background"></div>
               <div className="swiper-text container">
@@ -65,7 +65,7 @@ const NewSweets = () => {
         <SwiperSlide>
         <div className="swiper-main">
               <div className="img">
-                <img src="https://ormado-demo.webluna.space/cdn/img/Rectangle603.png" alt="" /> 
+                <img src="https://ormado.webluna.org/cdn/img/Rectangle603.png" alt="" /> 
               </div>
               <div className="swiper-background"></div>
               <div className="swiper-text container">
@@ -77,7 +77,7 @@ const NewSweets = () => {
         <SwiperSlide>
         <div className="swiper-main">
               <div className="img">
-                <img src="https://ormado-demo.webluna.space/cdn/img/Rectangle603.png" alt="" /> 
+                <img src="https://ormado.webluna.org/cdn/img/Rectangle603.png" alt="" /> 
               </div>
               <div className="swiper-background"></div>
               <div className="swiper-text container">
@@ -89,7 +89,7 @@ const NewSweets = () => {
         <SwiperSlide>
         <div className="swiper-main">
               <div className="img">
-                <img src="https://ormado-demo.webluna.space/cdn/img/Rectangle603.png" alt="" /> 
+                <img src="https://ormado.webluna.org/cdn/img/Rectangle603.png" alt="" /> 
               </div>
               <div className="swiper-background"></div>
               <div className="swiper-text container">

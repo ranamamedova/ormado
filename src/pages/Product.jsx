@@ -5,8 +5,9 @@ import { ProductContext } from '../context/ProductContext';
 
 import { Card, Col, Row } from 'react-bootstrap';
 import { useNavigate } from 'react-router';
-import slugify from 'slugify';
+// import slugify from 'slugify';
 import { Link } from 'react-router-dom';
+import ScrollToTop from '../components/ScrollToTop';
 
 const Product = () => {
   const navigate = useNavigate()
@@ -25,6 +26,7 @@ const Product = () => {
   const [product] = useContext(ProductContext);
   return (
     <>
+    <ScrollToTop/>
       <section className='container-fluid'>
         <div className="products-page row pb-5 mb-5 px-5">
           <div className="col-md-3">
@@ -67,7 +69,7 @@ const Product = () => {
               <div className="card mb-3" >
                 <div className="row g-0">
                   <div className="col-md-3">
-                    <img src="https://ormado-demo.webluna.space/cdn/img/drink.png" className="img-fluid rounded-start" alt="..." />
+                    <img src="https://ormado.webluna.org/cdn/img/drink.png" className="img-fluid rounded-start" alt="..." />
                   </div>
                   <div className="col-md-9">
                     <div className="card-body">
@@ -87,7 +89,7 @@ const Product = () => {
               <div className="card mb-3" style={{boxShadow: '0px 0px 12px 0px rgba(32, 181, 38, 0.32)'}}>
                 <div className="row g-0">
                   <div className="col-md-3">
-                    <img src="https://ormado-demo.webluna.space/cdn/img/drink1.png" className="img-fluid rounded-start" alt="..." />
+                    <img src="https://ormado.webluna.org/cdn/img/drink1.png" className="img-fluid rounded-start" alt="..." />
                   </div>
                   <div className="col-md-9">
                     <div className="card-body">
@@ -107,7 +109,7 @@ const Product = () => {
               <div className="card mb-3" >
                 <div className="row g-0">
                   <div className="col-md-3">
-                    <img src="https://ormado-demo.webluna.space/cdn/img/drink2.png" className="img-fluid rounded-start" alt="..." />
+                    <img src="https://ormado.webluna.org/cdn/img/drink2.png" className="img-fluid rounded-start" alt="..." />
                   </div>
                   <div className="col-md-9">
                     <div className="card-body">
@@ -128,7 +130,7 @@ const Product = () => {
           </div>
           <div className="col-md-9">
             <div className='img-transparent d-none d-md-block d-lg-block'>
-              <img src="https://ormado-demo.webluna.space/cdn/img/accoerdion.png" alt="" />
+              <img src="https://ormado.webluna.org/cdn/img/accoerdion.png" alt="" />
               <div className='img-background'></div>
               <div className='img-text-context'>
                 <h4>BEST DEALS</h4>
@@ -147,7 +149,7 @@ const Product = () => {
               <p>Showing 1-8 of 20 result</p>
               <p>Showing: 8</p>
               <div className='ep_menu'>
-                <img src="https://ormado-demo.webluna.space/cdn/img/ep_menu.png" alt="ep-menu" />
+                <img src="https://ormado.webluna.org/cdn/img/ep_menu.png" alt="ep-menu" />
               </div>
             </div>
             <div className="product-cards d-none d-md-block d-lg-block p-0">
@@ -155,23 +157,23 @@ const Product = () => {
                 {product.map((item) => (
                   <Col className="col-sm-6 col-md-6 col-lg-3 product-card-main d-flex justify-content-center mb-5">
                     <Card className="card p-3 mt-5" key={item._id}>
-                      <Card.Img className="card-rentagle" src="https://ormado-demo.webluna.space/cdn/img/Rectangle.png" />
-                      <Card.Img className="card-ellipse" src="https://ormado-demo.webluna.space/cdn/img/Ellipse.png" />
+                      <Card.Img className="card-rentagle" src="https://ormado.webluna.org/cdn/img/Rectangle.png" />
+                      <Card.Img className="card-ellipse" src="https://ormado.webluna.org/cdn/img/Ellipse.png" />
                       <Link to={`/product/${item.title}`}> 
-                      <Card.Img className="card-energy" src="https://ormado-demo.webluna.space/cdn/img/energydrink.png" />
+                      <Card.Img className="card-energy" src="https://ormado.webluna.org/cdn/img/energydrink.png" />
                       </Link>
-                      <Card.Img className="card-vector" src="https://ormado-demo.webluna.space/cdn/img/Vector.png" />
-                      <Card.Img className="card-vector1" src="https://ormado-demo.webluna.space/cdn/img/Vector%201.png" />
-                      <Card.Img className="card-vector2" src="https://ormado-demo.webluna.space/cdn/img/Vector%201.png" />
+                      <Card.Img className="card-vector" src="https://ormado.webluna.org/cdn/img/Vector.png" />
+                      <Card.Img className="card-vector1" src="https://ormado.webluna.org/cdn/img/Vector%201.png" />
+                      <Card.Img className="card-vector2" src="https://ormado.webluna.org/cdn/img/Vector%201.png" />
                       <Card.Body>
                         <Card.Title>{item.title}</Card.Title>
                         <Card.Text>${item.lastPrice}.00</Card.Text>
                         <div className="d-flex justify-content-center">
                           <button className="btn-card me-1">
-                            <img src="https://ormado-demo.webluna.space/cdn/img/Heart.png" className="btn-img" />
+                            <img src="https://ormado.webluna.org/cdn/img/Heart.png" className="btn-img" />
                           </button>
                           <button className="btn-card me-1">
-                            <img src="https://ormado-demo.webluna.space/cdn/img/Shopbag.png" className="btn-img" />
+                            <img src="https://ormado.webluna.org/cdn/img/Shopbag.png" className="btn-img" />
                           </button>
                           <button className="btn-readmore">Read More</button>
                         </div>
@@ -182,7 +184,7 @@ const Product = () => {
               </Row>
             </div>
             <div className='img-transparent'>
-              <img src="https://ormado-demo.webluna.space/cdn/img/accoerdion.png" alt="" />
+              <img src="https://ormado.webluna.org/cdn/img/accoerdion.png" alt="" />
               <div className='img-background'></div>
               <div className='img-text-context'>
                 <h4>BEST DEALS</h4>
@@ -195,21 +197,21 @@ const Product = () => {
                 {product.map((item) => (
                   <Col className="col-sm-6 col-md-6 col-lg-3 product-card-main d-flex justify-content-center mb-5">
                     <Card className="card p-3 mt-5" key={item._id}>
-                      <Card.Img className="card-rentagle" src="https://ormado-demo.webluna.space/cdn/img/Rectangle.png" />
-                      <Card.Img className="card-ellipse" src="https://ormado-demo.webluna.space/cdn/img/Ellipse.png" />
-                      <Card.Img className="card-energy" src="https://ormado-demo.webluna.space/cdn/img/energydrink.png" />
-                      <Card.Img className="card-vector" src="https://ormado-demo.webluna.space/cdn/img/Vector.png" />
-                      <Card.Img className="card-vector1" src="https://ormado-demo.webluna.space/cdn/img/Vector%201.png" />
-                      <Card.Img className="card-vector2" src="https://ormado-demo.webluna.space/cdn/img/Vector%201.png" />
+                      <Card.Img className="card-rentagle" src="https://ormado.webluna.org/cdn/img/Rectangle.png" />
+                      <Card.Img className="card-ellipse" src="https://ormado.webluna.org/cdn/img/Ellipse.png" />
+                      <Card.Img className="card-energy" src="https://ormado.webluna.org/cdn/img/energydrink.png" />
+                      <Card.Img className="card-vector" src="https://ormado.webluna.org/cdn/img/Vector.png" />
+                      <Card.Img className="card-vector1" src="https://ormado.webluna.org/cdn/img/Vector%201.png" />
+                      <Card.Img className="card-vector2" src="https://ormado.webluna.org/cdn/img/Vector%201.png" />
                       <Card.Body>
                         <Card.Title>{item.title}</Card.Title>
                         <Card.Text>${item.lastPrice}.00</Card.Text>
                         <div className="d-flex justify-content-center">
                           <button className="btn-card me-1">
-                            <img src="https://ormado-demo.webluna.space/cdn/img/Heart.png" className="btn-img" />
+                            <img src="https://ormado.webluna.org/cdn/img/Heart.png" className="btn-img" />
                           </button>
                           <button className="btn-card me-1">
-                            <img src="https://ormado-demo.webluna.space/cdn/img/Shopbag.png" className="btn-img" />
+                            <img src="https://ormado.webluna.org/cdn/img/Shopbag.png" className="btn-img" />
                           </button>
                           <button className="btn-readmore">Read More</button>
                         </div>
@@ -223,7 +225,7 @@ const Product = () => {
               <h5>Feature Product</h5>
               <div className="feature-card d-flex mb-3">
                   <div className="img-div-first">
-                    <img src="https://ormado-demo.webluna.space/cdn/img/drink2.png" className="img-fluid rounded-start" alt="..." />
+                    <img src="https://ormado.webluna.org/cdn/img/drink2.png" className="img-fluid rounded-start" alt="..." />
                   </div>
                   <div className="text-div-second">
                     <div className="card-body-test">
@@ -241,7 +243,7 @@ const Product = () => {
               </div>
               <div className="feature-card d-flex mb-3" style={{boxShadow: '0px 0px 12px 0px rgba(32, 181, 38, 0.32)'}}>
                   <div className="img-div-first">
-                    <img src="https://ormado-demo.webluna.space/cdn/img/drink2.png" className="img-fluid rounded-start" alt="..." />
+                    <img src="https://ormado.webluna.org/cdn/img/drink2.png" className="img-fluid rounded-start" alt="..." />
                   </div>
                   <div className="text-div-second">
                     <div className="card-body-test">
@@ -259,7 +261,7 @@ const Product = () => {
               </div>
               <div className="feature-card d-flex mb-3" >
                   <div className="img-div-first">
-                    <img src="https://ormado-demo.webluna.space/cdn/img/drink2.png" className="img-fluid rounded-start" alt="..." />
+                    <img src="https://ormado.webluna.org/cdn/img/drink2.png" className="img-fluid rounded-start" alt="..." />
                   </div>
                   <div className="text-div-second">
                     <div className="card-body-test">

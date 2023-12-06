@@ -7,7 +7,7 @@ const TestDetails = () => {
     {
       text:
         'Quisquam similique molestiae quia quod dolorum et. Aliquid blanditiis voluptatem maxime qui et voluptas minus. Nonprovident pariatur nisi. Repellat voluptas culpa eius.',
-      img: "https://ormado-demo.webluna.space/cdn/img/Image.png",
+      img: "https://ormado.webluna.org/cdn/img/Image.png",
       name: "Byron Rolfson",
       special: "Regional Solutions Architect"
 
@@ -15,7 +15,7 @@ const TestDetails = () => {
     {
       text:
         'Asperiores voluptatum explicabo vel maxime et consequuntur eveniet nobis. Tempore aperiam dolor aut molestiae soluta modi ut. Hic aspernatur ea uam...',
-      img: "https://ormado-demo.webluna.space/cdn/img/Image.png",
+      img: "https://ormado.webluna.org/cdn/img/Image.png",
       name: " Rolfson",
       special: " Solutions Architect"
 
@@ -23,7 +23,7 @@ const TestDetails = () => {
     {
       text:
         'Omnis velit quia. Perspiciatis et cupiditate. Voluptatum beatae asperiores dolor magnam fuga. Sed fuga est harum quo nesciunt sint. Optio veniam...',
-      img: "https://ormado-demo.webluna.space/cdn/img/Image.png",
+      img: "https://ormado.webluna.org/cdn/img/Image.png",
       name: "Byron ",
       special: "Regional  Architect"
     },
@@ -100,7 +100,7 @@ const TestDetails = () => {
                       key={index}
                       ref={(ref) => (itemTags.current[index] = ref)}
                     >
-                      <img src={quotes} alt="" />
+                      <img src="https://ormado.webluna.org/cdn/img/Quotes.svg" alt="" />
                       <p>{data[(count + index) % data.length].text}</p>
                     </div>
                   ))}

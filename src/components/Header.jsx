@@ -32,7 +32,7 @@ const Header = () => {
             <div className="col-7 ">
               <div className="d-flex align-items-center justify-content-between">
                 <div className="logo">
-                  <img src="https://ormado-demo.webluna.space/cdn/img/logo.png" alt="" />
+                  <img src="https://ormado.webluna.org/cdn/img/logo.png" alt="" />
                 </div>
 
                 <div class="search-container">

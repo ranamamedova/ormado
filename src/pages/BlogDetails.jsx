@@ -1,6 +1,5 @@
 import React from "react";
 import blogimg from "../assets/img/blogdetailsimg2.png";
-import vectorBlogdetails from "../assets/img/Vector (6).png"
 import line from "../assets/img/line.png"
 import clock from "../assets/img/tabler_clock-hour-8.png"
 import ScrollToTop from "../components/ScrollToTop";
@@ -12,16 +11,16 @@ const BlogDetails = () => {
       <div>
         <div className="blog-details">
           <div className="blog-details-main mt-3">
-            <img src={blogimg} alt="error" className='img-fluid' />
+            <img src="https://ormado.webluna.org/cdn/img/blogdetailsimg2.png" alt="error" className='img-fluid' />
             <div className="blog-details-background img-fluid"></div>
             <div className="blog-details-text">
               <h1>5 Efficient Rules How to Organize Your Working Place</h1>
               <h3 className="py-4">Relationship tips couples therapists are giving all the time</h3>
               <div className="read">
-                <img src={clock} alt="error" className="clock" />
+                <img src="https://ormado.webluna.org/cdn/img/tabler_clock-hour-8.png" alt="error" className="clock" />
                 <p className="mt-1">20.06.2023</p>
-                <img src={line} alt="error" className="line mx-2" />
-                <img src={vectorBlogdetails} alt="error" className="vector me-1" />
+                <img src="https://ormado.webluna.org/cdn/img/line.png" alt="error" className="line mx-2" />
+                <img src="https://ormado.webluna.org/cdn/img/Vector%20(6).png" alt="error" className="vector me-1" />
                 <p className="mt-1">1.6K read</p>
               </div>
             </div>

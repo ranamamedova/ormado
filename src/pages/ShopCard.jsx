@@ -44,7 +44,7 @@ const ShopCard = ({onDelete,classNames}) => {
       <div className="shopcard">
         <div className="row mx-5 my-5">
           <div className="col-12 col-sm-12 col-md-9 mb-5">
-            <table>
+            <table className='my-3'>
               <thead>
                 <tr>
                   <th>Product</th>
@@ -72,16 +72,26 @@ const ShopCard = ({onDelete,classNames}) => {
                       </button>
                     </div>
                     </td>
-                    <td className='subtotal-sec '>${parseInt(item.price[0].slice(1)) * 2} 
+                    <td >
+                      <div className="subtotal-sec ">
+                      ${parseInt(item.price[0].slice(1)) * 2} 
                     <button className="delete-btn text-center" onClick={() => onDelete(item.id)}>
                  <i className="fas fa-times"></i>
-              </button></td>
+              </button>
+                      </div></td>
                   </tr>
                 ))}
+                <tr>
+              <td colSpan="4" className="text-center">
+                <button className="btn btn-table-end">
+                Return to shop
+                </button>
+              </td>
+                </tr>
               </tbody>
             </table>
           </div>
-          <div className="col-12 col-sm-12 col-md-3 ">
+          <div className="col-12 col-sm-12 col-md-3 my-3">
             <div className='card'>
               <p className="bil">Cart Total</p>
               <div className="pays my-3">

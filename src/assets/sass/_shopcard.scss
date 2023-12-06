@@ -71,12 +71,22 @@
               }
               
             } 
-           
+            .btn-table-end{
+              color: #4A3024;
+              background-color: #f2f2f2;
+              border-radius: 25px;
+              border: none;
+              font-size: 12px;
+              font-family: Montserrat;
+              font-weight: 700;
+              
+            }
           }
           .subtotal-sec{
-            .delete-btn{
-            margin-left: 20px;
-            }
+            display: flex;
+            align-items: start;
+            width: 50%;
+            justify-content: space-between;
           }
           
         }
@@ -105,13 +115,10 @@
           
             .yellow{
                 color: #E3B142;
-                font-weight: 500;
+                font-weight: 700;
+                font-size: 12px;
               }
-              .yellow:nth-child(3){
-                color: #E3B142;
-                font-weight: 500;
-                font-size: 55px !important;
-              }
+              
               .coffs{
                font-size: 10px;
                color: #4A3024;
@@ -127,6 +134,11 @@
             color: #FFFFFF;
             padding: 5px;
             font-weight: 500;
+          }
+          hr{
+            margin: 0.5rem;
+            margin-left: 0;
+            margin-right: 0;
           }
          
          

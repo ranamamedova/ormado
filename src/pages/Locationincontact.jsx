@@ -66,6 +66,8 @@ const Locationincontact = () => {
 
                         )
                     })}
+
+
                 </div>
             </div>
 
@@ -76,8 +78,6 @@ const Locationincontact = () => {
                     <div className="container">
                         <div className="row">
                             <div className="leftmap  col-12 col-sm-4 col-md-4  ">
-
-
 
                                 <div className="text-box ">
                                     {myData.map((item, i) => {

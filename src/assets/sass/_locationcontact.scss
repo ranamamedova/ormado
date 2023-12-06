@@ -687,6 +687,8 @@
                 // margin-left: 60px;
                 // padding-right: 30px ;
 
+              
+
                 .myimage-0 {
                     position: absolute;
                     top: 50%;
@@ -698,10 +700,21 @@
                     border: white solid 4px;
                     z-index: 54;
 
+
+                    @media(max-width:1500px) {
+                       
+                        top: 50% !important;
+                        left: 25% !important;
+
+                    }
+
+
+
                     @media(min-width:1600px) {
                         width: 180px !important;
                         height: 240px !important;
                     }
+
 
                     @media(max-width:998px) {
                         width: 150px !important;
@@ -765,6 +778,8 @@
                     z-index: 1113;
                     border-radius: 10%;
                     border: white solid 4px;
+
+                  
 
                     @media(min-width:1600px) {
                         width: 180px !important;
@@ -834,6 +849,12 @@
                     left: 63%;
                     transform: translate(-50%, -50%);
                     border-radius: 10%;
+
+                    @media(max-width:1500px) {
+                       
+                        top: 35%;
+                        left: 65% !important;
+                    }
 
                     @media(min-width:1600px) {
                         width: 180px !important;

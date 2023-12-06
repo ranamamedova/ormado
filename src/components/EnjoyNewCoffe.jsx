@@ -6,7 +6,7 @@ const EnjoyNewCoffe = () => {
         <div className="row">
           <div className="col-12 col-sm-12 col-md-5 col-lg-5 coffeImgContainer ">
             <div className="coffeImg">
-              <img src="https://ormado-demo.webluna.space/cdn/img/coffeimg.png" alt="" className="img-fluid" />
+              <img src="https://ormado.webluna.org/cdn/img/coffeimg.png" alt="" className="img-fluid" />
               <div className="coffeModal pb-3">
                 <div className="coffeModalText mt-2 ms-1 mb-3">
                   <h6>Get Some Offer</h6>
@@ -14,7 +14,7 @@ const EnjoyNewCoffe = () => {
                 <div className="modelDrinkBox">
                   <div className="d-flex">
                     <div className="img">
-                      <img src="https://ormado-demo.webluna.space/cdn/img/drink.png" alt="" />
+                      <img src="https://ormado.webluna.org/cdn/img/drink.png" alt="" />
                     </div>
                     <div className="modalDrinkText">
                       <p>
@@ -26,7 +26,7 @@ const EnjoyNewCoffe = () => {
                 <div className="modelDrinkBox">
                   <div className="d-flex">
                     <div className="img">
-                      <img src="https://ormado-demo.webluna.space/cdn/img/drink1.png" alt="" />
+                      <img src="https://ormado.webluna.org/cdn/img/drink1.png" alt="" />
                     </div>
                     <div className="modalDrinkText">
                       <p>
@@ -38,7 +38,7 @@ const EnjoyNewCoffe = () => {
                 <div className="modelDrinkBox">
                   <div className="d-flex">
                     <div className="img">
-                      <img src="https://ormado-demo.webluna.space/cdn/img/drink2.png" alt="" />
+                      <img src="https://ormado.webluna.org/cdn/img/drink2.png" alt="" />
                     </div>
                     <div className="modalDrinkText">
                       <p>
@@ -71,10 +71,10 @@ const EnjoyNewCoffe = () => {
           <div className="col-12 col-sm-12 col-md-6 col-lg-6 coffeImgContainer1">
             <div className="enjoyCoffeDesc">
               <div className="beansBig">
-                <img src="https://ormado-demo.webluna.space/cdn/img/beans3.png" alt="" />
+                <img src="https://ormado.webluna.org/cdn/img/beans3.png" alt="" />
               </div>
               <div className="beans">
-                <img src="https://ormado-demo.webluna.space/cdn/img/beans2.png" alt="" />
+                <img src="https://ormado.webluna.org/cdn/img/beans2.png" alt="" />
               </div>
               <h6 className="enjoyCoffeDesch6">OUR COFFEE</h6>
               <div>
@@ -99,7 +99,7 @@ const EnjoyNewCoffe = () => {
                   </div>
                   <div className="enjoyFilterTxt active">
                     <p className="active">Late</p>
-                    <img src="https://ormado-demo.webluna.space/cdn/img/arrow.png" alt="" className="img-fluid" />
+                    <img src="https://ormado.webluna.org/cdn/img/arrow.png" alt="" className="img-fluid" />
                   </div>
                   <div className="enjoyFilterTxt">
                     <p>Arabica</p>
@@ -108,10 +108,10 @@ const EnjoyNewCoffe = () => {
               </div>
             </div>
             <div className="beans3">
-              <img src="https://ormado-demo.webluna.space/cdn/img/beans4.png" alt="" className="img-fluid" />
+              <img src="https://ormado.webluna.org/cdn/img/beans4.png" alt="" className="img-fluid" />
             </div>
             <div className="beans4">
-              <img src="https://ormado-demo.webluna.space/cdn/img/beans5.png" alt="" className="img-fluid" />
+              <img src="https://ormado.webluna.org/cdn/img/beans5.png" alt="" className="img-fluid" />
             </div>
           </div>
         </div>

@@ -14,7 +14,7 @@ const Footer = () => {
           <div className="footer-parts-top">
             <div className="footer-part1  mb-2 ms-5">
               <form>
-                <img src="https://ormado-demo.webluna.space/cdn/img/logo.png" alt="error" />
+                <img src="https://ormado.webluna.org/cdn/img/logo.png" alt="error" />
                 <div className="footer-part1-main d-flex flex-column flex-sm-row w-100 gap-2 mt-4">
                   <label htmlFor="newsletter1" className="visually-hidden">
                     Email address
@@ -108,24 +108,24 @@ const Footer = () => {
                   <div className="footer-card-part1">
                     <li className="nav-item mb-2">
                       <a href="#" className="nav-link p-0 ">
-                        <img src="https://ormado-demo.webluna.space/cdn/img/Visa.svg" alt="" />
+                        <img src="https://ormado.webluna.org/cdn/img/Visa.svg" alt="" />
                       </a>
                     </li>
                     <li className="nav-item mb-2">
                       <a href="#" className="nav-link p-0 ">
-                        <img src="https://ormado-demo.webluna.space/cdn/img/master.png" alt="" />
+                        <img src="https://ormado.webluna.org/cdn/img/master.png" alt="" />
                       </a>
                     </li>
                   </div>
                   <div className="footer-card-part2 ">
                     <li className="nav-item mb-2">
                       <a href="#" className="nav-link p-0 ">
-                        <img src="https://ormado-demo.webluna.space/cdn/img/Maestro.png" alt="" />
+                        <img src="https://ormado.webluna.org/cdn/img/Maestro.png" alt="" />
                       </a>
                     </li>
                     <li className="nav-item mb-2">
                       <a href="#" className="nav-link p-0 ">
-                        <img src="https://ormado-demo.webluna.space/cdn/img/PayPal.png" alt="" />
+                        <img src="https://ormado.webluna.org/cdn/img/PayPal.png" alt="" />
                       </a>
                     </li>
                   </div>
@@ -138,12 +138,12 @@ const Footer = () => {
                 <ul className="nav flex-column">
                   <li className="nav-item mb-2 mt-3">
                     <a href="#" className="nav-link p-0 ">
-                      <img src="https://ormado-demo.webluna.space/cdn/img/download.png" alt="error" />
+                      <img src="https://ormado.webluna.org/cdn/img/download.png" alt="error" />
                     </a>
                   </li>
                   <li className="nav-item mb-2">
                     <a href="#" className="nav-link p-0 ">
-                      <img src="https://ormado-demo.webluna.space/cdn/img/download2.png" alt="error" />
+                      <img src="https://ormado.webluna.org/cdn/img/download2.png" alt="error" />
                     </a>
                   </li>
                 </ul>

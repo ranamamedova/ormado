@@ -21,12 +21,13 @@ import Footer from "./components/Footer";
 import SignIn from "./pages/SignIn";
 import BlogDetails from "./pages/BlogDetails";
 import WishlistPage from "./pages/WishlistDetail";
-import Checkout from "./pages/Checkout"
+import Checkout from "./pages/Checkout";
 
 import { ProductProvider } from "./context/ProductContext";
 import { BlogProvider } from "./context/BlogContext";
 import { FaqProvider } from "./context/FaqContext";
 import MyOrder from "./pages/MyOrder";
+import ShopCard from "./pages/ShopCard";
 
 const App = () => {
 
@@ -38,8 +39,6 @@ const App = () => {
         <ProductProvider>
           <BlogProvider>
             <FaqProvider>
-
-
               <Header />
               <Routes>
                 <Route path="/" element={<Home />}></Route>
@@ -47,7 +46,7 @@ const App = () => {
                 <Route path="/career" element={<Career />}></Route>
                 <Route path="/product" element={<Product />}></Route>
                 <Route
-                  path="/product/:slug"
+                  path="/product/:slug" 
                   element={<ProductDetails />}
                 ></Route>
                 <Route path="/ourstory" element={<OurStory />}></Route>
@@ -61,6 +60,7 @@ const App = () => {
                 <Route path="/pagination" element={<Pagination />}></Route>
                 <Route path="/checkout" element={<Checkout />}></Route>
                 <Route path="/myorder" element={<MyOrder />}></Route>
+                <Route path="/shopcard" element={<ShopCard />}></Route>
                 <Route
                   path="/franchiseform"
                   element={<FranchiseForm />}
@@ -74,8 +74,6 @@ const App = () => {
                 <Route path="/signup" element={<CreateAccount />}></Route>
               </Routes>
               <Footer />
-
-
             </FaqProvider>
           </BlogProvider>
         </ProductProvider>

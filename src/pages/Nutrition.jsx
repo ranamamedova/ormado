@@ -13,7 +13,7 @@ const Nutrition = () => {
         <div className="container my-5 ">
           <div className="row justify-content-center">
             <div className="col-12  col-sm-12 col-md-5 col-lg-5   ">
-              <img src="https://ormado-demo.webluna.space/cdn/img/nutrition.png" alt="" className="img-fluid" />
+              <img src="https://ormado.webluna.org/cdn/img/nutrition.png" alt="" className="img-fluid" />
             </div>
             <div className="col-12  col-sm-12 col-md-5 col-lg-5 ms-4" style={{"marginTop":"50px"}}>
               <div className="nutritionDesc">

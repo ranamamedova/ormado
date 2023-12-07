@@ -15,17 +15,19 @@ import Pagination from "./components/Pagination";
 import Gallery from "./pages/Gallery";
 import ProductDetails from "./pages/ProductDetails";
 import FranchiseForm from "./pages/FranchiseForm";
-import MyAccount from "./pages/admin/MyAccount";
+import MyAccount from "./pages/admin/Account";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import SignIn from "./pages/SignIn";
 import BlogDetails from "./pages/BlogDetails";
 import WishlistPage from "./pages/WishlistDetail";
 import Checkout from "./pages/Checkout";
+import MyorderDetails from "./pages/MyorderDetails";
 
 import { ProductProvider } from "./context/ProductContext";
 import { BlogProvider } from "./context/BlogContext";
 import { FaqProvider } from "./context/FaqContext";
+import ShopCard from "./pages/ShopCard";
 
 
 const App = () => {
@@ -42,7 +44,7 @@ const App = () => {
                 <Route path="/career" element={<Career />}></Route>
                 <Route path="/product" element={<Product />}></Route>
                 <Route
-                  path="/product/:slug"
+                  path="/product/:slug" 
                   element={<ProductDetails />}
                 ></Route>
                 <Route path="/ourstory" element={<OurStory />}></Route>
@@ -55,6 +57,9 @@ const App = () => {
                 <Route path="/gallery" element={<Gallery />}></Route>
                 <Route path="/pagination" element={<Pagination />}></Route>
                 <Route path="/checkout" element={<Checkout />}></Route>
+                {/* <Route path="/myorder" element={<MyOrder />}></Route> */}
+                <Route path="/shopcard" element={<ShopCard />}></Route>
+                <Route path="/myaccount/:name" element={<MyorderDetails />}></Route>
                 <Route
                   path="/franchiseform"
                   element={<FranchiseForm />}

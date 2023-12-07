@@ -6,7 +6,7 @@ const Testimonials = () => {
     {
       text:
         'Quisquam similique molestiae quia quod dolorum et. Aliquid blanditiis voluptatem maxime qui et voluptas minus. Nonprovident pariatur nisi. Repellat voluptas culpa eius.',
-      img: 'Image.png',
+      img: 'https://ormado.webluna.org/cdn/img/Image.png',
       name:"Byron Rolfson",
       special:"Regional Solutions Architect"
       
@@ -14,7 +14,7 @@ const Testimonials = () => {
     {
       text:
         'Asperiores voluptatum explicabo vel maxime et consequuntur eveniet nobis. Tempore aperiam dolor aut molestiae soluta modi ut. Hic aspernatur ea uam...',
-        img: 'Image.png',
+        img: 'https://ormado.webluna.org/cdn/img/Image.png',
         name:" Rolfson",
         special:" Solutions Architect" 
        
@@ -22,7 +22,7 @@ const Testimonials = () => {
     {
       text:
         'Omnis velit quia. Perspiciatis et cupiditate. Voluptatum beatae asperiores dolor magnam fuga. Sed fuga est harum quo nesciunt sint. Optio veniam...',
-        img: 'Image.png',
+        img: 'https://ormado.webluna.org/cdn/img/Image.png',
         name:"Byron ",
         special:"Regional  Architect"
     },

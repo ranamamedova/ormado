@@ -7,7 +7,7 @@ export const ProductProvider = (props) => {
     const [product, setProduct] = useState([]);
 
     useEffect(() => {
-        axios.get("https://ormado.webluna.space/api/client/product")
+        axios.get("https://ormadoapi.webluna.org/api/client/product")
         .then((res)=>{
         console.log(res.data)
         setProduct(res.data.products)

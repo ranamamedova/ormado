@@ -80,8 +80,8 @@ const Payments = () => {
                                     best flavours coffee you will ever have.</h6>
                             </div>
                             <div className="store d-flex  ">
-                                <img className='imgleft' src="https://ormado-demo.webluna.space/cdn/img/download.png" alt="" />
-                                <img className='imgright ms-4' src={store2} alt="" />
+                                <img className='imgleft' src="https://ormado.webluna.org/cdn/img/download.png" alt="" />
+                                <img className='imgright ms-4' src="https://ormado.webluna.org/cdn/img/download2.png" alt="" />
                             </div>
 
                             <button className='click '><h6>Learn more</h6></button>
@@ -90,7 +90,7 @@ const Payments = () => {
 
                     <div className="col-12 col-sm-12 col-md-6 d-flex justify-content-center align-items-center">
 
-                        <img src="https://ormado-demo.webluna.space/cdn/img/iPhone%2015%20Pro.png" alt="" className='iphone img-fluid' />
+                        <img src="https://ormado.webluna.org/cdn/img/iPhone%2015%20Pro.png" alt="" className='iphone img-fluid' />
 
                     </div>
 
@@ -108,43 +108,43 @@ const Payments = () => {
                     <Slider className='slider my-3' {...settings}>
 
                         <div className="slicklogo d-flex align-items-center justify-content-center ">
-                            <img id='one'  src="https://ormado-demo.webluna.space/cdn/img/slick1.png" alt="" />
+                            <img id='one'  src="https://ormado.webluna.org/cdn/img/slick1.png" alt="" />
                         </div>
 
                         <div className="slicklogo d-flex align-items-center justify-content-center ">
-                            <img src="https://ormado-demo.webluna.space/cdn/img/slick2.png" alt="" />
+                            <img src="https://ormado.webluna.org/cdn/img/slick2.png" alt="" />
                         </div>
 
                         <div className="slicklogo d-flex align-items-center justify-content-center ">
-                            <img src="https://ormado-demo.webluna.space/cdn/img/slick3.png" alt="" />
+                            <img src="https://ormado.webluna.org/cdn/img/slick3.png" alt="" />
                         </div>
 
                         <div className="slicklogo d-flex align-items-center justify-content-center ">
-                            <img src="https://ormado-demo.webluna.space/cdn/img/slick4.png" alt="" />
+                            <img src="https://ormado.webluna.org/cdn/img/slick4.png" alt="" />
                         </div>
 
                         <div className="slicklogo d-flex align-items-center justify-content-center ">
-                            <img src="https://ormado-demo.webluna.space/cdn/img/slick5.png" alt="" />
+                            <img src="https://ormado.webluna.org/cdn/img/slick5.png" alt="" />
                         </div>
 
                         <div className="slicklogo d-flex align-items-center justify-content-center " >
-                            <img src="https://ormado-demo.webluna.space/cdn/img/slick6.png" alt="" />
+                            <img src="https://ormado.webluna.org/cdn/img/slick6.png" alt="" />
                         </div>
 
                         <div className="slicklogo d-flex align-items-center justify-content-center ">
-                            <img src="https://ormado-demo.webluna.space/cdn/img/slick7.png" alt="" />
+                            <img src="https://ormado.webluna.org/cdn/img/slick7.png" alt="" />
                         </div>
 
                         <div className="slicklogo d-flex align-items-center justify-content-center ">
-                            <img id='one' src="https://ormado-demo.webluna.space/cdn/img/slick1.png" alt="" />
+                            <img id='one' src="https://ormado.webluna.org/cdn/img/slick1.png" alt="" />
                         </div>
 
                         <div className="slicklogo d-flex align-items-center justify-content-center ">
-                            <img src="https://ormado-demo.webluna.space/cdn/img/slick2.png" alt="" />
+                            <img src="https://ormado.webluna.org/cdn/img/slick2.png" alt="" />
                         </div>
 
                         <div className="slicklogo d-flex align-items-center justify-content-center ">
-                            <img src="https://ormado-demo.webluna.space/cdn/img/slick3.png" alt="" />
+                            <img src="https://ormado.webluna.org/cdn/img/slick3.png" alt="" />
                         </div>
 
                     </Slider>

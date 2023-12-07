@@ -7,7 +7,7 @@ export const FaqProvider = (props) => {
     const [faq, setFaq] = useState([]);
 
     useEffect(() => {
-        axios.get("https://ormado.webluna.space/api/client/faq")
+        axios.get("https://ormadoapi.webluna.org//api/client/faq")
         .then((res)=>{
         console.log(res.data)
         setFaq(res.data.data)

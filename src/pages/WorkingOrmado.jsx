@@ -55,7 +55,7 @@ const WorkingOrmado = () => {
                             </div>
 
                             <div className="cat4">
-                                <label className=' label1 mt-3' ><h1>Portfolio</h1> <input id='one' placeholder='Attach the document' type="text" /> <img width={20} height={20} src={solar} alt="" /></label>
+                                <label className=' label1 mt-3' ><h1>Portfolio</h1> <input id='one' placeholder='Attach the document' type="text" /> <img width={20} height={20} src="https://ormado.webluna.org/cdn/img/solar.png" alt="" /></label>
                                 <label className='mt-3 ' ><h1>Place of residence</h1><input id='two' type="text" /> </label>
                             </div>
 
@@ -91,11 +91,11 @@ const WorkingOrmado = () => {
 
                         <button className="btnicon mt-3 mb-3">
 
-                            <div className="box1"><img src={logo1} alt="" /></div>
-                            <div className="box2"><img src={logo1} alt="" /></div>
+                            <div className="box1"><img src="https://ormado.webluna.org/cdn/img/logo1.png" alt="" /></div>
+                            <div className="box2"><img src="https://ormado.webluna.org/cdn/img/logo1.png" alt="" /></div>
                             <div className='writing '><h3 >Send</h3></div>
-                            <div className="box3"><img src={logo1} alt="" /></div>
-                            <div className="box4"><img src={logo1} alt="" /></div>
+                            <div className="box3"><img src="https://ormado.webluna.org/cdn/img/logo1.png" alt="" /></div>
+                            <div className="box4"><img src="https://ormado.webluna.org/cdn/img/logo1.png" alt="" /></div>
 
                         </button>
 

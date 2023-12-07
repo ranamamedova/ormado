@@ -7,7 +7,7 @@ import "swiper/css/pagination";
 import { Pagination,EffectFade } from "swiper/modules";
 const OrmadoKaffeSwiper = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const images = ["https://ormado-demo.webluna.space/cdn/img/swiperimg.png", "https://ormado-demo.webluna.space/cdn/img/swiperimg.png", "https://ormado-demo.webluna.space/cdn/img/swiperimg.png"];
+  const images = ["https://ormado.webluna.org/cdn/img/swiperimg.png", "https://ormado.webluna.org/cdn/img/swiperimg.png", "https://ormado.webluna.org/cdn/img/swiperimg.png"];
   const textArray = ["ORMADO", "ORMADO", "ORMADO"];
   const textArray1 = ["KAFFEHAUS", "KAFFEHAUS", "KAFFEHAUS"];
   const animationClasses = [

@@ -16,7 +16,7 @@ const OurStory = () => {
 
   useEffect(() => {
     setCurrentItems(gallerydata.slice(itemOffset, endOffset));
-    axios.get("https://ormado.webluna.space/api/client/about")
+    axios.get("https://ormadoapi.webluna.org/api/client/about")
     .then((res)=>{
       console.log(res.data.data)
       setData(res.data.data[0])
@@ -38,13 +38,13 @@ const OurStory = () => {
      
     </div>
     <div className="ourstory-main ">
-      <img src="https://ormado-demo.webluna.space/cdn/img/blast.png" alt="error" className='blastLeft'/>
+      <img src="https:/ormado.webluna.org/cdn/img/blast.png" alt="error" className='blastLeft'/>
       <h1>{data.headerText}</h1>
-      <img src="https://ormado-demo.webluna.space/cdn/img/pngwing3.png" alt="error" className='my-3'/>
+      <img src="https:/ormado.webluna.org/cdn/img/pngwing3.png" alt="error" className='my-3'/>
       <div className="ourstory-main-text">
         <p>{data.text}</p>
       </div>
-      <img src="https://ormado-demo.webluna.space/cdn/img/coffee_blast2.png" alt="" className='blastRight'/>
+      <img src="https:/ormado.webluna.org/cdn/img/coffee_blast2.png" alt="" className='blastRight'/>
     </div>
     </div>
     <div className="ourstory-section2">
@@ -83,9 +83,9 @@ const OurStory = () => {
         <div className="card-part1 mt-4">
           
             <div className="background-black"></div>
-            <img  src="https://ormado-demo.webluna.space/cdn/img/ImageOurstory.png" alt="" />
+            <img  src="https:/ormado.webluna.org/cdn/img/ImageOurstory.png" alt="" />
             <div className="card-main">
-              <img src="https://ormado-demo.webluna.space/cdn/img/VectorOurstory.svg" alt="error" />
+              <img src="https:/ormado.webluna.org/cdn/img/VectorOurstory.svg" alt="error" />
                
             </div>
           </div>

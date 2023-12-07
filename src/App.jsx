@@ -22,12 +22,11 @@ import SignIn from "./pages/SignIn";
 import BlogDetails from "./pages/BlogDetails";
 import WishlistDetail from "./pages/WishlistDetail";
 import Checkout from "./pages/Checkout";
-import ShopCard from "./pages/ShopCard";
 
 import { ProductProvider } from "./context/ProductContext";
 import { BlogProvider } from "./context/BlogContext";
 import { FaqProvider } from "./context/FaqContext";
-import MyOrder from "./pages/MyOrder";
+import ShopCard from "./pages/ShopCard";
 
 const App = () => {
   return (
@@ -43,7 +42,7 @@ const App = () => {
                 <Route path="/career" element={<Career />}></Route>
                 <Route path="/product" element={<Product />}></Route>
                 <Route
-                  path="/product/:slug"
+                  path="/product/:slug" 
                   element={<ProductDetails />}
                 ></Route>
                 <Route path="/ourstory" element={<OurStory />}></Route>
@@ -56,7 +55,7 @@ const App = () => {
                 <Route path="/gallery" element={<Gallery />}></Route>
                 <Route path="/pagination" element={<Pagination />}></Route>
                 <Route path="/checkout" element={<Checkout />}></Route>
-                <Route path="/myorder" element={<MyOrder />}></Route>
+                <Route path="/shopcard" element={<ShopCard />}></Route>
                 <Route
                   path="/franchiseform"
                   element={<FranchiseForm />}
@@ -66,7 +65,6 @@ const App = () => {
                 <Route path="/signin" element={<SignIn />}></Route>
                 <Route path="/signup" element={<CreateAccount />}></Route>
                 <Route path="/checkout" element={<Checkout />}></Route>
-                <Route path="/shopcard" element={<ShopCard />}></Route>
               </Routes>
               <Footer />
             </FaqProvider>

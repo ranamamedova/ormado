@@ -7,7 +7,7 @@ export const BlogProvider = (props) => {
     const [product, setProduct] = useState([]);
 
     useEffect(() => {
-        axios.get("https://ormado.webluna.space/api/client/blog")
+        axios.get("https://ormadoapi.webluna.org/api/client/blog")
         .then((res)=>{
         console.log(res.data,"BLOG")
         setProduct(res.data.data)

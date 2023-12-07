@@ -1,6 +1,7 @@
 import React from 'react';
 import { useFormik } from 'formik';
 import BreadCrumb from '../pages/BreadCrumb';
+import { Link } from 'react-router-dom';
 
 const initialValues = {
   name: '',
@@ -61,20 +62,21 @@ const Reserve = () => {
 
   return (
     <>
-      {/* <BreadCrumb title={'Reserve'} /> */}
+     <BreadCrumb title="Reserve" isOtherPage={true} />
       <div className="reserve my-5">
         <div className="row ">
           <div className="reserve-style col-12 col-sm-12 col-md-6 order-md-1 order-2">
-            <div className="image-coffee">
-              <img src='https://ormado-demo.webluna.space/cdn/img/sidenav-bg.png' alt=""/>
-             <div className="overlay ">
-             <div className="overlay-img mb-4">
-                <img src='https://ormado-demo.webluna.space/cdn/img/logo.png' alt="" />
-              </div>
-             <h2 className="overlay-text text-center mt-3">WELCOME TO ORMADO KAFFEEHAUS</h2>
-              
-             </div>
-            </div>
+          <div className="signImg">
+                  <img src="https://ormado.webluna.org/cdn/img/login.png" alt="" className="img-fluid" />
+                  <div className="logoTitle ">
+                    <div className="logoImg">
+                      <Link to="/">
+                        <img src="https://ormado.webluna.org/cdn/img/logo.png" alt="" className="mt-3 mb-5" />
+                      </Link>
+                    </div>
+                    <h2>WELCOME TO ORMADO KAFFEEHAUS</h2>
+                  </div>
+                </div>
           </div>
           <div className="reserve-form-tabel col-12 col-sm-12 col-md-6 order-md-2 order-1 my-3">
             <div className="unicorn ms-2">

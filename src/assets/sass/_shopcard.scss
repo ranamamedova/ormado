@@ -19,8 +19,16 @@
           td:nth-child(1){
             width: 40%;
           }
+          .darks{
+            color: #4A3024;
+            font-weight: 500;
+            img{
+              width: 90px !important;
+            }
+          }
           td{
             width: auto;
+            
             .delete-btn {
                 background-color: #fff ;
                 color: #808080;
@@ -55,7 +63,6 @@
                 padding: 6px;
               }
               .quantity{
-                
                 padding: 6px;
                 margin-bottom: 2px;
                 i{
@@ -67,6 +74,7 @@
                   font-size: 10px;
                   text-align: center;
                   padding: 5px;
+                  
                 }
               }
               
@@ -76,6 +84,7 @@
               background-color: #f2f2f2;
               border-radius: 25px;
               border: none;
+              padding: 10px 25px;
               font-size: 12px;
               font-family: Montserrat;
               font-weight: 700;

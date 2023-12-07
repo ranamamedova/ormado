@@ -34,7 +34,7 @@ const Franchise = () => {
           </div>
        
           <div className="right">
-            <img src="https://ormado-demo.webluna.space/cdn/img/screenFull.png" alt="" />
+            <img src="https://ormado.webluna.org/cdn/img/screenFull.png" alt="" />
           </div>
         </div>
       </div>

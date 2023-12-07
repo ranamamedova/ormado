@@ -15,53 +15,50 @@
 
 .reserve-style{
     
-    .image-coffee {
+    .signImg {
         position: relative;
-      
-        img{
-            
-          width: 85%;  
-          border-radius: 0px 150px 150px 0px;
-          @media (max-width:767px) {
-           border-radius: 0;
-           width: 100%;
-           z-index: 1;
-        
-    }
+        .logoTitle {
+          position: absolute;
+          top: 20px;
+          max-width: 500px;
+          width: 100%;
+          h2 {
+            color: #fff;
+            text-align: center;
+            font-family: Montserrat;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 700;
+            letter-spacing: 1.3px;
+          
+            @media(max-width:1254px){
+              font-size: 25px;
+            }
+
+            @media(max-width:950px){
+              font-size: 20px;
+            }
+
+
+          }
+          .logoImg {
+            img {
+              width: 70px;
+            }
+            @include displayCenter;
+            transform: translateX(13px);
+            @media (max-width:850px){
+              transform: translateX(0px);
+            }
+          }
+
+
 
         }
-        .overlay{
-            display: none;
-            position: absolute;
-            width: 100%;
-           
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -163%);
-            @media (max-width:767px) {
-                display:flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-               .overlay-text{
-                color: #fff;
-                text-align: center;
-                font-family: Montserrat;
-                font-size: 30px;
-                z-index: 2;
-                font-weight: 700;
 
-                
-               }
-               .overlay-img{
-                width: 60px;
-               }
-               
-         }
-        }
-        
-        
-    }
+
+
+      }
 }
 .reserve-form-tabel{
     

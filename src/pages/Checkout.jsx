@@ -51,7 +51,7 @@ const Checkout = () => {
       <BreadCrumb title="Checkout" isOtherPage={true} />
       <div className="checkout my-5">
         <div className="row mx-5 my-5">
-        <div className="col-12 col-sm-12 col-md-9 mb-5">
+        <div className="col-12 col-sm-12 col-md-7 mb-5">
   <form>
     <div>
       <p className="bil">Billing Information</p>
@@ -77,15 +77,25 @@ const Checkout = () => {
     <div className="d-fl">
       <div className="int">
         <p>Country</p>
-        <input type="text" id="country" placeholder="Select" />
+        <select  >
+          <option value="Select">Select</option>
+          <option value="A">A</option>
+          <option value="B">B</option>
+          <option value="C">C</option>
+        </select>
       </div>
       <div className="int">
         <p>State</p>
-        <input type="text" id="state" placeholder="Selects" />
+        <select  className="small-one">
+          <option value="Select">Select</option>
+          <option value="A">A</option>
+          <option value="B">B</option>
+          <option value="C">C</option>
+        </select>
       </div>
       <div className="int">
         <p>Zip Code</p>
-        <input type="text" id="zipCode" placeholder="Zip Code" />
+        <input type="text" id="zipCode" placeholder="Zip Code" className="small-two"/>
       </div>
     </div>
     <div className="d-fl">
@@ -114,7 +124,7 @@ const Checkout = () => {
   </form>
 </div>
 
-          <div className="col-12 col-sm-12 col-md-3">
+          <div className="col-12 col-sm-12 col-md-4 ">
             <div className={classNames("card ")}>
               <p className="bil">Order Summary</p>
               {productData.map((product) => (
@@ -125,7 +135,7 @@ const Checkout = () => {
                   />
                   <p> {product.name}</p>
                   <p>x {product.quantity}</p>
-                  <p> ${product.price.toFixed(2)}</p>
+                  <p className="colorly"> ${product.price.toFixed(2)}</p>
                 </div>
               ))}
               <div className="pays my-3">
@@ -141,7 +151,7 @@ const Checkout = () => {
                 <hr />
                 <div className={classNames("payment-sec total d-flex")}>
                   <p>Total:</p>
-                  <p className="yellow">${total.toFixed(2)}</p>
+                  <p className="yellow-sec">${total.toFixed(2)}</p>
                 </div>
               </div>
               <div className={classNames("payment")}>

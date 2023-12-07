@@ -20,7 +20,7 @@ const Franchise = () => {
             <div className="row ">
               <div className="leftbox col-6">
                 <div className="innerbox">
-                  <img src="https://ormado-demo.webluna.space/cdn/img/rightlifw.png" alt="" className="img-fluid image-one" />
+                  <img src="https://ormado.webluna.org/cdn/img/rightlifw.png" alt="" className="img-fluid image-one" />
                   <div className="innerbox1">
                     <h1>
                       Why <br /> <span className="Ormado">Ormado</span> <br />
@@ -34,18 +34,18 @@ const Franchise = () => {
 
                     <Link to="/franchiseform" className="footicon">
                       {/* <div className="footicon" style={{"cursor":"pointer"}}> */}
-                      <img className="img-fluid foot" src={footicon} alt="" />
+                      <img className="img-fluid foot" src="https://ormado.webluna.org/cdn/img/franchiseicon.png" alt="" />
                       <h5>INQUIRE NOW</h5>
                       {/* </div> */}
                     </Link>
                   </div>
-                  <img src="https://ormado-demo.webluna.space/cdn/img/leftside.png" alt="" className="img-fluid lefticon" />
+                  <img src="https://ormado.webluna.org/cdn/img/leftside.png" alt="" className="img-fluid lefticon" />
                 </div>
               </div>
 
               <div className="rightbox col-6">
                 <div className="innerbox2">
-                  <img className="lastimage img-fluid" src="https://ormado-demo.webluna.space/cdn/img/inner.png" alt="" />
+                  <img className="lastimage img-fluid" src="https://ormado.webluna.org/cdn/img/inner.png" alt="" />
                 </div>
               </div>
             </div>

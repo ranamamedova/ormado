@@ -18,7 +18,7 @@ const shopcarditem = [
   }
 ];
 
-const ShopCard = ({onDelete,classNames}) => {
+const ShopCard = ({onDelete}) => {
   const [total, setTotal] = useState(0);
   const [subtotal, setSubtotal] = useState(0);
 
@@ -56,19 +56,19 @@ const ShopCard = ({onDelete,classNames}) => {
               <tbody>
                 {shopcarditem.map(item => (
                   <tr key={item.id}>
-                    <td>
+                    <td className='darks'>
                       <img src={item.image} alt={item.name} style={{ width: '50px', height: '50px' }} />
                       {item.name}
                     </td>
                     <td>{item.price.join(', ')}</td>
                     <td>
                     <div className="quantity-shop">
-                      <button className="quantity btn">
-                        <i className="fa-solid fa-plus"></i>
+                      <button className="quantity btn ">
+                        <i className="fa-solid fa-minus"></i>
                       </button>
                       <span>0</span>
                       <button className="quantity btn">
-                        <i className="fa-solid fa-minus"></i>
+                        <i className="fa-solid fa-plus"></i>
                       </button>
                     </div>
                     </td>

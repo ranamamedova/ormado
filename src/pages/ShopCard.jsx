@@ -18,7 +18,7 @@ const shopcarditem = [
   }
 ];
 
-const ShopCard = ({onDelete}) => {
+const ShopCard = () => {
   const [total, setTotal] = useState(0);
   const [subtotal, setSubtotal] = useState(0);
 
@@ -47,21 +47,22 @@ const ShopCard = ({onDelete}) => {
             <table className='my-3'>
               <thead>
                 <tr>
-                  <th>Product</th>
-                  <th>Price</th>
-                  <th>Quantity</th>
-                  <th>Subtotal</th>
+                  <th> <p className='ms-4'>Product</p></th>
+                  <th> <p>Price</p></th>
+                  <th> <p>Quantity</p></th>
+                  <th> <p>Subtotal</p></th>
                 </tr>
               </thead>
               <tbody>
                 {shopcarditem.map(item => (
                   <tr key={item.id}>
                     <td className='darks'>
-                      <img src={item.image} alt={item.name} style={{ width: '50px', height: '50px' }} />
+                      <img className='dark-img' src={item.image} alt={item.name}  />
                       {item.name}
                     </td>
                     <td>{item.price.join(', ')}</td>
                     <td>
+                      <p className='response'>Quantity</p>
                     <div className="quantity-shop">
                       <button className="quantity btn ">
                         <i className="fa-solid fa-minus"></i>
@@ -73,9 +74,10 @@ const ShopCard = ({onDelete}) => {
                     </div>
                     </td>
                     <td >
+                    <p className='response'>Price</p>
                       <div className="subtotal-sec ">
                       ${parseInt(item.price[0].slice(1)) * 2} 
-                    <button className="delete-btn text-center" onClick={() => onDelete(item.id)}>
+                    <button className="delete-btn text-center" >
                  <i className="fas fa-times"></i>
               </button>
                       </div></td>

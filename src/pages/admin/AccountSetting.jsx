@@ -35,6 +35,7 @@ const AccountSetting = () => {
               <div className="container">
                 <div className="row justify-content-center">
                   <div className="col-7 col-sm-12 col-md-3">
+                 
                     <div className="accountBox">
                       <div className="title">
                         <h3>
@@ -82,7 +83,7 @@ const AccountSetting = () => {
                             </span>
                             <p>My Account</p>
                           </div>
-                          <div className={`info ${active == 2 || 4  ? "active" : ""}`} onClick={() => { setActive(2) }}>
+                          <div className={`info ${active == 2 && 4  ? "active" : ""}`} onClick={() => { setActive(2) }}>
                             <span className="me-1">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -95,7 +96,6 @@ const AccountSetting = () => {
                                 <g clip-path="url(#clip0_1_2191)">
                                   <path
                                     d="M48.4431 41.3102C48.4431 42.4199 47.5435 43.3195 46.4339 43.3195H9.52748C8.41782 43.3195 7.51825 42.4199 7.51825 41.3102C7.51825 40.2006 8.41781 39.301 9.52748 39.301H9.56449V25.2987C9.56449 15.2766 17.8108 7.15332 27.9807 7.15332C38.1505 7.15332 46.3969 15.2766 46.3969 25.2987V39.301H46.4339C47.5435 39.301 48.4431 40.2006 48.4431 41.3102ZM13.657 39.301H42.3044V25.2987C42.3044 17.4968 35.8914 11.1718 27.9807 11.1718C20.0699 11.1718 13.657 17.4968 13.657 25.2987V39.301ZM23.9939 48.4763C22.8006 47.019 24.392 45.3287 26.2755 45.3287H29.6859C31.5694 45.3287 33.1608 47.019 31.9674 48.4763C31.8523 48.6168 31.7291 48.7518 31.598 48.8806C30.6386 49.8226 29.3374 50.3518 27.9807 50.3518C26.6239 50.3518 25.3228 49.8226 24.3634 48.8806C24.2323 48.7518 24.109 48.6168 23.9939 48.4763Z"
-
                                   />
                                 </g>
                                 <defs>
@@ -146,10 +146,10 @@ const AccountSetting = () => {
                     active == 2 &&
                     <MyOrder />
                   }
-                  {
+                  {/* {
                     active == 4 && 
                     <MyorderDetails />
-                  }
+                  } */}
                 </div>
               </div>
             </section>

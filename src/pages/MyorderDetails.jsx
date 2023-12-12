@@ -4,19 +4,21 @@ import { useParams } from 'react-router'
 import slugify from 'slugify'
 import BreadCrumb from './BreadCrumb'
 
-const MyorderDetails = () => {
+const MyorderDetails = ({ accountBoxProps }) => {
     
     const {name}=useParams()
     const detailsData = myorderdetailData.find((p)=>slugify(p.name)==name)
     console.log(detailsData);
+    console.log(accountBoxProps);
     
     return (
         <>
         <BreadCrumb title="MY ORDER DETAIL" isOtherPage={true} />
+        {accountBoxProps}
         <div className="myorderdetail-card-body  col-10 col-sm-12 col-md-8 ">
                 <>
                    
-                    <div className="myorderdetailcard-main col-10 col-sm-12 col-md-8 p-3">
+                    <div className="myorderdetailcard-main col-10 col-sm-12 col-md-7 p-3">
                     <h4 className='mb-4'>Order detail</h4>
                         <div className="myorderdetsils-section col-10 col-sm-12 col-md-8">
                         <div className="myorderdetail">

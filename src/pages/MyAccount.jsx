@@ -4,17 +4,17 @@ import slugify from 'slugify'
 import { useNavigate } from 'react-router'
 
 const MyAccount = () => {
-    const navigate = useNavigate()
-    const [active, setActive] = useState(1)
-    const logoutFunc = () => {
-        localStorage.clear();
-        navigate("/");
-        setActive(3)
-      };
-      const [visible, setVisible] = useState(2)
-      const func = () => {
-        setVisible(fd => fd += 2)
-      }
+    // const navigate = useNavigate()
+    // const [active, setActive] = useState(1)
+    // const logoutFunc = () => {
+    //     localStorage.clear();
+    //     navigate("/");
+    //     setActive(3)
+    //   };
+    //   const [visible, setVisible] = useState(2)
+    //   const func = () => {
+    //     setVisible(fd => fd += 2)
+    //   }
   return (
     
     <>

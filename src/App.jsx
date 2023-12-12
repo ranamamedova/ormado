@@ -27,12 +27,17 @@ import { ProductProvider } from "./context/ProductContext";
 import { BlogProvider } from "./context/BlogContext";
 import { FaqProvider } from "./context/FaqContext";
 import ShopCard from "./pages/ShopCard";
+import { Provider } from "react-redux";
+import store from "./pages/manager/Store";
+
+
 
 const App = () => {
   return (
     <>
       <BrowserRouter>
-        <ProductProvider>
+      <Provider store={store}>
+         <ProductProvider>
           <BlogProvider>
             <FaqProvider>
               <Header />
@@ -70,6 +75,8 @@ const App = () => {
             </FaqProvider>
           </BlogProvider>
         </ProductProvider>
+      </Provider>
+       
       </BrowserRouter>
     </>
   );

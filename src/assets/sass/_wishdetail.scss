@@ -9,7 +9,7 @@
         border-radius: 10px;
         border-collapse: separate;
         margin-top: 20px;
-        font-size: 12px;
+        font-size: 13px;
         border: 1px solid #E6E6E6;
         border-bottom: none;
         @media screen and (max-width: 767px) {
@@ -52,7 +52,6 @@
           width: 100%;
          p{
           display: inline;
-          font-size: 10px;
            font-weight: 500;
            transform: translateY(5px);
          }
@@ -122,7 +121,7 @@
           th {
             background-color: none;
             font-family: Montserrat;
-            font-size: 12px;
+            font-size: 13px;
             font-weight: 600;
             
           }
@@ -160,26 +159,30 @@
           }
         }
       
-        .in-stock {
+        .true {
           color: #2C742F; 
           border: none;
           background-color: #20B52633;
           border-radius: 3px;
+          font-size: 13px;
           
         }
       
-        .out-stock {
+        .false {
           color: #EA4B48; 
           border: none;
           background-color: #EA4B4833;
           border-radius: 3px;
+          width:fit-content;
+          height: fit-content;
+          font-size: 13px;
         }
       
         .add-to-cart-btn {
             background-color: #4A3024; 
             color: #fff;
             border: none;
-            font-size: 10px;
+            font-size: 13px;
             padding: 8px 10px;
             cursor: pointer;
             font-weight: 600;
@@ -194,7 +197,7 @@
           background-color: #f2f2f2;
           color: #B3B3B3;
           border: none;
-          font-size: 10px;
+          font-size: 13px;
           padding: 8px 10px;
           
           cursor: not-allowed;

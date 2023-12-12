@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
-import { Link, NavLink, useNavigate,} from "react-router-dom";
+import { Link, NavLink, useNavigate} from "react-router-dom";
 // import login from "../assets/img/login.png";
 // import logo from "../assets/img/logo.png";
 

@@ -10,11 +10,7 @@ import { remove } from "./manager/WishSlice";
 const WishlistDetail = () => {
    const wishdata= useSelector(p=>p.wish);
   const dispatch = useDispatch();
-  
 
-  
-
- 
   return (
     <>
       <BreadCrumb title="My Wishlist" isOtherPage={true} />
@@ -39,11 +35,11 @@ const WishlistDetail = () => {
                 <p>PRICE</p>
   {item.lastPrice !== undefined && item.lastPrice !== item.firstPrice ? (
     <div className="multiple-prices">
-      <span className="primary-price">{item.firstPrice}</span>
-      <span className="secondary-price">{item.lastPrice}</span>
+      <span className="primary-price">${item.firstPrice}</span>
+      <span className="secondary-price">${item.lastPrice}</span>
     </div>
   ) : (
-    <span className="primary-price">{item.firstPrice}</span>
+    <span className="primary-price">${item.firstPrice}</span>
   )}
                 </td>
                 <td>

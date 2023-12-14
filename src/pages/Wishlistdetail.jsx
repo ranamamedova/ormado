@@ -1,7 +1,7 @@
 import React from "react";
 import BreadCrumb from "./BreadCrumb";
 import { useDispatch, useSelector } from "react-redux"
-import { remove } from "./manager/addwishlist/WishSlice";
+import { remove, addToCartFromWishlist } from "./manager/addwishlist/WishSlice";
 
 
 
@@ -59,9 +59,10 @@ const WishlistDetail = () => {
                         ? "add-to-cart-btn"
                         : "out-of-stock-btn"
                     }
+                    onClick={()=>{dispatch(addToCartFromWishlist(wishdata.id))}}
                     disabled={item.stockStatus === "out stock"}
                     style={{ margin: "5px", borderRadius: "20px" }}
-                  >
+                     >
                     Add to Cart
                   </button>
                   <button className="delete-btn text-center" onClick={()=>{dispatch(remove(wishdata.id))}}>

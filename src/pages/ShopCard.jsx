@@ -36,7 +36,7 @@ const ShopCard = () => {
                 {cartdata.map(item => (
                   <tr key={item.id}>
                     <td className='darks'>
-                      <img className='dark-img' src={item.images[0]} alt={item.title}  />
+                      <img className='dark-img' src={item.images[1]} alt={item.title}  />
                       {item.title}
                     </td>
                     <td>${item.lastPrice}</td>

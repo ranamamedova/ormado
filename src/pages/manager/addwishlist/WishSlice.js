@@ -1,6 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const storedWishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
+const storedCart = JSON.parse(localStorage.getItem("cart")) || [];
 
 const wishSlice = createSlice({
   name: "wishlist",
@@ -18,9 +19,24 @@ const wishSlice = createSlice({
       localStorage.setItem("wishlist", JSON.stringify(updatedWishlist));
       return updatedWishlist;
     },
+
+    addToCartFromWishlist: (state, action) => {
+      const itemIdToAdd = action.payload;
+      const itemToAdd = state.find((item) => item.id === itemIdToAdd);
+    
+      if (itemToAdd) {
+        const storedCart = JSON.parse(localStorage.getItem("cart")) || [];
+
+        const updatedCart = [...storedCart, itemToAdd];
+        localStorage.setItem("cart", JSON.stringify(updatedCart));
+        return state;
+      }
+      return state;
+    },
+    
   },
 });
 
 export default wishSlice.reducer;
 
-export const { add, remove } = wishSlice.actions;
+export const { add, remove, addToCartFromWishlist } = wishSlice.actions;

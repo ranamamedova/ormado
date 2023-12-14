@@ -36,7 +36,8 @@ const App = () => {
   return (
     <>
       <BrowserRouter>
-      <Provider store={store}>
+     
+        <Provider store={store}>
          <ProductProvider>
           <BlogProvider>
             <FaqProvider>
@@ -77,6 +78,8 @@ const App = () => {
         </ProductProvider>
       </Provider>
        
+      
+      
       </BrowserRouter>
     </>
   );

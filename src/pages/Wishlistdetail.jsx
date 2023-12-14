@@ -1,7 +1,7 @@
-import React, { useEffect } from "react";
+import React from "react";
 import BreadCrumb from "./BreadCrumb";
 import { useDispatch, useSelector } from "react-redux"
-import { remove } from "./manager/WishSlice";
+import { remove } from "./manager/addwishlist/WishSlice";
 
 
 

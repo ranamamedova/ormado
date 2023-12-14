@@ -2,16 +2,18 @@ import React, { useContext, useEffect, useState } from "react";
 import RangeSlider from "../components/RangeSlider";
 import Faqs from "../components/Faqs";
 import { ProductContext } from "../context/ProductContext";
-import { add } from "./manager/WishSlice";
+import { add } from "./manager/addwishlist/WishSlice";
 import { Card, Col, Row } from "react-bootstrap";
 import { useDispatch } from "react-redux";
 // import slugify from 'slugify';
 import ScrollToTop from "../components/ScrollToTop";
 import { Link} from "react-router-dom";
+import { addToCart } from "./manager/addtocart/CartSlice";
 
 
 const Product = () => {
   const dispatch = useDispatch();
+  
 
   const [showCategories, setShowCategories] = useState(true);
 
@@ -255,7 +257,7 @@ const Product = () => {
                               alt="Add to Wishlist"
                             />
                           </button>
-                          <button className="btn-card me-1">
+                          <button className="btn-card me-1" onClick={()=>{dispatch(addToCart(item))}}>
                             <img
                               src="https://ormado.webluna.org/cdn/img/Shopbag.png"
                               className="btn-img"

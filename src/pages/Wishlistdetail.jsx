@@ -28,7 +28,7 @@ const WishlistDetail = () => {
             {wishdata.map((item) => (
               <tr key={item.id}>
                 <td>
-                  <img src={item.images[1]} alt={item.title} />
+                  <img src={item.images[1]} alt='...' />
                   {item.title}
                 </td>
                 <td>

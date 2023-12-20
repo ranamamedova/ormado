@@ -1,20 +1,27 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import BreadCrumb from './BreadCrumb';
 import { useDispatch } from "react-redux";
 import { useSelector } from 'react-redux';
-import { removeToCart } from './manager/addtocart/CartSlice';
+import { removeToCart, updateQuantity  } from './manager/addtocart/CartSlice';
 import { Link } from 'react-router-dom';
 
 
 
 const ShopCard = () => {
   const cartdata= useSelector(e=>e.cart);
-  console.log(cartdata);
-
   const dispatch = useDispatch();
-  
+  const shippingCost=10;
+  const calculateTotal = () => {
+    const subtotal = cartdata.reduce((total, item) => total + item.lastPrice * item.quantity, 0);
+    return subtotal - shippingCost;
+  };
 
- 
+  const handleQuantityChange = (_id, newQuantity) => {
+    // console.log("_id:", _id);
+    // console.log("newQuantity:", newQuantity);
+    dispatch(updateQuantity({ itemId: _id, quantity: newQuantity }));
+  };
+
 
   return (
     <>
@@ -36,18 +43,18 @@ const ShopCard = () => {
                 {cartdata.map(item => (
                   <tr key={item.id}>
                     <td className='darks'>
-                      <img className='dark-img' src={item.images[1]} alt={item.title}  />
+                      <img className='dark-img' src={item.images[1]} alt={item.description}  />
                       {item.title}
                     </td>
                     <td>${item.lastPrice}</td>
                     <td>
                       <p className='response'>Quantity</p>
                         <div className="quantity-shop">
-                       <button className="quantity btn ">
+                       <button className="quantity btn " onClick={() => handleQuantityChange(item._id, Math.max(1, item.quantity - 1))} >
                          <i className="fa-solid fa-minus"></i>
                        </button>
-                       <span>0</span>
-                       <button className="quantity btn">
+                       <span>{item.quantity}</span>
+                       <button className="quantity btn" onClick={() => handleQuantityChange(item._id, item.quantity + 1)}>
                          <i className="fa-solid fa-plus"></i>
                        </button>
                       </div>
@@ -55,7 +62,7 @@ const ShopCard = () => {
                     <td >
                     <p className='response'>Price</p>
                       <div className="subtotal-sec ">
-                      {/* ${parseInt(item.price[0].slice(1)) * 2}  */}
+                    ${parseInt(item.lastPrice) * item.quantity} 
                     <button className="delete-btn text-center"  onClick={()=>{dispatch(removeToCart(cartdata.id))}}>
                  <i className="fas fa-times"></i>
               </button>
@@ -80,12 +87,12 @@ const ShopCard = () => {
               <div className="pays my-3">
                 <div className='price-sec d-flex'>
                   <p>Subtotal:</p>
-                  <p className='coffs'>$120</p>
+                  <p className='coffs'>${calculateTotal()}</p>
                 </div>
                 <hr />
                 <div className='price-sec d-flex'>
                   <p>Shipping:</p>
-                  <p className='coffs'>$10.00</p>
+                  <p className='coffs'>${shippingCost}</p>
                 </div>
                 <hr />
                 <div className='price-sec d-flex'>

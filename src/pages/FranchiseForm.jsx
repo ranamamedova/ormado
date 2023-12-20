@@ -1,10 +1,66 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import franchise from "../assets/img/franchiseform.png";
 import Faqs from "../components/Faqs";
 import ScrollToTop from "../components/ScrollToTop";
+import axios from "axios";
 const FranchiseForm = () => {
+  // useEffect(()=>{
+  //   axios.get('https://ormadoapi.webluna.org/api/client/franchiseForm').then((res)=>{
+  //     console.log(res.data)
+  //   });
+  // },[]);
+
+  // const [firstName, setFirstName] = useState();
+  // const [lastName, setLastName] = useState()
+  // const [email, setEmail] = useState()
+  // const [phone, setPhone] = useState()
+  // const [city, setCity] = useState()
+  // const [country, setCountry] = useState()
+  // const [image,setImage]=useState()
+
+  // const FranchiseForm = (e) =>{
+  //   e.preventDefault();
+
+  //   const formData = new FormData()
+
+  //   formData.append('name',firstName)
+  //   formData.append('surname',lastName)
+  //   formData.append('email',email)
+  //   formData.append('phone',phone)
+  //   formData.append('city',city)
+  //   formData.append('country',country)
+  //   formData.append('image',image)
+
+
+
+    
+  //   console.log(formData.get('name'));
+  //   console.log(formData.get('surname'));
+  //   console.log(formData.get('phone'));
+  //   console.log(formData.get('email'));
+  //   console.log(formData.get('city'));
+  //   console.log(formData.get('country'));
+
+  //   axios.post(
+  //     'https://ormadoapi.webluna.org/api/client/franchiseForm',formData)
+  //     .then((res)=>{
+  //       console.log(res.data);})
+  //       .catch((errorr)=>{
+  //         console.log(errorr);
+  //       });
+      
+    
+    
+  // }
+  // const handleUpdateImage=(e)=>{
+  //   const updateImage=e.target.files[0]
+  //   setImage(updateImage)
+  // }
+
+
   return (
     <>
+       
         <ScrollToTop/>
       <section className="franchiseform pb-5">
         <div className="container">
@@ -38,7 +94,7 @@ const FranchiseForm = () => {
                   Ut enim ad minim veniam, quis nostrud exercitation
                 </p>
               </div>
-              <form>
+              <form onSubmit={FranchiseForm}>
                 <div className="row  formRow g-4">
                   <div className="col-7 col-sm-6 col-md-6 col-lg-6">
                     <div className="formInput">
@@ -66,7 +122,7 @@ const FranchiseForm = () => {
                   </div>
                   <div className="col-7 col-sm-6 col-md-6 col-lg-6">
                     <div className="formInput">
-                      <input type="text" required />
+                      <input type="text" />
                       <label>City <span>*</span></label>
                     </div>
                   </div>
@@ -85,7 +141,7 @@ const FranchiseForm = () => {
                       id=""
                       className="me-2 mt-1"
                       required
-                    />
+                       />
                   </div>
                   <p>
                     Your personal data will be used to process your enquiry,
@@ -101,7 +157,7 @@ const FranchiseForm = () => {
                       id=""
                       className="me-2 mt-1"
                       required
-                    />
+                     />
                   </div>
                   <p>
                     Yes, please send me franchising opportunitiesBy checking
@@ -110,8 +166,9 @@ const FranchiseForm = () => {
                     email. You can unsubscribe at any time.
                   </p>
                 </div>
+               
                 <div className="d-flex justify-content-center">
-                  <button className="text-center submitBtn w-100">
+                  <button type="submit" className="text-center submitBtn w-100">
                     SUBMIT
                   </button>
                 </div>

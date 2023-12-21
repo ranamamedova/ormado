@@ -97,7 +97,7 @@ const ShopCard = () => {
                 <hr />
                 <div className='price-sec d-flex'>
                   <p>Total:</p>
-                  <p className="yellow">$120</p>
+                  <p className="yellow">$1200</p>
                 </div>
               </div>
               <button className='order-btn'>

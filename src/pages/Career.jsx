@@ -92,8 +92,8 @@ const Career = () => {
           {BaristaData.map((item)=>(
             <>
             <h5 className="my-4">{item.title}</h5>
-            <li className="barista-details-list"><div className="round mt-2 me-2"></div> {item.desc.li1}</li>
-            <li className="barista-details-list"><div className="round mt-2 me-2"></div> {item.desc.li2}</li>
+            <li className="barista-details-list"><div className="round mt-1 me-2"></div> {item.desc.li1}</li>
+            <li className="barista-details-list"><div className="round mt-1 me-2"></div> {item.desc.li2}</li>
             </>
           ))}
           

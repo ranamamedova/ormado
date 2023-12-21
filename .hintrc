@@ -17,7 +17,8 @@
       {
         "ignore": [
           "accent-color",
-          "background-clip"
+          "background-clip",
+          "width: fit-content"
         ]
       }
     ]

@@ -14,8 +14,6 @@ import Slider from 'react-slick';
 
 
 const Payments = () => {
-
-
     var settings = {
         dots: true,
         infinite: true,
@@ -68,12 +66,6 @@ const Payments = () => {
             }
         ]
     };
-
-
-
-
-
-
     return (
         <div className="Payments">
             <div className="container">

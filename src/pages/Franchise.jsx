@@ -9,6 +9,7 @@ import Faqs from "../components/Faqs";
 import { Link } from "react-router-dom";
 import Ormadolocation from "../pages/Ormadolocation";
 import ScrollToTop from "../components/ScrollToTop";
+import category from "../data/CategoryData";
 
 const Franchise = () => {
   return (
@@ -56,6 +57,34 @@ const Franchise = () => {
       <Watch />
       <Ormadolocation />
       <Faqs />
+      <div className="franchise-blog">
+      <div className="row mt-5 g-5 container">
+              {category.slice(0,3).map((fd) => (
+                <div
+                  className={`col-6 sol-sm-6 col-md-4 col-lg-4 mobileBlog`}
+                >
+                  <div className="blogBox">
+                    <div className="blogImg">
+                    <Link to={`/category/${fd.id}`}>
+                    <img src={fd.img} alt="" className="img-fluid" />
+                    </Link>
+                    </div>
+                    <h4 className="my-3">{fd.title}</h4>
+                    <div className=" date">
+                      <p>{fd.date}</p>
+                      <span>1K read</span>
+                    </div>
+                    <p className="description">
+                    {fd.desc}
+                    </p>
+                    <a href="#react" className="readMore">
+                      Read More
+                    </a>
+                  </div>
+                </div>
+              ))}
+      </div>
+      </div>
     </>
   );
 };

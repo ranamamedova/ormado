@@ -13,6 +13,7 @@ import NewSweets from "../components/home/NewSweets"
 import Faqs from "../components/Faqs";
 
 
+
 const Home = () => {
   return (
     <>
@@ -29,11 +30,11 @@ const Home = () => {
       <Franchise />
       <Faqs/>
       <Blog />
-     
+      
 
    
 
-
+   
     </>
   );
 };

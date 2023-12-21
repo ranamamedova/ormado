@@ -15,13 +15,14 @@ import Pagination from "./components/Pagination";
 import Gallery from "./pages/Gallery";
 import ProductDetails from "./pages/ProductDetails";
 import FranchiseForm from "./pages/FranchiseForm";
-import MyAccount from "./pages/admin/MyAccount";
+import MyAccount from "./pages/admin/Account";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import SignIn from "./pages/SignIn";
 import BlogDetails from "./pages/BlogDetails";
 import WishlistDetail from "./pages/WishlistDetail";
 import Checkout from "./pages/Checkout";
+import MyorderDetails from "./pages/MyorderDetails";
 
 import { ProductProvider } from "./context/ProductContext";
 import { BlogProvider } from "./context/BlogContext";
@@ -33,6 +34,9 @@ import store from "./pages/manager/Store";
 
 
 const App = () => {
+
+
+
   return (
     <>
       <BrowserRouter>
@@ -62,6 +66,7 @@ const App = () => {
                 <Route path="/pagination" element={<Pagination />}></Route>
                 <Route path="/checkout" element={<Checkout />}></Route>
                 <Route path="/shopcard" element={<ShopCard />}></Route>
+                <Route path="/myaccount/:name" element={<MyorderDetails />}></Route>
                 <Route
                   path="/franchiseform"
                   element={<FranchiseForm />}

@@ -87,6 +87,7 @@
                         display: flex;
                         align-items: center;
                         justify-content: space-evenly;
+                        
                         button {
                           display: flex;
                           align-items: center;
@@ -95,12 +96,16 @@
                           border-radius: 20px;
                           width: 75px;
                           height: 20px;
-  
+                          .order-link{
+                            list-style: none;
+                            text-decoration: none;
+                          }
                           .repeat-icon {
                             border: 1px solid #e3b142;
                             border-radius: 50%;
                             padding: 2px;
                           }
+
   
                           p {
                             font-size: 12px;

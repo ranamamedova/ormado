@@ -1,0 +1,72 @@
+.myorderdetail-card-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 20px;
+  .myorderdetailcard-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #E6E6E6;
+    border-radius: 20px;
+
+    h4 {
+      color: #979797;
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 150%;
+    }
+
+    .myorderdetsils-section {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+      .myorderdetail {
+        display: flex;
+        justify-content: space-between;
+
+        .detail-title {
+          color: #979797;
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 150%;
+        }
+        p{
+          color: #E3B142;
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 150%;
+        }
+      }
+    }
+
+    .myorderdetail-card {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      border-top: 1px solid #E6E6E6;
+      .myorderdetail-card-parts{
+        .detail-title{
+          color: #979797;
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 150%;
+        }
+        p{
+          color: #E3B142;
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 150%;
+        }
+      }
+    }
+
+  }
+}

@@ -98,7 +98,7 @@ const FranchiseForm = () => {
                 <div className="row  formRow g-4">
                   <div className="col-7 col-sm-6 col-md-6 col-lg-6">
                     <div className="formInput">
-                      <input type="text" required />
+                      <input type="text" required  />
                       <label>First Name <span>*</span></label>
                     </div>
                   </div>
@@ -128,7 +128,7 @@ const FranchiseForm = () => {
                   </div>
                   <div className="col-7 col-sm-6 col-md-6 col-lg-6">
                     <div className="formInput">
-                      <input type="text" required />
+                      <input type="text" required  />
                       <label>Country <span>*</span></label>
                     </div>
                   </div>
@@ -179,7 +179,7 @@ const FranchiseForm = () => {
       </section>
       <Faqs />
     </>
-  );
+  ); 
 };
 
 export default FranchiseForm;

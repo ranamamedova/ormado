@@ -80,7 +80,7 @@ const Header = () => {
                     </svg>
                   </div>
                   <Link to="/shopcard">
- <div className="cart">
+                 <div className="cart">
                     <div className="svgBox ">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"

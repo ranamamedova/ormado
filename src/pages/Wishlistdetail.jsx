@@ -60,7 +60,7 @@ const WishlistDetail = () => {
                         : "out-of-stock-btn"
                     }
                     onClick={()=>{dispatch(addToCartFromWishlist(wishdata.id))}}
-                    disabled={item.stockStatus === "out stock"}
+                    disabled={item.stockStatus === "out-stock"}
                     style={{ margin: "5px", borderRadius: "20px" }}
                      >
                     Add to Cart

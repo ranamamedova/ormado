@@ -17,8 +17,7 @@ const ShopCard = () => {
   };
 
   const handleQuantityChange = (_id, newQuantity) => {
-    // console.log("_id:", _id);
-    // console.log("newQuantity:", newQuantity);
+    // console.log(newQuantity);
     dispatch(updateQuantity({ itemId: _id, quantity: newQuantity }));
   };
 

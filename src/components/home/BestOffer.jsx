@@ -1,14 +1,30 @@
-import React, {  useState } from 'react'
+import React, {  useEffect, useState } from 'react'
 import bestofferData from '../../data/bestofferData'
+import axios from 'axios';
 
 
 
 const BestOffer = () => {
-
+  const [cartData,setCartData]= useState()
   const [index, setindex] = useState(0);
   const n = 3;
+  const [loading,setloading] =useState(true);
+  const [error,seterror] =useState()
 
+  useEffect(()=>{
+    axios.get('https://ormadoapi.webluna.org/api/client/product')
+    .then((res)=>{
+      console.log(res.data,'productdata')
+      setCartData(res.data.products);
+      setloading(false)
+    })
 
+    .catch(()=>{
+      setloading(false)
+      seterror(true)
+    })
+  },[])
+  console.log("yoxlama:",cartData);
 
   const nextSlide = () => {
     const newIndex = index + n;
@@ -63,8 +79,7 @@ const BestOffer = () => {
               </div>
             
           </div> */}
-          
-
+         {/* { console.log( typeof cartData)} */}
           <div className="card-column card col-md-7 ">
           <div className="btn-arrow ">
           <button onClick={prevSlide} disabled={index === 0}><i className="fa-solid fa-arrow-left "></i></button>
@@ -72,29 +87,41 @@ const BestOffer = () => {
           </div>
           
             <div className="row" >
-              {bestofferData.slice(index, index + n).map((item,i)=>(
+            {
+              loading ? <h1>loading....</h1> 
+              : 
+              error ? <h1>error..</h1>
+
+              :
+              cartData.length ==0 ? <h1>empty</h1>
+
+              :
+              cartData.slice(index, index + n).map((fd)=>(
                 <div className='card-part2' effect={'fade'}>
                 <div className="card-img col-md-3 col-lg-3 " >
-                 <img src={item.photo} className="img-fluid rounded-start m-1" alt="..." />
+                 <img src={fd.coverImage[0]} className="img-fluid rounded-start m-1" alt="..." />
                 </div>
                 <div className="card-body col-md-8 d-flex align-items-center justify-content-center">
                 <div className="card-body-main">
                   <div className="card-text-main">
-                    <h4 className="card-title"><b>{item.title}</b></h4>
+                    <h4 className="card-title"><b>{fd.title}</b></h4>
                     <div className="line mx-2">
                       <div className="line-main "></div>
                     </div>
                     <div className="card-price">
-                      <b><i>$ </i>{item.price}</b>
+                      <b><i>$ </i>{fd.firstPrice}</b>
                     </div>
                   </div>
-                  <p className="card-text">{item.desc}</p>
+                  <p className="card-text">{fd.description}</p>
 
                 </div>
               </div>
                 </div>
 
-              ))}
+              ))
+
+
+            }
             </div>
           </div>
         </div>

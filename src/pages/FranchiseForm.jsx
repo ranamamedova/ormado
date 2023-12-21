@@ -179,7 +179,7 @@ const FranchiseForm = () => {
       </section>
       <Faqs />
     </>
-  );
+  ); 
 };
 
 export default FranchiseForm;

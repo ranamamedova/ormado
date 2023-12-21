@@ -1,68 +1,67 @@
 
 
 .wishlistcart{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  .wishlist-table {
-      width: 80%;
-      color: #979797;
-      border-radius: 10px;
-      border-collapse: separate;
-      margin-top: 20px;
-      font-size: 12px;
-      border: 1px solid #E6E6E6;
-      border-bottom: none;
-      @media screen and (max-width: 767px) {
-        border: none;
-        
-        
-        
-       }
-      
-      
-       th,td {
-        border-right: none;
-        border-bottom: 1px solid #E6E6E6;
-        padding: 8px;
-        text-align: left;
-        font-family: Montserrat;
-        
-        @media screen and (max-width: 767px) {
-          border: 1px solid #E6E6E6;
-          margin: 0;
-          
-         
-        }
-        
-        
-      }
-      td:nth-child(2){
-       width: 25%;
-       
-       p{
-        display: none;
-       }
-        @media screen and (max-width: 767px) {
-         border-top-right-radius: 10px;
-         border-top-left-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .wishlist-table {
+        width: 80%;
+        color: #979797;
+        border-radius: 10px;
+        border-collapse: separate;
+        margin-top: 20px;
+        font-size: 13px;
+        border: 1px solid #E6E6E6;
         border-bottom: none;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
-       p{
-        display: inline;
-        font-size: 10px;
-         font-weight: 500;
-         transform: translateY(5px);
-       }
+        @media screen and (max-width: 767px) {
+          border: none;
+          
+          
+          
+         }
+        
+        
+         th,td {
+          border-right: none;
+          border-bottom: 1px solid #E6E6E6;
+          padding: 8px;
+          text-align: left;
+          font-family: Montserrat;
+          
+          @media screen and (max-width: 767px) {
+            border: 1px solid #E6E6E6;
+            margin: 0;
+            
+           
+          }
+          
+          
         }
-      }
-      td:nth-child(3){
-       width: 25%;
-       p{
-        display: none;
+        td:nth-child(2){
+         width: 25%;
+         
+         p{
+          display: none;
+         }
+          @media screen and (max-width: 767px) {
+           border-top-right-radius: 10px;
+           border-top-left-radius: 10px;
+          border-bottom: none;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+         p{
+          display: inline;
+           font-weight: 500;
+           transform: translateY(5px);
+         }
+          }
+        }
+        td:nth-child(3){
+         width: 25%;
+         p{
+          display: none;
 
        }
        @media screen and (max-width: 1038px) {
@@ -114,124 +113,128 @@
         
       }
 
+        
       
-    
-      thead{
-        text-align:center ;
-        
-       
-        th {
-          background-color: none;
-          font-family: Montserrat;
-          font-size: 12px;
-          font-weight: 600;
+        thead{
+          text-align:center ;
           
-        }
-        th:nth-child(1){
-          padding-left: 35px;
-         }
-        
-        
-       
-      }
-      img {
-        max-width: 80px;
-        max-height: 80px;
-        @media screen and (max-width: 767px) {
-         max-width: 300px;
-         max-height: 500px;
          
-         }
-      }
-    
-      .multiple-prices {
-        
-        
-        span {
-          
-          &.primary-price {
-            color: #979797; 
-            text-decoration: line-through;
-            
-          }
-          &.secondary-price {
-              color: #E3B142;  
-              
-          }
-        }
-      }
-    
-      .in-stock {
-        color: #2C742F; 
-        border: none;
-        background-color: #20B52633;
-        border-radius: 3px;
-        
-      }
-    
-      .out-stock {
-        color: #EA4B48; 
-        border: none;
-        background-color: #EA4B4833;
-        border-radius: 3px;
-      }
-    
-      .add-to-cart-btn {
-          background-color: #4A3024; 
-          color: #fff;
-          border: none;
-          font-size: 10px;
-          padding: 8px 10px;
-          cursor: pointer;
-          font-weight: 600;
-          &:disabled {
-            cursor: not-allowed;
-            
-          }
-        }
-
-    
-      .out-of-stock-btn {
-        background-color: #f2f2f2;
-        color: #B3B3B3;
-        border: none;
-        font-size: 10px;
-        padding: 8px 10px;
-        
-        cursor: not-allowed;
-      }
-    
-      .delete-btn {
-          background-color: #fff ;
-          color: #808080;
-          border: 1px solid #808080;
-          border-radius: 50%; 
-          cursor: pointer;
-          
-          
-          i{
-            
+          th {
+            background-color: none;
+            font-family: Montserrat;
             font-size: 13px;
-            width: 4px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            font-weight: 600;
             
           }
+          th:nth-child(1){
+            padding-left: 35px;
+           }
+          
+          
          
-         
+        }
+        img {
+          max-width: 80px;
+          max-height: 80px;
+          @media screen and (max-width: 767px) {
+           max-width: 300px;
+           max-height: 500px;
+           
+           }
+        }
+      
+        .multiple-prices {
+          
+          
+          span {
+            
+            &.primary-price {
+              color: #979797; 
+              text-decoration: line-through;
+              
+            }
+            &.secondary-price {
+                color: #E3B142;  
+                
+            }
+          }
+        }
+      
+        .true {
+          color: #2C742F; 
+          border: none;
+          background-color: #20B52633;
+          border-radius: 3px;
+          font-size: 13px;
+          
+        }
+      
+        .false {
+          color: #EA4B48; 
+          border: none;
+          background-color: #EA4B4833;
+          border-radius: 3px;
+          width:fit-content;
+          height: fit-content;
+          font-size: 13px;
+        }
+      
+        .add-to-cart-btn {
+            background-color: #4A3024; 
+            color: #fff;
+            border: none;
+            font-size: 13px;
+            padding: 8px 10px;
+            cursor: pointer;
+            font-weight: 600;
+            &:disabled {
+              cursor: not-allowed;
+              
+            }
+          }
+
+      
+        .out-of-stock-btn {
+          background-color: #f2f2f2;
+          color: #B3B3B3;
+          border: none;
+          font-size: 13px;
+          padding: 8px 10px;
+          
+          cursor: not-allowed;
+        }
+      
+        .delete-btn {
+            background-color: #fff ;
+            color: #808080;
+            border: 1px solid #808080;
+            border-radius: 50%; 
+            cursor: pointer;
+            
+            
+            i{
+              
+              font-size: 13px;
+              width: 4px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              
+            }
+           
+           
+        }
       }
+      @media screen and (max-width: 767px) {
+    img {
+      margin-bottom: 0; 
     }
-    @media screen and (max-width: 767px) {
-  img {
-    margin-bottom: 0; 
+   th{
+  display: none;
+   }
+    td {
+      display: block; 
+      // margin-bottom: 20px; 
+    }
   }
- th{
-display: none;
- }
-  td {
-    display: block; 
-    // margin-bottom: 20px; 
-  }
-}
 }

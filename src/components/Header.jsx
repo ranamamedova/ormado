@@ -79,7 +79,8 @@ const Header = () => {
                       />
                     </svg>
                   </div>
-                  <div className="cart">
+                  <Link to="/shopcard">
+ <div className="cart">
                     <div className="svgBox ">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -106,6 +107,8 @@ const Header = () => {
                       </div>
                     </div>
                   </div>
+                  </Link>
+                 
                  <Link to="/wishlistdetail">
                  <div className="heart">
                     <div className="svgBox">

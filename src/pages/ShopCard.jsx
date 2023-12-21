@@ -1,41 +1,27 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import BreadCrumb from './BreadCrumb';
-import { useEffect } from 'react';
-import { useState } from 'react';
+import { useDispatch } from "react-redux";
+import { useSelector } from 'react-redux';
+import { removeToCart, updateQuantity  } from './manager/addtocart/CartSlice';
+import { Link } from 'react-router-dom';
 
-const shopcarditem = [
-  {
-    "id": 1,
-    "image": "https://s3-alpha-sig.figma.com/img/e3ee/94e6/7954dadb4be2faa26d1003d079be902b?Expires=1702252800&Signature=ZNT8pDQeJtq0-Qp5ey5V7SVUzOyNl2IiivRLXMUO9p3quFE5yT1r5ebWg0uVFXJIVrAmn~JcB7IEPADitrNeisOy9dpJlp-h0MeNBNOnKZIJBqwI4tPdJKGaYma1sfs98oPQZcfsr613gdJlKuO9ZG~7~rW2Pu6XQnFyaozhbUPQrei~3E6fpjcR4VolqmWjhhsqisx~bp-Y-S6Z08ZP896OxYpU9ovz~h6ZKZP4-RRHWAKrmhNe~i10cAyS84wyJnZo5wUSAcWcmamOW0t85B64iBABqDVQXtt72nXENBz6clslRw17Nln6o00u1nIRFha49V2N2xUNnLB7AassmA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
-    "name": "Ormado Energy Drink",
-    "price": ["$50"],
-  },
-  {
-    "id": 2,
-    "image": "https://s3-alpha-sig.figma.com/img/853b/6258/4e27fac09098a3ed919163fa8d619121?Expires=1702252800&Signature=GDG8sEBy6oHUk52ttsra03m9NqRVMBS6~1DiyOVFEQSAERGQ3tthHrhrR2ISwsp1iu92FWKIZ1PcRqepL1n6hnFdFTnjUhLw66eDEL0uR0lScu431gGr0JM-C3T~yuFY95Oa7zorBcMX53hrjGt9AreLvQ1MJLdBozSeFsoZ6NrkfACzdbDXinoZMdoxSnJ~3F2MfyjXbaPH09ZHV1kLhj5VRVPgTwXpnepbMSRElbZ1hHenmAFO6zMTqpVbwZZLyrX7a42ABe7s3Rnkdo4-Sek7v5zkBAWf5wo~oK6LxduKxiNO9-h-DJ905tMPW6qPa4pBhiMIhkglcyVyR9d3FA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
-    "name": "Ormado Energy Drink",
-    "price": ["$30"],
-  }
-];
 
-const ShopCard = ({onDelete,classNames}) => {
-  const [total, setTotal] = useState(0);
-  const [subtotal, setSubtotal] = useState(0);
 
-  useEffect(() => {
-    calculateTotal();
-  }, [shopcarditem]);
-
-  
-
+const ShopCard = () => {
+  const cartdata= useSelector(e=>e.cart);
+  const dispatch = useDispatch();
+  const shippingCost=10;
   const calculateTotal = () => {
-    const newSubtotal = shopcarditem.reduce(
-      (acc, product) => acc + (parseInt(product.price[0].slice(1)) * 2),
-      0
-    );
-    setSubtotal(newSubtotal);
-    setTotal(newSubtotal - 10.0);
+    const subtotal = cartdata.reduce((total, item) => total + item.lastPrice * item.quantity, 0);
+    return subtotal - shippingCost;
   };
+
+  const handleQuantityChange = (_id, newQuantity) => {
+    // console.log("_id:", _id);
+    // console.log("newQuantity:", newQuantity);
+    dispatch(updateQuantity({ itemId: _id, quantity: newQuantity }));
+  };
+
 
   return (
     <>
@@ -47,35 +33,37 @@ const ShopCard = ({onDelete,classNames}) => {
             <table className='my-3'>
               <thead>
                 <tr>
-                  <th>Product</th>
-                  <th>Price</th>
-                  <th>Quantity</th>
-                  <th>Subtotal</th>
+                  <th> <p className='ms-4'>Product</p></th>
+                  <th> <p>Price</p></th>
+                  <th> <p>Quantity</p></th>
+                  <th> <p>Subtotal</p></th>
                 </tr>
               </thead>
               <tbody>
-                {shopcarditem.map(item => (
+                {cartdata.map(item => (
                   <tr key={item.id}>
-                    <td>
-                      <img src={item.image} alt={item.name} style={{ width: '50px', height: '50px' }} />
-                      {item.name}
+                    <td className='darks'>
+                      <img className='dark-img' src={item.images[1]} alt={item.description}  />
+                      {item.title}
                     </td>
-                    <td>{item.price.join(', ')}</td>
+                    <td>${item.lastPrice}</td>
                     <td>
-                    <div className="quantity-shop">
-                      <button className="quantity btn">
-                        <i className="fa-solid fa-plus"></i>
-                      </button>
-                      <span>0</span>
-                      <button className="quantity btn">
-                        <i className="fa-solid fa-minus"></i>
-                      </button>
-                    </div>
+                      <p className='response'>Quantity</p>
+                        <div className="quantity-shop">
+                       <button className="quantity btn " onClick={() => handleQuantityChange(item._id, Math.max(1, item.quantity - 1))} >
+                         <i className="fa-solid fa-minus"></i>
+                       </button>
+                       <span>{item.quantity}</span>
+                       <button className="quantity btn" onClick={() => handleQuantityChange(item._id, item.quantity + 1)}>
+                         <i className="fa-solid fa-plus"></i>
+                       </button>
+                      </div>
                     </td>
                     <td >
+                    <p className='response'>Price</p>
                       <div className="subtotal-sec ">
-                      ${parseInt(item.price[0].slice(1)) * 2} 
-                    <button className="delete-btn text-center" onClick={() => onDelete(item.id)}>
+                    ${parseInt(item.lastPrice) * item.quantity} 
+                    <button className="delete-btn text-center"  onClick={()=>{dispatch(removeToCart(cartdata.id))}}>
                  <i className="fas fa-times"></i>
               </button>
                       </div></td>
@@ -83,9 +71,11 @@ const ShopCard = ({onDelete,classNames}) => {
                 ))}
                 <tr>
               <td colSpan="4" className="text-center">
+              <Link to="/product">
                 <button className="btn btn-table-end">
                 Return to shop
                 </button>
+                </Link>
               </td>
                 </tr>
               </tbody>
@@ -97,17 +87,17 @@ const ShopCard = ({onDelete,classNames}) => {
               <div className="pays my-3">
                 <div className='price-sec d-flex'>
                   <p>Subtotal:</p>
-                  <p className='coffs'>${subtotal.toFixed(2)}</p>
+                  <p className='coffs'>${calculateTotal()}</p>
                 </div>
                 <hr />
                 <div className='price-sec d-flex'>
                   <p>Shipping:</p>
-                  <p className='coffs'>$10.00</p>
+                  <p className='coffs'>${shippingCost}</p>
                 </div>
                 <hr />
                 <div className='price-sec d-flex'>
                   <p>Total:</p>
-                  <p className="yellow">${total.toFixed(2)}</p>
+                  <p className="yellow">$120</p>
                 </div>
               </div>
               <button className='order-btn'>

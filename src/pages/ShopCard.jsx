@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import BreadCrumb from './BreadCrumb';
 import { useDispatch } from "react-redux";
 import { useSelector } from 'react-redux';
-import { removeToCart, updateQuantity  } from './manager/addtocart/CartSlice';
+import { removeToCart } from './manager/addtocart/CartSlice';
 import { Link } from 'react-router-dom';
 
 
@@ -12,15 +12,32 @@ const ShopCard = () => {
   const dispatch = useDispatch();
   const shippingCost=10;
   const calculateTotal = () => {
-    const subtotal = cartdata.reduce((total, item) => total + item.lastPrice * item.quantity, 0);
+    const subtotal = cartdata.reduce((total, item) => total + item.lastPrice * 2, 0);
     return subtotal - shippingCost;
   };
 
-  const handleQuantityChange = (_id, newQuantity) => {
-    // console.log(newQuantity);
-    dispatch(updateQuantity({ itemId: _id, quantity: newQuantity }));
-  };
-
+ 
+  
+  
+  if (cartdata.length === 0) {
+    return (
+      <>
+        <BreadCrumb title="My Shopping Card" isOtherPage={true} />
+        <div className="shopcard">
+          <div className="row mx-5 my-5">
+            <div className="col-12">
+              <h1>Sebetde mehsul yoxdur</h1>
+              <Link to="/product">
+                <button className="btn btn-table-end">
+                  shop now
+                </button>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </>
+    );
+  }
 
   return (
     <>
@@ -48,21 +65,22 @@ const ShopCard = () => {
                     <td>${item.lastPrice}</td>
                     <td>
                       <p className='response'>Quantity</p>
-                        <div className="quantity-shop">
-                       <button className="quantity btn " onClick={() => handleQuantityChange(item._id, Math.max(1, item.quantity - 1))} >
-                         <i className="fa-solid fa-minus"></i>
-                       </button>
-                       <span>{item.quantity}</span>
-                       <button className="quantity btn" onClick={() => handleQuantityChange(item._id, item.quantity + 1)}>
-                         <i className="fa-solid fa-plus"></i>
-                       </button>
-                      </div>
+                      <div className="quantity-shop">
+                      <button className="quantity btn" >
+                        <i className="fa-solid fa-minus"></i>
+                      </button>
+                      <span>1</span>
+                      <button className="quantity btn" >
+                        <i className="fa-solid fa-plus"></i>
+                      </button>
+                    </div>
+
                     </td>
                     <td >
                     <p className='response'>Price</p>
                       <div className="subtotal-sec ">
-                    ${parseInt(item.lastPrice) * item.quantity} 
-                    <button className="delete-btn text-center"  onClick={()=>{dispatch(removeToCart(cartdata.id))}}>
+                    ${parseInt(item.lastPrice) * 2} 
+                    <button className="delete-btn text-center"   onClick={()=>{dispatch(removeToCart(cartdata.id))}}>
                  <i className="fas fa-times"></i>
               </button>
                       </div></td>

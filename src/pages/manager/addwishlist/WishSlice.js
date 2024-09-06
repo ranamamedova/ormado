@@ -23,7 +23,7 @@ const wishSlice = createSlice({
     addToCartFromWishlist: (state, action) => {
       const itemIdToAdd = action.payload;
       const itemToAdd = state.find((item) => item.id === itemIdToAdd);
-    
+
       if (itemToAdd) {
         const storedCart = JSON.parse(localStorage.getItem("cart")) || [];
 

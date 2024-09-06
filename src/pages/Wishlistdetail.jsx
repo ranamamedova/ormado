@@ -10,6 +10,21 @@ import { remove, addToCartFromWishlist } from "./manager/addwishlist/WishSlice";
 const WishlistDetail = () => {
    const wishdata= useSelector(p=>p.wish);
   const dispatch = useDispatch();
+  if (wishdata.length === 0) {
+    return (
+      <>
+        <BreadCrumb title="My Shopping Card" isOtherPage={true} />
+        <div className="shopcard">
+          <div className="row mx-5 my-5">
+            <div className="col-12">
+              <h1>Wishlistde mehsul yoxdur</h1>
+              
+            </div>
+          </div>
+        </div>
+      </>
+    );
+  }
 
   return (
     <>
@@ -46,21 +61,21 @@ const WishlistDetail = () => {
                   <p>STOCK STATUS</p>
                   <button
                     className={
-                      item.stock === "true" ? "true" : "false"
+                      item.stock === true ? "true" : "false"
                     }
                   >
-                    {item.stock==='true'?'in-stock':"out-stock"}
+                    {item.stock===true?'in-stock':"out-stock"}
                   </button>
                 </td>
                 <td>
                   <button
                     className={
-                      item.stockStatus === "in stock"
+                      item.stock === true
                         ? "add-to-cart-btn"
                         : "out-of-stock-btn"
                     }
                     onClick={()=>{dispatch(addToCartFromWishlist(wishdata.id))}}
-                    disabled={item.stockStatus === "out-stock"}
+                    disabled={item.stockStatus === false}
                     style={{ margin: "5px", borderRadius: "20px" }}
                      >
                     Add to Cart
